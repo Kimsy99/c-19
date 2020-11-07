@@ -1,29 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.ConstrainedExecution;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class KenMovement : MonoBehaviour
+public class KenMovement : Movable2D
 {
-    public float moveSpeed = 5F;
-
-    private Rigidbody2D body;
-    private Vector2 movementVec = new Vector2();
-
-	private void Start()
-	{
-        body = GetComponent<Rigidbody2D>();
-	}
-
-	void FixedUpdate()
-    {
-        body.MovePosition(body.position + movementVec * moveSpeed * Time.fixedDeltaTime);
-    }
-
+    [SerializeField] private float walkSpeed = 5;
+    [SerializeField] private float runSpeed = 15;
+    
     // Update is called once per frame
     void Update()
     {
-        movementVec.x = Input.GetAxisRaw("Horizontal");
-        movementVec.y = Input.GetAxisRaw("Vertical");
+        float vx = Input.GetAxisRaw("Horizontal");
+        float vy = Input.GetAxisRaw("Vertical");
+
+        float speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+
+        SetVelocity(vx * speed, vy * speed);
     }
 }

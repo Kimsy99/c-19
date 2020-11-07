@@ -1,25 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ForwardOrientable : MonoBehaviour
+/**
+ * Makes it such that the sprite will always face the direction that it is going.
+ * 
+ * For this to work properly, the GameObject's sprite must be facing to the right and does not have
+ * the SpriteFlippable2D component.
+ */
+public class ForwardOrientable : Movable2D
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-	void FixedUpdate()
-	{
-        Rigidbody2D body = GetComponent<Rigidbody2D>();
-        Vector3 localVel = transform.InverseTransformDirection(body.velocity);
-        transform.localRotation = Quaternion.LookRotation(localVel);
-    }
-
-	// Update is called once per frame
 	void Update()
-    {
-        
-    }
+	{
+		transform.localRotation = Quaternion.Euler(0, 0, Direction);
+	}
 }

@@ -1,20 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Ken : MonoBehaviour
+public class Ken : AnimatableMovable2D
 {
-    public Vector2 movementVec = new Vector2();
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

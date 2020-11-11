@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 127395793}
   - component: {fileID: 127395792}
   - component: {fileID: 127395791}
-  - component: {fileID: 127395789}
   - component: {fileID: 127395796}
   - component: {fileID: 127395797}
   - component: {fileID: 127395790}
@@ -145,23 +144,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &127395789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127395788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7209daa963811401fb5342ee3a3cc41b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: -8892455320561179592, guid: aa18f913253573b4db3a21463f2186c7,
-    type: 3}
-  ShootingPoint: {fileID: 127395795}
-  bulletSpeed: 10
-  cam: {fileID: 507328890}
 --- !u!114 &127395790
 MonoBehaviour:
   m_ObjectHideFlags: 0

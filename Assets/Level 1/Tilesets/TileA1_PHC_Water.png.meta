@@ -1,0 +1,371 @@
+fileFormatVersion: 2
+guid: 4c8822fc1a7914e799a6ce3b3df1c665
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3877989993299213111
+    second: TileA1_PHC_Water_0
+  - first:
+      213: -4361616548850531259
+    second: TileA1_PHC_Water_1
+  - first:
+      213: 5617971607895224103
+    second: TileA1_PHC_Water_2
+  - first:
+      213: 3190700970732887598
+    second: TileA1_PHC_Water_3
+  - first:
+      213: 8396438534901955357
+    second: TileA1_PHC_Water_4
+  - first:
+      213: 6951679879905548730
+    second: TileA1_PHC_Water_5
+  - first:
+      213: -430400092001356423
+    second: TileA1_PHC_Water_6
+  - first:
+      213: 5245880462643061823
+    second: TileA1_PHC_Water_7
+  - first:
+      213: 5768022417191782296
+    second: TileA1_PHC_Water_8
+  - first:
+      213: -8941413181818383124
+    second: TileA1_PHC_Water_9
+  - first:
+      213: 8758816831207463990
+    second: TileA1_PHC_Water_10
+  - first:
+      213: 3946293469769377758
+    second: TileA1_PHC_Water_11
+  - first:
+      213: 6690337637713986304
+    second: TileA1_PHC_Water_12
+  - first:
+      213: 3293571026502843256
+    second: TileA1_PHC_Water_13
+  - first:
+      213: -5819675039875047066
+    second: TileA1_PHC_Water_14
+  - first:
+      213: -5491899675720721861
+    second: TileA1_PHC_Water_15
+  - first:
+      213: -3958795822971394616
+    second: TileA1_PHC_Water_16
+  - first:
+      213: 8532644990982168466
+    second: TileA1_PHC_Water_17
+  - first:
+      213: -219205960267980040
+    second: TileA1_PHC_Water_18
+  - first:
+      213: 2027241099994113880
+    second: TileA1_PHC_Water_19
+  - first:
+      213: -609640935309183796
+    second: TileA1_PHC_Water_20
+  - first:
+      213: -6756067850759611647
+    second: TileA1_PHC_Water_21
+  - first:
+      213: 7604106565544681414
+    second: TileA1_PHC_Water_22
+  - first:
+      213: -548716853875072379
+    second: TileA1_PHC_Water_23
+  - first:
+      213: 1701178134139546382
+    second: TileA1_PHC_Water_24
+  - first:
+      213: 750455701012104440
+    second: TileA1_PHC_Water_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TileA1_PHC_Water_0
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c481e6c5ac9e2ac0800000000000000
+      internalID: -3877989993299213111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA1_PHC_Water_1
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 96
+        width: 94
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5448c4f8bdc6873c0800000000000000
+      internalID: -4361616548850531259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA1_PHC_Water_2
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 145
+        width: 94
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f23de796b07fd40800000000000000
+      internalID: 5617971607895224103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA1_PHC_Water_3
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 289
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e1709b0a5a74c20800000000000000
+      internalID: 3190700970732887598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA1_PHC_Water_4
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 383
+        width: 95
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b7b3b7c54268470800000000000000
+      internalID: 8396438534901955357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA1_PHC_Water_5
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 299
+        width: 93
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9100ae404597060800000000000000
+      internalID: 6951679879905548730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA1_PHC_Water_6
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 393
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975b6fc8569e60af0800000000000000
+      internalID: -430400092001356423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA1_PHC_Water_7
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 379
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f346006ac7c1dc840800000000000000
+      internalID: 5245880462643061823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA1_PHC_Water_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897c43104d12c0050800000000000000
+      internalID: 5768022417191782296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

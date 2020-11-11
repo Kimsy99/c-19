@@ -41,6 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Map
+  - name: Floor
+    uniqueID: 3907178819
+    locked: 0
+  - name: Deco
+    uniqueID: 1271386637
+    locked: 0
+  - name: Wall
+    uniqueID: 476639341
+    locked: 0
+  - name: Player
     uniqueID: 2249014311
     locked: 0

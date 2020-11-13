@@ -1,79 +1,13 @@
 fileFormatVersion: 2
-guid: 8ba1b2a08be53274790d8f00c7ec5638
+guid: dcc93900946da564b95c0eb5421ca063
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 564361669979821910
-    second: CP_WallsA4_0
+      213: -6488400805883484493
+    second: HC_SewerC_0
   - first:
-      213: 3715388189055440939
-    second: CP_WallsA4_1
-  - first:
-      213: -499669187925852386
-    second: CP_WallsA4_2
-  - first:
-      213: -981070182911900828
-    second: CP_WallsA4_3
-  - first:
-      213: -5501207512827515942
-    second: CP_WallsA4_4
-  - first:
-      213: 2034464484987021717
-    second: CP_WallsA4_5
-  - first:
-      213: 7973639456543878939
-    second: CP_WallsA4_6
-  - first:
-      213: -6651083065369500614
-    second: CP_WallsA4_7
-  - first:
-      213: 333772760500457351
-    second: CP_WallsA4_8
-  - first:
-      213: -6645807174213190994
-    second: CP_WallsA4_9
-  - first:
-      213: 654277729650927651
-    second: CP_WallsA4_10
-  - first:
-      213: -3906848492335036352
-    second: CP_WallsA4_11
-  - first:
-      213: -6800025037140721359
-    second: CP_WallsA4_12
-  - first:
-      213: -1753880060336410071
-    second: CP_WallsA4_13
-  - first:
-      213: -4898061795388964221
-    second: CP_WallsA4_14
-  - first:
-      213: -7019751974885041799
-    second: CP_WallsA4_15
-  - first:
-      213: -5088799920664138483
-    second: CP_WallsA4_16
-  - first:
-      213: -7180287373020839761
-    second: CP_WallsA4_17
-  - first:
-      213: -1630562152561643127
-    second: CP_WallsA4_18
-  - first:
-      213: -8594638801803905431
-    second: CP_WallsA4_19
-  - first:
-      213: -2724858728890457849
-    second: CP_WallsA4_20
-  - first:
-      213: -4336058947341516529
-    second: CP_WallsA4_21
-  - first:
-      213: -884246381487525409
-    second: CP_WallsA4_22
-  - first:
-      213: 7272420150803065806
-    second: CP_WallsA4_23
+      213: 3758373922568214073
+    second: HC_SewerC_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 90
+  spritePixelsToUnits: 46
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -159,22 +93,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CP_WallsA4_0
+      name: HC_SewerC_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 480
-        width: 90
-        height: 189
-      alignment: 9
-      pivot: {x: 0.5, y: 0.7619048}
+        x: 159
+        y: 0
+        width: 129
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6575effd2f305d700800000000000000
-      internalID: 564361669979821910
+      spriteID: 3b6e4f418d194f5a0800000000000000
+      internalID: -6488400805883484493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HC_SewerC_1
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 99
+        width: 45
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93615cb7b2d682430800000000000000
+      internalID: 3758373922568214073
       vertices: []
       indices: 
       edges: []

@@ -38,6 +38,9 @@ TextureImporter:
   - first:
       213: -631287614426364301
     second: TileA4_PHC_Interior-General_11
+  - first:
+      213: -5801824340295640052
+    second: TileA4_PHC_Interior-General_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -362,7 +365,7 @@ TextureImporter:
         width: 90
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -370,6 +373,27 @@ TextureImporter:
       bones: []
       spriteID: 376430762473d37f0800000000000000
       internalID: -631287614426364301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA4_PHC_Interior-General_12
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 5
+        width: 90
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c967b7087cb7fa0800000000000000
+      internalID: -5801824340295640052
       vertices: []
       indices: 
       edges: []

@@ -26,6 +26,9 @@ TextureImporter:
   - first:
       213: -1531432646929911546
     second: TileB_PHC_Exterior-City_7
+  - first:
+      213: -3574322593521842844
+    second: TileB_PHC_Exterior-City_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -266,7 +269,7 @@ TextureImporter:
         width: 39
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -274,6 +277,27 @@ TextureImporter:
       bones: []
       spriteID: 6017e4a1f124fbae0800000000000000
       internalID: -1531432646929911546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Exterior-City_8
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 288
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4654a7ce984756ec0800000000000000
+      internalID: -3574322593521842844
       vertices: []
       indices: 
       edges: []

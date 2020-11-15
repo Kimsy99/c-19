@@ -50,6 +50,15 @@ TextureImporter:
   - first:
       213: -8095796587712679116
     second: TileC_PHC_Exterior-Rails&Stairs_15
+  - first:
+      213: 4404278894185375398
+    second: TileC_PHC_Exterior-Rails&Stairs_16
+  - first:
+      213: -7679318608962138272
+    second: TileC_PHC_Exterior-Rails&Stairs_17
+  - first:
+      213: 1712334109563001198
+    second: TileC_PHC_Exterior-Rails&Stairs_18
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -93,7 +102,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 75.43
+  spritePixelsToUnits: 60
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -329,7 +338,7 @@ TextureImporter:
         serializedVersion: 2
         x: 673
         y: 383
-        width: 92
+        width: 77
         height: 144
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -466,6 +475,69 @@ TextureImporter:
       bones: []
       spriteID: 433f09795e3f5af80800000000000000
       internalID: -8095796587712679116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Exterior-Rails&Stairs_16
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 146
+        width: 93
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a66ba3c1542f1d30800000000000000
+      internalID: 4404278894185375398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Exterior-Rails&Stairs_17
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 383
+        width: 58
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fc3c379649d6590800000000000000
+      internalID: -7679318608962138272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Exterior-Rails&Stairs_18
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 383
+        width: 78
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e699941ecce63c710800000000000000
+      internalID: 1712334109563001198
       vertices: []
       indices: 
       edges: []

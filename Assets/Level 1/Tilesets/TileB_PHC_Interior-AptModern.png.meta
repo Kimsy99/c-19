@@ -1,0 +1,1664 @@
+fileFormatVersion: 2
+guid: 7456e486070d746f08ba5821ae78165f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2110503719361816949
+    second: TileB_PHC_Interior-AptModern_0
+  - first:
+      213: 3011816004081007907
+    second: TileB_PHC_Interior-AptModern_1
+  - first:
+      213: -7588739896580886561
+    second: TileB_PHC_Interior-AptModern_2
+  - first:
+      213: 5759498273199846024
+    second: TileB_PHC_Interior-AptModern_3
+  - first:
+      213: 7070549392503629908
+    second: TileB_PHC_Interior-AptModern_4
+  - first:
+      213: -8984673924657291764
+    second: TileB_PHC_Interior-AptModern_5
+  - first:
+      213: -2751911340176817183
+    second: TileB_PHC_Interior-AptModern_6
+  - first:
+      213: -1645898756878340769
+    second: TileB_PHC_Interior-AptModern_7
+  - first:
+      213: 2657666261116807115
+    second: TileB_PHC_Interior-AptModern_8
+  - first:
+      213: -6128783623058514376
+    second: TileB_PHC_Interior-AptModern_9
+  - first:
+      213: -6409583105103846337
+    second: TileB_PHC_Interior-AptModern_10
+  - first:
+      213: 8817859720527018063
+    second: TileB_PHC_Interior-AptModern_11
+  - first:
+      213: 422095279215524486
+    second: TileB_PHC_Interior-AptModern_12
+  - first:
+      213: -2888208401902003366
+    second: TileB_PHC_Interior-AptModern_13
+  - first:
+      213: -4013719219385032887
+    second: TileB_PHC_Interior-AptModern_14
+  - first:
+      213: 4041836958477585826
+    second: TileB_PHC_Interior-AptModern_15
+  - first:
+      213: 1924608571122203664
+    second: TileB_PHC_Interior-AptModern_16
+  - first:
+      213: -5413329031026089622
+    second: TileB_PHC_Interior-AptModern_17
+  - first:
+      213: -8184623701849270016
+    second: TileB_PHC_Interior-AptModern_18
+  - first:
+      213: -4661848024281238776
+    second: TileB_PHC_Interior-AptModern_19
+  - first:
+      213: 4704049978584475552
+    second: TileB_PHC_Interior-AptModern_20
+  - first:
+      213: 9145643973097525383
+    second: TileB_PHC_Interior-AptModern_21
+  - first:
+      213: 8972019587499722041
+    second: TileB_PHC_Interior-AptModern_22
+  - first:
+      213: -3114225575115488494
+    second: TileB_PHC_Interior-AptModern_23
+  - first:
+      213: -8061017117519872932
+    second: TileB_PHC_Interior-AptModern_24
+  - first:
+      213: -7535248838504695504
+    second: TileB_PHC_Interior-AptModern_25
+  - first:
+      213: -2361964951253752699
+    second: TileB_PHC_Interior-AptModern_26
+  - first:
+      213: -8174587832526136040
+    second: TileB_PHC_Interior-AptModern_27
+  - first:
+      213: 7188382965972829606
+    second: TileB_PHC_Interior-AptModern_28
+  - first:
+      213: -346412179014147641
+    second: TileB_PHC_Interior-AptModern_29
+  - first:
+      213: -464941297379780091
+    second: TileB_PHC_Interior-AptModern_30
+  - first:
+      213: 8353348299522194731
+    second: TileB_PHC_Interior-AptModern_31
+  - first:
+      213: 4382259602718310763
+    second: TileB_PHC_Interior-AptModern_32
+  - first:
+      213: 3680928918005446202
+    second: TileB_PHC_Interior-AptModern_33
+  - first:
+      213: -8897541325626369659
+    second: TileB_PHC_Interior-AptModern_34
+  - first:
+      213: 4474788781247133467
+    second: TileB_PHC_Interior-AptModern_35
+  - first:
+      213: 1257767546553867967
+    second: TileB_PHC_Interior-AptModern_36
+  - first:
+      213: 4777106120764055009
+    second: TileB_PHC_Interior-AptModern_37
+  - first:
+      213: -2240119950931694629
+    second: TileB_PHC_Interior-AptModern_38
+  - first:
+      213: 7204257055325981915
+    second: TileB_PHC_Interior-AptModern_39
+  - first:
+      213: -380744181507065954
+    second: TileB_PHC_Interior-AptModern_40
+  - first:
+      213: -1216989932053993065
+    second: TileB_PHC_Interior-AptModern_41
+  - first:
+      213: -2564901458826098559
+    second: TileB_PHC_Interior-AptModern_42
+  - first:
+      213: 3471332350373850288
+    second: TileB_PHC_Interior-AptModern_43
+  - first:
+      213: 4593590814978793877
+    second: TileB_PHC_Interior-AptModern_44
+  - first:
+      213: 1070101167201581744
+    second: TileB_PHC_Interior-AptModern_45
+  - first:
+      213: -2844548981698508974
+    second: TileB_PHC_Interior-AptModern_46
+  - first:
+      213: -9096121973231308176
+    second: TileB_PHC_Interior-AptModern_47
+  - first:
+      213: -2314032824099489659
+    second: TileB_PHC_Interior-AptModern_48
+  - first:
+      213: 6200993752926350346
+    second: TileB_PHC_Interior-AptModern_49
+  - first:
+      213: 213764955911262295
+    second: TileB_PHC_Interior-AptModern_50
+  - first:
+      213: -9105461040743752176
+    second: TileB_PHC_Interior-AptModern_51
+  - first:
+      213: -4523910801394218710
+    second: TileB_PHC_Interior-AptModern_52
+  - first:
+      213: 8603198135527021190
+    second: TileB_PHC_Interior-AptModern_53
+  - first:
+      213: -7616206688031029138
+    second: TileB_PHC_Interior-AptModern_54
+  - first:
+      213: 1305386091340514815
+    second: TileB_PHC_Interior-AptModern_55
+  - first:
+      213: 1534626161301429487
+    second: TileB_PHC_Interior-AptModern_56
+  - first:
+      213: 1776013825178295498
+    second: TileB_PHC_Interior-AptModern_57
+  - first:
+      213: 8177539548373931141
+    second: TileB_PHC_Interior-AptModern_58
+  - first:
+      213: -5120059610254399338
+    second: TileB_PHC_Interior-AptModern_59
+  - first:
+      213: -165222059227227815
+    second: TileB_PHC_Interior-AptModern_60
+  - first:
+      213: -7370162640172586982
+    second: TileB_PHC_Interior-AptModern_61
+  - first:
+      213: -7939549494131316069
+    second: TileB_PHC_Interior-AptModern_62
+  - first:
+      213: 7341444849381248367
+    second: TileB_PHC_Interior-AptModern_63
+  - first:
+      213: -4684325906600037470
+    second: TileB_PHC_Interior-AptModern_64
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 694
+        width: 48
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 579a3b963f30a4d10800000000000000
+      internalID: 2110503719361816949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 698
+        width: 98
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32db51cc2be1cc920800000000000000
+      internalID: 3011816004081007907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_2
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 693
+        width: 93
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf267b55416fa690800000000000000
+      internalID: -7588739896580886561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_3
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 642
+        width: 91
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8827d821a29ddef40800000000000000
+      internalID: 5759498273199846024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_4
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 720
+        width: 78
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458680b0633af1260800000000000000
+      internalID: 7070549392503629908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_5
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 718
+        width: 188
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e561a1ba6005380800000000000000
+      internalID: -8984673924657291764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 699
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e34463673f3fc9d0800000000000000
+      internalID: -2751911340176817183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_7
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 699
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d620c0dc79829e0800000000000000
+      internalID: -1645898756878340769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_8
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 699
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc76861326de1e420800000000000000
+      internalID: 2657666261116807115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_9
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 681
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e9d5a34cf22faa0800000000000000
+      internalID: -6128783623058514376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_10
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 681
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34a0f510269c07a0800000000000000
+      internalID: -6409583105103846337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_11
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 681
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48fc3162b45f5a70800000000000000
+      internalID: 8817859720527018063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_12
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 681
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ab20b8b659bd500800000000000000
+      internalID: 422095279215524486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_13
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 595
+        width: 147
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b1557c2c50be7d0800000000000000
+      internalID: -2888208401902003366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_14
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 597
+        width: 93
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f9564b2a76c48c0800000000000000
+      internalID: -4013719219385032887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_15
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 497
+        width: 93
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad0a169c4d771830800000000000000
+      internalID: 4041836958477585826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 435
+        width: 45
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c39656c4595ba10800000000000000
+      internalID: 1924608571122203664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 399
+        width: 96
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6161656dedffd4b0800000000000000
+      internalID: -5413329031026089622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_18
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 435
+        width: 39
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009180f6b106a6e80800000000000000
+      internalID: -8184623701849270016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_19
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 432
+        width: 93
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8033cd3ebe9cd4fb0800000000000000
+      internalID: -4661848024281238776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_20
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 345
+        width: 93
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7263b4884284140800000000000000
+      internalID: 4704049978584475552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_21
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 435
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7809ba2ecbadbee70800000000000000
+      internalID: 9145643973097525383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_22
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 439
+        width: 47
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93584ce6744038c70800000000000000
+      internalID: 8972019587499722041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_23
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 441
+        width: 78
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2130eccd65c08c4d0800000000000000
+      internalID: -3114225575115488494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_24
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 438
+        width: 93
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c72e504a3812090800000000000000
+      internalID: -8061017117519872932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_25
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 295
+        width: 92
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039b0c6da1b6d6790800000000000000
+      internalID: -7535248838504695504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_26
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 336
+        width: 93
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584e89c146d983fd0800000000000000
+      internalID: -2361964951253752699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_27
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 387
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d9c095da70e8e80800000000000000
+      internalID: -8174587832526136040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_28
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 297
+        width: 48
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5874cc83442c360800000000000000
+      internalID: 7188382965972829606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_29
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 297
+        width: 78
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c12ef365fb413bf0800000000000000
+      internalID: -346412179014147641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_30
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 294
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ad4487a523c89f0800000000000000
+      internalID: -464941297379780091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_31
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 339
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d322e350e0de370800000000000000
+      internalID: 8353348299522194731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_32
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 197
+        width: 94
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61c195f3e9e0dc30800000000000000
+      internalID: 4382259602718310763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_33
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 240
+        width: 93
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a367d293959451330800000000000000
+      internalID: 3680928918005446202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_34
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 205
+        width: 93
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5899ea73e45958480800000000000000
+      internalID: -8897541325626369659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_35
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 190
+        width: 96
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17732720b4a91e30800000000000000
+      internalID: 4474788781247133467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_36
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 191
+        width: 93
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe9b5e6bec747110800000000000000
+      internalID: 1257767546553867967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_37
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 117
+        width: 39
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed5c76e4b0bb4240800000000000000
+      internalID: 4777106120764055009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_38
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 117
+        width: 42
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb6376f5ce79e0e0800000000000000
+      internalID: -2240119950931694629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_39
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 108
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc8e4d3f99aaf360800000000000000
+      internalID: 7204257055325981915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_40
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 123
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9779f62f2357baf0800000000000000
+      internalID: -380744181507065954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_41
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 102
+        width: 90
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799e1bcca126c1fe0800000000000000
+      internalID: -1216989932053993065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_42
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 102
+        width: 90
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1880ace66b3a76cd0800000000000000
+      internalID: -2564901458826098559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_43
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 108
+        width: 93
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcea597166ac2030800000000000000
+      internalID: 3471332350373850288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_44
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 21
+        width: 39
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591ee422286bfbf30800000000000000
+      internalID: 4593590814978793877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_45
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 21
+        width: 42
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0baf7c88753c9de00800000000000000
+      internalID: 1070101167201581744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_46
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 12
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25749afa5c12688d0800000000000000
+      internalID: -2844548981698508974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_47
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 27
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0723ce7324514c180800000000000000
+      internalID: -9096121973231308176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_48
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 6
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588b4f02867e2efd0800000000000000
+      internalID: -2314032824099489659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_49
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 6
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c6799c6fa5e0650800000000000000
+      internalID: 6200993752926350346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_50
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 674
+        width: 78
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7509486481277f200800000000000000
+      internalID: 213764955911262295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_51
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 668
+        width: 188
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e5f4e1d67e2a180800000000000000
+      internalID: -9105461040743752176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_52
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 586
+        width: 285
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2948574817d731c0800000000000000
+      internalID: -4523910801394218710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_53
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 593
+        width: 94
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a14606f13b46770800000000000000
+      internalID: 8603198135527021190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_54
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 304
+        width: 47
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68c4ff9e5ccd4690800000000000000
+      internalID: -7616206688031029138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_55
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 480
+        width: 50
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5461ddbb9ad1210800000000000000
+      internalID: 1305386091340514815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 302
+        width: 47
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec9467ec561c4510800000000000000
+      internalID: 1534626161301429487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_57
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 94
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc5fed0a2ba5a810800000000000000
+      internalID: 1776013825178295498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_58
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 193
+        width: 94
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584598d84e47c7170800000000000000
+      internalID: 8177539548373931141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_59
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 99
+        width: 101
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69826f569e4e1f8b0800000000000000
+      internalID: -5120059610254399338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_60
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 0
+        width: 107
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959d3ba996305bdf0800000000000000
+      internalID: -165222059227227815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_61
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 85
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1868a7a02ce7b990800000000000000
+      internalID: -7370162640172586982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_62
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 0
+        width: 56
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9aaba5fccd01d190800000000000000
+      internalID: -7939549494131316069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_63
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 288
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d8d71a13d02e560800000000000000
+      internalID: 7341444849381248367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileB_PHC_Interior-AptModern_64
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 506
+        width: 47
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3f1f4186eedfeb0800000000000000
+      internalID: -4684325906600037470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

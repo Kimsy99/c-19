@@ -13,14 +13,8 @@ public class AnimatableMovable2D : Movable2D
 	void Update()
 	{
 		if (Speed > 0)
-		{
-			print("moving");
-			//animator.SetBool(movingParamater, value: true);
-		}
+			animator.SetBool(movingParamater, value: true);
 		else
-		{
-			print("not moving");
-			//animator.SetBool(movingParamater, value: false);
-		}
+			animator.SetBool(movingParamater, value: false);
 	}
 }

@@ -321,7 +321,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7985903dd1aac7042b31538e206fc0fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashMaterial: {fileID: 2100000, guid: 5fcb6e202cc85b045903661a7575796e, type: 2}
 --- !u!1 &4365825434138179224
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,9 +986,9 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: 0, z: 0}
+    m_Position: {x: 0, y: 0, z: -0.15}
     m_Rotation: {x: 90, y: 0, z: 0.2}
-    m_Scale: {x: 1.02, y: 1.12, z: 1}
+    m_Scale: {x: 1.02, y: 0.66, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0

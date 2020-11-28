@@ -137,13 +137,14 @@ GameObject:
   - component: {fileID: 381826858}
   - component: {fileID: 381826863}
   - component: {fileID: 381826857}
+  - component: {fileID: 381826865}
   m_Layer: 0
   m_Name: Ken
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &381826857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,7 +304,33 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!61 &381826865
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381826856}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.25}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.109375}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.64}
+  m_EdgeRadius: 0
 --- !u!1 &384693652
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,19 +342,19 @@ GameObject:
   - component: {fileID: 384693655}
   - component: {fileID: 384693654}
   - component: {fileID: 384693653}
-  - component: {fileID: 384693659}
-  - component: {fileID: 384693658}
   - component: {fileID: 384693657}
+  - component: {fileID: 384693658}
   - component: {fileID: 384693656}
   - component: {fileID: 384693661}
   - component: {fileID: 384693660}
+  - component: {fileID: 384693659}
   m_Layer: 0
   m_Name: Zombie 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &384693653
 Animator:
   serializedVersion: 3
@@ -453,10 +480,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 384693652}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c59ceb66647c44602bd0d89381a53093, type: 3}
+  m_Script: {fileID: 11500000, guid: 61e6c71a2e61b4e889530a07cb637043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
+  wayPoint01: {fileID: 0}
+  wayPoint02: {fileID: 0}
+  walkSpeed: 7
 --- !u!114 &384693659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,7 +495,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 384693652}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9769a535e29eb4a6fa7038d882ac97ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 91843b27527e9aa4699307f3a78393a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &384693660
@@ -508,7 +537,6 @@ GameObject:
   - component: {fileID: 494943279}
   - component: {fileID: 494943278}
   - component: {fileID: 494943277}
-  - component: {fileID: 494943282}
   - component: {fileID: 494943281}
   - component: {fileID: 494943280}
   m_Layer: 0
@@ -517,7 +545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &494943274
 Animator:
   serializedVersion: 3
@@ -668,22 +696,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 494943273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 592b5e88026b549a1a5a4ac0b45a716b, type: 3}
+  m_Script: {fileID: 11500000, guid: 61e6c71a2e61b4e889530a07cb637043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wayPoint01: {fileID: 0}
+  wayPoint02: {fileID: 0}
   walkSpeed: 7
---- !u!114 &494943282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 494943273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e62ae32f5dad84a5e83b0b53ccbbac14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,16 +815,15 @@ GameObject:
   - component: {fileID: 633969443}
   - component: {fileID: 633969442}
   - component: {fileID: 633969441}
-  - component: {fileID: 633969444}
-  - component: {fileID: 633969446}
   - component: {fileID: 633969445}
+  - component: {fileID: 633969444}
   m_Layer: 0
   m_Name: Boss 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &633969438
 Animator:
   serializedVersion: 3
@@ -957,22 +974,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 633969437}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a2d6ce276ef74a88ade39fa26a1494f, type: 3}
+  m_Script: {fileID: 11500000, guid: 61e6c71a2e61b4e889530a07cb637043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wayPoint01: {fileID: 0}
+  wayPoint02: {fileID: 0}
   walkSpeed: 7
---- !u!114 &633969446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633969437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 466aa11cdc73f41c6a723b716781ec5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &644696223
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,18 +992,17 @@ GameObject:
   - component: {fileID: 644696225}
   - component: {fileID: 644696224}
   - component: {fileID: 644696232}
+  - component: {fileID: 644696228}
   - component: {fileID: 644696231}
   - component: {fileID: 644696227}
   - component: {fileID: 644696230}
-  - component: {fileID: 644696229}
-  - component: {fileID: 644696228}
   m_Layer: 0
   m_Name: Zombie 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &644696224
 Animator:
   serializedVersion: 3
@@ -1102,22 +1108,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 644696223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c9051be6e07543c99a3d063596ea958, type: 3}
+  m_Script: {fileID: 11500000, guid: 61e6c71a2e61b4e889530a07cb637043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wayPoint01: {fileID: 0}
+  wayPoint02: {fileID: 0}
   walkSpeed: 7
---- !u!114 &644696229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644696223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ee4bb0ad5acf41f8a54b2cd3ebe7b46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &644696230
 Rigidbody2D:
   serializedVersion: 4
@@ -1163,6 +1159,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91843b27527e9aa4699307f3a78393a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &779332107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 779332108}
+  m_Layer: 0
+  m_Name: TargetObject1
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &779332108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779332107}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.34, y: 1.88, z: -2.9077077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &821371630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 821371631}
+  m_Layer: 0
+  m_Name: TargetObject2
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &821371631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821371630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.33, y: -0.42, z: -2.9077077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &937612240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,7 +1233,6 @@ GameObject:
   - component: {fileID: 937612246}
   - component: {fileID: 937612245}
   - component: {fileID: 937612244}
-  - component: {fileID: 937612249}
   - component: {fileID: 937612248}
   - component: {fileID: 937612247}
   m_Layer: 0
@@ -1186,7 +1241,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &937612241
 Animator:
   serializedVersion: 3
@@ -1337,22 +1392,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 937612240}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04e9726d5d81e46859980ee60ffde436, type: 3}
+  m_Script: {fileID: 11500000, guid: 61e6c71a2e61b4e889530a07cb637043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wayPoint01: {fileID: 0}
+  wayPoint02: {fileID: 0}
   walkSpeed: 7
---- !u!114 &937612249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937612240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ab07f991832d4efd8c71efdd5b44ea9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &985311653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,16 +1412,16 @@ GameObject:
   - component: {fileID: 985311659}
   - component: {fileID: 985311658}
   - component: {fileID: 985311657}
-  - component: {fileID: 985311662}
   - component: {fileID: 985311661}
   - component: {fileID: 985311660}
+  - component: {fileID: 985311662}
   m_Layer: 0
   m_Name: Nurse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &985311654
 Animator:
   serializedVersion: 3
@@ -1527,10 +1572,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 985311653}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 228cc7cce881d4a699f3ad9337e5afbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 61e6c71a2e61b4e889530a07cb637043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 9
+  wayPoint01: {fileID: 0}
+  wayPoint02: {fileID: 0}
+  walkSpeed: 7
 --- !u!114 &985311662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1540,7 +1587,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 985311653}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1963806298ec49978109a3fd0027538, type: 3}
+  m_Script: {fileID: 11500000, guid: 91843b27527e9aa4699307f3a78393a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1609426463
@@ -1557,16 +1604,15 @@ GameObject:
   - component: {fileID: 1609426469}
   - component: {fileID: 1609426468}
   - component: {fileID: 1609426467}
-  - component: {fileID: 1609426470}
-  - component: {fileID: 1609426472}
   - component: {fileID: 1609426471}
+  - component: {fileID: 1609426470}
   m_Layer: 0
   m_Name: Zombie 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1609426464
 Animator:
   serializedVersion: 3
@@ -1717,22 +1763,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1609426463}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c7992d1a419b4ae0bac9e7cfdbe4888, type: 3}
+  m_Script: {fileID: 11500000, guid: 61e6c71a2e61b4e889530a07cb637043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wayPoint01: {fileID: 0}
+  wayPoint02: {fileID: 0}
   walkSpeed: 7
---- !u!114 &1609426472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1609426463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67ad72548ac0a4df4b08bbd0cbc1e06c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1771939810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1746,17 +1782,16 @@ GameObject:
   - component: {fileID: 1771939811}
   - component: {fileID: 1771939819}
   - component: {fileID: 1771939818}
-  - component: {fileID: 1771939817}
-  - component: {fileID: 1771939816}
   - component: {fileID: 1771939815}
   - component: {fileID: 1771939814}
+  - component: {fileID: 1771939816}
   m_Layer: 0
   m_Name: Zombie 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1771939811
 Animator:
   serializedVersion: 3
@@ -1849,10 +1884,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1771939810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f325f074e6bd84460856835e51a8334a, type: 3}
+  m_Script: {fileID: 11500000, guid: 61e6c71a2e61b4e889530a07cb637043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 8
+  wayPoint01: {fileID: 0}
+  wayPoint02: {fileID: 0}
+  walkSpeed: 7
 --- !u!114 &1771939815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1862,7 +1899,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1771939810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99058699621f0469da9914522a985852, type: 3}
+  m_Script: {fileID: 11500000, guid: 91843b27527e9aa4699307f3a78393a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!50 &1771939816
@@ -1886,18 +1923,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1771939817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1771939810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91843b27527e9aa4699307f3a78393a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1771939818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1939,14 +1964,13 @@ GameObject:
   - component: {fileID: 1844518696}
   - component: {fileID: 1844518699}
   - component: {fileID: 1844518701}
-  - component: {fileID: 1844518700}
   m_Layer: 0
   m_Name: Doctor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1844518693
 Animator:
   serializedVersion: 3
@@ -2024,7 +2048,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844518692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.82, y: 0, z: 0}
+  m_LocalPosition: {x: -0.26, y: -0.56, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2088,19 +2112,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1844518700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1844518692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74d1545f140a1424abbec0b694dc0bfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 7
 --- !u!114 &1844518701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2110,9 +2121,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1844518692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1415fe3bc6fc247d0bacaa5fe401458f, type: 3}
+  m_Script: {fileID: 11500000, guid: 61e6c71a2e61b4e889530a07cb637043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wayPoint01: {fileID: 779332108}
+  wayPoint02: {fileID: 821371631}
+  walkSpeed: 4
 --- !u!1 &1897119672
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,12 +2138,13 @@ GameObject:
   - component: {fileID: 1897119674}
   - component: {fileID: 1897119673}
   - component: {fileID: 1897119675}
-  - component: {fileID: 1897119677}
-  - component: {fileID: 1897119676}
   - component: {fileID: 1897119679}
+  - component: {fileID: 1897119676}
   - component: {fileID: 1897119678}
   - component: {fileID: 1897119680}
   - component: {fileID: 1897119681}
+  - component: {fileID: 1897119677}
+  - component: {fileID: 1897119682}
   m_Layer: 0
   m_Name: Zombie 1
   m_TagString: Untagged
@@ -2227,12 +2242,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897119672}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5abf2b4e0bc3741acb161050ae625f5b, type: 3}
+  m_Script: {fileID: 11500000, guid: 61e6c71a2e61b4e889530a07cb637043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 4
+  wayPoint01: {fileID: 779332108}
+  wayPoint02: {fileID: 821371631}
+  walkSpeed: 7
 --- !u!114 &1897119677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2242,9 +2259,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1897119672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e201ff790bc234c33809d9233b8d3b5d, type: 3}
+  m_Script: {fileID: 11500000, guid: eadcd539294744d3c84ea3f7b5461696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wayPoint01: {fileID: 779332108}
+  wayPoint02: {fileID: 821371631}
+  walkSpeed: 4
+  attackRange: 10
 --- !u!114 &1897119678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2289,7 +2310,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1897119681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2303,6 +2324,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
+--- !u!61 &1897119682
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897119672}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.64}
+  m_EdgeRadius: 0
 --- !u!1 &2027481596
 GameObject:
   m_ObjectHideFlags: 0
@@ -2317,7 +2364,6 @@ GameObject:
   - component: {fileID: 2027481602}
   - component: {fileID: 2027481601}
   - component: {fileID: 2027481600}
-  - component: {fileID: 2027481605}
   - component: {fileID: 2027481604}
   - component: {fileID: 2027481603}
   m_Layer: 0
@@ -2326,7 +2372,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &2027481597
 Animator:
   serializedVersion: 3
@@ -2477,22 +2523,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2027481596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffbbb8014f652449eaa39a74103901fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 61e6c71a2e61b4e889530a07cb637043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wayPoint01: {fileID: 0}
+  wayPoint02: {fileID: 0}
   walkSpeed: 7
---- !u!114 &2027481605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2027481596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 477489d94c4be4596b67fc1255cec7f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2043743654
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,8 +2543,8 @@ GameObject:
   - component: {fileID: 2043743660}
   - component: {fileID: 2043743659}
   - component: {fileID: 2043743658}
-  - component: {fileID: 2043743663}
   - component: {fileID: 2043743662}
+  - component: {fileID: 2043743663}
   - component: {fileID: 2043743661}
   m_Layer: 0
   m_Name: Guard
@@ -2516,7 +2552,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &2043743655
 Animator:
   serializedVersion: 3
@@ -2667,9 +2703,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2043743654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43e1468f82f944de28d7146ee843a1b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 61e6c71a2e61b4e889530a07cb637043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wayPoint01: {fileID: 0}
+  wayPoint02: {fileID: 0}
   walkSpeed: 7
 --- !u!114 &2043743663
 MonoBehaviour:
@@ -2680,6 +2718,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2043743654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92183fb4e215c404bb12ce2125fe908e, type: 3}
+  m_Script: {fileID: 11500000, guid: 91843b27527e9aa4699307f3a78393a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

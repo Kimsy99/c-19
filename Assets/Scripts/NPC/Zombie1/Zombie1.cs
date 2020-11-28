@@ -2,12 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Zombie1 : Movable2D
+public class Zombie1 : NPCMovement
 {
-  protected Animator animator;
-
+  [SerializeField] private float attackRange;
+  private Transform target;
+  // Start is called before the first frame update
   void Start()
   {
-    animator = GetComponent<Animator>();
+    base.Start();
+    target = GameObject.FindWithTag("Player").transform;
+  }
+
+  // Update is called once per frame
+  void Update()
+  {
+    // base.Update();
+    //player outside the range
+    if (Vector2.Distance(transform.position, target.position) >= attackRange)
+    {
+      Patrol();
+    }
+    else
+    {
+      Debug.Log("Found player");
+    }
   }
 }

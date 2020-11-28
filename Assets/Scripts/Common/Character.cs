@@ -1,12 +1,20 @@
-﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-	[SerializeField] private CharacterType characterType;
 
 	public enum CharacterType
 	{
 		Player,
 		NPC
 	}
+     [SerializeField] private CharacterType characterType;
+    [SerializeField] private GameObject characterSprite;
+    [SerializeField] private Animator characterAnimator;
+    
+    public CharacterType CharacterTypes => characterType;
+    public GameObject CharacterSprite => characterSprite;
+    public Animator CharacterAnimator => characterAnimator;
 }

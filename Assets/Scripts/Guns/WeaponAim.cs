@@ -15,7 +15,6 @@ public class WeaponAim : MonoBehaviour
 
     private Camera mainCamera;
     private GameObject reticle;
-    private Weapon weapon;
 
     private Vector3 direction;
     private Vector3 mousePosition;
@@ -31,7 +30,6 @@ public class WeaponAim : MonoBehaviour
     private void Start()
     {
         Cursor.visible = false;
-        weapon = GetComponent<Weapon>();
         initialRotation = transform.rotation;
 
         characterMovingDirection = GetComponentInParent<SpriteFlippable2D>();
@@ -60,12 +58,12 @@ public class WeaponAim : MonoBehaviour
         reticlePosition = direction;
 
         currentAimAbsolute = direction - transform.position;
-        if (characterMovingDirection.Direction < 0)
-        {
+        if (characterMovingDirection.Direction == 0)
+        {   //character facing right
             currentAim = direction - transform.position;
         }
-        else
-        {
+        else if (characterMovingDirection.Direction == 180)
+        {   //character facing left
             currentAim = transform.position - direction;
         }
     }
@@ -78,15 +76,6 @@ public class WeaponAim : MonoBehaviour
             CurrentAimAngle = Mathf.Atan2(currentAim.y, currentAim.x) * Mathf.Rad2Deg;
             CurrentAimAngleAbsolute = Mathf.Atan2(currentAimAbsolute.y, currentAimAbsolute.x) * Mathf.Rad2Deg;
 
-            // Clamp (fix) our rotation
-            /*if (weapon.WeaponOwner.GetComponent<CharacterFlip>().FacingRight)
-            {
-                CurrentAimAngle = Mathf.Clamp(CurrentAimAngle, -180, 180);
-            }
-            else
-            {
-                CurrentAimAngle = Mathf.Clamp(CurrentAimAngle, -180, 180);
-            }*/
             CurrentAimAngle = Mathf.Clamp(CurrentAimAngle, -180, 180);
 
             // Apply the angle

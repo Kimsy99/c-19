@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 381826858}
   - component: {fileID: 381826863}
   - component: {fileID: 381826857}
+  - component: {fileID: 381826865}
   m_Layer: 0
   m_Name: Ken
   m_TagString: Untagged
@@ -305,6 +306,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &381826865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381826856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0713b09b6952f3f4e98481ca61441241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponToUse: {fileID: 8746005748287365609, guid: c4e74c3361b643f4188ac98d459baa46,
+    type: 3}
+  weaponHolderPosition: {fileID: 880729484}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,7 +430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 880729484}
   m_Layer: 0
-  m_Name: WeaponHolder
+  m_Name: WeaponPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -428,78 +444,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880729483}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: 0.185, z: 0}
+  m_LocalPosition: {x: -0.081, y: 0.154, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 381826862}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &6847602130878804531
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 663404204263773803, guid: 5b59d11e698100b4696d0cb3868d6e68,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.052
-      objectReference: {fileID: 0}
-    - target: {fileID: 663404204263773803, guid: 5b59d11e698100b4696d0cb3868d6e68,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.268
-      objectReference: {fileID: 0}
-    - target: {fileID: 663404204263773803, guid: 5b59d11e698100b4696d0cb3868d6e68,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 663404204263773803, guid: 5b59d11e698100b4696d0cb3868d6e68,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 663404204263773803, guid: 5b59d11e698100b4696d0cb3868d6e68,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 663404204263773803, guid: 5b59d11e698100b4696d0cb3868d6e68,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 663404204263773803, guid: 5b59d11e698100b4696d0cb3868d6e68,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 663404204263773803, guid: 5b59d11e698100b4696d0cb3868d6e68,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 663404204263773803, guid: 5b59d11e698100b4696d0cb3868d6e68,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 663404204263773803, guid: 5b59d11e698100b4696d0cb3868d6e68,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 663404204263773803, guid: 5b59d11e698100b4696d0cb3868d6e68,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5088473337472437438, guid: 5b59d11e698100b4696d0cb3868d6e68,
-        type: 3}
-      propertyPath: m_Name
-      value: Weapon_11
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5b59d11e698100b4696d0cb3868d6e68, type: 3}

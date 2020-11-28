@@ -27,17 +27,12 @@ public class Weapon : MonoBehaviour
 
     protected virtual void Update()
     {
-        RotateWeapon();
+
     }
 
     // Reference the owner of this Weapon
     public void SetOwner(Character owner)
     {
         WeaponOwner = owner;
-    }
-
-    protected virtual void RotateWeapon()
-    {
-        transform.localScale = new Vector3(1, 1, 1);
     }
 }

@@ -34,4 +34,10 @@ public class Weapon : MonoBehaviour
     {
         WeaponOwner = owner;
     }
+
+    public void TriggerShootAnimation()
+    {
+        Debug.Log("triggerShootAnimation() called");
+        muzzlePS.Play();
+    }
 }

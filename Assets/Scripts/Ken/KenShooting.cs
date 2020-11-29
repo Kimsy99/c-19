@@ -48,6 +48,6 @@ public class KenShooting : Movable2D
         Movable2D bullet = Instantiate<Movable2D>(bulletPrefab, weaponAim.EvaluateProjectileSpawnPosition(), Quaternion.identity);
         bullet.Speed = bulletSpeed;
         bullet.Direction = angle;
-		weapon.TriggerShootAnimation();
+		weapon.TriggerShootingEffect();
     }
 }

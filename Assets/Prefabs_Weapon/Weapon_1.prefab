@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 320575847686650223}
   - component: {fileID: 8746005748287365609}
   - component: {fileID: 4424178189499079653}
+  - component: {fileID: 2283513475250914586}
   m_Layer: 0
   m_Name: Weapon_1
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5466221067303216058}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.853, y: 0.28, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7788816781026760372}
@@ -62,6 +63,25 @@ MonoBehaviour:
   reticlePrefab: {fileID: 8906583325241577133, guid: 0d327b40d16f46d4099b525df3ac5e22,
     type: 3}
   projectileSpawnPosition: {x: 0.32, y: 0.06, z: 0}
+--- !u!95 &2283513475250914586
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5466221067303216058}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bc3856c397634a649aae7f45d3e64747, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6987624856697632990
 GameObject:
   m_ObjectHideFlags: 0

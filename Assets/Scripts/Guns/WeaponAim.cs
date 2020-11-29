@@ -5,7 +5,11 @@ using UnityEngine;
 
 public class WeaponAim : MonoBehaviour
 {
+    [Header("Reticle")]
     [SerializeField] private GameObject reticlePrefab;
+
+    [Header("Bullet starting point")]
+    [SerializeField] private Vector3 projectileSpawnPosition;
 
     // Returns the current absolute angle
     public float CurrentAimAngleAbsolute { get; set; }
@@ -24,6 +28,13 @@ public class WeaponAim : MonoBehaviour
     private Quaternion initialRotation;
     private Quaternion lookRotation;
 
+    // Controls the position of our projectile spawn
+    // The calculated positioin
+    public Vector3 ProjectileSpawnPosition { get; set; }
+
+    // projectile spawn position when the weapon is flipped
+    private Vector3 projectileFlippedSpawnPosition;
+
     //character movement
     private SpriteFlippable2D characterMovingDirection;
 
@@ -36,6 +47,9 @@ public class WeaponAim : MonoBehaviour
 
         mainCamera = Camera.main;
         reticle = Instantiate(reticlePrefab);
+
+        projectileFlippedSpawnPosition = projectileSpawnPosition;
+        projectileFlippedSpawnPosition.y = -projectileSpawnPosition.y;
     }
 
     private void Update()
@@ -94,5 +108,30 @@ public class WeaponAim : MonoBehaviour
     {
         reticle.transform.rotation = Quaternion.identity; //set the normal rotation
         reticle.transform.position = reticlePosition;
+    }
+
+    // Calculates the position where our projectile is going to be fired
+    public Vector3 EvaluateProjectileSpawnPosition()
+    {
+        if (characterMovingDirection.Direction == 0)
+        {
+            // Right side
+            ProjectileSpawnPosition = transform.position + transform.rotation * projectileSpawnPosition;
+            return ProjectileSpawnPosition;
+        }
+        else
+        {
+            // Left side
+            ProjectileSpawnPosition = transform.position - transform.rotation * projectileFlippedSpawnPosition;
+            return ProjectileSpawnPosition;
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        EvaluateProjectileSpawnPosition();
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(ProjectileSpawnPosition, 0.1f);
     }
 }

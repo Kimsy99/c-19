@@ -5,7 +5,7 @@ using UnityEngine;
 
 /*
  * This class is to control the movement of weapon
- * However, the rotation of the weapon is controlled by WeaponAim
+ * note: The rotation of the weapon is controlled by WeaponAim
  */
 
 public class Weapon : MonoBehaviour
@@ -19,8 +19,7 @@ public class Weapon : MonoBehaviour
     private Animator animator;
     private readonly int weaponUseParameter = Animator.StringToHash("WeaponUse");
 
-
-    protected virtual void Awake()
+    protected void Awake()
     {
         animator = GetComponent<Animator>();
     }

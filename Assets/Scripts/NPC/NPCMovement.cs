@@ -23,6 +23,7 @@ public class NPCMovement : AnimatableMovable2D
   {
     //movement
     Vector2 nextPosition = Vector2.MoveTowards(transform.position, wayPointTarget.position, walkSpeed * Time.deltaTime);
+    // transform.position = Vector2.MoveTowards(transform.position, wayPointTarget.position, walkSpeed * Time.deltaTime);
     if (Vector2.Distance(transform.position, wayPoint01.position) <= 0.01f)
     {
       wayPointTarget = wayPoint02;
@@ -31,7 +32,6 @@ public class NPCMovement : AnimatableMovable2D
     {
       wayPointTarget = wayPoint01;
     }
-    // transform.position = Vector2.MoveTowards(transform.position, wayPointTarget.position, walkSpeed * Time.deltaTime);
 
     //controller
 
@@ -69,8 +69,9 @@ public class NPCMovement : AnimatableMovable2D
     // vy = Input.GetAxisRaw("Vertical");
     // Debug.Log(-(transform.position.x - nextPosition.x) * 10 + " " + -(transform.position.y - nextPosition.y) * 10);
 
-    // SetVelocity(vx * walkSpeed, vy * walkSpeed);
-    SetVelocity(-(transform.position.x - nextPosition.x) * 7 * walkSpeed, (-(transform.position.y - nextPosition.y) * 7) * walkSpeed);
+    SetVelocity(vx * walkSpeed, vy * walkSpeed);
+
+    // SetVelocity(-(transform.position.x - nextPosition.x) * 7 * walkSpeed, (-(transform.position.y - nextPosition.y) * 7) * walkSpeed);
     // UpdateAnimations();
 
   }

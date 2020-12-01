@@ -6,25 +6,37 @@ public class Zombie1 : NPCMovement
 {
   [SerializeField] private float attackRange;
   private Transform target;
+
+  private readonly int isAttack = Animator.StringToHash("isAttack");
+  [SerializeField] private GameObject projectile; //projectile Object
   // Start is called before the first frame update
   void Start()
   {
     base.Start();
     target = GameObject.FindWithTag("Player").transform;
+    animator = GetComponent<Animator>();
   }
 
   // Update is called once per frame
   void Update()
   {
-    // base.Update();
+    base.Update();
     //player outside the range
     if (Vector2.Distance(transform.position, target.position) >= attackRange)
     {
+      Debug.Log("No player");
+      animator.SetBool(isAttack, value: false);
       Patrol();
     }
     else
     {
+      animator.SetBool(isAttack, value: true);
+      // Shot();
       Debug.Log("Found player");
     }
+  }
+  public void Shot()
+  {
+    Instantiate(projectile, transform.position, Quaternion.identity);
   }
 }

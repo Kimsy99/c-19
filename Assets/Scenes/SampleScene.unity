@@ -437,7 +437,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.25}
+  m_Offset: {x: -0.03, y: 0.25}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.109375}
@@ -448,7 +448,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 0.31, y: 0.49}
   m_EdgeRadius: 0
 --- !u!1 &384693652
 GameObject:
@@ -2676,7 +2676,7 @@ MonoBehaviour:
   wayPoint01: {fileID: 779332108}
   wayPoint02: {fileID: 821371631}
   walkSpeed: 4
-  attackRange: 3
+  attackRange: 6
   projectile: {fileID: 8472959599878325174, guid: b48ba185cfabe4ba5a505dabaecadad7,
     type: 3}
 --- !u!114 &1897119678
@@ -2761,7 +2761,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 0.28, y: 0.52}
   m_EdgeRadius: 0
 --- !u!1 &2027481596
 GameObject:

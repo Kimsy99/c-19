@@ -69,9 +69,9 @@ public class NPCMovement : AnimatableMovable2D
     // vy = Input.GetAxisRaw("Vertical");
     // Debug.Log(-(transform.position.x - nextPosition.x) * 10 + " " + -(transform.position.y - nextPosition.y) * 10);
 
-    SetVelocity(vx * walkSpeed, vy * walkSpeed);
+    // SetVelocity(vx * walkSpeed, vy * walkSpeed);
 
-    // SetVelocity(-(transform.position.x - nextPosition.x) * 7 * walkSpeed, (-(transform.position.y - nextPosition.y) * 7) * walkSpeed);
+    SetVelocity(-(transform.position.x - nextPosition.x) * 7 * walkSpeed, (-(transform.position.y - nextPosition.y) * 7) * walkSpeed);
     // UpdateAnimations();
 
   }

@@ -34,6 +34,11 @@ public class Zombie1 : NPCMovement
       // Shot();
       Debug.Log("Found player");
     }
+    //test minus life point
+    if (Input.GetKeyDown(KeyCode.Space))
+    {
+      GetComponentInChildren<NPCHealthBar>().hp -= 25;
+    }
   }
   public void Shot()
   {

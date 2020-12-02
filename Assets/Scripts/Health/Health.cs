@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
     [Header("Health")]
     [SerializeField]  private float initialHealth = 10f;
     [SerializeField]  private float maxHealth = 10f;
-
+     private float life_num = 3f;
     [SerializeField]  private GameObject Health1;
     [SerializeField]  private GameObject Health2;
     [SerializeField]  private GameObject Health3;
@@ -21,13 +21,16 @@ public class Health : MonoBehaviour
 
     [Header("Settings")] 
     [SerializeField] private bool destroyObject;
+    [SerializeField] private bool isinfecting;
+    [SerializeField] private bool ishurting = false;
+  
 
     private Character character;
     private Character_Controller controller;
     private Collider2D collider2D;
     private SpriteRenderer spriteRenderer;
 
-    private bool InfectionFull;
+
 
     // Controls the current health of the object    
     public float CurrentHealth { get; set; }
@@ -48,12 +51,17 @@ public class Health : MonoBehaviour
     }
 
     private void Update()
+
     {
+        if (CurrentInfection >= (maxInfection / 2))
+        {
+            TakeDamage(1);
+        }
         if (Input.GetKeyDown(KeyCode.L))
         {
             TakeDamage(1);
         }
-      if (Input.GetKeyDown(KeyCode.K))
+       if (Input.GetKeyDown(KeyCode.K)||isinfecting)
         {
             BeInfected(1);
         }
@@ -64,28 +72,21 @@ public class Health : MonoBehaviour
     // Take the amount of damage we pass in parameters
     public void TakeDamage(int damage)
     {
-        if (CurrentHealth <= 0)
+	
+       
+       if (character != null)
         {
-            return;
-        }
-       if (!InfectionFull && character != null)
-        {
+       
             CurrentHealth -= damage;
         UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentInfection, initialInfection, maxInfection);      
 
-            if ( CurrentInfection >= maxInfection)
-            {
-                InfectionFull = true;
-            
-            }
-            return;
         }
-       CurrentHealth = CurrentHealth - damage;
-        UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentInfection, initialInfection, maxInfection);      
-
+      
         if (CurrentHealth <= 0)
         {
             Die();
+          
+      
         }
     }
 
@@ -98,15 +99,12 @@ public void BeInfected(int infect)
             return;
         }
 
-
+     
         CurrentInfection += infect;
-       UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentInfection, initialInfection, maxInfection);      
-      if (CurrentInfection >= maxInfection )
-        {
-            
-            Die();
-        }
+       UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentInfection, initialInfection, maxInfection);
+
        
+
     }
 
     // infects the game object
@@ -125,29 +123,77 @@ public void BeInfected(int infect)
         if (destroyObject)
         {
             DestroyObject();
+        
+        }
+ 	 if (life_num  == 1)
+        {
+        
+
+         Health3.SetActive(false);
+      
+         gameObject.SetActive(false);
+
+
         }
     }
     
     // Revive this game object    
     public void Revive()
     {
-        if (character != null)
+      
+        gameObject.SetActive(true);
+        if (life_num  == 2)
         {
-            collider2D.enabled = true;
+          
+            if (character != null)
+        {
+                print("life_num  == 2  ccccc");
+                collider2D.enabled = true;
             spriteRenderer.enabled = true;
 
             character.enabled = true;
             controller.enabled = true;
         }
+        
+         Health2.SetActive(false);
+      
+    
+        CurrentHealth = initialHealth;
+        CurrentInfection = initialInfection;
 
-        gameObject.SetActive(true);
+     
+
+        UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentInfection, initialInfection, maxInfection);  
+      life_num = life_num - 1; 
+
+        }
+
+        if (life_num  == 3)
+        {
+            
+            if (character != null)
+        {
+          
+                collider2D.enabled = true;
+            spriteRenderer.enabled = true;
+
+            character.enabled = true;
+            controller.enabled = true;
+        }
+        
+         Health1.SetActive(false);
+      
+      
 
         CurrentHealth = initialHealth;
         CurrentInfection = initialInfection;
 
-        InfectionFull = false;
+
 
         UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentInfection, initialInfection, maxInfection);   
+        life_num = life_num - 1;
+        }
+ 	
 
 	}   
 

@@ -384,9 +384,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundDefinitions:
   - sound: 0
-    audioClip: {fileID: 0}
-  - sound: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 9ba228554a48262448dcfd0f64409805, type: 3}
+  - sound: 1
+    audioClip: {fileID: 8300000, guid: a874cda4afb42b84791bf5cf8d3a0e61, type: 3}
 --- !u!4 &326160986
 Transform:
   m_ObjectHideFlags: 0
@@ -479,12 +479,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340018598}
   m_CullTransparentMesh: 0
---- !u!1 &381826856 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4365825432817831297, guid: 4d5aa352202380c4386922c38dfa0249,
-    type: 3}
-  m_PrefabInstance: {fileID: 4365825432587287209}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &479304400
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,8 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c2b9d56c58359b4c94abd8db4fef415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420031}
-  cameraFocus: {fileID: 381826856}
+  cameraTarget: {fileID: 0}
   cameraSpeedFactor: 5
 --- !u!20 &519420031
 Camera:
@@ -2238,6 +2231,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4106598307230641558, guid: 4d5aa352202380c4386922c38dfa0249,
+        type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106598307230641558, guid: 4d5aa352202380c4386922c38dfa0249,
+        type: 3}
+      propertyPath: initialHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4365825432817831296, guid: 4d5aa352202380c4386922c38dfa0249,
         type: 3}
       propertyPath: cam

@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// For all GameObjects that can flash red.
+/// </summary>
 public class Flashable : MonoBehaviour
 {
 	private SpriteRenderer spriteRenderer;
@@ -11,13 +14,13 @@ public class Flashable : MonoBehaviour
 		spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 	
-	public void flash()
+	public virtual void Flash()
 	{
 		spriteRenderer.color = Color.red;
-		StartCoroutine(FlashWhite());
+		StartCoroutine(Revert());
 	}
 
-	private IEnumerator FlashWhite()
+	private IEnumerator Revert()
 	{
 		yield return new WaitForSeconds(0.1F);
 		spriteRenderer.color = Color.white;

@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// AnimatableMovable2Ds are an extension to Movable2Ds in that they contain animations and have an Animator component.
+/// </summary>
 public class AnimatableMovable2D : Movable2D
 {
 	private Animator animator;

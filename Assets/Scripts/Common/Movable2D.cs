@@ -1,16 +1,18 @@
-﻿using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
-/**
- * For all GameObjects that are able to move in a specified direction and speed.
- */
+/// <summary>
+/// For all GameObjects that are able to move in a specified direction and speed.
+/// </summary>
 public class Movable2D : MonoBehaviour
 {
 	private const float floatThreshold = 0.0001F;
 
-	/** Cached direction the GameObject is moving, in degrees. 0 means to the right and increases anti-clockwise. */
+	/**
+	 * Internally cached direction the GameObject is moving in case the object is not moving. If you want to
+	 * get the direction, use the Direction property.
+	 */
 	private float direction;
-	/** Whether the GameObject is moving backwards. */
+	/** Used internally to determine whether the GameObject is moving backwards. */
 	private bool isMovingBackwards;
 
 	protected Rigidbody2D body;
@@ -21,11 +23,11 @@ public class Movable2D : MonoBehaviour
 		body = GetComponent<Rigidbody2D>();
 	}
 
-	/**
-	 * Speed property. The speed the GameObject is moving in units per second, negative means backwards.
-	 * 
-	 * Changing Speed scales HSpeed and VSpeed, but does not change Direction.
-	 */
+	/// <summary>
+	/// Speed property. The speed the GameObject is moving in units per second, negative means backwards.
+	/// 
+	/// Changing Speed scales HSpeed and VSpeed, but does not change Direction.
+	/// </summary>
 	public float Speed
 	{
 		get
@@ -41,16 +43,18 @@ public class Movable2D : MonoBehaviour
 		}
 	}
 
-	/**
-	 * Direction property. The direction this GameObject is moving, in degrees. 0 means to the right and increases
-	 * anti-clockwise.
-	 * 
-	 * Changing Direction changes HSpeed and VSpeed, but does not change Speed.
-	 */
+	/// <summary>
+	/// Direction property. The direction this GameObject is moving, in degrees. Ranges between (-180, 180], 0 means
+	/// to the right and increases anti-clockwise.
+	/// 
+	/// Changing Direction changes HSpeed and VSpeed, but does not change Speed.
+	/// </summary>
 	public float Direction
 	{
 		get
 		{
+			/* Direction is calculated using its RigidBody2D velocity. If velocity is 0, returns previously cached
+			   direction */
 			if (Mathf.Abs(Speed) > floatThreshold)
 				direction = Vector2.SignedAngle(Vector2.right, body.velocity);
 			if (isMovingBackwards)
@@ -69,36 +73,36 @@ public class Movable2D : MonoBehaviour
 		}
 	}
 
-	/**
-	 * HSpeed property. Refers to the horizontal speed this GameObject is moving in units per second. Positive means
-	 * to the right, and negative means to the left.
-	 * 
-	 * Changing HSpeed changes Direction and Speed, but does not change VSpeed.
-	 */
+	/// <summary>
+	/// HSpeed property. Refers to the horizontal speed this GameObject is moving in units per second. Positive means
+	/// to the right, and negative means to the left.
+	/// 
+	/// Changing HSpeed changes Direction and Speed, but does not change VSpeed.
+	/// </summary>
 	public float HSpeed
 	{
 		get => body.velocity.x;
 		set => SetVelocity(value, VSpeed);
 	}
 
-	/**
-	 * VSpeed property. Refers to the vertical speed this GameObject is moving. Positive means upwards, and negative
-	 * means downwards.
-	 * 
-	 * Changing VSpeed changes Direction and Speed, but does not change HSpeed.
-	 */
+	/// <summary>
+	/// VSpeed property. Refers to the vertical speed this GameObject is moving. Positive means upwards, and negative
+	/// means downwards.
+	/// 
+	/// Changing VSpeed changes Direction and Speed, but does not change HSpeed.
+	/// </summary>
 	public float VSpeed
 	{
 		get => body.velocity.y;
 		set => SetVelocity(HSpeed, value);
 	}
 
-	/**
-	 * Sets the velocity of this GameObject, in units per second.
-	 * Params:
-	 * vx - horizontal velocity
-	 * vy - vertical velocity
-	 */
+	/// <summary>
+	/// Sets the velocity of this GameObject, in units per second.
+	/// </summary>
+	/// 
+	/// <param name="vx">The horizontal speed</param>
+	/// <param name="vy">The vertical speed</param>
 	public void SetVelocity(float vx, float vy)
 	{
 		float dMomentumX = body.mass * (vx - body.velocity.x);

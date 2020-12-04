@@ -1,41 +1,55 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIManager : Singleton<UIManager>
 {
-	[Header("Settings")]
-	[SerializeField] private Image healthBar;
-	[SerializeField] private Image infectionBar;
-	[SerializeField] private TextMeshProUGUI currentHealthTMP;
-	[SerializeField] private TextMeshProUGUI currentInfectionTMP;
+	private Image healthBar;
+	private Image healthBarBackground;
+	private Image infectionBar;
+	[SerializeField] private float fillAmountChangeRate = 1;
+	//[SerializeField] private TextMeshProUGUI currentHealthTMP;
+	//[SerializeField] private TextMeshProUGUI currentInfectionTMP;
 
-	private float playerCurrentHealth;
-	private float playerMaxHealth;
-	private float playerInitialInfection;
-	private float playerCurrentInfection;
+	private float playerHealth = 5F;
+	private float playerMaxHealth = 10F;
+	private float playerInfection;
 	private float playerMaxInfection;
 
-	private void Update()
+	void Start()
 	{
-		InternalUpdate();
+		healthBar = GameObject.Find("HealthBar").GetComponent<Image>();
+		healthBarBackground = GameObject.Find("HealthBarBackground").GetComponent<Image>();
+		infectionBar = GameObject.Find("InfectionBar").GetComponent<Image>();
 	}
 
-	public void UpdateHealth(float currentHealth, float maxHealth, float currentInfection, float initialInfection, float maxInfection)
+	void Update()
 	{
-		playerCurrentHealth = currentHealth;
+		UpdateStatusBars();
+	}
+
+	public void SetStatus(float health, float maxHealth, float infection, float maxInfection)
+	{
+		playerHealth = health;
 		playerMaxHealth = maxHealth;
-		playerCurrentInfection = currentInfection;
-		playerInitialInfection = initialInfection;
+		playerInfection = infection;
 		playerMaxInfection = maxInfection;
 	}
 
-	private void InternalUpdate()
+	private void UpdateStatusBars()
 	{
-		healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount, playerCurrentHealth / playerMaxHealth, 10f * Time.deltaTime);
-		currentHealthTMP.text = playerCurrentHealth.ToString() + "/" + playerMaxHealth.ToString();
+		healthBar.fillAmount = playerHealth / playerMaxHealth;
 
-		infectionBar.fillAmount = Mathf.Lerp(infectionBar.fillAmount, playerCurrentInfection / playerMaxInfection, 10f * Time.deltaTime);
-		currentInfectionTMP.text = playerCurrentInfection.ToString() + "/" + playerMaxInfection.ToString();
+		// Dynamically shrink/grow background health bar to match the actual health bar
+		if (Mathf.Abs(healthBarBackground.fillAmount - healthBar.fillAmount) > fillAmountChangeRate * Time.deltaTime)
+		{
+			float dFillAmount = fillAmountChangeRate * (healthBarBackground.fillAmount > healthBar.fillAmount ? -1 : 1);
+			healthBarBackground.fillAmount += dFillAmount * Time.deltaTime;
+		}
+		else
+			healthBarBackground.fillAmount = healthBar.fillAmount;
+		//currentHealthTMP.text = playerCurrentHealth.ToString() + "/" + playerMaxHealth.ToString();
+
+		infectionBar.fillAmount = playerInfection / playerMaxInfection;
+		//currentInfectionTMP.text = playerCurrentInfection.ToString() + "/" + playerMaxInfection.ToString();
 	}
 }

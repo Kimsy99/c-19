@@ -12,14 +12,10 @@ public class KenFlash : Flashable
 		hurt = GetComponent<AudioSource>();
 	}
 
-	// Update is called once per frame
-	void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            flash();
-			blood.Play();
-			hurt.Play();
-        }
-    }
+	public override void Flash()
+	{
+		base.Flash();
+		blood.Play();
+		hurt.Play();
+	}
 }

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 /// <summary>
-/// For all GameObjects that are able to flip their sprites according to their horizontal speed.
+/// Flips the sprite of the GameObject to the left/right according to its horizontal speed.
 /// </summary>
 public class SpriteFlippable2D : Movable2D
 {

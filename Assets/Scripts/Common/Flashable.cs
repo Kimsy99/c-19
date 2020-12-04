@@ -2,7 +2,7 @@
 using UnityEngine;
 
 /// <summary>
-/// For all GameObjects that can flash red.
+/// GameObjects can apply this script for a damage flash red effect.
 /// </summary>
 public class Flashable : MonoBehaviour
 {
@@ -14,6 +14,9 @@ public class Flashable : MonoBehaviour
 		spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 	
+	/// <summary>
+	/// Call this function to flash red.
+	/// </summary>
 	public virtual void Flash()
 	{
 		spriteRenderer.color = Color.red;

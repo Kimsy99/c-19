@@ -1,7 +1,12 @@
 ﻿using UnityEngine;
 
 /// <summary>
-/// For all GameObjects that are able to move in a specified direction and speed.
+/// For GameObjects that are able to move in a specified direction and speed.<br/>
+/// 
+/// This script allows movement of GameObjects to be set through intuitive mathematical direction and speed
+/// properties, without messing with physics!<br/>
+/// 
+/// For this to work, Movable2Ds must have a Rigidbody2D component.
 /// </summary>
 public class Movable2D : MonoBehaviour
 {
@@ -24,7 +29,7 @@ public class Movable2D : MonoBehaviour
 	}
 
 	/// <summary>
-	/// Speed property. The speed the GameObject is moving in units per second, negative means backwards.
+	/// Speed property. The speed the GameObject is moving in units per second, negative means backwards.<br/>
 	/// 
 	/// Changing Speed scales HSpeed and VSpeed, but does not change Direction.
 	/// </summary>
@@ -45,7 +50,7 @@ public class Movable2D : MonoBehaviour
 
 	/// <summary>
 	/// Direction property. The direction this GameObject is moving, in degrees. Ranges between (-180, 180], 0 means
-	/// to the right and increases anti-clockwise.
+	/// to the right and increases anti-clockwise.<br/>
 	/// 
 	/// Changing Direction changes HSpeed and VSpeed, but does not change Speed.
 	/// </summary>
@@ -75,7 +80,7 @@ public class Movable2D : MonoBehaviour
 
 	/// <summary>
 	/// HSpeed property. Refers to the horizontal speed this GameObject is moving in units per second. Positive means
-	/// to the right, and negative means to the left.
+	/// to the right, and negative means to the left.<br/>
 	/// 
 	/// Changing HSpeed changes Direction and Speed, but does not change VSpeed.
 	/// </summary>
@@ -87,7 +92,7 @@ public class Movable2D : MonoBehaviour
 
 	/// <summary>
 	/// VSpeed property. Refers to the vertical speed this GameObject is moving. Positive means upwards, and negative
-	/// means downwards.
+	/// means downwards.<br/>
 	/// 
 	/// Changing VSpeed changes Direction and Speed, but does not change HSpeed.
 	/// </summary>

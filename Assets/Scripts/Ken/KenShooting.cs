@@ -12,6 +12,8 @@ public class KenShooting : Movable2D
 	private WeaponAim weaponAim;
 	private Weapon weapon;
 
+	private Vector3 spawnPosition;
+
     // Update is called once per frame
     void Update()
 	{
@@ -26,26 +28,15 @@ public class KenShooting : Movable2D
 			weapon = GetComponentInChildren<Weapon>();
 	}
 
-    /*private void Shoot()
-	{
-		// Obtain angle from Ken to mouse
-		Vector2 lookDirection = mousePos - body.position;
-		float angle = Vector2.SignedAngle(Vector2.right, lookDirection);
-
-		// Actually create the bullet
-		Movable2D bullet = Instantiate<Movable2D>(bulletPrefab, ShootingPoint.position, Quaternion.identity);
-		bullet.Speed = bulletSpeed;
-		bullet.Direction = angle;
-	}*/
-
     private void Shoot() //shoot with updated position
     {
-        // Obtain angle from Ken to mouse
-        Vector2 lookDirection = mousePos - body.position;
+		// Obtain angle from Ken to mouse
+		spawnPosition = weaponAim.EvaluateProjectileSpawnPosition();
+		Vector2 lookDirection = mousePos - (Vector2)spawnPosition;
         float angle = Vector2.SignedAngle(Vector2.right, lookDirection);
 
         // Actually create the bullet
-        Movable2D bullet = Instantiate<Movable2D>(bulletPrefab, weaponAim.EvaluateProjectileSpawnPosition(), Quaternion.identity);
+        Movable2D bullet = Instantiate<Movable2D>(bulletPrefab, spawnPosition, Quaternion.identity);
         bullet.Speed = bulletSpeed;
         bullet.Direction = angle;
 		weapon.TriggerShootingEffect();

@@ -35,8 +35,10 @@ public class WeaponAim : MonoBehaviour
     // projectile spawn position when the weapon is flipped
     private Vector3 projectileFlippedSpawnPosition;
 
-    //character movement
+    // character movement
     private SpriteFlippable2D characterMovingDirection;
+    // to flip the character
+    private AnimatableMovable2D characterMovement;
 
     private void Start()
     {
@@ -44,6 +46,7 @@ public class WeaponAim : MonoBehaviour
         initialRotation = transform.rotation;
 
         characterMovingDirection = GetComponentInParent<SpriteFlippable2D>();
+        characterMovement = GetComponentInParent<AnimatableMovable2D>();
 
         mainCamera = Camera.main;
         reticle = Instantiate(reticlePrefab);
@@ -92,6 +95,18 @@ public class WeaponAim : MonoBehaviour
 
             CurrentAimAngle = Mathf.Clamp(CurrentAimAngle, -180, 180);
 
+            if(CurrentAimAngle > 90 || CurrentAimAngle < -90)
+            {
+                //pointing left
+                // to flip the character, but setting Direction won't work
+                //characterMovement.Direction = 180;
+            }
+            else
+            {
+                //pointing right
+                //characterMovement.Direction = 0;
+            }
+
             // Apply the angle
             lookRotation = Quaternion.Euler(CurrentAimAngle * Vector3.forward);
             transform.rotation = lookRotation;
@@ -117,14 +132,13 @@ public class WeaponAim : MonoBehaviour
         {
             // Right side
             ProjectileSpawnPosition = transform.position + transform.rotation * projectileSpawnPosition;
-            return ProjectileSpawnPosition;
         }
         else
         {
             // Left side
             ProjectileSpawnPosition = transform.position - transform.rotation * projectileFlippedSpawnPosition;
-            return ProjectileSpawnPosition;
         }
+        return ProjectileSpawnPosition;
     }
 
     private void OnDrawGizmosSelected()

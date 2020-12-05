@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 204250021}
   - component: {fileID: 204250022}
   m_Layer: 5
-  m_Name: InventoryBox3
+  m_Name: InventorySlot2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1018,24 +1018,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794203958}
   m_CullTransparentMesh: 0
---- !u!1 &888042352 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4365825432817831297, guid: 4d5aa352202380c4386922c38dfa0249,
-    type: 3}
-  m_PrefabInstance: {fileID: 4365825432587287209}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &888042353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888042352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f790971926246f543ba4d40a67ab16b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &895125620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,7 +1103,7 @@ GameObject:
   - component: {fileID: 938004433}
   - component: {fileID: 938004434}
   m_Layer: 5
-  m_Name: InventoryBox1
+  m_Name: InventorySlot0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1284,7 +1266,7 @@ GameObject:
   - component: {fileID: 1043203219}
   - component: {fileID: 1043203220}
   m_Layer: 0
-  m_Name: InventoryBoxSelected
+  m_Name: ActiveInventorySlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1400,7 +1382,7 @@ GameObject:
   - component: {fileID: 1069994627}
   - component: {fileID: 1069994628}
   m_Layer: 5
-  m_Name: InventoryBox4
+  m_Name: InventorySlot3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1859,7 +1841,7 @@ GameObject:
   - component: {fileID: 1712552563}
   - component: {fileID: 1712552564}
   m_Layer: 5
-  m_Name: InventoryBox5
+  m_Name: InventorySlot4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1946,7 +1928,7 @@ GameObject:
   - component: {fileID: 1771398977}
   - component: {fileID: 1771398979}
   m_Layer: 5
-  m_Name: StatBarContainer
+  m_Name: StatsBarContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2140,7 +2122,7 @@ GameObject:
   - component: {fileID: 1968654906}
   - component: {fileID: 1968654907}
   m_Layer: 5
-  m_Name: InventoryBox2
+  m_Name: InventorySlot1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

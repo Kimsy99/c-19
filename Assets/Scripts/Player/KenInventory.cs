@@ -4,58 +4,69 @@ public class KenInventory : MonoBehaviour
 {
 	GameObject[] inventory = new GameObject[5];
 	
-	private Vector3 inventoryBox1Pos;
-	private Vector3 inventoryBox2Pos;
-	private Vector3 inventoryBox3Pos;
-	private Vector3 inventoryBox4Pos;
-	private Vector3 inventoryBox5Pos;
-	private GameObject selectedInventoryBox;
+	private Transform slot0Pos;
+	private Transform slot1Pos;
+	private Transform slot2Pos;
+	private Transform slot3Pos;
+	private Transform slot4Pos;
+	private GameObject activeSlot;
 
-	private int selectedInventoryIndex;
+	private int activeSlotIndex;
 
 	// Start is called before the first frame update
 	void Start()
 	{
-		inventoryBox1Pos = GameObject.Find("InventoryBox1").transform.position;
-		inventoryBox2Pos = GameObject.Find("InventoryBox2").transform.position;
-		inventoryBox3Pos = GameObject.Find("InventoryBox3").transform.position;
-		inventoryBox4Pos = GameObject.Find("InventoryBox4").transform.position;
-		inventoryBox5Pos = GameObject.Find("InventoryBox5").transform.position;
-		selectedInventoryBox = GameObject.Find("InventoryBoxSelected");
+		slot0Pos = GameObject.Find("InventorySlot0").transform;
+		slot1Pos = GameObject.Find("InventorySlot1").transform;
+		slot2Pos = GameObject.Find("InventorySlot2").transform;
+		slot3Pos = GameObject.Find("InventorySlot3").transform;
+		slot4Pos = GameObject.Find("InventorySlot4").transform;
+		activeSlot = GameObject.Find("ActiveInventorySlot");
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
+		// Switch inventory slot with number keys
 		if (Input.GetKeyDown(KeyCode.Alpha1))
-		{
-			selectedInventoryBox.transform.position = inventoryBox1Pos;
-			selectedInventoryIndex = 0;
-			SoundManager.Instance.Play(SoundManager.Sound.KenSelect);
-		}
+			SetActiveInventory(0);
 		else if (Input.GetKeyDown(KeyCode.Alpha2))
-		{
-			selectedInventoryBox.transform.position = inventoryBox2Pos;
-			selectedInventoryIndex = 1;
-			SoundManager.Instance.Play(SoundManager.Sound.KenSelect);
-		}
+			SetActiveInventory(1);
 		else if (Input.GetKeyDown(KeyCode.Alpha3))
-		{
-			selectedInventoryBox.transform.position = inventoryBox3Pos;
-			selectedInventoryIndex = 2;
-			SoundManager.Instance.Play(SoundManager.Sound.KenSelect);
-		}
+			SetActiveInventory(2);
 		else if (Input.GetKeyDown(KeyCode.Alpha4))
-		{
-			selectedInventoryBox.transform.position = inventoryBox4Pos;
-			selectedInventoryIndex = 3;
-			SoundManager.Instance.Play(SoundManager.Sound.KenSelect);
-		}
+			SetActiveInventory(3);
 		else if (Input.GetKeyDown(KeyCode.Alpha5))
+			SetActiveInventory(4);
+
+		// Switch inventory slot with scroll wheel
+		if (Input.mouseScrollDelta.y < 0)
+			SetActiveInventory((activeSlotIndex + 1) % 5);
+		else if (Input.mouseScrollDelta.y > 0)
+			SetActiveInventory((activeSlotIndex + 4) % 5);
+	}
+
+	private void SetActiveInventory(int index)
+	{
+		activeSlotIndex = index;
+		switch (index)
 		{
-			selectedInventoryBox.transform.position = inventoryBox5Pos;
-			selectedInventoryIndex = 4;
-			SoundManager.Instance.Play(SoundManager.Sound.KenSelect);
+			case 0:
+				activeSlot.transform.position = slot0Pos.position;
+				break;
+			case 1:
+				activeSlot.transform.position = slot1Pos.position;
+				break;
+			case 2:
+				activeSlot.transform.position = slot2Pos.position;
+				break;
+			case 3:
+				activeSlot.transform.position = slot3Pos.position;
+				break;
+			case 4:
+				activeSlot.transform.position = slot4Pos.position;
+				break;
 		}
+		SoundManager.Instance.Play(SoundManager.Sound.KenSelect);
 	}
 }

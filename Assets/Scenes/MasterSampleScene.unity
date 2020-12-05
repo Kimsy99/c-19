@@ -2328,6 +2328,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4106598307230641558, guid: 4d5aa352202380c4386922c38dfa0249,
+        type: 3}
+      propertyPath: maxInfection
+      value: 10.6
+      objectReference: {fileID: 0}
     - target: {fileID: 4365825432817831296, guid: 4d5aa352202380c4386922c38dfa0249,
         type: 3}
       propertyPath: cam

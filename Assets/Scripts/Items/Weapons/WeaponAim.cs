@@ -35,15 +35,19 @@ public class WeaponAim : MonoBehaviour
 	// projectile spawn position when the weapon is flipped
 	private Vector3 projectileFlippedSpawnPosition;
 
-	// character movement
-	private AnimatableMovable2D ken;
+	// to check and control character movement
+	private SpriteFlippable2D ken;
+
+	private SpriteRenderer SpriteRenderer;
 
 	private void Start()
 	{
 		Cursor.visible = false;
 		initialRotation = transform.rotation;
 
-		ken = GetComponentInParent<AnimatableMovable2D>();
+		ken = GetComponentInParent<SpriteFlippable2D>();
+
+		SpriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
 		mainCamera = Camera.main;
 		reticle = Instantiate(reticlePrefab);
@@ -72,11 +76,13 @@ public class WeaponAim : MonoBehaviour
 		reticlePosition = direction;
 
 		currentAimAbsolute = direction - transform.position;
-		if (ken.Direction == 0)
+
+		//Debug.Log(ken.Facing);
+		if (ken.Facing == SpriteFlippable2D.RelativeDirection.Right)
 		{   //character facing right
 			currentAim = direction - transform.position;
 		}
-		else if (ken.Direction == 180)
+		else if (ken.Facing == SpriteFlippable2D.RelativeDirection.Left)
 		{   //character facing left
 			currentAim = transform.position - direction;
 		}
@@ -92,21 +98,37 @@ public class WeaponAim : MonoBehaviour
 
 			CurrentAimAngle = Mathf.Clamp(CurrentAimAngle, -180, 180);
 
-			if(CurrentAimAngle > 90 || CurrentAimAngle < -90)
-			{
-				//pointing left
-				// to flip the character, but setting Direction won't work
-				//characterMovement.Direction = 180;
-			}
-			else
-			{
-				//pointing right
-				//characterMovement.Direction = 0;
-			}
-
 			// Apply the angle
 			lookRotation = Quaternion.Euler(CurrentAimAngle * Vector3.forward);
 			transform.rotation = lookRotation;
+
+			//flip weapoon upside down
+			if(CurrentAimAngle > 90 || CurrentAimAngle < -90)
+            {
+				//gun pointing backward
+				SpriteRenderer.flipY = true;
+			}
+			else
+            {
+				SpriteRenderer.flipY = false;
+			}
+
+			// Flip character
+			// only when character do not have horizontal speed to avoid weapon pointing wrong direction
+			if (ken.HSpeed == 0)
+            {
+				// Check the relative position of the mouse pointer to the character 
+				if (CurrentAimAngleAbsolute > 90 || CurrentAimAngleAbsolute < -90)
+				{
+					//pointing left
+					ken.Facing = SpriteFlippable2D.RelativeDirection.Left;
+				}
+				else
+				{
+					//pointing right
+					ken.Facing = SpriteFlippable2D.RelativeDirection.Right;
+				}
+			}
 		}
 		else
 		{
@@ -125,7 +147,7 @@ public class WeaponAim : MonoBehaviour
 	// Calculates the position where our projectile is going to be fired
 	public Vector3 EvaluateProjectileSpawnPosition()
 	{
-		if (ken.Direction == 0)
+		if (ken.Facing == SpriteFlippable2D.RelativeDirection.Right)
 		{
 			// Right side
 			ProjectileSpawnPosition = transform.position + transform.rotation * projectileSpawnPosition;

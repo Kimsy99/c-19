@@ -1928,7 +1928,7 @@ GameObject:
   - component: {fileID: 1771398977}
   - component: {fileID: 1771398979}
   m_Layer: 5
-  m_Name: StatusBarContainer
+  m_Name: StatBarContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2328,16 +2328,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4106598307230641558, guid: 4d5aa352202380c4386922c38dfa0249,
-        type: 3}
-      propertyPath: maxHealth
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4106598307230641558, guid: 4d5aa352202380c4386922c38dfa0249,
-        type: 3}
-      propertyPath: initialHealth
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4365825432817831296, guid: 4d5aa352202380c4386922c38dfa0249,
         type: 3}
       propertyPath: cam
@@ -2347,6 +2337,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ken
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365825432817831297, guid: 4d5aa352202380c4386922c38dfa0249,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4365825432817831303, guid: 4d5aa352202380c4386922c38dfa0249,
         type: 3}
@@ -2401,6 +2396,11 @@ PrefabInstance:
     - target: {fileID: 4365825432817831303, guid: 4d5aa352202380c4386922c38dfa0249,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365825434138179224, guid: 4d5aa352202380c4386922c38dfa0249,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

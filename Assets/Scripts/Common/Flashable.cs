@@ -6,7 +6,7 @@ using UnityEngine;
 /// </summary>
 public class Flashable : MonoBehaviour
 {
-	private SpriteRenderer spriteRenderer;
+	[HideInInspector] public SpriteRenderer spriteRenderer;
 
 	// Use this for initialization
 	protected virtual void Start()

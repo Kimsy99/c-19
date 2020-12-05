@@ -44,7 +44,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5466221067303216058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bed3281848fd57643b0ea06d8ecc82b1, type: 3}
+  m_Script: {fileID: 11500000, guid: d8fbab4b0e1ff374c870504ad3e44a83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   muzzlePS: {fileID: 9018280776737010788}
@@ -150,7 +150,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 61380793
-  m_SortingLayer: 1
+  m_SortingLayer: -1
   m_SortingOrder: 1
   m_Sprite: {fileID: -231260545638774761, guid: 49f1d111ecb7b0248bb2b8b7643985c7,
     type: 3}
@@ -239,7 +239,7 @@ PrefabInstance:
     - target: {fileID: 4464800871594300401, guid: 6ab6db561c448e84ea3b5bdb7ef1de97,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4464800871594300401, guid: 6ab6db561c448e84ea3b5bdb7ef1de97,
         type: 3}

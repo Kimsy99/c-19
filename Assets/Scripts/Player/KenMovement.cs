@@ -3,16 +3,18 @@
 public class KenMovement : Movable2D
 {
 	[SerializeField] private float walkSpeed = 5;
-	[SerializeField] private float runSpeed = 15;
-	
+	public float speedMultiplier = 1;
+
+	public Vector2 recoilVelocity = new Vector2(0, 0);
+
 	// Update is called once per frame
 	void Update()
 	{
 		float vx = Input.GetAxisRaw("Horizontal");
 		float vy = Input.GetAxisRaw("Vertical");
 
-		float speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+		float speed = speedMultiplier * walkSpeed * (Input.GetKey(KeyCode.LeftShift) ? 2 : 1);
 
-		SetVelocity(vx * speed, vy * speed);
+		SetVelocity(recoilVelocity.x + vx * speed, recoilVelocity.y + vy * speed);
 	}
 }

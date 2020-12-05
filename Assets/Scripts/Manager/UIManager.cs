@@ -24,10 +24,10 @@ public class UIManager : Singleton<UIManager>
 
 	void Update()
 	{
-		UpdateStatusBars();
+		UpdateStatBars();
 	}
 
-	public void SetStatus(float health, float maxHealth, float infection, float maxInfection)
+	public void SetStats(float health, float maxHealth, float infection, float maxInfection)
 	{
 		playerHealth = health;
 		playerMaxHealth = maxHealth;
@@ -35,16 +35,13 @@ public class UIManager : Singleton<UIManager>
 		playerMaxInfection = maxInfection;
 	}
 
-	private void UpdateStatusBars()
+	private void UpdateStatBars()
 	{
 		healthBar.fillAmount = playerHealth / playerMaxHealth;
 
-		// Dynamically shrink/grow background health bar to match the actual health bar
-		if (Mathf.Abs(healthBarBackground.fillAmount - healthBar.fillAmount) > fillAmountChangeRate * Time.deltaTime)
-		{
-			float dFillAmount = fillAmountChangeRate * (healthBarBackground.fillAmount > healthBar.fillAmount ? -1 : 1);
-			healthBarBackground.fillAmount += dFillAmount * Time.deltaTime;
-		}
+		// Dynamically shrink background health bar to match the actual health bar
+		if (healthBarBackground.fillAmount - healthBar.fillAmount > fillAmountChangeRate * Time.deltaTime)
+			healthBarBackground.fillAmount -= fillAmountChangeRate * Time.deltaTime;
 		else
 			healthBarBackground.fillAmount = healthBar.fillAmount;
 		//currentHealthTMP.text = playerCurrentHealth.ToString() + "/" + playerMaxHealth.ToString();

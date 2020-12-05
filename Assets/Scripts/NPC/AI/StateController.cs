@@ -13,11 +13,11 @@ public class StateController : MonoBehaviour
     public Transform Target { get; set; }
     
     // Returns a reference to this enemy movement
-    public CharacterMovement CharacterMovement { get; set; }
+    public NPCMovement NPCMovement { get; set; }
     
     private void Awake()
     {
-        CharacterMovement = GetComponent<CharacterMovement>();
+        NPCMovement = GetComponent<NPCMovement>();
     }
     
     private void Update()

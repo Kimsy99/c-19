@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class NPCController : MonoBehaviour
 {
     // Controls the current movement of this character
     public Vector2 CurrentMovement { get; set; }
@@ -28,11 +28,11 @@ public class CharacterController : MonoBehaviour
 
         if (NormalMovement)
         {
-            MoveCharacter();
+            MoveNPC();
         }
     }
     
-    private void MoveCharacter()
+    private void MoveNPC()
     {
         Vector2 currentMovePosition = myRigidbody2D.position + CurrentMovement * Time.fixedDeltaTime;
         myRigidbody2D.MovePosition(currentMovePosition);

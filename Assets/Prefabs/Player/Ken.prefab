@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 4365825432817831296}
   - component: {fileID: 4106598307230641558}
   - component: {fileID: 8410554047534616499}
+  - component: {fileID: 7434616710355192970}
   m_Layer: 0
   m_Name: Ken
   m_TagString: Player
@@ -196,7 +197,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 4
-  runSpeed: 15
+  speedMultiplier: 1
+  recoilVelocity: {x: 0, y: 0}
 --- !u!114 &4365825432817831296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +253,18 @@ MonoBehaviour:
   weaponToUse: {fileID: 8746005748287365609, guid: c4e74c3361b643f4188ac98d459baa46,
     type: 3}
   weaponHolderPosition: {fileID: 5541163300561861784}
+--- !u!114 &7434616710355192970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4365825432817831297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f790971926246f543ba4d40a67ab16b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4365825434138179224
 GameObject:
   m_ObjectHideFlags: 0

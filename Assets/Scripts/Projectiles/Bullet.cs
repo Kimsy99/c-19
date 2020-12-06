@@ -7,20 +7,43 @@ public class Bullet : Movable2D
 	[Header("Effects")]
 	[SerializeField] private ParticleSystem impactPS;
 
-	void OnCollisionEnter2D(Collision2D collision)
-	{
+	// Should be initialized when created in KenShooting
+	public int damage;
 
+	private SpriteRenderer bulletSprite;
+	private CircleCollider2D bulletCollider;
+
+    private void Start()
+    {
+		bulletSprite = GetComponent<SpriteRenderer>();
+		bulletCollider = GetComponent<CircleCollider2D>();
+    }
+
+    void OnBecameInvisible()
+	{
+		Destroy(bullet);
 	}
 
-	void OnBecameInvisible()
-	{
+	private void DestroyBullet()
+    {
 		Destroy(bullet);
 	}
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-        /*Debug.Log("colided");
-        impactPS.Play();*/
+		
+		if(!other.CompareTag("Player"))
+        {
+			DisableBullet();
+			impactPS.Play();
+			Invoke(nameof(DestroyBullet), impactPS.main.duration);
+		}
     }
 
+	private void DisableBullet()
+    {
+		Speed = 0;
+		//bulletSprite.enabled = false;
+		//bulletCollider.enabled = false;
+    }
 }

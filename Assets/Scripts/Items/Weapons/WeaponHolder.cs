@@ -19,7 +19,7 @@ public class WeaponHolder : MonoBehaviour
     // Reference of the Weapon we are using
     public Weapon CurrentWeapon { get; set; }
 
-    protected void Start()
+    private void Awake()
     {
         character = GetComponent<Character>();
         EquipWeapon(weaponToUse, weaponHolderPosition);

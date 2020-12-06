@@ -12,6 +12,9 @@ public class Weapon : MonoBehaviour
 {
     [Header("Bullet")]
     [SerializeField] public Movable2D bulletToUse;
+
+    [Header("Damage")]
+    [SerializeField] public int damageValue = 1;
     
     [Header("Effects")]
     [SerializeField] private ParticleSystem muzzlePS;

@@ -2348,6 +2348,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4365825432817831300, guid: 4d5aa352202380c4386922c38dfa0249,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365825432817831300, guid: 4d5aa352202380c4386922c38dfa0249,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4365825432817831303, guid: 4d5aa352202380c4386922c38dfa0249,
         type: 3}
       propertyPath: m_LocalPosition.x

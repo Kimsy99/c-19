@@ -102,32 +102,16 @@ public class WeaponAim : MonoBehaviour
 			lookRotation = Quaternion.Euler(CurrentAimAngle * Vector3.forward);
 			transform.rotation = lookRotation;
 
-			//flip weapoon upside down
-			if(CurrentAimAngle > 90 || CurrentAimAngle < -90)
-            {
-				//gun pointing backward
-				SpriteRenderer.flipY = true;
+			// Check the relative position of the mouse pointer to the character 
+			if (CurrentAimAngleAbsolute > 90 || CurrentAimAngleAbsolute < -90)
+			{
+				//pointing left
+				ken.Facing = SpriteFlippable2D.RelativeDirection.Left;
 			}
 			else
-            {
-				SpriteRenderer.flipY = false;
-			}
-
-			// Flip character
-			// only when character do not have horizontal speed to avoid weapon pointing wrong direction
-			if (ken.HSpeed == 0)
-            {
-				// Check the relative position of the mouse pointer to the character 
-				if (CurrentAimAngleAbsolute > 90 || CurrentAimAngleAbsolute < -90)
-				{
-					//pointing left
-					ken.Facing = SpriteFlippable2D.RelativeDirection.Left;
-				}
-				else
-				{
-					//pointing right
-					ken.Facing = SpriteFlippable2D.RelativeDirection.Right;
-				}
+			{
+				//pointing right
+				ken.Facing = SpriteFlippable2D.RelativeDirection.Right;
 			}
 		}
 		else

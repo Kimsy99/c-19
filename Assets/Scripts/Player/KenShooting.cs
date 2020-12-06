@@ -34,6 +34,9 @@ public class KenShooting : Movable2D
 		spawnPosition = weaponAim.EvaluateProjectileSpawnPosition();
 		Vector2 lookDirection = mousePos - (Vector2)spawnPosition;
         float angle = Vector2.SignedAngle(Vector2.right, lookDirection);
+		//Debug.Log("Original angle: " + angle);
+		angle += Random.Range(-20, 30) / 10;
+		//Debug.Log(angle);
 
         // Actually create the bullet
         Movable2D bullet = Instantiate<Movable2D>(bulletPrefab, spawnPosition, Quaternion.identity);

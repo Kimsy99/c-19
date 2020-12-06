@@ -10,6 +10,9 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    [Header("Bullet")]
+    [SerializeField] public Movable2D bulletToUse;
+    
     [Header("Effects")]
     [SerializeField] private ParticleSystem muzzlePS;
 

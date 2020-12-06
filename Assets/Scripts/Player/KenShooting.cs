@@ -2,8 +2,6 @@
 
 public class KenShooting : Movable2D
 {
-	[SerializeField] private Movable2D bulletPrefab;
-	[SerializeField] private Transform ShootingPoint;
 	[SerializeField] private float bulletSpeed = 10F;
 
 	[SerializeField] private Camera cam;
@@ -11,6 +9,9 @@ public class KenShooting : Movable2D
 
 	private WeaponAim weaponAim;
 	private Weapon weapon;
+
+	// The bullet depends on what type of weapon is used 
+	private Movable2D bulletPrefab;
 
 	private Vector3 spawnPosition;
 
@@ -25,7 +26,10 @@ public class KenShooting : Movable2D
 			weaponAim = GetComponentInChildren<WeaponAim>();
 
 		if (weapon == null)
+		{
 			weapon = GetComponentInChildren<Weapon>();
+			bulletPrefab = weapon.bulletToUse;
+		}
 	}
 
     private void Shoot() //shoot with updated position
@@ -35,8 +39,9 @@ public class KenShooting : Movable2D
 		Vector2 lookDirection = mousePos - (Vector2)spawnPosition;
         float angle = Vector2.SignedAngle(Vector2.right, lookDirection);
 		//Debug.Log("Original angle: " + angle);
+		
+		// bullet will randomly go slightly upward of downward
 		angle += Random.Range(-20, 30) / 10;
-		//Debug.Log(angle);
 
         // Actually create the bullet
         Movable2D bullet = Instantiate<Movable2D>(bulletPrefab, spawnPosition, Quaternion.identity);

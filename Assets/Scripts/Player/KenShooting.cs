@@ -11,7 +11,7 @@ public class KenShooting : Movable2D
 	private Weapon weapon;
 
 	// The bullet depends on what type of weapon is used 
-	private Movable2D bulletPrefab;
+	private Bullet bulletPrefab;
 
 	private Vector3 spawnPosition;
 
@@ -41,9 +41,10 @@ public class KenShooting : Movable2D
 		angle += Random.Range(-20, 30) / 10;
 
         // Actually create the bullet
-        Movable2D bullet = Instantiate<Movable2D>(bulletPrefab, spawnPosition, Quaternion.identity);
+        Bullet bullet = Instantiate<Bullet>(bulletPrefab, spawnPosition, Quaternion.identity);
         bullet.Speed = bulletSpeed;
         bullet.Direction = angle;
+		bullet.setDamage(weapon.damageValue);
 		weapon.TriggerShootingEffect();
     }
 }

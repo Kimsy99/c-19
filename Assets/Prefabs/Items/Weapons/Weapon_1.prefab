@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletToUse: {fileID: -8892455320561179592, guid: 122a8833de850ac4fab79d92a6b2e137,
     type: 3}
+  damageValue: 4
   muzzlePS: {fileID: 9018280776737010788}
 --- !u!114 &4424178189499079653
 MonoBehaviour:

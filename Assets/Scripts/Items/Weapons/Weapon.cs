@@ -11,7 +11,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [Header("Bullet")]
-    [SerializeField] public Movable2D bulletToUse;
+    [SerializeField] public Bullet bulletToUse;
 
     [Header("Damage")]
     [SerializeField] public int damageValue = 1;

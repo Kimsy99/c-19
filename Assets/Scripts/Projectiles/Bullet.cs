@@ -47,7 +47,6 @@ public class Bullet : Movable2D
 		// collide with everything except object of its type
 		if(!other.CompareTag(ownerTag))
         {
-			Debug.Log(ownerTag);
 			DisableBullet();
 			impactPS.Play();
 			// Wait for particle finish playing
@@ -56,7 +55,7 @@ public class Bullet : Movable2D
 			if(other.CompareTag("Player") || other.CompareTag("NPC"))
             {
 				// make damage to character being shot
-				Debug.Log("make damage " + damage);
+				other.GetComponent<KenHealth>().Damage(damage);
             }
 		}
     }

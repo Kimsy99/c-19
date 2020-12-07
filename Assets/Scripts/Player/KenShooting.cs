@@ -45,6 +45,7 @@ public class KenShooting : Movable2D
         bullet.Speed = bulletSpeed;
         bullet.Direction = angle;
 		bullet.setDamage(weapon.damageValue);
+		bullet.SetOwnerTag(tag);	// indicate the shooter of the bullet
 		weapon.TriggerShootingEffect();
     }
 }

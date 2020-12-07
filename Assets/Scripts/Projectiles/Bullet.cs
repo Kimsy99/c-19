@@ -26,6 +26,11 @@ public class Bullet : Movable2D
 		damage = damageValue;
     }
 
+	public void SetOwnerTag(string tag)
+    {
+		ownerTag = tag;
+    }
+
     void OnBecameInvisible()
 	{
 		Destroy(bullet);
@@ -38,12 +43,6 @@ public class Bullet : Movable2D
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		if(ownerTag == null)
-        {
-			// the bullet will collide with shooter when created
-			ownerTag = other.tag;
-			return;
-        }
 		// collide with everything except object of its type
 		if(!other.CompareTag(ownerTag))
         {

@@ -375,6 +375,16 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3806407148159309304, guid: 4d5aa352202380c4386922c38dfa0249,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.037813693
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806407148159309304, guid: 4d5aa352202380c4386922c38dfa0249,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.29211396
+      objectReference: {fileID: 0}
     - target: {fileID: 4365825432817831296, guid: 4d5aa352202380c4386922c38dfa0249,
         type: 3}
       propertyPath: cam
@@ -465,7 +475,7 @@ PrefabInstance:
         type: 3}
       propertyPath: weaponToUse
       value: 
-      objectReference: {fileID: 8746005748287365609, guid: c4e74c3361b643f4188ac98d459baa46,
+      objectReference: {fileID: 8746005748287365609, guid: 77e46cd489a637c4c903db01e88e3dce,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5aa352202380c4386922c38dfa0249, type: 3}

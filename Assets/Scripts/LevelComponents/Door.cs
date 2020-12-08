@@ -8,7 +8,7 @@ public class Door : MonoBehaviour
   private Animator animator;
   private BoxCollider2D boxCollider2D;
   private readonly int doorOpenParameter = Animator.StringToHash("HaveKey");
-  private bool haveKey = false;
+  public bool haveKey = false;
   private void Start()
   {
     animator = GetComponent<Animator>();

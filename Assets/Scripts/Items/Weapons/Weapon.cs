@@ -12,6 +12,7 @@ public class Weapon : MonoBehaviour
 {
     [Header("Bullet")]
     [SerializeField] public Bullet bulletToUse;
+    [SerializeField] private int maxBullet = 10;
 
     [Header("Damage")]
     [SerializeField] public int damageValue = 1;
@@ -25,9 +26,13 @@ public class Weapon : MonoBehaviour
     private Animator animator;
     private readonly int weaponUseParameter = Animator.StringToHash("WeaponUse");
 
+    private int currentBullet;
+    public int CurrentBullet => currentBullet;
+
     protected void Awake()
     {
         animator = GetComponent<Animator>();
+        currentBullet = maxBullet;
     }
 
     protected virtual void Update()
@@ -45,5 +50,18 @@ public class Weapon : MonoBehaviour
     {
         animator.SetTrigger(weaponUseParameter);
         muzzlePS.Play();
+    }
+
+    public bool ConsumeAmmo()
+    {
+        if(currentBullet > 0)
+        {
+            --currentBullet;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

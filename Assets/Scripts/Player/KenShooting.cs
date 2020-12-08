@@ -32,20 +32,24 @@ public class KenShooting : Movable2D
 
     private void Shoot() //shoot with updated position
     {
-		// Obtain angle from Ken to mouse
-		spawnPosition = weaponAim.EvaluateProjectileSpawnPosition();
-		Vector2 lookDirection = mousePos - (Vector2)spawnPosition;
-        float angle = Vector2.SignedAngle(Vector2.right, lookDirection);
-		
-		// bullet will randomly go slightly upward of downward
-		angle += Random.Range(-20, 30) / 10;
+		// Check if still have bullet
+		if(weapon.ConsumeAmmo())
+        {
+			// Obtain angle from Ken to mouse
+			spawnPosition = weaponAim.EvaluateProjectileSpawnPosition();
+			Vector2 lookDirection = mousePos - (Vector2)spawnPosition;
+			float angle = Vector2.SignedAngle(Vector2.right, lookDirection);
 
-        // Actually create the bullet
-        Bullet bullet = Instantiate<Bullet>(bulletPrefab, spawnPosition, Quaternion.identity);
-        bullet.Speed = bulletSpeed;
-        bullet.Direction = angle;
-		bullet.setDamage(weapon.damageValue);
-		bullet.SetOwnerTag(tag);	// indicate the shooter of the bullet
-		weapon.TriggerShootingEffect();
+			// bullet will randomly go slightly upward of downward
+			angle += Random.Range(-20, 30) / 10;
+
+			// Actually create the bullet
+			Bullet bullet = Instantiate<Bullet>(bulletPrefab, spawnPosition, Quaternion.identity);
+			bullet.Speed = bulletSpeed;
+			bullet.Direction = angle;
+			bullet.setDamage(weapon.damageValue);
+			bullet.SetOwnerTag(tag);    // indicate the shooter of the bullet
+			weapon.TriggerShootingEffect();
+		}
     }
 }

@@ -3,6 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This class is to provide aiming functionality of the weapon
+ * and rotate the weapon according to rectile position
+ */
+
 public class WeaponAim : MonoBehaviour
 {
 	[Header("Reticle")]
@@ -127,6 +132,11 @@ public class WeaponAim : MonoBehaviour
 		reticle.transform.rotation = Quaternion.identity; //set the normal rotation
 		reticle.transform.position = reticlePosition;
 	}
+
+	public void DestroyReticle()
+    {
+		Destroy(reticle);
+    }
 
 	// Calculates the position where our projectile is going to be fired
 	public Vector3 EvaluateProjectileSpawnPosition()

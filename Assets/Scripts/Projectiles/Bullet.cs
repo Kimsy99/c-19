@@ -33,7 +33,7 @@ public class Bullet : Movable2D
 
     void OnBecameInvisible()
 	{
-		Destroy(bullet);
+		DestroyBullet();
 	}
 
 	private void DestroyBullet()

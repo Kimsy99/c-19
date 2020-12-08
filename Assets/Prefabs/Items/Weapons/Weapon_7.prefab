@@ -49,6 +49,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletToUse: {fileID: -8892455320561179592, guid: 10327c6f9a08ef547bb498a93e0317b6,
     type: 3}
+  bulletSpeed: 10
+  maxBullet: 10
+  damageValue: 2
+  spread: 20
   muzzlePS: {fileID: 9018280776737010788}
 --- !u!114 &4424178189499079653
 MonoBehaviour:

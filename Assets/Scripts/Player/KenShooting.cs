@@ -2,8 +2,6 @@
 
 public class KenShooting : Movable2D
 {
-	[SerializeField] private float bulletSpeed = 10F;
-
 	[SerializeField] private Camera cam;
 	private Vector2 mousePos = new Vector2();
 
@@ -15,19 +13,19 @@ public class KenShooting : Movable2D
 
 	private Vector3 spawnPosition;
 
-    private void Start()
-    {
-		weaponAim = GetComponentInChildren<WeaponAim>();
-		weapon = GetComponentInChildren<Weapon>();
-		bulletPrefab = weapon.bulletToUse;
-	}
-
     // Update is called once per frame
     void Update()
 	{
 		mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 		if (Input.GetButtonDown("Fire1"))
 			Shoot();
+	}
+
+	public void SetNewWeapon(Weapon newWeapon, WeaponAim newWeaponAim)
+    {
+		weapon = newWeapon;
+		weaponAim = newWeaponAim;
+		bulletPrefab = weapon.bulletToUse;
 	}
 
     private void Shoot() //shoot with updated position
@@ -41,13 +39,13 @@ public class KenShooting : Movable2D
 			float angle = Vector2.SignedAngle(Vector2.right, lookDirection);
 
 			// bullet will randomly go slightly upward of downward
-			angle += Random.Range(-20, 30) / 10;
+			angle += Random.Range(-weapon.Spread, weapon.Spread) / 10;
 
 			// Actually create the bullet
 			Bullet bullet = Instantiate<Bullet>(bulletPrefab, spawnPosition, Quaternion.identity);
-			bullet.Speed = bulletSpeed;
+			bullet.Speed = weapon.BulletSpeed;
 			bullet.Direction = angle;
-			bullet.setDamage(weapon.damageValue);
+			bullet.setDamage(weapon.DamageValue);
 			bullet.SetOwnerTag(tag);    // indicate the shooter of the bullet
 			weapon.TriggerShootingEffect();
 		}

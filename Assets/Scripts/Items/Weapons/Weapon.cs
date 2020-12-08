@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
- * This class is to control the movement of weapon
+ * This class is to control the characteristics of weapon
+ * and its animation when shooting
  * note: The rotation of the weapon is controlled by WeaponAim
  */
 
@@ -12,10 +13,10 @@ public class Weapon : MonoBehaviour
 {
     [Header("Bullet")]
     [SerializeField] public Bullet bulletToUse;
+    [SerializeField] private float bulletSpeed = 10F;
     [SerializeField] private int maxBullet = 10;
-
-    [Header("Damage")]
-    [SerializeField] public int damageValue = 1;
+    [SerializeField] private int damageValue = 1;
+    [SerializeField] private int spread = 20;
     
     [Header("Effects")]
     [SerializeField] private ParticleSystem muzzlePS;
@@ -27,7 +28,12 @@ public class Weapon : MonoBehaviour
     private readonly int weaponUseParameter = Animator.StringToHash("WeaponUse");
 
     private int currentBullet;
+
+    // Provide access to internal data
     public int CurrentBullet => currentBullet;
+    public int DamageValue => damageValue;
+    public float BulletSpeed => bulletSpeed;
+    public int Spread => spread;
 
     protected void Awake()
     {
@@ -38,12 +44,6 @@ public class Weapon : MonoBehaviour
     protected virtual void Update()
     {
 
-    }
-
-    // Reference the owner of this Weapon
-    public void SetOwner(Character owner)
-    {
-        WeaponOwner = owner;
     }
 
     public void TriggerShootingEffect()

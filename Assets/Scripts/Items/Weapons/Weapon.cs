@@ -1,24 +1,61 @@
 ﻿using UnityEngine;
 
-public class Weapon : Item
+/*
+ * This class is to control the characteristics of weapon
+ * and its animation when shooting
+ * note: The rotation of the weapon is controlled by WeaponAim
+ */
+
+public class Weapon : MonoBehaviour
 {
-    [Header("Settings")]
-    [SerializeField] private Movable2D bulletPrefab;
-    [SerializeField] private Transform shootingPoint;
-    [SerializeField] private float bulletSpeed = 10F;
-    [SerializeField] private ParticleSystem muzzlePS;
+	[Header("Bullet")]
+	[SerializeField] public Bullet bulletToUse;
+	[SerializeField] private float bulletSpeed = 10F;
+	[SerializeField] private int maxBullet = 10;
+	[SerializeField] private int damageValue = 1;
+	[SerializeField] private int spread = 20;
+	
+	[Header("Effects")]
+	[SerializeField] private ParticleSystem muzzlePS;
 
-    private Animator animator;
-    private readonly int weaponUseParameter = Animator.StringToHash("WeaponUse");
+	private Animator animator;
+	private readonly int weaponUseParameter = Animator.StringToHash("WeaponUse");
 
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
+	private int currentBullet;
 
-    public override void Use()
+	// Provide access to internal data
+	public int CurrentBullet => currentBullet;
+	public int DamageValue => damageValue;
+	public float BulletSpeed => bulletSpeed;
+	public int Spread => spread;
+
+	protected void Awake()
 	{
-        animator.SetTrigger(weaponUseParameter);
-        muzzlePS.Play();
+		animator = GetComponent<Animator>();
+		currentBullet = maxBullet;
+	}
+
+	protected virtual void Update()
+	{
+
+	}
+
+	public void TriggerShootingEffect()
+	{
+		animator.SetTrigger(weaponUseParameter);
+		muzzlePS.Play();
+	}
+
+	public bool ConsumeAmmo()
+	{
+		if(currentBullet > 0)
+		{
+			--currentBullet;
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 }

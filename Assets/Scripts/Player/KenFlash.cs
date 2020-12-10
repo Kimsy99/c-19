@@ -4,9 +4,9 @@ public class KenFlash : Flashable
 {
 	private ParticleSystem blood;
 
-	protected override void Start()
+	protected override void Awake()
 	{
-		base.Start();
+		base.Awake();
 		blood = GetComponentInChildren<ParticleSystem>();
 	}
 

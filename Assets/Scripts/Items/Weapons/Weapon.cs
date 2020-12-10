@@ -1,43 +1,24 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-/*
- * This class is to control the movement of weapon
- * note: The rotation of the weapon is controlled by WeaponAim
- */
-
-public class Weapon : MonoBehaviour
+public class Weapon : Item
 {
-    [Header("Effects")]
+    [Header("Settings")]
+    [SerializeField] private Movable2D bulletPrefab;
+    [SerializeField] private Transform shootingPoint;
+    [SerializeField] private float bulletSpeed = 10F;
     [SerializeField] private ParticleSystem muzzlePS;
-
-    // Reference of the Character that controls this Weapon
-    public Character WeaponOwner { get; set; }
 
     private Animator animator;
     private readonly int weaponUseParameter = Animator.StringToHash("WeaponUse");
 
-    protected void Awake()
+    void Start()
     {
         animator = GetComponent<Animator>();
     }
 
-    protected virtual void Update()
-    {
-
-    }
-
-    // Reference the owner of this Weapon
-    public void SetOwner(Character owner)
-    {
-        WeaponOwner = owner;
-    }
-
-    public void TriggerShootingEffect()
-    {
+    public override void Use()
+	{
         animator.SetTrigger(weaponUseParameter);
         muzzlePS.Play();
-    }
+	}
 }

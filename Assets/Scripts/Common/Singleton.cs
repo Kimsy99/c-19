@@ -2,10 +2,8 @@ using UnityEngine;
 
 public class Singleton<T> : MonoBehaviour where T : Component
 {
-	// Variable of the instance
 	private static T instance;
 
-	// Property of the instance
 	public static T Instance
 	{
 		get

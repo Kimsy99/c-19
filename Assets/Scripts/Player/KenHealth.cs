@@ -1,46 +1,40 @@
 using UnityEngine;
 
-public class KenHealth : KenFlash
+public class KenHealth : Health
 {
-	[Header("Health")]
-	[SerializeField] private float initialHealth = 100;
-	[SerializeField] private float maxHealth = 100;
-
 	[Header("Infection")]
-	[SerializeField] private float initialInfection = 0;
 	[SerializeField] private float maxInfection = 100;
 
 	[Header("Settings")]
-	[SerializeField] private bool isInvulnerable;
 	[SerializeField] private bool isInfecting;
 	[SerializeField] private bool isHurting = false;
-	[SerializeField] private Sprite ken, kenDead;
 
 	private GameObject heartIcon1;
 	private GameObject heartIcon2;
 	private GameObject heartIcon3;
 	private Animator animator;
+	private readonly int isDeadParameter = Animator.StringToHash("IsDead");
+	private KenFlash kenFlash;
 	private KenMovement kenMovement;
 
-	private float health;
-	private float infection;
+	private float infection = 0;
 	private int lives = 3;
 
-	void Awake()
+	protected override void Awake()
 	{
+		base.Awake();
 		heartIcon1 = GameObject.Find("HeartIcon1");
 		heartIcon2 = GameObject.Find("HeartIcon2");
 		heartIcon3 = GameObject.Find("HeartIcon3");
 		animator = GetComponent<Animator>();
+		kenFlash = GetComponent<KenFlash>();
 		kenMovement = GetComponent<KenMovement>();
-
-		Health = initialHealth;
-		Infection = initialInfection;
+		UIManager.Instance.SetStats(Hp, maxHp, infection, maxInfection);
 	}
 	
-	private void Update()
+	void Update()
 	{
-		if (Health == 0)
+		if (IsDead())
 		{
 			if (Input.GetKeyDown(KeyCode.R))
 				Revive();
@@ -52,19 +46,19 @@ public class KenHealth : KenFlash
 		if (!isInvulnerable && Input.GetKeyDown(KeyCode.L))
 		{
 			Damage(1);
-			Flash();
+			kenFlash.Flash();
 		}
 		if (Input.GetKeyDown(KeyCode.K) || isInfecting)
 			Infect(1);
 	}
 
-	public float Health
+	public new float Hp
 	{
-		get => health;
+		get => base.Hp;
 		set
 		{
-			health = Mathf.Clamp(value, 0, maxHealth);
-			UIManager.Instance.SetStats(health, maxHealth, infection, maxInfection);
+			base.Hp = value;
+			UIManager.Instance.SetStats(value, maxHp, infection, maxInfection);
 		}
 	}
 
@@ -74,16 +68,14 @@ public class KenHealth : KenFlash
 		set
 		{
 			infection = Mathf.Clamp(value, 0, maxInfection);
-			UIManager.Instance.SetStats(health, maxHealth, infection, maxInfection);
+			UIManager.Instance.SetStats(Hp, maxHp, infection, maxInfection);
 		}
 	}
-	
-	// Take the amount of damage we pass in parameters
-	public void Damage(float damage)
+
+	public override void Damage(float damage)
 	{
-		Health -= damage;
-		if (Health == 0)
-			Die();
+		if (!isInvulnerable)
+			Hp -= damage;
 	}
 
 	public void Infect(float infection)
@@ -91,21 +83,20 @@ public class KenHealth : KenFlash
 		Infection += infection;
 	}
 	
-	private void Die()
+	public override void Die()
 	{
-		Flash();
-		animator.enabled = false;
+		kenFlash.Flash();
 		kenMovement.speedMultiplier = 0;
-		spriteRenderer.sprite = kenDead;
+		animator.SetBool(isDeadParameter, true);
 	}
 
 	// Revive this game object    
 	public void Revive()
 	{
-		animator.enabled = true;
+		animator.SetBool(isDeadParameter, false);
 		kenMovement.speedMultiplier = 1;
-		Health = initialHealth;
-		Infection = initialInfection;
+		Hp = maxHp;
+		Infection = 0;
 		lives--;
 
 		if (lives == 2)

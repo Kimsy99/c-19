@@ -9,7 +9,7 @@ public class Flashable : MonoBehaviour
 	[HideInInspector] public SpriteRenderer spriteRenderer;
 
 	// Use this for initialization
-	protected virtual void Start()
+	protected virtual void Awake()
 	{
 		spriteRenderer = GetComponent<SpriteRenderer>();
 	}

@@ -1,12 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
+[Obsolete("Going to replace with KenUseItem")]
 public class KenShooting : Movable2D
 {
-	[SerializeField] private Movable2D bulletPrefab;
-	[SerializeField] private Transform ShootingPoint;
-	[SerializeField] private float bulletSpeed = 10F;
-
-	[SerializeField] private Camera cam;
+	private Camera cam;
 	private Vector2 mousePos = new Vector2();
 
 	private WeaponAim weaponAim;
@@ -14,31 +12,41 @@ public class KenShooting : Movable2D
 
 	private Vector3 spawnPosition;
 
-    // Update is called once per frame
-    void Update()
+	protected override void Awake()
 	{
-		mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-		if (Input.GetButtonDown("Fire1"))
-			Shoot();
+		base.Awake();
+	}
 
-		if(weaponAim == null)
-			weaponAim = GetComponentInChildren<WeaponAim>();
+	void Start()
+	{
+		cam = Camera.main;
+	}
 
-		if (weapon == null)
-			weapon = GetComponentInChildren<Weapon>();
+	// Update is called once per frame
+	void Update()
+	{
+		//mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+		//if (Input.GetButtonDown("Fire1"))
+		//	Shoot();
+
+		//if(weaponAim == null)
+		//	weaponAim = GetComponentInChildren<WeaponAim>();
+
+		//if (weapon == null)
+		//	weapon = GetComponentInChildren<Weapon>();
 	}
 
     private void Shoot() //shoot with updated position
     {
 		// Obtain angle from Ken to mouse
-		spawnPosition = weaponAim.EvaluateProjectileSpawnPosition();
-		Vector2 lookDirection = mousePos - (Vector2)spawnPosition;
-        float angle = Vector2.SignedAngle(Vector2.right, lookDirection);
+		//spawnPosition = weaponAim.EvaluateProjectileSpawnPosition();
+		//Vector2 lookDirection = mousePos - (Vector2)spawnPosition;
+  //      float angle = Vector2.SignedAngle(Vector2.right, lookDirection);
 
-        // Actually create the bullet
-        Movable2D bullet = Instantiate<Movable2D>(bulletPrefab, spawnPosition, Quaternion.identity);
-        bullet.Speed = bulletSpeed;
-        bullet.Direction = angle;
-		weapon.TriggerShootingEffect();
+  //      // Actually create the bullet
+  //      Movable2D bullet = Instantiate<Movable2D>(bulletPrefab, spawnPosition, Quaternion.identity);
+  //      bullet.Speed = bulletSpeed;
+  //      bullet.Direction = angle;
+		//weapon.TriggerShootingEffect();
     }
 }

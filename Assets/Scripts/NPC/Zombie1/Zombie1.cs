@@ -26,14 +26,16 @@ public class Zombie1 : NPCMovement
     {
       Debug.Log("No player");
       animator.SetBool(isAttack, value: false);
-      Patrol();
+      // Patrol(attackRange);
     }
     else
     {
       animator.SetBool(isAttack, value: true);
       // Shot();
       Debug.Log("Found player");
+
     }
+    Patrol(attackRange);
     //test minus life point
     if (Input.GetKeyDown(KeyCode.Space))
     {

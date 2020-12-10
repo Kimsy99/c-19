@@ -6,72 +6,61 @@ public class NPCMovement : AnimatableMovable2D
 {
   public Transform wayPoint01, wayPoint02;
   private Transform wayPointTarget;
-  [SerializeField] protected float walkSpeed = 7;
+  [SerializeField] protected float walkSpeed = 4;
   private readonly int movingParamater = Animator.StringToHash("Moving");
-  private float vx;
-  private float vy;
+  private Transform target;
   protected void Start()
   {
     wayPointTarget = wayPoint01;
+    target = GameObject.FindWithTag("Player").transform;
   }
   // Update is called once per frame
   protected void Update()
   {
-
+    // Patrol();
   }
-  protected void Patrol()
+  protected void Patrol(float attackRange)
   {
     //movement
     Vector2 nextPosition = Vector2.MoveTowards(transform.position, wayPointTarget.position, walkSpeed * Time.deltaTime);
+    // wayPointTarget = wayPoint01;
     // transform.position = Vector2.MoveTowards(transform.position, wayPointTarget.position, walkSpeed * Time.deltaTime);
-    if (Vector2.Distance(transform.position, wayPoint01.position) <= 0.01f)
+    if (Vector2.Distance(transform.position, target.position) <= attackRange)
     {
-      wayPointTarget = wayPoint02;
+      wayPointTarget = target;
     }
-    if (Vector2.Distance(transform.position, wayPoint02.position) <= 0.01f)
+    else
     {
-      wayPointTarget = wayPoint01;
+      if (wayPointTarget == target)
+      {
+        wayPointTarget = wayPoint02;
+      }
+      if (Vector2.Distance(transform.position, wayPoint01.position) <= 0.1f)
+      {
+        wayPointTarget = wayPoint02;
+      }
+      if (Vector2.Distance(transform.position, wayPoint02.position) <= 0.1f)
+      {
+        wayPointTarget = wayPoint01;
+      }
     }
-
+    // transform.direction
     //controller
+    Vector2 direction = nextPosition - (Vector2)transform.position;
+    float angle = Vector2.SignedAngle(Vector2.right, direction);
 
-    if ((transform.position.x - nextPosition.x) < -0.03f)
-    {
-      vx = 1;
-    }
-    else if ((transform.position.x - nextPosition.x) > 0.03f)
-    {
-      vx = -1;
-    }
-    else
-    {
-      vx = 0;
-    }
-
-
-
-    if ((transform.position.y - nextPosition.y) < -0.03f)
-    {
-      vy = 1;
-    }
-    else if ((transform.position.y - nextPosition.y) > 0.03f)
-    {
-      vy = -1;
-    }
-    else
-    {
-      vy = 0;
-    }
     // Debug.Log(Vector2.MoveTowards(transform.position, wayPointTarget.position, walkSpeed * Time.deltaTime));
 
 
     // vx = Input.GetAxisRaw("Horizontal");
     // vy = Input.GetAxisRaw("Vertical");
     // Debug.Log(-(transform.position.x - nextPosition.x) * 10 + " " + -(transform.position.y - nextPosition.y) * 10);
-
+    Direction = angle;
+    Speed = walkSpeed;
     // SetVelocity(vx * walkSpeed, vy * walkSpeed);
 
-    SetVelocity(-(transform.position.x - nextPosition.x) * 7 * walkSpeed, (-(transform.position.y - nextPosition.y) * 7) * walkSpeed);
+    // SetVelocity(vx * walkSpeed, vy * walkSpeed);
+    // SetVelocity(-(transform.position.x - nextPosition.x) * 7 * walkSpeed, (-(transform.position.y - nextPosition.y) * 7) * walkSpeed);
     // UpdateAnimations();
 
   }

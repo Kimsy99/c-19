@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 272387123277920697}
   - component: {fileID: 272387123277920698}
   - component: {fileID: 3337439086264857472}
-  - component: {fileID: 8287233513492114011}
   - component: {fileID: 272387123277920703}
   - component: {fileID: 1972989046202996643}
   - component: {fileID: 552993719932164522}
@@ -114,7 +113,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &272387123277920697
 Animator:
   serializedVersion: 3
@@ -165,19 +164,6 @@ MonoBehaviour:
   health: {fileID: 0}
   movement: {fileID: 0}
   shooting: {fileID: 0}
---- !u!114 &8287233513492114011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272387123277920701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68d8104b8b0a640bd9d7712905279991, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterType: 0
 --- !u!114 &272387123277920703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5115,7 +5101,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.027160853, y: 0.25987938}

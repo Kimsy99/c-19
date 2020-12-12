@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51977423f9c3d4a0692ce0828b946c1c, type: 3}
+  m_Name: GuardStateFollow
+  m_EditorClassIdentifier: 
+  Actions:
+  - {fileID: 11400000, guid: 7e2039e943f4d48a09e2721a4e819623, type: 2}
+  Transitions:
+  - Decision: {fileID: 11400000, guid: 516d21a0dbe6b404ebe858336ae9af81, type: 2}
+    TrueState: {fileID: 11400000, guid: 9b2756af1ce614b3580b56f6c9f05e42, type: 2}
+    FalseState: {fileID: 11400000, guid: 38232e6b7fdb546d5ab10580120e08de, type: 2}

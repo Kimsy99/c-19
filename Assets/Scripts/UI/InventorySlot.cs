@@ -1,27 +1,27 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using TMPro;
+using UnityEngine;
 
 public class InventorySlot : MonoBehaviour
 {
-	private Item item;
+	private Weapon weapon;
 
 	private SpriteRenderer spriteRenderer;
-	private Text itemCounter;
+	private TextMeshProUGUI itemCounter;
 
-	public Item Item
+	public Weapon Weapon
 	{
-		get => item;
+		get => weapon;
 		set
 		{
-			item = value;
+			weapon = value;
 			UpdateSlot();
 		}
 	}
 
-	void Start()
+	void Awake()
 	{
 		spriteRenderer = transform.Find("InventorySprite").GetComponent<SpriteRenderer>();
-		itemCounter = transform.Find("ItemCounter").GetComponent<Text>();
+		itemCounter = transform.Find("ItemCounter").GetComponent<TextMeshProUGUI>();
 	}
 
 	/// <summary>
@@ -29,7 +29,7 @@ public class InventorySlot : MonoBehaviour
 	/// </summary>
 	public void UpdateSlot()
 	{
-		spriteRenderer.sprite = item.ItemSprite;
-		itemCounter.text = item.Count.ToString();
+		spriteRenderer.sprite = weapon?.weaponSettings.displaySprite;
+		itemCounter.text = weapon == null || weapon.weaponSettings.maxBulletCount == -1 ? "" : weapon.bulletCount.ToString();
 	}
 }

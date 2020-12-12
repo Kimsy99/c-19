@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34754dc4ed93d2d46b5185f88b1290e5, type: 3}
+  m_Name: TrishotPistol
+  m_EditorClassIdentifier: 
+  displayName: Trishot Pistol
+  displaySprite: {fileID: -2505125261248690692, guid: eb082058f0a599945b15d17405d326c3,
+    type: 3}
+  heldSprite: {fileID: -2505125261248690692, guid: 49f1d111ecb7b0248bb2b8b7643985c7,
+    type: 3}
+  bulletToUse: {fileID: -8892455320561179592, guid: 122a8833de850ac4fab79d92a6b2e137,
+    type: 3}
+  bulletSpawnPositionOffset: {x: 0.265, y: 0.047}
+  bulletSpeed: 8
+  maxBulletCount: 300
+  damage: 0.6
+  spread: 5
+  shootSound: 3
+  cooldown: 0.4
+  muzzlePS: {fileID: 2302688338332776376, guid: e9d5becc7763c3e48a3b255dc9242286,
+    type: 3}

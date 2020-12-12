@@ -14,8 +14,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Player
+  - PlayerBullet
   - 
   - 
   - 
@@ -41,6 +41,9 @@ TagManager:
   m_SortingLayers:
   - name: ZOrderedObjects
     uniqueID: 61380793
+    locked: 0
+  - name: UI
+    uniqueID: 2096794309
     locked: 0
   - name: Default
     uniqueID: 0

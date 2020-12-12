@@ -6,24 +6,26 @@ public class Bullet : Movable2D
 
 	[Header("Effects")]
 	[SerializeField] private ParticleSystem impactPS;
+	[SerializeField] private ParticleSystem impactPS2;
 
 	// Should be initialized when created in KenShooting
-	private int damage;
+	private float damage;
 
-	private SpriteRenderer bulletSprite;
+	private SpriteRenderer spriteRenderer;
 	private CircleCollider2D bulletCollider;
 
 	private string ownerTag;
 
-    private void Start()
+    protected override void Awake()
     {
-		bulletSprite = GetComponent<SpriteRenderer>();
+		base.Awake();
+		spriteRenderer = GetComponent<SpriteRenderer>();
 		bulletCollider = GetComponent<CircleCollider2D>();
     }
 
-	public void setDamage(int damageValue)
+	public void SetDamage(float damage)
     {
-		damage = damageValue;
+		this.damage = damage;
     }
 
 	public void SetOwnerTag(string tag)
@@ -43,26 +45,29 @@ public class Bullet : Movable2D
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		// collide with everything except object of its type
-		if(!other.CompareTag(ownerTag))
+		// Collide with everything except object of its type
+		if (!other.CompareTag(ownerTag))
         {
-			DisableBullet();
 			impactPS.Play();
+			if (impactPS2 != null)
+				impactPS2.Play();
+
 			// Wait for particle finish playing
 			Invoke(nameof(DestroyBullet), impactPS.main.duration);
 
 			if(other.CompareTag("Player") || other.CompareTag("NPC"))
             {
 				// make damage to character being shot
-				other.GetComponent<KenHealth>().Damage(damage);
+				//other.GetComponent<KenHealth>().Damage(damage);
             }
+			DisableBullet();
 		}
     }
 
 	private void DisableBullet()
     {
 		Speed = 0;
-		//bulletSprite.enabled = false;
+		spriteRenderer.sprite = null;
 		bulletCollider.enabled = false;
     }
 }

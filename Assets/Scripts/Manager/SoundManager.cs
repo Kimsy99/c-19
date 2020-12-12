@@ -7,7 +7,7 @@ using UnityEngine;
 public class SoundManager : Singleton<SoundManager>
 {
 	[SerializeField] private SoundDefinition[] soundDefinitions;
-	private Dictionary<Sound, AudioClip> soundDictionary = new Dictionary<Sound, AudioClip>();
+	private readonly Dictionary<Sound, AudioClip> soundDictionary = new Dictionary<Sound, AudioClip>();
 
 	private AudioSource audioSource;
 
@@ -46,6 +46,9 @@ public class SoundManager : Singleton<SoundManager>
 	public enum Sound
 	{
 		KenHurt,
-		KenSelect
+		KenSelect,
+		EnemyHurt,
+		PistolShoot,
+		PlasmaGunShoot
 	}
 }

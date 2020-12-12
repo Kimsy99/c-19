@@ -1,61 +1,17 @@
-﻿using UnityEngine;
-
-/*
- * This class is to control the characteristics of weapon
- * and its animation when shooting
- * note: The rotation of the weapon is controlled by WeaponAim
- */
-
-public class Weapon : MonoBehaviour
+﻿/// <summary>
+/// Data structure for weapons. Actual weapons (weapons in the world, weapons held in inventory,
+/// and the weapon held by Ken) will read data from this.
+/// </summary>
+public class Weapon
 {
-	[Header("Bullet")]
-	[SerializeField] public Bullet bulletToUse;
-	[SerializeField] private float bulletSpeed = 10F;
-	[SerializeField] private int maxBullet = 10;
-	[SerializeField] private int damageValue = 1;
-	[SerializeField] private int spread = 20;
-	
-	[Header("Effects")]
-	[SerializeField] private ParticleSystem muzzlePS;
+	public WeaponSettings weaponSettings;
+	/** Inventory slot for this item. If this item is not in inventory, this will be null. */
+	public InventorySlot inventorySlot;
+	public int bulletCount;
 
-	private Animator animator;
-	private readonly int weaponUseParameter = Animator.StringToHash("WeaponUse");
-
-	private int currentBullet;
-
-	// Provide access to internal data
-	public int CurrentBullet => currentBullet;
-	public int DamageValue => damageValue;
-	public float BulletSpeed => bulletSpeed;
-	public int Spread => spread;
-
-	protected void Awake()
+	public Weapon(WeaponSettings weaponSettings)
 	{
-		animator = GetComponent<Animator>();
-		currentBullet = maxBullet;
-	}
-
-	protected virtual void Update()
-	{
-
-	}
-
-	public void TriggerShootingEffect()
-	{
-		animator.SetTrigger(weaponUseParameter);
-		muzzlePS.Play();
-	}
-
-	public bool ConsumeAmmo()
-	{
-		if(currentBullet > 0)
-		{
-			--currentBullet;
-			return true;
-		}
-		else
-		{
-			return false;
-		}
+		this.weaponSettings = weaponSettings;
+		bulletCount = weaponSettings.maxBulletCount;
 	}
 }

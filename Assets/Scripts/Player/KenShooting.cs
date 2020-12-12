@@ -1,61 +1,36 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-[Obsolete("Going to replace with KenUseItem")]
-public class KenShooting : Movable2D
+public class KenShooting : MonoBehaviour
 {
-	private Camera cam;
-	private Vector2 mousePos = new Vector2();
+	private KenHealth kenHealth;
+	private HeldWeapon heldWeapon;
 
-	private WeaponAim weaponAim;
-	private Weapon weapon;
+	public HeldWeapon HeldWeapon => heldWeapon;
 
-	// The bullet depends on what type of weapon is used 
-	private Bullet bulletPrefab;
+	/** Time needed to wait before Ken can shoot the next bullet. */
+	[HideInInspector] public float cooldown;
 
-	private Vector3 spawnPosition;
-
-	protected override void Awake()
+	void Awake()
 	{
-		base.Awake();
-		cam = Camera.main;
+		kenHealth = GetComponent<KenHealth>();
+		heldWeapon = GetComponentInChildren<HeldWeapon>();
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-		if (Input.GetButtonDown("Fire1"))
-			Shoot();
-	}
+		if (kenHealth.IsDead())
+			return;
 
-	public void SetNewWeapon(Weapon newWeapon, WeaponAim newWeaponAim)
-    {
-		weapon = newWeapon;
-		weaponAim = newWeaponAim;
-		bulletPrefab = weapon.bulletToUse;
-	}
+		cooldown = Mathf.Max(cooldown - Time.deltaTime, 0);
 
-    private void Shoot() //shoot with updated position
-    {
-		// Check if still have bullet
-		if(weapon.ConsumeAmmo())
-        {
-			// Obtain angle from Ken to mouse
-			spawnPosition = weaponAim.EvaluateProjectileSpawnPosition();
-			Vector2 lookDirection = mousePos - (Vector2)spawnPosition;
-			float angle = Vector2.SignedAngle(Vector2.right, lookDirection);
-
-			// bullet will randomly go slightly upward of downward
-			angle += Random.Range(-weapon.Spread, weapon.Spread) / 10;
-
-			// Actually create the bullet
-			Bullet bullet = Instantiate<Bullet>(bulletPrefab, spawnPosition, Quaternion.identity);
-			bullet.Speed = weapon.BulletSpeed;
-			bullet.Direction = angle;
-			bullet.setDamage(weapon.DamageValue);
-			bullet.SetOwnerTag(tag);    // indicate the shooter of the bullet
-			weapon.TriggerShootingEffect();
+		if (Input.GetButton("Fire1") && heldWeapon.Weapon != null)
+		{
+			if (cooldown == 0)
+			{
+				cooldown = heldWeapon.WeaponSettings.cooldown;
+				heldWeapon.Shoot();
+			}
 		}
-    }
+	}
 }

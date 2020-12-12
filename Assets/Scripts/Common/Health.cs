@@ -6,7 +6,7 @@ public class Health : MonoBehaviour
 	[SerializeField] protected float maxHp;
 	public bool isInvulnerable;
 
-	public float Hp
+	public virtual float Hp
 	{
 		get => hp;
 		set
@@ -23,10 +23,14 @@ public class Health : MonoBehaviour
 		Hp = maxHp;
 	}
 
-	public virtual void Damage(float damage)
+	public virtual bool Damage(float damage)
 	{
 		if (!isInvulnerable)
+		{
 			Hp -= damage;
+			return true;
+		}
+		return false;
 	}
 
 	public bool IsDead()

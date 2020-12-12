@@ -25,7 +25,7 @@ public class WeaponAim : MonoBehaviour
 		//reticle = Instantiate(reticlePrefab);
 	}
 	
-	private void Update()
+	void Update()
 	{
 		if (ken.shooting.HeldWeapon.Weapon == null) // Enable autoflip if Ken is not holding a weapon
 		{
@@ -54,94 +54,4 @@ public class WeaponAim : MonoBehaviour
 			transform.rotation = Quaternion.Euler(0, 0, AimAngle);
 		}
 	}
-
-	// Get the exact mouse position in order to aim
-	//private void GetMousePosition()
-	//{
-	//	// Get Mouse Position
-
-	//	mousePosition = Input.mousePosition;
-	//	mousePosition.z = 5f;  // We set this value to ensure the camera always stays infront to view everything in game
-
-	//	// Get World space position
-	//	direction = cam.ScreenToWorldPoint(mousePosition);
-	//	direction.z = transform.position.z;
-	//	reticlePosition = direction;
-
-	//	currentAimAbsolute = direction - transform.position;
-
-	//	//Debug.Log(ken.Facing);
-	//	if (ken.Facing == SpriteFlippable2D.RelativeDirection.Right)
-	//	{   //character facing right
-	//		currentAim = direction - transform.position;
-	//	}
-	//	else if (ken.Facing == SpriteFlippable2D.RelativeDirection.Left)
-	//	{   //character facing left
-	//		currentAim = transform.position - direction;
-	//	}
-	//}
-
-	//public void RotateWeapon()
-	//{
-	//	if (currentAim != Vector3.zero && direction != Vector3.zero)
-	//	{
-	//		// Get Angle
-	//		CurrentAimAngle = Mathf.Atan2(currentAim.y, currentAim.x) * Mathf.Rad2Deg;
-	//		CurrentAimAngleAbsolute = Mathf.Atan2(currentAimAbsolute.y, currentAimAbsolute.x) * Mathf.Rad2Deg;
-
-	//		CurrentAimAngle = Mathf.Clamp(CurrentAimAngle, -180, 180);
-
-	//		// Apply the angle
-	//		lookRotation = Quaternion.Euler(CurrentAimAngle * Vector3.forward);
-	//		transform.rotation = lookRotation;
-
-	//		// Check the relative position of the mouse pointer to the character 
-	//		if (CurrentAimAngleAbsolute > 90 || CurrentAimAngleAbsolute < -90)
-	//		{
-	//			//pointing left
-	//			ken.Facing = SpriteFlippable2D.RelativeDirection.Left;
-	//		}
-	//		else
-	//		{
-	//			//pointing right
-	//			ken.Facing = SpriteFlippable2D.RelativeDirection.Right;
-	//		}
-	//	}
-	//	else
-	//	{
-	//		CurrentAimAngle = 0f;  // If the mouse is not moving at all at the beginning
-	//		transform.rotation = initialRotation;
-	//	}
-	//}
-
-	// Moves our reticle towards our Mouse Position
-	//private void MoveReticle()
-	//{
-	//	reticle.transform.rotation = Quaternion.identity; //set the normal rotation
-	//	reticle.transform.position = reticlePosition;
-	//}
-
-	// Calculates the position where our projectile is going to be fired
-	//public Vector3 EvaluateProjectileSpawnPosition()
-	//{
-	//	if (ken.Facing == SpriteFlippable2D.RelativeDirection.Right)
-	//	{
-	//		// Right side
-	//		ProjectileSpawnPosition = transform.position + transform.rotation * projectileSpawnPosition;
-	//	}
-	//	else
-	//	{
-	//		// Left side
-	//		ProjectileSpawnPosition = transform.position - transform.rotation * projectileFlippedSpawnPosition;
-	//	}
-	//	return ProjectileSpawnPosition;
-	//}
-
-	//private void OnDrawGizmosSelected()
-	//{
-	//	EvaluateProjectileSpawnPosition();
-
-	//	Gizmos.color = Color.green;
-	//	Gizmos.DrawWireSphere(ProjectileSpawnPosition, 0.1f);
-	//}
 }

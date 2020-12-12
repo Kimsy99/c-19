@@ -3503,7 +3503,7 @@ GameObject:
   - component: {fileID: 2028025489}
   m_Layer: 0
   m_Name: Placeholder
-  m_TagString: NPC
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

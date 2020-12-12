@@ -55,8 +55,10 @@ public class Bullet : Movable2D
 			// Wait for particle finish playing
 			Invoke(nameof(DestroyBullet), impactPS.main.duration);
 
-			if(other.CompareTag("Player") || other.CompareTag("NPC"))
+			if (other.CompareTag("NPC"))
             {
+				other.gameObject.GetComponent<Flashable>().Flash();
+				other.gameObject.GetComponentInChildren<NPCHealthBar>().hp -= damage;
 				// make damage to character being shot
 				//other.GetComponent<KenHealth>().Damage(damage);
             }
@@ -66,6 +68,8 @@ public class Bullet : Movable2D
 
 	private void DisableBullet()
     {
+		print("disable");
+		Direction = 90;
 		Speed = 0;
 		spriteRenderer.sprite = null;
 		bulletCollider.enabled = false;

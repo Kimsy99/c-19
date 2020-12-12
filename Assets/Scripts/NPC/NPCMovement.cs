@@ -5,7 +5,7 @@ using UnityEngine;
 public class NPCMovement : AnimatableMovable2D
 {
   public Transform wayPoint01, wayPoint02;
-  private Transform wayPointTarget;
+  protected Transform wayPointTarget;
   [SerializeField] protected float walkSpeed = 4;
   private readonly int movingParamater = Animator.StringToHash("Moving");
   private Transform target;
@@ -17,25 +17,15 @@ public class NPCMovement : AnimatableMovable2D
   // Update is called once per frame
   protected void Update()
   {
-    // Patrol();
+    Patrol();
   }
-  protected void Patrol(float attackRange)
+  protected void Patrol()
   {
     //movement
     Vector2 nextPosition = Vector2.MoveTowards(transform.position, wayPointTarget.position, walkSpeed * Time.deltaTime);
     // wayPointTarget = wayPoint01;
     // transform.position = Vector2.MoveTowards(transform.position, wayPointTarget.position, walkSpeed * Time.deltaTime);
-    if (Vector2.Distance(transform.position, target.position) <= attackRange)
-    {
-      wayPointTarget = target;
-    }
-    else
-    {
-      if (wayPointTarget == target)
-      {
-        wayPointTarget = wayPoint02;
-      }
-      if (Vector2.Distance(transform.position, wayPoint01.position) <= 0.1f)
+    if (Vector2.Distance(transform.position, wayPoint01.position) <= 0.1f)
       {
         wayPointTarget = wayPoint02;
       }
@@ -43,7 +33,6 @@ public class NPCMovement : AnimatableMovable2D
       {
         wayPointTarget = wayPoint01;
       }
-    }
     // transform.direction
     //controller
     Vector2 direction = nextPosition - (Vector2)transform.position;

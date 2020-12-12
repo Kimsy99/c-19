@@ -1,0 +1,392 @@
+fileFormatVersion: 2
+guid: 6434153c4ea414f4e83883bfb62e16a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1666422440675625768
+    second: TileC_PHC_Interior-Office&Facility_0
+  - first:
+      213: 2434061885482141906
+    second: TileC_PHC_Interior-Office&Facility_1
+  - first:
+      213: 3383217082810973404
+    second: TileC_PHC_Interior-Office&Facility_2
+  - first:
+      213: 1445372798200416743
+    second: TileC_PHC_Interior-Office&Facility_3
+  - first:
+      213: 5718522050289042054
+    second: TileC_PHC_Interior-Office&Facility_4
+  - first:
+      213: -6805010202828466876
+    second: TileC_PHC_Interior-Office&Facility_5
+  - first:
+      213: -9193762591959671556
+    second: TileC_PHC_Interior-Office&Facility_6
+  - first:
+      213: 7316712355992437758
+    second: TileC_PHC_Interior-Office&Facility_7
+  - first:
+      213: 7955445407412442724
+    second: TileC_PHC_Interior-Office&Facility_8
+  - first:
+      213: 4503614612968094714
+    second: TileC_PHC_Interior-Office&Facility_9
+  - first:
+      213: -2260706779251749563
+    second: TileC_PHC_Interior-Office&Facility_10
+  - first:
+      213: -7826251978416015691
+    second: TileC_PHC_Interior-Office&Facility_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TileC_PHC_Interior-Office&Facility_0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 501
+        width: 87
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d43ac98e9dafd8e0800000000000000
+      internalID: -1666422440675625768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Interior-Office&Facility_1
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 501
+        width: 71
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d80b7d736687c120800000000000000
+      internalID: 2434061885482141906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Interior-Office&Facility_2
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 659
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc3bf2030a93fe20800000000000000
+      internalID: 3383217082810973404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Interior-Office&Facility_3
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 589
+        width: 95
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e98fbce6eefe0410800000000000000
+      internalID: 1445372798200416743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Interior-Office&Facility_4
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 403
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68287b7b1854c5f40800000000000000
+      internalID: 5718522050289042054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Interior-Office&Facility_5
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 259
+        width: 92
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4451087664fbf81a0800000000000000
+      internalID: -6805010202828466876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Interior-Office&Facility_6
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 256
+        width: 104
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc18fc12a1396080800000000000000
+      internalID: -9193762591959671556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Interior-Office&Facility_7
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 0
+        width: 36
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef304a64f1f2a8560800000000000000
+      internalID: 7316712355992437758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Interior-Office&Facility_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 33
+        width: 136
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466d4d2c27b676e60800000000000000
+      internalID: 7955445407412442724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Interior-Office&Facility_9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 32
+        width: 144
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbb83b11ad008e30800000000000000
+      internalID: 4503614612968094714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Interior-Office&Facility_10
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 721
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54dc169792b50a0e0800000000000000
+      internalID: -2260706779251749563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileC_PHC_Interior-Office&Facility_11
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 633
+        width: 98
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6b0d77a41936390800000000000000
+      internalID: -7826251978416015691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

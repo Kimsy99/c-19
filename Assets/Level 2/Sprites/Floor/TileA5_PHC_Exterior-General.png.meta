@@ -1,0 +1,1301 @@
+fileFormatVersion: 2
+guid: 945ee963b458142c58653aa666a4a79b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8022443725994884443
+    second: TileA5_PHC_Exterior-General_0
+  - first:
+      213: -6021278136974897580
+    second: TileA5_PHC_Exterior-General_1
+  - first:
+      213: 7889854001690741094
+    second: TileA5_PHC_Exterior-General_2
+  - first:
+      213: -1845080705055844725
+    second: TileA5_PHC_Exterior-General_3
+  - first:
+      213: 8678967747631180570
+    second: TileA5_PHC_Exterior-General_4
+  - first:
+      213: 6913097719142351253
+    second: TileA5_PHC_Exterior-General_5
+  - first:
+      213: 474515373878484319
+    second: TileA5_PHC_Exterior-General_6
+  - first:
+      213: 7436231625926750745
+    second: TileA5_PHC_Exterior-General_7
+  - first:
+      213: 5858143885915511252
+    second: TileA5_PHC_Exterior-General_8
+  - first:
+      213: 3900883677376878642
+    second: TileA5_PHC_Exterior-General_9
+  - first:
+      213: -2135020558486409525
+    second: TileA5_PHC_Exterior-General_10
+  - first:
+      213: -5705633376861194575
+    second: TileA5_PHC_Exterior-General_11
+  - first:
+      213: 2602782885686592692
+    second: TileA5_PHC_Exterior-General_12
+  - first:
+      213: 2963383560326257084
+    second: TileA5_PHC_Exterior-General_13
+  - first:
+      213: 8493473245670549155
+    second: TileA5_PHC_Exterior-General_14
+  - first:
+      213: -4574426957100196194
+    second: TileA5_PHC_Exterior-General_15
+  - first:
+      213: 6953094753141830825
+    second: TileA5_PHC_Exterior-General_16
+  - first:
+      213: -8552236647228911016
+    second: TileA5_PHC_Exterior-General_17
+  - first:
+      213: -5612528965211631066
+    second: TileA5_PHC_Exterior-General_18
+  - first:
+      213: 3348938840994283628
+    second: TileA5_PHC_Exterior-General_19
+  - first:
+      213: -333748061676375211
+    second: TileA5_PHC_Exterior-General_20
+  - first:
+      213: 603019985291193643
+    second: TileA5_PHC_Exterior-General_21
+  - first:
+      213: 5059259677202768299
+    second: TileA5_PHC_Exterior-General_22
+  - first:
+      213: 8019982621693011262
+    second: TileA5_PHC_Exterior-General_23
+  - first:
+      213: -6790222135435198159
+    second: TileA5_PHC_Exterior-General_24
+  - first:
+      213: 932927092182149211
+    second: TileA5_PHC_Exterior-General_25
+  - first:
+      213: -968186201680416656
+    second: TileA5_PHC_Exterior-General_26
+  - first:
+      213: 8912720722120420710
+    second: TileA5_PHC_Exterior-General_27
+  - first:
+      213: 8517652172628698808
+    second: TileA5_PHC_Exterior-General_28
+  - first:
+      213: -5324571987905186319
+    second: TileA5_PHC_Exterior-General_29
+  - first:
+      213: -3838137931222287192
+    second: TileA5_PHC_Exterior-General_30
+  - first:
+      213: -6414705521323406257
+    second: TileA5_PHC_Exterior-General_31
+  - first:
+      213: -5203695063725125812
+    second: TileA5_PHC_Exterior-General_32
+  - first:
+      213: -7567941213852975035
+    second: TileA5_PHC_Exterior-General_33
+  - first:
+      213: -7435510971216113606
+    second: TileA5_PHC_Exterior-General_34
+  - first:
+      213: 6668242611895848625
+    second: TileA5_PHC_Exterior-General_35
+  - first:
+      213: -246311226273299943
+    second: TileA5_PHC_Exterior-General_36
+  - first:
+      213: 88527713684914045
+    second: TileA5_PHC_Exterior-General_37
+  - first:
+      213: -7564470016386098483
+    second: TileA5_PHC_Exterior-General_38
+  - first:
+      213: 1715778972463267005
+    second: TileA5_PHC_Exterior-General_39
+  - first:
+      213: -4676799608330218926
+    second: TileA5_PHC_Exterior-General_40
+  - first:
+      213: -1776335741113991874
+    second: TileA5_PHC_Exterior-General_41
+  - first:
+      213: -2561325469660497111
+    second: TileA5_PHC_Exterior-General_42
+  - first:
+      213: 7020321577794066663
+    second: TileA5_PHC_Exterior-General_43
+  - first:
+      213: -1101149279940919351
+    second: TileA5_PHC_Exterior-General_44
+  - first:
+      213: 625556751790655681
+    second: TileA5_PHC_Exterior-General_45
+  - first:
+      213: -3835986719322519853
+    second: TileA5_PHC_Exterior-General_46
+  - first:
+      213: 918365686741107267
+    second: TileA5_PHC_Exterior-General_47
+  - first:
+      213: -4969648016336051656
+    second: TileA5_PHC_Exterior-General_48
+  - first:
+      213: 1885579334039054214
+    second: TileA5_PHC_Exterior-General_49
+  - first:
+      213: 6565355125733125702
+    second: TileA5_PHC_Exterior-General_50
+  - first:
+      213: 8792707377300728213
+    second: TileA5_PHC_Exterior-General_51
+  - first:
+      213: 266993083380427180
+    second: TileA5_PHC_Exterior-General_52
+  - first:
+      213: 4707908606923745060
+    second: TileA5_PHC_Exterior-General_53
+  - first:
+      213: -5623126461517434021
+    second: TileA5_PHC_Exterior-General_54
+  - first:
+      213: 777206807562572526
+    second: TileA5_PHC_Exterior-General_55
+  - first:
+      213: -5006389856058197798
+    second: TileA5_PHC_Exterior-General_56
+  - first:
+      213: 2874525632559871022
+    second: TileA5_PHC_Exterior-General_57
+  - first:
+      213: -8165899130355173517
+    second: TileA5_PHC_Exterior-General_58
+  - first:
+      213: 2694800311265764481
+    second: TileA5_PHC_Exterior-General_59
+  - first:
+      213: 4130606793302498889
+    second: TileA5_PHC_Exterior-General_60
+  - first:
+      213: 1282171625364275455
+    second: TileA5_PHC_Exterior-General_61
+  - first:
+      213: 749388158521804824
+    second: TileA5_PHC_Exterior-General_62
+  - first:
+      213: 990123263080642749
+    second: TileA5_PHC_Exterior-General_63
+  - first:
+      213: -4678664046749000150
+    second: TileA5_PHC_Exterior-General_64
+  - first:
+      213: 1592936314506197657
+    second: TileA5_PHC_Exterior-General_65
+  - first:
+      213: 5225392325013157077
+    second: TileA5_PHC_Exterior-General_66
+  - first:
+      213: -3279079149497957069
+    second: TileA5_PHC_Exterior-General_67
+  - first:
+      213: -4786038644403366879
+    second: TileA5_PHC_Exterior-General_68
+  - first:
+      213: 8380598458675492480
+    second: TileA5_PHC_Exterior-General_69
+  - first:
+      213: 2953220526858954357
+    second: TileA5_PHC_Exterior-General_70
+  - first:
+      213: -9014519285007927046
+    second: TileA5_PHC_Exterior-General_71
+  - first:
+      213: -538504513710917552
+    second: TileA5_PHC_Exterior-General_72
+  - first:
+      213: -6344900937019076397
+    second: TileA5_PHC_Exterior-General_73
+  - first:
+      213: -6946416124596213453
+    second: TileA5_PHC_Exterior-General_74
+  - first:
+      213: -4444860261170431230
+    second: TileA5_PHC_Exterior-General_75
+  - first:
+      213: -2963813089243479211
+    second: TileA5_PHC_Exterior-General_76
+  - first:
+      213: -8820676002574324381
+    second: TileA5_PHC_Exterior-General_77
+  - first:
+      213: -7701374213103201953
+    second: TileA5_PHC_Exterior-General_78
+  - first:
+      213: 7503643995920549301
+    second: TileA5_PHC_Exterior-General_79
+  - first:
+      213: 132081458980652498
+    second: TileA5_PHC_Exterior-General_80
+  - first:
+      213: -4469248634550731075
+    second: TileA5_PHC_Exterior-General_81
+  - first:
+      213: 6999223385505943331
+    second: TileA5_PHC_Exterior-General_82
+  - first:
+      213: -564017586286325605
+    second: TileA5_PHC_Exterior-General_83
+  - first:
+      213: -8310391012478817240
+    second: TileA5_PHC_Exterior-General_84
+  - first:
+      213: 8885353203197788424
+    second: TileA5_PHC_Exterior-General_85
+  - first:
+      213: 413744050018498262
+    second: TileA5_PHC_Exterior-General_86
+  - first:
+      213: 4982049671984013420
+    second: TileA5_PHC_Exterior-General_87
+  - first:
+      213: -7099495480214307459
+    second: TileA5_PHC_Exterior-General_88
+  - first:
+      213: -8703337497465091649
+    second: TileA5_PHC_Exterior-General_89
+  - first:
+      213: -7643556249426122216
+    second: TileA5_PHC_Exterior-General_90
+  - first:
+      213: 5931935714714894466
+    second: TileA5_PHC_Exterior-General_91
+  - first:
+      213: -2009704212774918485
+    second: TileA5_PHC_Exterior-General_92
+  - first:
+      213: 6552668390875017534
+    second: TileA5_PHC_Exterior-General_93
+  - first:
+      213: 8325724389874067412
+    second: TileA5_PHC_Exterior-General_94
+  - first:
+      213: 8673863146208898165
+    second: TileA5_PHC_Exterior-General_95
+  - first:
+      213: -960945180662492460
+    second: TileA5_PHC_Exterior-General_96
+  - first:
+      213: 608560916590485322
+    second: TileA5_PHC_Exterior-General_97
+  - first:
+      213: 8003992421585744539
+    second: TileA5_PHC_Exterior-General_98
+  - first:
+      213: 8038759837795835843
+    second: TileA5_PHC_Exterior-General_99
+  - first:
+      213: -8421006331568800573
+    second: TileA5_PHC_Exterior-General_100
+  - first:
+      213: -2798988418209310824
+    second: TileA5_PHC_Exterior-General_101
+  - first:
+      213: 7340742931955761436
+    second: TileA5_PHC_Exterior-General_102
+  - first:
+      213: -8278530039778075365
+    second: TileA5_PHC_Exterior-General_103
+  - first:
+      213: 8528401339325068084
+    second: TileA5_PHC_Exterior-General_104
+  - first:
+      213: -7471377527094230955
+    second: TileA5_PHC_Exterior-General_105
+  - first:
+      213: -5442270834006249007
+    second: TileA5_PHC_Exterior-General_106
+  - first:
+      213: 2125061774484998131
+    second: TileA5_PHC_Exterior-General_107
+  - first:
+      213: -1746034639155491298
+    second: TileA5_PHC_Exterior-General_108
+  - first:
+      213: -6034414389393823230
+    second: TileA5_PHC_Exterior-General_109
+  - first:
+      213: -5670004107500500805
+    second: TileA5_PHC_Exterior-General_110
+  - first:
+      213: 5305268538166888268
+    second: TileA5_PHC_Exterior-General_111
+  - first:
+      213: 6528232153723155320
+    second: TileA5_PHC_Exterior-General_112
+  - first:
+      213: -7502159203604026581
+    second: TileA5_PHC_Exterior-General_113
+  - first:
+      213: -7082087430839874923
+    second: TileA5_PHC_Exterior-General_114
+  - first:
+      213: 2124462297838244497
+    second: TileA5_PHC_Exterior-General_115
+  - first:
+      213: 5580913943887911816
+    second: TileA5_PHC_Exterior-General_116
+  - first:
+      213: 1266000785665085331
+    second: TileA5_PHC_Exterior-General_117
+  - first:
+      213: 497744822559063263
+    second: TileA5_PHC_Exterior-General_118
+  - first:
+      213: 576774430852083794
+    second: TileA5_PHC_Exterior-General_119
+  - first:
+      213: -529194524855132570
+    second: TileA5_PHC_Exterior-General_120
+  - first:
+      213: -6147235829489812946
+    second: TileA5_PHC_Exterior-General_121
+  - first:
+      213: -7435780822736784338
+    second: TileA5_PHC_Exterior-General_122
+  - first:
+      213: 9062634475123697436
+    second: TileA5_PHC_Exterior-General_123
+  - first:
+      213: -5788245213049969079
+    second: TileA5_PHC_Exterior-General_124
+  - first:
+      213: -4406013587183994035
+    second: TileA5_PHC_Exterior-General_125
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 44
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2529ac3f88ba81fb0800000000000000
+      internalID: -4676799608330218926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832a09f9573480bb0800000000000000
+      internalID: -4969648016336051656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_49
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68727310a6cea2a10800000000000000
+      internalID: 1885579334039054214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_50
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64eec9db3b3dc1b50800000000000000
+      internalID: 6565355125733125702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_51
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59967fd16c8f50a70800000000000000
+      internalID: 8792707377300728213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_52
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca960647bcc84b300800000000000000
+      internalID: 266993083380427180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_53
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427a1b63fe9d55140800000000000000
+      internalID: 4707908606923745060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_54
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53772e9644a6f1b0800000000000000
+      internalID: -5623126461517434021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_55
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 432
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee258c1497139ca00800000000000000
+      internalID: 777206807562572526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8388e63fab58ab0800000000000000
+      internalID: -5006389856058197798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_57
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e247c7a35dd54e720800000000000000
+      internalID: 2874525632559871022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_58
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37732877106ecae80800000000000000
+      internalID: -8165899130355173517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_59
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184ab9dfa9ad56520800000000000000
+      internalID: 2694800311265764481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_60
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e5c9d5efcd25930800000000000000
+      internalID: 4130606793302498889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_61
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff04ceecc403bc110800000000000000
+      internalID: 1282171625364275455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_62
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818839b4f8c566a00800000000000000
+      internalID: 749388158521804824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8b5c3acdf9dbd00800000000000000
+      internalID: 990123263080642749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_64
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e522e86db021fb0800000000000000
+      internalID: -4678664046749000150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_65
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a36f7632f3b1610800000000000000
+      internalID: 1592936314506197657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_66
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4367062a2548840800000000000000
+      internalID: 5225392325013157077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_67
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335c8c703ee5e72d0800000000000000
+      internalID: -3279079149497957069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_68
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1249b0fd533949db0800000000000000
+      internalID: -4786038644403366879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_69
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086f98655eddd4470800000000000000
+      internalID: 8380598458675492480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_70
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576e1de1c62fbf820800000000000000
+      internalID: 2953220526858954357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8b134a87ef5e280800000000000000
+      internalID: -9014519285007927046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_72
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058f0567ff8d688f0800000000000000
+      internalID: -538504513710917552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_73
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d05fe9e63262f7a0800000000000000
+      internalID: -6344900937019076397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_74
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339a56f965f599f90800000000000000
+      internalID: -6946416124596213453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_75
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20bbfa0742fa052c0800000000000000
+      internalID: -4444860261170431230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_76
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5534df2c2bb6ed6d0800000000000000
+      internalID: -2963813089243479211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_77
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36daebbd8e9a69580800000000000000
+      internalID: -8820676002574324381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_98
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92798153b4e31f60800000000000000
+      internalID: 8003992421585744539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_99
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf5f763b796f8f60800000000000000
+      internalID: 8038759837795835843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_100
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccb68b9b53922b80800000000000000
+      internalID: -8421006331568800573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_101
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89793320ddef729d0800000000000000
+      internalID: -2798988418209310824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_106
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1b697c28b2974b0800000000000000
+      internalID: -5442270834006249007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_107
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f780f1cc6cbd7d10800000000000000
+      internalID: 2125061774484998131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_108
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e0c9f1fb6d4c7e0800000000000000
+      internalID: -1746034639155491298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileA5_PHC_Exterior-General_109
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20aeca4a514714ca0800000000000000
+      internalID: -6034414389393823230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

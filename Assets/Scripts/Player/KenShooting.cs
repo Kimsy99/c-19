@@ -19,7 +19,7 @@ public class KenShooting : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (kenHealth.IsDead())
+		if (kenHealth.IsDead)
 			return;
 
 		cooldown = Mathf.Max(cooldown - Time.deltaTime, 0);

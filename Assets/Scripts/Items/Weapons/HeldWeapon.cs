@@ -113,7 +113,10 @@ public class HeldWeapon : MonoBehaviour
 				break;
 			case "Laser Gun":
 				if (!laserSpawner.IsLaserOn)
+				{
 					laserSpawner.IsLaserOn = true;
+					laserSpawner.damage = WeaponSettings.damage;
+				}
 				break;
 			default:
 				TriggerShootingEffect();

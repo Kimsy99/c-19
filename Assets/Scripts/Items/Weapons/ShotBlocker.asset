@@ -17,7 +17,7 @@ MonoBehaviour:
     type: 3}
   heldSprite: {fileID: -4924065256469680006, guid: 49f1d111ecb7b0248bb2b8b7643985c7,
     type: 3}
-  bulletToUse: {fileID: -8892455320561179592, guid: 2e26188dc97290746b5b37b82298e0ec,
+  bulletToUse: {fileID: 7887080687246668764, guid: 2e26188dc97290746b5b37b82298e0ec,
     type: 3}
   bulletSpawnPositionOffset: {x: 0.232, y: 0.071}
   bulletSpeed: 8
@@ -28,3 +28,4 @@ MonoBehaviour:
   cooldown: 0.6
   muzzlePS: {fileID: 2302688338332776376, guid: e9d5becc7763c3e48a3b255dc9242286,
     type: 3}
+  customBulletSpawner: {fileID: 0}

@@ -20,7 +20,6 @@ public class KenHealth : Health
 
 	private float infection = 0;
 	private int lives = 3;
-	private float invulnerabilityTimer = 0;
 
 	protected override void Awake()
 	{
@@ -34,12 +33,11 @@ public class KenHealth : Health
 		UIManager.Instance.SetStats(Hp, maxHp, infection, maxInfection);
 	}
 	
-	void Update()
+	protected override void Update()
 	{
-		invulnerabilityTimer = Mathf.Max(invulnerabilityTimer - Time.deltaTime, 0);
-		isInvulnerable = invulnerabilityTimer > 0;
+		base.Update();
 
-		if (IsDead())
+		if (IsDead)
 		{
 			if (Input.GetKeyDown(KeyCode.R))
 				Revive();
@@ -48,7 +46,7 @@ public class KenHealth : Health
 
 		if (Infection >= maxInfection / 2)
 			Damage(0.001F);
-		if (!isInvulnerable && Input.GetKeyDown(KeyCode.L))
+		if (!IsInvulnerable && Input.GetKeyDown(KeyCode.L))
 		{
 			if (Damage(1))
 			{

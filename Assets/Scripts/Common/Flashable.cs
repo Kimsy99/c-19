@@ -7,6 +7,7 @@ using UnityEngine;
 public class Flashable : MonoBehaviour
 {
 	[HideInInspector] public SpriteRenderer spriteRenderer;
+	private Coroutine revertCoroutine;
 
 	// Use this for initialization
 	protected virtual void Awake()
@@ -20,12 +21,15 @@ public class Flashable : MonoBehaviour
 	public virtual void Flash()
 	{
 		spriteRenderer.color = Color.red;
-		StartCoroutine(Revert());
+		if (revertCoroutine != null)
+			StopCoroutine(revertCoroutine);
+		revertCoroutine = StartCoroutine(Revert());
 	}
 
 	private IEnumerator Revert()
 	{
 		yield return new WaitForSeconds(0.1F);
 		spriteRenderer.color = Color.white;
+		revertCoroutine = null;
 	}
 }

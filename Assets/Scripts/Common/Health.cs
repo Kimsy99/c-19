@@ -4,7 +4,7 @@ public class Health : MonoBehaviour
 {
 	private float hp;
 	[SerializeField] protected float maxHp;
-	public bool isInvulnerable;
+	public float invulnerabilityTimer = 0;
 
 	public virtual float Hp
 	{
@@ -23,9 +23,14 @@ public class Health : MonoBehaviour
 		Hp = maxHp;
 	}
 
+	protected virtual void Update()
+	{
+		invulnerabilityTimer = Mathf.Max(invulnerabilityTimer - Time.deltaTime, 0);
+	}
+
 	public virtual bool Damage(float damage)
 	{
-		if (!isInvulnerable)
+		if (!IsInvulnerable)
 		{
 			Hp -= damage;
 			return true;
@@ -33,9 +38,14 @@ public class Health : MonoBehaviour
 		return false;
 	}
 
-	public bool IsDead()
+	public bool IsInvulnerable
 	{
-		return Hp == 0;
+		get => invulnerabilityTimer > 0;
+	}
+
+	public bool IsDead
+	{
+		get => Hp == 0;
 	}
 
 	public virtual void Die() {}

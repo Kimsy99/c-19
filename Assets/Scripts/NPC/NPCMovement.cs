@@ -4,39 +4,39 @@ using UnityEngine;
 
 public class NPCMovement : AnimatableMovable2D
 {
-    public Transform wayPoint01, wayPoint02;
-    protected Transform wayPointTarget;
-    [SerializeField] protected float walkSpeed = 4;
-    private Transform target;
-
-    protected void Start()
-    {
+  public Transform wayPoint01, wayPoint02;
+  protected Transform wayPointTarget;
+  [SerializeField] protected float walkSpeed = 4;
+  private readonly int movingParamater = Animator.StringToHash("Moving");
+  private Transform target;
+  protected void Start()
+  {
+    wayPointTarget = wayPoint01;
+    target = GameObject.FindWithTag("Player").transform;
+  }
+  // Update is called once per frame
+  protected void Update()
+  {
+    Patrol();
+  }
+  protected void Patrol()
+  {
+    //movement
+    Vector2 nextPosition = Vector2.MoveTowards(transform.position, wayPointTarget.position, walkSpeed * Time.deltaTime);
+    // wayPointTarget = wayPoint01;
+    // transform.position = Vector2.MoveTowards(transform.position, wayPointTarget.position, walkSpeed * Time.deltaTime);
+    if (Vector2.Distance(transform.position, wayPoint01.position) <= 0.1f)
+      {
+        wayPointTarget = wayPoint02;
+      }
+      if (Vector2.Distance(transform.position, wayPoint02.position) <= 0.1f)
+      {
         wayPointTarget = wayPoint01;
-        target = GameObject.FindWithTag("Player").transform;
-    }
-    // Update is called once per frame
-    protected void Update()
-    {
-        Patrol();
-    }
-    protected void Patrol()
-    {
-        //movement
-        Vector2 nextPosition = Vector2.MoveTowards(transform.position, wayPointTarget.position, walkSpeed * Time.deltaTime);
-        // wayPointTarget = wayPoint01;
-        // transform.position = Vector2.MoveTowards(transform.position, wayPointTarget.position, walkSpeed * Time.deltaTime);
-        if (Vector2.Distance(transform.position, wayPoint01.position) <= 0.1f)
-        {
-            wayPointTarget = wayPoint02;
-        }
-        if (Vector2.Distance(transform.position, wayPoint02.position) <= 0.1f)
-        {
-            wayPointTarget = wayPoint01;
-        }
-        // transform.direction
-        //controller
-        Vector2 direction = nextPosition - (Vector2)transform.position;
-        float angle = Vector2.SignedAngle(Vector2.right, direction);
+      }
+    // transform.direction
+    //controller
+    Vector2 direction = nextPosition - (Vector2)transform.position;
+    float angle = Vector2.SignedAngle(Vector2.right, direction);
 
         // Debug.Log(Vector2.MoveTowards(transform.position, wayPointTarget.position, walkSpeed * Time.deltaTime));
 

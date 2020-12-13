@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 8472959599878325172}
   - component: {fileID: 8472959599878325175}
   - component: {fileID: 8472959599878325179}
-  m_Layer: 0
+  - component: {fileID: -4302216780864823160}
+  m_Layer: 13
   m_Name: EnemyProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 61380793
-  m_SortingLayer: 1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: be79a2a4b55de46de9704bad7b6d95f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -120,7 +121,7 @@ MonoBehaviour:
     type: 3}
   attackEffect: {fileID: 4084275945994392668, guid: b89298d0a7db448628f685723bafe607,
     type: 3}
-  maxLife: 2
+  maxLife: 1.4
 --- !u!58 &8472959599878325179
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -137,3 +138,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.03
+--- !u!50 &-4302216780864823160
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8472959599878325174}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

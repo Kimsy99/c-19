@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8155201058259399411}
   - component: {fileID: 8155201058259399410}
   - component: {fileID: 8155201058259399409}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 8155201058472873878}
   - component: {fileID: 8155201058472873880}
   - component: {fileID: 8155201058472873879}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: HealthPointEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 8155201059586498399}
   - component: {fileID: 8155201059586498401}
   - component: {fileID: 8155201059586498400}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: HealthPointBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 8155201059714106893}
   - component: {fileID: 8155201059714106895}
   - component: {fileID: 8155201059714106894}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: HealthPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -356,15 +356,17 @@ GameObject:
   - component: {fileID: 8155201060241492857}
   - component: {fileID: 8155201060241492859}
   - component: {fileID: 8155201060241492863}
-  - component: {fileID: 8155201060241492860}
   - component: {fileID: 8155201060241492862}
   - component: {fileID: 8155201060241492736}
-  - component: {fileID: 8155201060241492737}
-  - component: {fileID: 8155201060241492861}
   - component: {fileID: 8155201060241492738}
-  m_Layer: 0
+  - component: {fileID: 776726346404066950}
+  - component: {fileID: 27363499289322393}
+  - component: {fileID: 6876851615884617996}
+  - component: {fileID: 3696116192513698426}
+  - component: {fileID: 8488249669436905836}
+  m_Layer: 12
   m_Name: Zombie 1
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -420,8 +422,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 61380793
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 32e72920fef154c329ebbd93261a6cad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -465,21 +467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91843b27527e9aa4699307f3a78393a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8155201060241492860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8155201060241492856}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61e6c71a2e61b4e889530a07cb637043, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wayPoint01: {fileID: 0}
-  wayPoint02: {fileID: 0}
-  walkSpeed: 7
 --- !u!114 &8155201060241492862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a04c3900bbbd984da63e0178c34ace3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoFlip: 1
+  facing: 1
 --- !u!50 &8155201060241492736
 Rigidbody2D:
   serializedVersion: 4
@@ -513,37 +502,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8155201060241492737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8155201060241492856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68d8104b8b0a640bd9d7712905279991, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterType: 1
---- !u!114 &8155201060241492861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8155201060241492856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eadcd539294744d3c84ea3f7b5461696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wayPoint01: {fileID: 0}
-  wayPoint02: {fileID: 0}
-  walkSpeed: 2
-  attackRange: 4
-  projectile: {fileID: 8472959599878325174, guid: b48ba185cfabe4ba5a505dabaecadad7,
-    type: 3}
 --- !u!61 &8155201060241492738
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -570,3 +528,71 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28, y: 0.52}
   m_EdgeRadius: 0
+--- !u!114 &776726346404066950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8155201060241492856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acc548f101c777e4ea00d3bba69476c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &27363499289322393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8155201060241492856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eadcd539294744d3c84ea3f7b5461696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wayPoint01: {fileID: 0}
+  wayPoint02: {fileID: 0}
+  walkSpeed: 4
+  attackRange: 0
+  projectile: {fileID: 0}
+--- !u!114 &6876851615884617996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8155201060241492856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91843b27527e9aa4699307f3a78393a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3696116192513698426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8155201060241492856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2d16f67700afa4aa3075c56fa9ca47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+--- !u!114 &8488249669436905836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8155201060241492856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a04c3900bbbd984da63e0178c34ace3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoFlip: 1
+  facing: 1

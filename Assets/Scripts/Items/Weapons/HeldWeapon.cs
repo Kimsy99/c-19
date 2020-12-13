@@ -15,8 +15,10 @@ public class HeldWeapon : MonoBehaviour
 	private Animator animator;
 	private readonly int UseWeaponParameter = Animator.StringToHash("UseWeapon");
 	[SerializeField] private Transform bulletSpawner;
+	private GameObject customSpawner;
+	private LaserSpawner laserSpawner;
 	private ParticleSystem muzzlePS;
-	
+
 	// Provide access to internal data
 	public WeaponSettings WeaponSettings => Weapon?.weaponSettings;
 	
@@ -48,8 +50,25 @@ public class HeldWeapon : MonoBehaviour
 		bulletSpawner.localPosition = weapon?.weaponSettings.bulletSpawnPositionOffset ?? Vector2.zero;
 		if (muzzlePS != null)
 			Destroy(muzzlePS.gameObject);
+		if (customSpawner != null)
+		{
+			Destroy(customSpawner);
+			if (laserSpawner != null)
+			{
+				laserSpawner.IsLaserOn = false;
+				laserSpawner = null;
+			}
+		}
+
 		if (weapon != null)
+		{
 			muzzlePS = Instantiate(weapon.weaponSettings.muzzlePS, bulletSpawner.transform);
+			if (weapon.weaponSettings.customBulletSpawner != null)
+			{
+				customSpawner = Instantiate(weapon.weaponSettings.customBulletSpawner, bulletSpawner.transform);
+				laserSpawner = customSpawner.GetComponent<LaserSpawner>();
+			}
+		}
 	}
 
 	public void TriggerShootingEffect()
@@ -83,19 +102,24 @@ public class HeldWeapon : MonoBehaviour
 		float shootingAngle = weaponAim.AimAngle + Random.Range(-WeaponSettings.spread, WeaponSettings.spread);
 
 		// Actually create the bullet
-		if (WeaponSettings.displayName.Equals("Trishot Pistol"))
+		switch (WeaponSettings.displayName)
 		{
-			TriggerShootingEffect();
-			CreateBullet(shootingAngle, WeaponSettings.bulletSpeed, WeaponSettings.damage);
-			CreateBullet(shootingAngle + 10, WeaponSettings.bulletSpeed, WeaponSettings.damage);
-			CreateBullet(shootingAngle - 10, WeaponSettings.bulletSpeed, WeaponSettings.damage);
-			SoundManager.Instance.Play(WeaponSettings.shootSound);
-		}
-		else
-		{
-			TriggerShootingEffect();
-			CreateBullet(shootingAngle, WeaponSettings.bulletSpeed, WeaponSettings.damage);
-			SoundManager.Instance.Play(WeaponSettings.shootSound);
+			case "Trishot Pistol":
+				TriggerShootingEffect();
+				CreateBullet(shootingAngle, WeaponSettings.bulletSpeed, WeaponSettings.damage);
+				CreateBullet(shootingAngle + 10, WeaponSettings.bulletSpeed, WeaponSettings.damage);
+				CreateBullet(shootingAngle - 10, WeaponSettings.bulletSpeed, WeaponSettings.damage);
+				AudioManager.Instance.Play(WeaponSettings.shootSound);
+				break;
+			case "Laser Gun":
+				if (!laserSpawner.IsLaserOn)
+					laserSpawner.IsLaserOn = true;
+				break;
+			default:
+				TriggerShootingEffect();
+				CreateBullet(shootingAngle, WeaponSettings.bulletSpeed, WeaponSettings.damage);
+				AudioManager.Instance.Play(WeaponSettings.shootSound);
+				break;
 		}
 
 		if (Weapon.bulletCount == 0)
@@ -105,12 +129,24 @@ public class HeldWeapon : MonoBehaviour
 		}
 	}
 
+	public void DontShoot()
+	{
+		switch (WeaponSettings.displayName)
+		{
+			case "Laser Gun":
+				if (laserSpawner.IsLaserOn)
+					laserSpawner.IsLaserOn = false;
+				break;
+		}
+	}
+
 	private void CreateBullet(float direction, float speed, float damage)
 	{
 		Bullet bullet = Instantiate(WeaponSettings.bulletToUse, bulletSpawner.transform.position, Quaternion.identity);
 		bullet.Speed = speed;
 		bullet.Direction = direction;
 		bullet.SetDamage(damage);
-		bullet.SetOwnerTag(tag); // Indicate the shooter of the bullet
+		bullet.ShotByWeaponName = WeaponSettings.displayName;
+		//bullet.SetOwnerTag(tag); // Indicate the shooter of the bullet
 	}
 }

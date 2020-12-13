@@ -16,10 +16,10 @@ TextureImporter:
     second: weapon_3
   - first:
       213: -4924065256469680006
-    second: weapon_4
+    second: WeaponShotBlockerInventoryView
   - first:
       213: -4107469028111699786
-    second: weapon_5
+    second: WeaponLaserGunInventoryView
   - first:
       213: 641757711363318294
     second: PlasmaGunInventoryView
@@ -207,15 +207,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_4
+      name: WeaponShotBlockerInventoryView
       rect:
         serializedVersion: 2
         x: 128
         y: 201
         width: 39
         height: 24
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,15 +228,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_5
+      name: WeaponLaserGunInventoryView
       rect:
         serializedVersion: 2
         x: 41
         y: 148
         width: 42
         height: 24
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -14,6 +14,6 @@ public class KenFlash : Flashable
 	{
 		base.Flash();
 		blood.Play();
-		SoundManager.Instance.Play(SoundManager.Sound.KenHurt);
+		AudioManager.Instance.Play(SoundEnum.KenHurt);
 	}
 }

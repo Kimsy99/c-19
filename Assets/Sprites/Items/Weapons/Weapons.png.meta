@@ -16,13 +16,13 @@ TextureImporter:
     second: weapon_3
   - first:
       213: -4924065256469680006
-    second: weapon_4
+    second: WeaponShotBlocker
   - first:
       213: -4107469028111699786
-    second: weapon_5
+    second: WeaponLaserGun
   - first:
       213: 641757711363318294
-    second: PlasmaGun
+    second: WeaponPlasmaGun
   - first:
       213: 8504530463791557030
     second: weapon_7
@@ -207,15 +207,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_4
+      name: WeaponShotBlocker
       rect:
         serializedVersion: 2
         x: 128
         y: 201
         width: 39
         height: 24
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.16296779, y: 0.38742575}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,15 +228,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_5
+      name: WeaponLaserGun
       rect:
         serializedVersion: 2
         x: 41
         y: 148
         width: 42
         height: 24
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.22234099, y: 0.45984077}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlasmaGun
+      name: WeaponPlasmaGun
       rect:
         serializedVersion: 2
         x: 127

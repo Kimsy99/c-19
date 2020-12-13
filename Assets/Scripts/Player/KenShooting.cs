@@ -24,13 +24,18 @@ public class KenShooting : MonoBehaviour
 
 		cooldown = Mathf.Max(cooldown - Time.deltaTime, 0);
 
-		if (Input.GetButton("Fire1") && heldWeapon.Weapon != null)
+		if (heldWeapon.Weapon != null)
 		{
-			if (cooldown == 0)
+			if (Input.GetButton("Fire1"))
 			{
-				cooldown = heldWeapon.WeaponSettings.cooldown;
-				heldWeapon.Shoot();
+				if (cooldown == 0)
+				{
+					cooldown = heldWeapon.WeaponSettings.cooldown;
+					heldWeapon.Shoot();
+				}
 			}
+			else
+				heldWeapon.DontShoot();
 		}
 	}
 }

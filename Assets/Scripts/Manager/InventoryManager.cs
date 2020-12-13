@@ -28,7 +28,7 @@ public class InventoryManager : Singleton<InventoryManager>
 		{
 			activeSlotIndex = value;
 			activeSlot.anchoredPosition = ((RectTransform)slotDictionary[value].gameObject.transform).anchoredPosition;
-			SoundManager.Instance.Play(SoundManager.Sound.KenSelect);
+			AudioManager.Instance.Play(SoundEnum.KenSelect);
 			OnActiveSlotIndexChanged?.Invoke(value);
 		}
 	}
@@ -82,6 +82,29 @@ public class InventoryManager : Singleton<InventoryManager>
 	{
 		weapons[index] = weapon; // Add the item
 		BindInventorySlot(slotDictionary[index], weapon);
+	}
+
+	/// <summary>
+	/// Adds a weapon to the inventory by finding an empty slot. If the inventory slot is full, then the
+	/// current active slot will be replaced with the new weapon.
+	/// </summary>
+	/// <param name="weapon">the new weapon</param>
+	/// <returns>If the inventory is full, the old weapon that got replaced is returned.</returns>
+	public Weapon AddWeapon(Weapon weapon)
+	{
+		for (int i = 0; i < weapons.Length; i++)
+		{
+			if (weapons[i] == null) // Is the slot empty?
+			{
+				SetWeapon(i, weapon);
+				ActiveSlotIndex = i;
+				return null;
+			}
+		}
+		Weapon oldWeapon = weapons[ActiveSlotIndex];
+		SetWeapon(ActiveSlotIndex, weapon);
+		OnActiveSlotIndexChanged?.Invoke(ActiveSlotIndex);
+		return oldWeapon;
 	}
 
 	/// <summary>

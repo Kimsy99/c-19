@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1825369658625408931}
   - component: {fileID: 7887080687246668764}
   - component: {fileID: 6887210987852032930}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: ShotBlocker
   m_TagString: Untagged
   m_Icon: {fileID: 0}

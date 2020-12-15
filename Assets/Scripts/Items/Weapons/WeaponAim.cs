@@ -9,9 +9,6 @@ public class WeaponAim : MonoBehaviour
 	private Camera cam;
 	private Ken ken; // To check and control character movement
 
-	[Header("Bullet starting point")]
-	[SerializeField] private Vector2 projectileSpawnPosition;
-
 	public float AimAngle { get; private set; }
 
 	//private GameObject reticle;

@@ -11,6 +11,7 @@ public class SpriteFlippable2D : Movable2D
 {
 	public bool autoFlip = true;
 	[SerializeField] private RelativeDirection facing = RelativeDirection.Right;
+	[SerializeField] private Transform objectToNotFlip = null;
 
 	protected override void Awake()
 	{
@@ -44,6 +45,15 @@ public class SpriteFlippable2D : Movable2D
 				transform.localScale = new Vector2(xscale, transform.localScale.y);
 			else
 				transform.localScale = new Vector2(-xscale, transform.localScale.y);
+
+			if (objectToNotFlip != null)
+			{
+				float xscale2 = Mathf.Abs(objectToNotFlip.localScale.x);
+				if (value == RelativeDirection.Right)
+					objectToNotFlip.localScale = new Vector2(xscale2, objectToNotFlip.localScale.y);
+				else
+					objectToNotFlip.localScale = new Vector2(-xscale2, objectToNotFlip.localScale.y);
+			}
 		}
 	}
 

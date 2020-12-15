@@ -6,7 +6,7 @@
 public class CameraController : MonoBehaviour
 {
 	private Camera cam;
-	[SerializeField] private Transform cameraTarget;
+	[SerializeField] private Transform cameraTarget = null;
 	[SerializeField] private float cameraSpeedFactor = 3;
 	private Vector2 mousePos = new Vector2();
 

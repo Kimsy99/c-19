@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserEnd: {fileID: 8252541940099717104}
+  damage: 0
 --- !u!1 &1830442106650832583
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +274,7 @@ PrefabInstance:
     - target: {fileID: 6601259670385929433, guid: 8016cdd6917db514c9c14054c99b50cd,
         type: 3}
       propertyPath: m_Name
-      value: LaserImpactEffect1
+      value: LaserImpactEffect 1
       objectReference: {fileID: 0}
     - target: {fileID: 6601259670385929433, guid: 8016cdd6917db514c9c14054c99b50cd,
         type: 3}
@@ -353,7 +354,7 @@ PrefabInstance:
     - target: {fileID: 4849812254601389062, guid: cf0b19dfc74edaa478f96380e8385c70,
         type: 3}
       propertyPath: m_Name
-      value: LaserImpactEffect2
+      value: LaserImpactEffect 2
       objectReference: {fileID: 0}
     - target: {fileID: 4849812254601389062, guid: cf0b19dfc74edaa478f96380e8385c70,
         type: 3}
@@ -433,7 +434,7 @@ PrefabInstance:
     - target: {fileID: 6601259670385929433, guid: 8016cdd6917db514c9c14054c99b50cd,
         type: 3}
       propertyPath: m_Name
-      value: LaserImpactEffect1
+      value: LaserImpactEffect 1
       objectReference: {fileID: 0}
     - target: {fileID: 6601259670385929433, guid: 8016cdd6917db514c9c14054c99b50cd,
         type: 3}
@@ -513,7 +514,7 @@ PrefabInstance:
     - target: {fileID: 4849812254601389062, guid: cf0b19dfc74edaa478f96380e8385c70,
         type: 3}
       propertyPath: m_Name
-      value: LaserImpactEffect2
+      value: LaserImpactEffect 2
       objectReference: {fileID: 0}
     - target: {fileID: 4849812254601389062, guid: cf0b19dfc74edaa478f96380e8385c70,
         type: 3}

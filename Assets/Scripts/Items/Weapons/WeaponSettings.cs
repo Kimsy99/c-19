@@ -19,7 +19,7 @@ public class WeaponSettings : ScriptableObject
 	public int maxBulletCount;
 	public float damage;
 	public int spread;
-	public SoundEnum shootSound;
+	public AudioEnum shootSound;
 	public float cooldown;
 	public ParticleSystem muzzlePS;
 	public GameObject customBulletSpawner;

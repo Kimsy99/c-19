@@ -3,7 +3,7 @@ using UnityEngine;
 public class Ken : MonoBehaviour
 {
 	[HideInInspector] public SpriteFlippable2D spriteFlippable2D;
-	[HideInInspector] public KenFlash flash;
+	[HideInInspector] public Flashable flashable;
 	[HideInInspector] public KenHealth health;
 	[HideInInspector] public KenMovement movement;
 	[HideInInspector] public KenShooting shooting;
@@ -11,7 +11,7 @@ public class Ken : MonoBehaviour
 	void Awake()
 	{
 		spriteFlippable2D = GetComponent<SpriteFlippable2D>();
-		flash = GetComponent<KenFlash>();
+		flashable = GetComponent<Flashable>();
 		health = GetComponent<KenHealth>();
 		movement = GetComponent<KenMovement>();
 		shooting = GetComponent<KenShooting>();

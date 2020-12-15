@@ -3,8 +3,8 @@
 public class Bullet : Movable2D
 {
 	[Header("Effects")]
-	[SerializeField] private ParticleSystem impactPS;
-	[SerializeField] private ParticleSystem impactPS2;
+	[SerializeField] protected ParticleSystem impactPS;
+	[SerializeField] protected ParticleSystem impactPS2;
 
 	// Should be initialized when created in KenShooting
 	protected float damage;
@@ -31,12 +31,12 @@ public class Bullet : Movable2D
 		DestroyBullet();
 	}
 
-	private void DestroyBullet()
+	protected void DestroyBullet()
     {
 		Destroy(gameObject);
 	}
 
-	protected virtual void OnTriggerEnter2D(Collider2D other)
+	protected virtual void OnCollisionEnter2D(Collision2D other)
 	{
 		if (ShotByWeaponName.Equals("Shot Blocker"))
 			return;
@@ -48,10 +48,9 @@ public class Bullet : Movable2D
 		// Wait for particle finish playing
 		Invoke(nameof(DestroyBullet), impactPS.main.duration);
 
-		if (other.CompareTag("NPC"))
-        {
-			other.gameObject.GetComponent<Flashable>()?.Flash();
-			other.gameObject.GetComponentInChildren<NPCHealthBar>().hp -= damage;
+		if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+		{
+			other.gameObject.GetComponentInParent<NPCHealth>().Damage(damage, true);
 			// make damage to character being shot
 			//other.GetComponent<KenHealth>().Damage(damage);
         }
@@ -60,7 +59,7 @@ public class Bullet : Movable2D
 
 	protected void DisableBullet()
     {
-		Direction = 90;
+		Direction = 0;
 		Speed = 0;
 		spriteRenderer.sprite = null;
 		bulletCollider.enabled = false;

@@ -5,7 +5,7 @@ public class LaserSpawner : MonoBehaviour
 	private Camera cam;
 	private LineRenderer lineRenderer;
 	private WeaponAim weaponAim;
-	[SerializeField] private GameObject laserEnd;
+	[SerializeField] private GameObject laserEnd = null;
 	public float damage;
 
 	void Awake()
@@ -29,18 +29,15 @@ public class LaserSpawner : MonoBehaviour
 
 	void ShootLaser()
 	{
-		int layerMask = 1 << 10 | 1 << 12;
+		int layerMask = LayerMask.GetMask("Enemy", "Wall");
 		Vector2 laserEnd = transform.position + Quaternion.Euler(0, 0, weaponAim.AimAngle) * Vector2.right * 100;
 		RaycastHit2D hit = Physics2D.Raycast(transform.position, laserEnd, Mathf.Infinity, layerMask);
 		if (hit)
 		{
 			SetLaserPoints(transform.position, hit.point);
-			NPCHealthBar npcHealth = hit.collider.gameObject.GetComponentInChildren<NPCHealthBar>();
+			NPCHealth npcHealth = hit.collider.gameObject.GetComponentInParent<NPCHealth>();
 			if (npcHealth != null)
-			{
-				hit.collider.gameObject.GetComponent<Flashable>().Flash();
-				npcHealth.hp -= damage;
-			}
+				npcHealth.Damage(damage, true);
 		}
 		else
 			SetLaserPoints(transform.position, laserEnd);
@@ -62,10 +59,10 @@ public class LaserSpawner : MonoBehaviour
 			if (value)
 			{
 				ShootLaser();
-				AudioManager.Instance.Play(SoundEnum.Laser);
+				AudioManager.Instance.Play(AudioEnum.Laser);
 			}
 			else
-				AudioManager.Instance.Stop(SoundEnum.Laser);
+				AudioManager.Instance.Stop(AudioEnum.Laser);
 		}
 	}
 }

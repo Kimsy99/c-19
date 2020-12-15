@@ -1,10 +1,13 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Health : MonoBehaviour
 {
 	private float hp;
 	[SerializeField] protected float maxHp;
-	public float invulnerabilityTimer = 0;
+	[HideInInspector] public float invulnerabilityTimer = 0;
+
+	public Action OnDie;
 
 	public virtual float Hp
 	{
@@ -13,7 +16,7 @@ public class Health : MonoBehaviour
 		{
 			hp = Mathf.Clamp(value, 0, maxHp);
 			if (hp == 0)
-				Die();
+				OnDie?.Invoke();
 		}
 	}
 
@@ -28,11 +31,12 @@ public class Health : MonoBehaviour
 		invulnerabilityTimer = Mathf.Max(invulnerabilityTimer - Time.deltaTime, 0);
 	}
 
-	public virtual bool Damage(float damage)
+	public virtual bool Damage(float damage, float invulnerabilityTime = 0)
 	{
 		if (!IsInvulnerable)
 		{
 			Hp -= damage;
+			invulnerabilityTimer = invulnerabilityTime;
 			return true;
 		}
 		return false;
@@ -47,6 +51,4 @@ public class Health : MonoBehaviour
 	{
 		get => Hp == 0;
 	}
-
-	public virtual void Die() {}
 }

@@ -3,11 +3,9 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
 	private HeldWeapon heldWeapon;
-	[SerializeField] private Transform spawnPosition;
-
-	[SerializeField] private WeaponSettings firstWeaponSettings;
-	[SerializeField] private WeaponSettings secondWeaponSettings;
-	[SerializeField] private WeaponSettings thirdWeaponSettings;
+	[SerializeField] private WeaponSettings firstWeaponSettings = null;
+	[SerializeField] private WeaponSettings secondWeaponSettings = null;
+	[SerializeField] private WeaponSettings thirdWeaponSettings = null;
 
 	void Awake()
 	{

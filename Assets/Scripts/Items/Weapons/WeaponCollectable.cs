@@ -2,7 +2,7 @@
 
 public class WeaponCollectable : MonoBehaviour
 {
-	[SerializeField] private WeaponSettings weaponSettings;
+	[SerializeField] private WeaponSettings weaponSettings = null;
 	private Weapon weapon;
 
 	private Ken ken;
@@ -24,7 +24,7 @@ public class WeaponCollectable : MonoBehaviour
 			if (Vector2.Distance(ken.transform.position, transform.position) < 1)
 			{
 				Weapon oldWeapon = InventoryManager.Instance.AddWeapon(weapon);
-				AudioManager.Instance.Play(SoundEnum.Equip);
+				AudioManager.Instance.Play(AudioEnum.Equip);
 				if (oldWeapon != null)
 				{
 					//transform.position = ken.transform.position;

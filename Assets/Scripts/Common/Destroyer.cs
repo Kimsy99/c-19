@@ -2,7 +2,7 @@
 
 public class Destroyer : MonoBehaviour
 {
-	[SerializeField] private float lifeTimer;
+	[SerializeField] private float lifeTimer = 1;
 
 	private void Start()
 	{

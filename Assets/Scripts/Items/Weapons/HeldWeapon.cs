@@ -14,7 +14,7 @@ public class HeldWeapon : MonoBehaviour
 	private SpriteRenderer spriteRenderer;
 	private Animator animator;
 	private readonly int UseWeaponParameter = Animator.StringToHash("UseWeapon");
-	[SerializeField] private Transform bulletSpawner;
+	[SerializeField] private Transform bulletSpawner = null;
 	private GameObject customSpawner;
 	private LaserSpawner laserSpawner;
 	private ParticleSystem muzzlePS;

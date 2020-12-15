@@ -22,9 +22,9 @@ MonoBehaviour:
   bulletSpawnPositionOffset: {x: 0.232, y: 0.071}
   bulletSpeed: 8
   maxBulletCount: 150
-  damage: 2.5
+  damage: 1.75
   spread: 0
-  shootSound: 3
+  shootSound: 4
   cooldown: 0.6
   muzzlePS: {fileID: 2302688338332776376, guid: e9d5becc7763c3e48a3b255dc9242286,
     type: 3}

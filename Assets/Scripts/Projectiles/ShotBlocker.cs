@@ -2,13 +2,9 @@
 
 public class ShotBlocker : Bullet
 {
-	protected override void OnTriggerEnter2D(Collider2D other)
+	protected void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.CompareTag("NPC"))
-        {
-			Debug.Log("Shot block");
-			other.gameObject.GetComponent<Flashable>().Flash();
-			other.gameObject.GetComponentInChildren<NPCHealthBar>().hp -= damage;
-        }
+		if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+			other.gameObject.GetComponentInParent<NPCHealth>().Damage(damage, true);
     }
 }

@@ -24,7 +24,8 @@ MonoBehaviour:
   maxBulletCount: 60
   damage: 10
   spread: 3
-  shootSound: 4
+  shootSound: 5
   cooldown: 1.5
   muzzlePS: {fileID: 2302688338332776376, guid: b6a31acec231f5c4e9cb7960a47f3881,
     type: 3}
+  customBulletSpawner: {fileID: 0}

@@ -6,8 +6,11 @@ using UnityEngine;
 /// </summary>
 public class Flashable : MonoBehaviour
 {
-	[HideInInspector] public SpriteRenderer spriteRenderer;
+	[HideInInspector] public SpriteRenderer spriteRenderer = null;
 	private Coroutine revertCoroutine;
+	
+	[SerializeField] private ParticleSystem blood = null;
+	[SerializeField] private AudioEnum flashAudio = AudioEnum.NoAudio;
 
 	// Use this for initialization
 	protected virtual void Awake()
@@ -21,6 +24,9 @@ public class Flashable : MonoBehaviour
 	public virtual void Flash()
 	{
 		spriteRenderer.color = Color.red;
+		if (blood != null)
+			blood.Play();
+		AudioManager.Instance.Play(flashAudio);
 		if (revertCoroutine != null)
 			StopCoroutine(revertCoroutine);
 		revertCoroutine = StartCoroutine(Revert());

@@ -44,39 +44,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - soundEnum: 0
+  - audioEnum: 0
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - audioEnum: 1
     clip: {fileID: 8300000, guid: a874cda4afb42b84791bf5cf8d3a0e61, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - soundEnum: 1
+  - audioEnum: 2
     clip: {fileID: 8300000, guid: 9ba228554a48262448dcfd0f64409805, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - soundEnum: 2
+  - audioEnum: 3
     clip: {fileID: 8300000, guid: bc05c7fd89f827244b599fa77153d0d8, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - soundEnum: 3
+  - audioEnum: 4
     clip: {fileID: 8300000, guid: 2f51b9596b539d64aaf02237d535c71b, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - soundEnum: 4
+  - audioEnum: 5
     clip: {fileID: 8300000, guid: e03ac746a1c6900479426020b070292c, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - soundEnum: 5
+  - audioEnum: 6
     clip: {fileID: 8300000, guid: 788e6dff94537a44f9820834633bcdfe, type: 3}
     volume: 1
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - audioEnum: 7
+    clip: {fileID: 8300000, guid: 9649c6216064e344499ba652ecee4a37, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
     source: {fileID: 0}

@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4262399593839567416}
   - component: {fileID: 4262399593839567414}
   - component: {fileID: 6986193024417634222}
-  - component: {fileID: -8892455320561179592}
   - component: {fileID: 6887210987852032930}
+  - component: {fileID: -8892455320561179592}
   m_Layer: 9
   m_Name: Bullet
   m_TagString: Untagged
@@ -118,27 +118,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.13
---- !u!114 &-8892455320561179592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4262399593839567417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67f3a4ffada7b4a3c93a0de8fb41b887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 4262399593839567417}
-  impactPS: {fileID: 6076250657958295324}
-  impactPS2: {fileID: 5008774253523619720}
 --- !u!114 &6887210987852032930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +136,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f649b647e9c79e94da4edd742b62d957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-8892455320561179592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4262399593839567417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67f3a4ffada7b4a3c93a0de8fb41b887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactPS: {fileID: 6076250657958295324}
+  impactPS2: {fileID: 5008774253523619720}
 --- !u!1001 &5451579930986152100
 PrefabInstance:
   m_ObjectHideFlags: 0

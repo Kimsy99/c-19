@@ -2,11 +2,11 @@
 
 public class Character : MonoBehaviour
 {
-	[SerializeField] private CharacterType characterType;
+  [SerializeField] public CharacterType characterType;
 
-	public enum CharacterType
-	{
-		Player,
-		NPC
-	}
+  public enum CharacterType
+  {
+    Player,
+    NPC
+  }
 }

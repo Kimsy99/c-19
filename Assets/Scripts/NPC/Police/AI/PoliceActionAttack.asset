@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02a1f370912823640a5edb98c55f20af, type: 3}
   m_Name: PoliceActionAttack
   m_EditorClassIdentifier: 
-  secondsBetweenAttack: 0.5
+  secondsBetweenAttack: 3

@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a0bd4a87d2228e498c631669d06f9ba, type: 3}
-  m_Name: GuardDecisionDetect
+  m_Script: {fileID: 11500000, guid: 02a1f370912823640a5edb98c55f20af, type: 3}
+  m_Name: GuardActionAttack
   m_EditorClassIdentifier: 
-  detectArea: 10
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 256
+  secondsBetweenAttack: 1.5

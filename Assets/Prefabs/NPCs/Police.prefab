@@ -383,9 +383,11 @@ GameObject:
   - component: {fileID: 8306201492048684174}
   - component: {fileID: 377928896877333892}
   - component: {fileID: 8773359181186603766}
+  - component: {fileID: 1355826366518434919}
   - component: {fileID: 1230429255424121848}
   - component: {fileID: 4377628124488479149}
   - component: {fileID: 1230429255424121346}
+  - component: {fileID: 8993003860792248083}
   m_Layer: 12
   m_Name: Police
   m_TagString: Untagged
@@ -580,6 +582,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acc548f101c777e4ea00d3bba69476c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1355826366518434919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8306201492048684168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a7d0f322ebc4611b34fcc100eb32be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  movement: {fileID: 0}
+  heldWeapon: {fileID: 0}
 --- !u!114 &1230429255424121848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -610,8 +627,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88021e10d8dceb8439ec71c260dcf099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wayPoint01: {fileID: 0}
-  wayPoint02: {fileID: 0}
   followRange: 10
   walkSpeed: 0.8
   projectile: {fileID: 3252524670281322196, guid: be7cd14aea9391641937db128b47d2b9,
@@ -629,6 +644,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionDamage: 0.5
+--- !u!114 &8993003860792248083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8306201492048684168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d77fb0f408df26479c862fe504d163e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: {fileID: 11400000, guid: 35d40831e232248a7a53e0d953531def, type: 2}
+  remainState: {fileID: 11400000, guid: 9b2756af1ce614b3580b56f6c9f05e42, type: 2}
 --- !u!1 &8306201492352933151
 GameObject:
   m_ObjectHideFlags: 0

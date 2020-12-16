@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3335df63360ccdc418e9de8ab96d297c, type: 3}
-  m_Name: PoliceActionFollow
+  m_Script: {fileID: 11500000, guid: 02a1f370912823640a5edb98c55f20af, type: 3}
+  m_Name: PoliceActionAttack
   m_EditorClassIdentifier: 
-  minDistanceToFollow: 2
-  followingSpeed: 1.25
+  secondsBetweenAttack: 0.5

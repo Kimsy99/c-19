@@ -167,9 +167,11 @@ GameObject:
   - component: {fileID: 892908392163746213}
   - component: {fileID: 8799784187117275311}
   - component: {fileID: 495548779115126749}
+  - component: {fileID: 7038407371914891973}
   - component: {fileID: 7940670431555395283}
   - component: {fileID: 892908392163746214}
   - component: {fileID: 7940670431555395369}
+  - component: {fileID: 2141492535573478094}
   m_Layer: 12
   m_Name: Zombie 4
   m_TagString: Untagged
@@ -363,6 +365,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acc548f101c777e4ea00d3bba69476c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7038407371914891973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892908392163746211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a7d0f322ebc4611b34fcc100eb32be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  movement: {fileID: 0}
 --- !u!114 &7940670431555395283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,8 +409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eadcd539294744d3c84ea3f7b5461696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wayPoint01: {fileID: 0}
-  wayPoint02: {fileID: 0}
   followRange: 10
   walkSpeed: 0.8
   projectile: {fileID: 8472959599878325174, guid: b48ba185cfabe4ba5a505dabaecadad7,
@@ -412,6 +426,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionDamage: 0.5
+--- !u!114 &2141492535573478094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892908392163746211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d77fb0f408df26479c862fe504d163e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: {fileID: 11400000, guid: 8a26f6b0d325e4758b3087139593c2ad, type: 2}
+  remainState: {fileID: 11400000, guid: 9b2756af1ce614b3580b56f6c9f05e42, type: 2}
 --- !u!1 &892908392540906830
 GameObject:
   m_ObjectHideFlags: 0

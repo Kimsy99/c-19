@@ -44,50 +44,50 @@ public class Zombie1 : NPCMovement
 
 		// wayPointTarget = wayPoint01;
 		// transform.position = Vector2.MoveTowards(transform.position, wayPointTarget.position, walkSpeed * Time.deltaTime);
-		if (Vector2.Distance(transform.position, target.position) <= followRange)
-		{
-			wayPointTarget = target.position;
-			print("go to target");
-		}
-		else
-		{
-			//if (wayPointTarget == (Vector2)target.position)
-			//	wayPointTarget = wayPoint02.position;
-			if (wayPoint01 != null && wayPoint02 != null)
-			{
-				print("both waypoint not null");
-				if (Vector2.Distance(transform.position, wayPoint01.position) <= 0.1F)
-				{
-					wayPointTarget = wayPoint02.position;
-					print("go to way point 2");
-				}
-				else if (Vector2.Distance(transform.position, wayPoint02.position) <= 0.1F)
-				{
-					wayPointTarget = wayPoint01.position;
-					print("go to way point 1");
-				}
-			}
-			else
-			{
-				wayPointTarget = initialPosition;
-				print("go to innitial");
-			}
+		//if (Vector2.Distance(transform.position, target.position) <= followRange)
+		//{
+		//	wayPointTarget = target.position;
+		//	print("go to target");
+		//}
+		//else
+		//{
+		//	//if (wayPointTarget == (Vector2)target.position)
+		//	//	wayPointTarget = wayPoint02.position;
+		//	if (wayPoint01 != null && wayPoint02 != null)
+		//	{
+		//		print("both waypoint not null");
+		//		if (Vector2.Distance(transform.position, wayPoint01.position) <= 0.1F)
+		//		{
+		//			wayPointTarget = wayPoint02.position;
+		//			print("go to way point 2");
+		//		}
+		//		else if (Vector2.Distance(transform.position, wayPoint02.position) <= 0.1F)
+		//		{
+		//			wayPointTarget = wayPoint01.position;
+		//			print("go to way point 1");
+		//		}
+		//	}
+		//	else
+		//	{
+		//		wayPointTarget = initialPosition;
+		//		print("go to innitial");
+		//	}
 
-		}
-		// transform.direction
-		//controller
-		Vector2 nextPosition = wayPointTarget - (Vector2)transform.position;
-		Vector2 direction = nextPosition - (Vector2)transform.position;
-		float angle = Vector2.SignedAngle(Vector2.right, direction);
+		//}
+		//// transform.direction
+		////controller
+		//Vector2 nextPosition = wayPointTarget - (Vector2)transform.position;
+		//Vector2 direction = nextPosition - (Vector2)transform.position;
+		//float angle = Vector2.SignedAngle(Vector2.right, direction);
 
-		print(Vector2.Distance(transform.position, initialPosition));
-		if (wayPoint01 != null && wayPoint02 != null && Vector2.Distance(transform.position, initialPosition) <= 0.1F) // Initial position mode
-			Speed = 0;
-		else
-		{
-			Direction = angle;
-			Speed = walkSpeed;
-		}
+		//print(Vector2.Distance(transform.position, initialPosition));
+		//if (wayPoint01 != null && wayPoint02 != null && Vector2.Distance(transform.position, initialPosition) <= 0.1F) // Initial position mode
+		//	Speed = 0;
+		//else
+		//{
+		//	Direction = angle;
+		//	Speed = walkSpeed;
+		//}
 	}
 
 	public void Shot()

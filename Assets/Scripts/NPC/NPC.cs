@@ -2,9 +2,12 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
-    [SerializeField] private GameObject npcSprite = null;
-    [SerializeField] private Animator npcAnimator = null;
+    [HideInInspector] public NPCHealth health;
+    [HideInInspector] public NPCMovement movement;
     
-    public GameObject NPCSprite => npcSprite;
-    public Animator NPCAnimator => npcAnimator;
+    void Awake()
+    {
+        health = GetComponent<NPCHealth>();
+        movement = GetComponent<NPCMovement>();
+    }
 }

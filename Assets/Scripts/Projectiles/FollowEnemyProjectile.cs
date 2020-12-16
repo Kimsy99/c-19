@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
-public class FollowEnemyProjectile : MonoBehaviour
+public class FollowEnemyProjectile : EnemyBullet
 {
-	private Transform target;
 	[SerializeField] private float moveSpeed = 1;
 
 	public GameObject destroyEffect; //after 2 sec and never touch player, trigger
@@ -11,14 +10,13 @@ public class FollowEnemyProjectile : MonoBehaviour
 	private float lifeTimer;
 	[SerializeField] private float maxLife = 2.0F;
 
-	private void Start()
-	{
-		target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-	}
-
 	private void Update()
 	{
-		transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+		Vector2 directionVector = ken.transform.position - transform.position;
+		float direction = Vector2.SignedAngle(Vector2.right, directionVector);
+
+		Direction = direction;
+		Speed = moveSpeed;
 
 		lifeTimer += Time.deltaTime;
 		if (lifeTimer >= maxLife)
@@ -29,13 +27,11 @@ public class FollowEnemyProjectile : MonoBehaviour
 	}
 
 	//projectile collide with player
-	private void OnTriggerEnter2D(Collider2D other)
+	protected override void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
-		{
-			// other.GetComponentInChildren<NPCHealthBar>().hp -= 25;
-			Instantiate(attackEffect, transform.position, Quaternion.identity);
-			Destroy(gameObject);
-		}
+			ken.health.Damage(damage, true, 0.1F);
+		Instantiate(attackEffect, transform.position, Quaternion.identity);
+		Destroy(gameObject);
 	}
 }

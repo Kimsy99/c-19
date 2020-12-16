@@ -13,7 +13,7 @@ public class KenMovement : AnimatableMovable2D
 	protected override void Awake()
 	{
 		base.Awake();
-		weaponHolderAnimator = GameObject.Find("WeaponHolder").GetComponent<Animator>();
+		weaponHolderAnimator = transform.Find("WeaponHolder").GetComponent<Animator>();
 	}
 
 	// Update is called once per frame

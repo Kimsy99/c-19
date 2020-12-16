@@ -9,7 +9,7 @@ public class LevelManager : MonoBehaviour
 
 	void Awake()
 	{
-		heldWeapon = GameObject.Find("HeldWeapon").GetComponent<HeldWeapon>();
+		heldWeapon = GameObject.Find("Ken").GetComponentInChildren<HeldWeapon>();
 	}
 
 	void Start()

@@ -28,6 +28,9 @@ public class NPCHeldWeapon : MonoBehaviour
 
 	public void Shoot() //shoot with updated position
 	{
+		if (bulletToUse == null)
+			return;
+
 		// Bullet will randomly go slightly upward of downward
 		float shootingAngle = weaponAim.AimAngle;
 

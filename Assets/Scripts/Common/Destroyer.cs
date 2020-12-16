@@ -2,10 +2,10 @@
 
 public class Destroyer : MonoBehaviour
 {
-	[SerializeField] private float lifeTimer = 1;
+	//[SerializeField] private float lifeTimer = 1;
 
-	private void Start()
+	private void DestroySelf()
 	{
-		Destroy(gameObject, lifeTimer);
+		Destroy(gameObject);
 	}
 }

@@ -2,7 +2,7 @@
 
 public class Zombie1 : NPCMovement
 {
-	private Transform target;
+	private new Transform target;
 
 	//private readonly int isAttack = Animator.StringToHash("isAttack");
 	[SerializeField] private GameObject projectile = null; //projectile Object

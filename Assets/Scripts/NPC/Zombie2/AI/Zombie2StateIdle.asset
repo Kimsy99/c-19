@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51977423f9c3d4a0692ce0828b946c1c, type: 3}
+  m_Script: {fileID: 11500000, guid: ec3cf0ed0ad440a4488159c0681e2cf3, type: 3}
   m_Name: Zombie2StateIdle
   m_EditorClassIdentifier: 
   Actions:
   - {fileID: 11400000, guid: c38d67f128a814402ba0fba293759924, type: 2}
   Transitions:
-  - Decision: {fileID: 11400000, guid: f0b36b4f6e9204a50bc406c97de15927, type: 2}
-    TrueState: {fileID: 11400000, guid: 304cd7c3bf81b47bf9f58c86e4e65904, type: 2}
+  - Decision: {fileID: 11400000, guid: 724311359bca7be4180b55aa7ec407d9, type: 2}
+    TrueState: {fileID: 11400000, guid: d8281db716e0527468bc391c512f6945, type: 2}
     FalseState: {fileID: 11400000, guid: 9b2756af1ce614b3580b56f6c9f05e42, type: 2}

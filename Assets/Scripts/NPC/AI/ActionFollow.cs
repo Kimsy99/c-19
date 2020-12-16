@@ -27,6 +27,12 @@ public class ActionFollow : AIAction
 			controller.npc.movement.Speed = followingSpeed;
 		}
 		else
+		{
 			controller.npc.movement.Speed = 0;
+			if (controller.Target.position.x > controller.transform.position.x)
+				controller.npc.spriteFlippable2D.Facing = SpriteFlippable2D.RelativeDirection.Right;
+			else
+				controller.npc.spriteFlippable2D.Facing = SpriteFlippable2D.RelativeDirection.Left;
+		}
 	}
 }

@@ -107,6 +107,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 2141492535573478094, guid: 187a4d797af0742a5a5767dfee00d3e3,
+        type: 3}
+      propertyPath: currentState
+      value: 
+      objectReference: {fileID: 11400000, guid: eec70798b5d2de24881ee13b53187095,
+        type: 2}
     - target: {fileID: 7940670431555395283, guid: 187a4d797af0742a5a5767dfee00d3e3,
         type: 3}
       propertyPath: maxHp

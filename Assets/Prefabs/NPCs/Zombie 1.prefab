@@ -78,6 +78,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2141492535573478094, guid: 187a4d797af0742a5a5767dfee00d3e3,
+        type: 3}
+      propertyPath: currentState
+      value: 
+      objectReference: {fileID: 11400000, guid: c5f5303203d822145b3488b0f3055ddb,
+        type: 2}
+    - target: {fileID: 5984424923952772208, guid: 187a4d797af0742a5a5767dfee00d3e3,
+        type: 3}
+      propertyPath: bulletToUse
+      value: 
+      objectReference: {fileID: 6086891095368650237, guid: 428c28dc428674f41a15468e58b14548,
+        type: 3}
+    - target: {fileID: 5984424923952772208, guid: 187a4d797af0742a5a5767dfee00d3e3,
+        type: 3}
+      propertyPath: bulletDamage
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5984424923952772208, guid: 187a4d797af0742a5a5767dfee00d3e3,
+        type: 3}
+      propertyPath: bulletSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6068312062649501076, guid: 187a4d797af0742a5a5767dfee00d3e3,
         type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y

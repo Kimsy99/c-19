@@ -2,7 +2,7 @@
 
 public class EnemyBullet : Bullet
 {
-	private Ken ken;
+	protected Ken ken;
 
 	protected override void Awake()
 	{
@@ -10,7 +10,7 @@ public class EnemyBullet : Bullet
 		ken = GameObject.Find("Ken").GetComponent<Ken>();
 	}
 
-	void OnTriggerEnter2D(Collider2D collision)
+	protected virtual void OnTriggerEnter2D(Collider2D collision)
 	{
 		impactPS.Play();
 		if (impactPS2 != null)

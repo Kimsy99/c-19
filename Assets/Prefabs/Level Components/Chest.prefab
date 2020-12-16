@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 61380793
   m_SortingLayer: -2
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Sprite: {fileID: -5281422124547630143, guid: f8e1833b0fbc5d44f92df11f59b83578,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -102,7 +102,7 @@ MonoBehaviour:
   chestLoot:
   - collectable: {fileID: 6862088023674417546, guid: ce95086adcbcf415e9883f60397c3c9c,
       type: 3}
-    weightage: 5
+    weightage: 100
   - collectable: {fileID: 3778275499027133721, guid: 448f2e8f8b3344672af09c702ae3ee8c,
       type: 3}
     weightage: 1

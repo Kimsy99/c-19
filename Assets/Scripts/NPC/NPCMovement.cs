@@ -4,8 +4,9 @@ public class NPCMovement : AnimatableMovable2D
 {
 	private NPCHealth npcHealth;
 
+	protected Vector2 initialPosition;
 	public Transform wayPoint01, wayPoint02;
-	protected Transform wayPointTarget;
+	protected Vector2 wayPointTarget;
 	[SerializeField] private float followRange = 10;
 	[SerializeField] protected float walkSpeed = 4;
 	//private Transform target;
@@ -13,8 +14,10 @@ public class NPCMovement : AnimatableMovable2D
 	protected override void Awake()
 	{
 		base.Awake();
+		initialPosition = transform.position;
+		print(initialPosition);
 		npcHealth = GetComponent<NPCHealth>();
-		wayPointTarget = wayPoint01;
+		//wayPointTarget = wayPoint01.position;
 		//target = GameObject.FindWithTag("Player").transform;
 	}
 

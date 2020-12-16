@@ -4,23 +4,20 @@ using UnityEngine;
 
 public class CInfectionBar : Collectables
 {
-  [SerializeField] private ParticleSystem recoverEffect;
+	[SerializeField] private ParticleSystem recoverEffect = null;
 
-  protected override void Pick()
-  {
-    ReduceInfect();
-  }
+	protected override void Pick()
+	{
+		ReduceInfect();
+	}
 
-  protected override void PlayEffects()
-  {
-    Instantiate(recoverEffect, transform.position, Quaternion.identity);
-  }
+	protected override void PlayEffects()
+	{
+		Instantiate(recoverEffect, transform.position, Quaternion.identity);
+	}
 
-  public void ReduceInfect()
-  {
-    if (character != null)
-    {
-      character.GetComponent<KenHealth>().reduceInfection();
-    }
-  }
+	public void ReduceInfect()
+	{
+		ken.health.reduceInfection();
+	}
 }

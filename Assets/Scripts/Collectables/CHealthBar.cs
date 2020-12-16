@@ -4,25 +4,21 @@ using UnityEngine;
 
 public class CHealthBar : Collectables
 {
-  [SerializeField] private int healthToAdd = 1;
-  [SerializeField] private ParticleSystem healthBonus;
+	[SerializeField] private int healthToAdd = 1;
+	[SerializeField] private ParticleSystem healthBonus = null;
 
-  protected override void Pick()
-  {
-    AddHealth();
-  }
+	protected override void Pick()
+	{
+		AddHealth();
+	}
 
-  protected override void PlayEffects()
-  {
-    Instantiate(healthBonus, transform.position, Quaternion.identity);
-  }
+	protected override void PlayEffects()
+	{
+		Instantiate(healthBonus, transform.position, Quaternion.identity);
+	}
 
-  public void AddHealth()
-  {
-    if (character != null)
-    {
-      character.GetComponent<KenHealth>().GainHealth(healthToAdd);
-    }
-  }
-
+	public void AddHealth()
+	{
+		ken.health.Hp += healthToAdd;
+	}
 }

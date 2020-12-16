@@ -88,14 +88,7 @@ public class KenHealth : Health
       ken.flashable.Flash();
     return true;
   }
-  public void GainHealth(float health)
-  {
-    if (Hp == maxHp || Hp >= maxHp - health)
-    {
-      Hp = maxHp;
-    }
-    Hp += health;
-  }
+    
   public void Infect(float infection)
   {
     Infection += infection;

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7298993422440162724
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6075333916904434793, guid: 156eefb8472eed146b629da88ed4d0c6,
+        type: 3}
+      propertyPath: m_Name
+      value: LaserGunCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075333916904434796, guid: 156eefb8472eed146b629da88ed4d0c6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075333916904434796, guid: 156eefb8472eed146b629da88ed4d0c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075333916904434796, guid: 156eefb8472eed146b629da88ed4d0c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075333916904434796, guid: 156eefb8472eed146b629da88ed4d0c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075333916904434798, guid: 156eefb8472eed146b629da88ed4d0c6,
+        type: 3}
+      propertyPath: weaponSettings
+      value: 
+      objectReference: {fileID: 11400000, guid: 6c1fc713d58d1d740b628e42ce792c65,
+        type: 2}
+    - target: {fileID: 6075333916904434799, guid: 156eefb8472eed146b629da88ed4d0c6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4107469028111699786, guid: eb082058f0a599945b15d17405d326c3,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 156eefb8472eed146b629da88ed4d0c6, type: 3}

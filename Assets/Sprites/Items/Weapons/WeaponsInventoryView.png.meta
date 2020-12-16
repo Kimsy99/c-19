@@ -22,7 +22,7 @@ TextureImporter:
     second: WeaponLaserGunInventoryView
   - first:
       213: 641757711363318294
-    second: PlasmaGunInventoryView
+    second: WeaponPlasmaGunInventoryView
   - first:
       213: 8504530463791557030
     second: weapon_7
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlasmaGunInventoryView
+      name: WeaponPlasmaGunInventoryView
       rect:
         serializedVersion: 2
         x: 127

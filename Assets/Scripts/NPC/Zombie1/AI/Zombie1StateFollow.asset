@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51977423f9c3d4a0692ce0828b946c1c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3335df63360ccdc418e9de8ab96d297c, type: 3}
   m_Name: Zombie1StateFollow
   m_EditorClassIdentifier: 
-  Actions:
-  - {fileID: 11400000, guid: 4422e3209b7c941fc8c58986119cc933, type: 2}
-  Transitions:
-  - Decision: {fileID: 11400000, guid: 7de0a1968940a4d4a8ce62362012fafa, type: 2}
-    TrueState: {fileID: 11400000, guid: 9b2756af1ce614b3580b56f6c9f05e42, type: 2}
-    FalseState: {fileID: 11400000, guid: 9801bac3b67864baba3be9cbf94ab8a8, type: 2}
+  minDistanceToFollow: 2
+  followingSpeed: 1

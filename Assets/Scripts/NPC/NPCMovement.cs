@@ -3,22 +3,14 @@
 public class NPCMovement : AnimatableMovable2D
 {
 	private NPCHealth npcHealth;
-
-	protected Vector2 initialPosition;
-	public Transform wayPoint01, wayPoint02;
-	protected Vector2 wayPointTarget;
+	protected Vector2 target;
 	[SerializeField] private float followRange = 10;
 	[SerializeField] protected float walkSpeed = 4;
-	//private Transform target;
 
 	protected override void Awake()
 	{
 		base.Awake();
-		initialPosition = transform.position;
-		print(initialPosition);
 		npcHealth = GetComponent<NPCHealth>();
-		//wayPointTarget = wayPoint01.position;
-		//target = GameObject.FindWithTag("Player").transform;
 	}
 
 	// Update is called once per frame
@@ -64,18 +56,6 @@ public class NPCMovement : AnimatableMovable2D
 		// UpdateAnimations();
 
 	}
-	// private void UpdateAnimations()
-	// {
-	//   if (Mathf.Abs(vx) > 0.1f || Mathf.Abs(vy) > 0.1f)
-	//   {
-	//     animator.SetBool(movingParamater, value: true);
-	//   }
-	//   else
-	//   {
-	//     animator.SetBool(movingParamater, value: false);
-	//   }
-	// }
-
 }
 
 

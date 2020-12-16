@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class StateController : MonoBehaviour
@@ -13,16 +10,17 @@ public class StateController : MonoBehaviour
     public Transform Target { get; set; }
     
     // Returns a reference to this enemy movement
-    public NPCMovementAI NPCMovementAI { get; set; }
+    public NPC npc { get; set; }
     
     private void Awake()
     {
-        NPCMovementAI = GetComponent<NPCMovementAI>();
+        npc = GetComponent<NPC>();
     }
     
     private void Update()
     {
-        currentState.EvaluateState(this);
+        if (!npc.health.IsDead)
+            currentState.EvaluateState(this);
     }
     
     public void TransitionToState(AIState nextState)

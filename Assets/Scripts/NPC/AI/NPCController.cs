@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Obsolete("Use Movable2D.Direction and Movable2D.Speed for movement")]
 public class NPCController : MonoBehaviour
 {
     // Controls the current movement of this character

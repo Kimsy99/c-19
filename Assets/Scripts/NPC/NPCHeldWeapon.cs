@@ -22,7 +22,8 @@ public class NPCHeldWeapon : MonoBehaviour
 	public void TriggerShootingEffect()
 	{
 		animator.SetTrigger(UseWeaponParameter);
-		muzzlePS.Play();
+		if (muzzlePS != null)
+			muzzlePS.Play();
 	}
 
 	public void Shoot() //shoot with updated position

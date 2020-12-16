@@ -10,7 +10,7 @@ public class Bullet : Movable2D
 	protected float damage;
 
 	private SpriteRenderer spriteRenderer;
-	private CircleCollider2D bulletCollider;
+	private Collider2D bulletCollider;
 
 	public string ShotByWeaponName { get; set; }
 

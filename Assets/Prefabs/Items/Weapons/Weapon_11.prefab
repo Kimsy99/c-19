@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8fbab4b0e1ff374c870504ad3e44a83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletToUse: {fileID: -8892455320561179592, guid: 122a8833de850ac4fab79d92a6b2e137,
+  bulletToUse: {fileID: -8892455320561179592, guid: 63e183d85f6249b8bf6e8638d3d7d056,
     type: 3}
   muzzlePS: {fileID: 9018280776737010788}
 --- !u!114 &4424178189499079653
@@ -59,10 +59,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5466221067303216058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5acc2c4ad8be0546b1d395c2825f24a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8224778e849847619c0eb35f5e7ba47f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reticlePrefab: {fileID: 8906583325241577133, guid: 0d327b40d16f46d4099b525df3ac5e22,
+  reticlePrefab: {fileID: 8906583325241577133, guid: cbab3a2a1a754b1db5b17e532559336a,
     type: 3}
   projectileSpawnPosition: {x: 0.3, y: 0.06, z: 0}
 --- !u!95 &2283513475250914586
@@ -75,7 +75,7 @@ Animator:
   m_GameObject: {fileID: 5466221067303216058}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bc3856c397634a649aae7f45d3e64747, type: 2}
+  m_Controller: {fileID: 9100000, guid: 53d1dc88a6a3411e87d6f4df9cc41a4d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -154,7 +154,7 @@ SpriteRenderer:
   m_SortingLayerID: 61380793
   m_SortingLayer: -1
   m_SortingOrder: 1
-  m_Sprite: {fileID: -5432460076227942151, guid: 49f1d111ecb7b0248bb2b8b7643985c7,
+  m_Sprite: {fileID: -5432460076227942151, guid: 43d3b3a36df54412a5c13c6db2c4b8d5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -232,7 +232,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 07422df87053d6f408e496e362485c20, type: 2}
+      objectReference: {fileID: 2100000, guid: 0aa7ecbb13bd4791af9759d0a550e84c, type: 2}
     - target: {fileID: 4464800871594300401, guid: 6ab6db561c448e84ea3b5bdb7ef1de97,
         type: 3}
       propertyPath: m_SortingLayerID

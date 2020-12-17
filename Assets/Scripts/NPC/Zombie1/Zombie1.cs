@@ -1,16 +1,16 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
+[Obsolete("No longer required, use NPCMovement script as component instead")]
 public class Zombie1 : NPCMovement
 {
-	private new Transform target;
-
 	//private readonly int isAttack = Animator.StringToHash("isAttack");
 	[SerializeField] private GameObject projectile = null; //projectile Object
 	
 	protected override void Awake()
 	{
 		base.Awake();
-		target = GameObject.FindWithTag("Player").transform;
+		//target = GameObject.FindWithTag("Player").transform;
 	}
 
 	// Update is called once per frame

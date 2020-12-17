@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: '!$Elevator Doors_1'
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -738919434234687679, guid: 3e2582d750aea493d91d44783f263ca3,
+  m_Sprite: {fileID: -738919434234687679, guid: e6f52b259f904e09a9cc05f9b1aae806,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:

@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3cf0ed0ad440a4488159c0681e2cf3, type: 3}
+  m_Script: {fileID: 11500000, guid: 5eacb8be64d046be95c7e6c1e90df8d7, type: 3}
   m_Name: DoctorStateIdle
   m_EditorClassIdentifier: 
   Actions:
-  - {fileID: 11400000, guid: c38d67f128a814402ba0fba293759924, type: 2}
+  - {fileID: 11400000, guid: ccd0d2368a2f467f936471b0b641225d, type: 2}
   Transitions:
-  - Decision: {fileID: 11400000, guid: 79c93ec1f878206449c3c1bbd5e724ff, type: 2}
-    TrueState: {fileID: 11400000, guid: 0df5ac0da1d0e184eaa310f056ef9573, type: 2}
-    FalseState: {fileID: 11400000, guid: 9b2756af1ce614b3580b56f6c9f05e42, type: 2}
+  - Decision: {fileID: 11400000, guid: 49309bac67e24b89808fd153bbcb9ad0, type: 2}
+    TrueState: {fileID: 11400000, guid: cc8e70ff6c7f4ff882ef8f98ec4fb529, type: 2}
+    FalseState: {fileID: 11400000, guid: f69039a2355e4ecdab92086502067f6f, type: 2}

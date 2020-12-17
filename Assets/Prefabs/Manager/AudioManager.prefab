@@ -40,7 +40,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6654508589814167038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 026a35e370af419458e38d1515b3c761, type: 3}
+  m_Script: {fileID: 11500000, guid: 823bd846230b46efbe855ad237ef17b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
@@ -51,43 +51,49 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - audioEnum: 1
-    clip: {fileID: 8300000, guid: a874cda4afb42b84791bf5cf8d3a0e61, type: 3}
+    clip: {fileID: 8300000, guid: 16592e3d836d4b5088976c7ec989d592, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - audioEnum: 2
-    clip: {fileID: 8300000, guid: 9ba228554a48262448dcfd0f64409805, type: 3}
+    clip: {fileID: 8300000, guid: 98283b7b23dd4356be177206cee73b88, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - audioEnum: 3
-    clip: {fileID: 8300000, guid: bc05c7fd89f827244b599fa77153d0d8, type: 3}
+    clip: {fileID: 8300000, guid: 367e3f68c8b6486381964f517a6fd2c7, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - audioEnum: 4
-    clip: {fileID: 8300000, guid: 2f51b9596b539d64aaf02237d535c71b, type: 3}
+    clip: {fileID: 8300000, guid: 0764f019d75a4cf2a3a9a3c2317bc8db, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - audioEnum: 5
-    clip: {fileID: 8300000, guid: e03ac746a1c6900479426020b070292c, type: 3}
+    clip: {fileID: 8300000, guid: facce130bc574a09b93e5a153e2e015d, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - audioEnum: 6
-    clip: {fileID: 8300000, guid: 788e6dff94537a44f9820834633bcdfe, type: 3}
+    clip: {fileID: 8300000, guid: b1cfebf6049f4d158c7b0cc21846848d, type: 3}
     volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - audioEnum: 7
-    clip: {fileID: 8300000, guid: 9649c6216064e344499ba652ecee4a37, type: 3}
+    clip: {fileID: 8300000, guid: 5143508fd9c9457b8fef72abcaecf355, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - audioEnum: 8
+    clip: {fileID: 8300000, guid: 8f8bc66e5089a384b9ac3e476a2b346a, type: 3}
     volume: 1
     pitch: 1
     loop: 0

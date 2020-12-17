@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3335df63360ccdc418e9de8ab96d297c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e7129b578f44f1f978f83243c3ec0d2, type: 3}
   m_Name: Zombie2ActionFollow
   m_EditorClassIdentifier: 
   minDistanceToFollow: 0

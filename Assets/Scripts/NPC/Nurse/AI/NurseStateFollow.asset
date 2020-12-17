@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: NurseStateFollow
   m_EditorClassIdentifier: 
   Actions:
-  - {fileID: 11400000, guid: cf13f41b3c033431bbbedb60d99d34c1, type: 2}
+  - {fileID: 11400000, guid: 1526b7809e2a442fb434b17c35bbf613, type: 2}
   Transitions:
-  - Decision: {fileID: 11400000, guid: 7999d4111139944fe9e256aa71b1d2df, type: 2}
-    TrueState: {fileID: 11400000, guid: 9b2756af1ce614b3580b56f6c9f05e42, type: 2}
-    FalseState: {fileID: 11400000, guid: 8b0dfbf874e894f72ac02c252027124e, type: 2}
+  - Decision: {fileID: 11400000, guid: ca3582d4b37847078e01d1d40935393f, type: 2}
+    TrueState: {fileID: 11400000, guid: f69039a2355e4ecdab92086502067f6f, type: 2}
+    FalseState: {fileID: 11400000, guid: f9a3134d1aee47c38e0287a64ed2fd13, type: 2}

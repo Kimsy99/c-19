@@ -9,15 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34754dc4ed93d2d46b5185f88b1290e5, type: 3}
+  m_Script: {fileID: 11500000, guid: f2886db0d28f4adf999069ab57179b2f, type: 3}
   m_Name: PlasmaGun
   m_EditorClassIdentifier: 
   displayName: Plasma Gun
-  displaySprite: {fileID: 641757711363318294, guid: eb082058f0a599945b15d17405d326c3,
+  displaySprite: {fileID: 641757711363318294, guid: f6d51d1aafc340249f981272e0a72e40,
     type: 3}
-  heldSprite: {fileID: 641757711363318294, guid: 49f1d111ecb7b0248bb2b8b7643985c7,
+  heldSprite: {fileID: 641757711363318294, guid: 43d3b3a36df54412a5c13c6db2c4b8d5,
     type: 3}
-  bulletToUse: {fileID: -8892455320561179592, guid: 10327c6f9a08ef547bb498a93e0317b6,
+  bulletToUse: {fileID: -8892455320561179592, guid: 2e4950f743754d5eb8de600769bf7865,
     type: 3}
   bulletSpawnPositionOffset: {x: 0.36, y: 0.031}
   bulletSpeed: 20
@@ -26,6 +26,6 @@ MonoBehaviour:
   spread: 3
   shootSound: 5
   cooldown: 1.5
-  muzzlePS: {fileID: 2302688338332776376, guid: b6a31acec231f5c4e9cb7960a47f3881,
+  muzzlePS: {fileID: 2302688338332776376, guid: e576b816d9014c93a456885d873befe0,
     type: 3}
   customBulletSpawner: {fileID: 0}

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a0bd4a87d2228e498c631669d06f9ba, type: 3}
+  m_Script: {fileID: 11500000, guid: d02ff7e0ea2645a0aaa9495cf0c6f231, type: 3}
   m_Name: DoctorDecisionDetect
   m_EditorClassIdentifier: 
   detectArea: 10

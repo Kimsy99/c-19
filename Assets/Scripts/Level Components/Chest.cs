@@ -29,6 +29,7 @@ public class Chest : MonoBehaviour
 			{
 				spriteRenderer.sprite = chestOpenSprite;
 				GenerateLoot();
+				AudioManager.Instance.Play(AudioEnum.ChestOpen);
 			}
 		}
 	}

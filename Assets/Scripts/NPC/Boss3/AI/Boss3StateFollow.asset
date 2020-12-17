@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Boss3StateFollow
   m_EditorClassIdentifier: 
   Actions:
-  - {fileID: 11400000, guid: 4d6a3dd06e8b74bf393ffeb36bde2b01, type: 2}
+  - {fileID: 11400000, guid: f899a632b01347869fcf9290800b88eb, type: 2}
   Transitions:
-  - Decision: {fileID: 11400000, guid: 4ddfd3b9c87c346449645ea771540432, type: 2}
-    TrueState: {fileID: 11400000, guid: 9b2756af1ce614b3580b56f6c9f05e42, type: 2}
-    FalseState: {fileID: 11400000, guid: 39fb17e57b7634732b1cf8ab0d5e1297, type: 2}
+  - Decision: {fileID: 11400000, guid: f3438157f24a472d9d1738e0ebbbc837, type: 2}
+    TrueState: {fileID: 11400000, guid: f69039a2355e4ecdab92086502067f6f, type: 2}
+    FalseState: {fileID: 11400000, guid: f594250fc72346b5ad49a15ee7ffa393, type: 2}

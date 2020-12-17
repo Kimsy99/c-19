@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Pixeled SDF Material
-  m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
+  m_Shader: {fileID: 4800000, guid: e5ee682e2d67451a80dbe08a318d5249, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -161,7 +161,7 @@ MonoBehaviour:
   materialHashCode: -1410064520
   m_Version: 1.1.0
   m_SourceFontFileGUID: 9db6c29a3d65ff14881b5f5e4cb8af39
-  m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 9db6c29a3d65ff14881b5f5e4cb8af39,
+  m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 352b0dfd1f6a46a48ed6839b7934e2e2,
     type: 3}
   m_SourceFontFile: {fileID: 0}
   m_AtlasPopulationMode: 0

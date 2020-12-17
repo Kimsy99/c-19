@@ -10,30 +10,16 @@ public class EnemyBullet : Bullet
 		ken = GameObject.Find("Ken").GetComponent<Ken>();
 	}
 
-	protected virtual void OnTriggerEnter2D(Collider2D collision)
+	protected void OnTriggerEnter2D(Collider2D collision)
 	{
-		impactPS.Play();
-		if (impactPS2 != null)
-			impactPS2.Play();
-
-		// Wait for particle finish playing
-		Invoke(nameof(DestroyBullet), impactPS.main.duration);
-
-		DisableBullet();
-
 		if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
 			ken.health.Damage(damage, true, 0.1F);
+
+		OnBulletImpact();
 	}
 
 	protected override void OnCollisionEnter2D(Collision2D other)
 	{
-		impactPS.Play();
-		if (impactPS2 != null)
-			impactPS2.Play();
-
-		// Wait for particle finish playing
-		Invoke(nameof(DestroyBullet), impactPS.main.duration);
-
-		DisableBullet();
+		OnBulletImpact();
 	}
 }

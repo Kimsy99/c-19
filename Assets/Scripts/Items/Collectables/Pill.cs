@@ -7,5 +7,6 @@ public class Pill : Collectable
 	protected override void Collect()
 	{
 		ken.health.Infection -= infectionToReduce;
+		AudioManager.Instance.Play(AudioEnum.Collect);
 	}
 }

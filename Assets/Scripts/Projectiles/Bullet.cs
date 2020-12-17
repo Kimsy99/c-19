@@ -18,7 +18,7 @@ public class Bullet : Movable2D
     {
 		base.Awake();
 		spriteRenderer = GetComponent<SpriteRenderer>();
-		bulletCollider = GetComponent<CircleCollider2D>();
+		bulletCollider = GetComponent<BoxCollider2D>();
     }
 
 	public void SetDamage(float damage)
@@ -26,21 +26,24 @@ public class Bullet : Movable2D
 		this.damage = damage;
     }
 
-    void OnBecameInvisible()
-	{
-		DestroyBullet();
-	}
-
-	protected void DestroyBullet()
-    {
-		Destroy(gameObject);
-	}
-
 	protected virtual void OnCollisionEnter2D(Collision2D other)
 	{
 		if (ShotByWeaponName.Equals("Shot Blocker"))
 			return;
 
+		if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+			other.gameObject.GetComponentInParent<NPCHealth>().Damage(damage, true);
+
+		OnBulletImpact();
+	}
+
+	void OnBecameInvisible()
+	{
+		DestroyBullet();
+	}
+
+	protected void OnBulletImpact()
+	{
 		impactPS.Play();
 		if (impactPS2 != null)
 			impactPS2.Play();
@@ -48,20 +51,14 @@ public class Bullet : Movable2D
 		// Wait for particle finish playing
 		Invoke(nameof(DestroyBullet), impactPS.main.duration);
 
-		if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
-		{
-			other.gameObject.GetComponentInParent<NPCHealth>().Damage(damage, true);
-			// make damage to character being shot
-			//other.GetComponent<KenHealth>().Damage(damage);
-        }
-		DisableBullet();
-    }
-
-	protected void DisableBullet()
-    {
 		Direction = 0;
 		Speed = 0;
 		spriteRenderer.sprite = null;
 		bulletCollider.enabled = false;
-    }
+	}
+
+	protected void DestroyBullet()
+	{
+		Destroy(gameObject);
+	}
 }

@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 61380793
   m_SortingLayer: -2
   m_SortingOrder: -1
-  m_Sprite: {fileID: -231260545638774761, guid: eb082058f0a599945b15d17405d326c3,
+  m_Sprite: {fileID: -231260545638774761, guid: f6d51d1aafc340249f981272e0a72e40,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -92,9 +92,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6075333916904434793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0e2d85fbfa1c764ca78c5685cbffe9b, type: 3}
+  m_Script: {fileID: 11500000, guid: e1e446ca32b24be596225a7cafadd9b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   collectEffect: {fileID: 0}
   shouldDestroy: 0
-  weaponSettings: {fileID: 11400000, guid: 5e128760706ffb84d8206af2215b87be, type: 2}
+  weaponSettings: {fileID: 11400000, guid: 74b22c7a4bbe4593a24f15f055aa4c79, type: 2}

@@ -3,12 +3,11 @@ using UnityEngine.UI;
 
 public class NPCHealth : Health
 {
-	private NPCMovement npcMovement;
+	private NPC npc;
 	private new Collider2D collider2D;
 	private GameObject healthBar;
 	private Animator animator;
 	private readonly int isDeadParameter = Animator.StringToHash("IsDead");
-	private Flashable flashable;
 
 	public Image hpImage;
 	public Image hpEffectImage;
@@ -17,11 +16,10 @@ public class NPCHealth : Health
 	protected override void Awake()
 	{
 		base.Awake();
-		npcMovement = GetComponent<NPCMovement>();
+		npc = GetComponent<NPC>();
 		collider2D = GetComponent<Collider2D>();
 		healthBar = transform.Find("Canvas").gameObject;
 		animator = GetComponent<Animator>();
-		flashable = GetComponent<Flashable>();
 
 		OnDie += Die;
 	}
@@ -43,13 +41,14 @@ public class NPCHealth : Health
 		if (!damaged)
 			return false;
 		if (shouldFlash)
-			flashable.Flash();
+			npc.flashable.Flash();
 		return true;
 	}
 
 	private void Die()
 	{
-		npcMovement.Speed = 0;
+		npc.movement.Speed = 0;
+		npc.weaponHolder.SetActive(false);
 		collider2D.enabled = false;
 		healthBar.SetActive(false);
 		animator.SetBool(isDeadParameter, true);

@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 61380793
   m_SortingLayer: -2
   m_SortingOrder: -2
-  m_Sprite: {fileID: -5281422124547630143, guid: f8e1833b0fbc5d44f92df11f59b83578,
+  m_Sprite: {fileID: -5281422124547630143, guid: 349bb168337f438c8e6288d86058bfff,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -94,31 +94,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 1672729643879489031}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4997fefeaf1b49108e6e547c46afa85, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c74e79230e9493ba2bf873f9ae17974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chestOpenSprite: {fileID: 4714410783012859700, guid: f8e1833b0fbc5d44f92df11f59b83578,
+  chestOpenSprite: {fileID: 4714410783012859700, guid: 349bb168337f438c8e6288d86058bfff,
     type: 3}
   chestLoot:
-  - collectable: {fileID: 6862088023674417546, guid: ce95086adcbcf415e9883f60397c3c9c,
+  - collectable: {fileID: 6862088023674417546, guid: 2569ef3baae74ffda458e3abb0a02e8c,
       type: 3}
     weightage: 100
-  - collectable: {fileID: 3778275499027133721, guid: 448f2e8f8b3344672af09c702ae3ee8c,
+  - collectable: {fileID: 3778275499027133721, guid: 5dfa1ffabf4c4cadafbf4f429e38724e,
       type: 3}
     weightage: 1
-  - collectable: {fileID: 6075333916904434798, guid: 156eefb8472eed146b629da88ed4d0c6,
+  - collectable: {fileID: 6075333916904434798, guid: 8a0b230834cc4987b2e2e5e7b761a66e,
       type: 3}
     weightage: 10
-  - collectable: {fileID: 3532185342734879178, guid: b4dc2801ff414fc4ea01c1bccda56fc3,
+  - collectable: {fileID: 3532185342734879178, guid: ed68540f90c5491682f6f7afe8424ebc,
       type: 3}
     weightage: 3
-  - collectable: {fileID: 2082961803307455677, guid: 4b19ad40ecd9d7844beb8317460abfdf,
+  - collectable: {fileID: 2082961803307455677, guid: 1c003260ad824feb81d01d39b1dfb40d,
       type: 3}
     weightage: 5
-  - collectable: {fileID: 7625321631656126446, guid: 98fc6a4c443843448b92a1a017c4d645,
+  - collectable: {fileID: 7625321631656126446, guid: 07c8977e02b14e50bf3fc28a069ea100,
       type: 3}
     weightage: 8
-  - collectable: {fileID: 6925210510993166370, guid: 0be741238ced9f94183f712124f088b7,
+  - collectable: {fileID: 6925210510993166370, guid: 71bde23f87ae47148e7eec915f072e1c,
       type: 3}
     weightage: 10
 --- !u!61 &5712938565531426515

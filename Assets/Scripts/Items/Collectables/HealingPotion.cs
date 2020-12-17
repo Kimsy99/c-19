@@ -7,5 +7,6 @@ public class HealingPotion : Collectable
 	protected override void Collect()
 	{
 		ken.health.Hp += healthToAdd;
+		AudioManager.Instance.Play(AudioEnum.Collect);
 	}
 }

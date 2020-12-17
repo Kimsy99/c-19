@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3cf0ed0ad440a4488159c0681e2cf3, type: 3}
+  m_Script: {fileID: 11500000, guid: 5eacb8be64d046be95c7e6c1e90df8d7, type: 3}
   m_Name: MiniZombie4StateFollow
   m_EditorClassIdentifier: 
   Actions:
-  - {fileID: 11400000, guid: a0c116b2136e810409cbda5d9ae0c531, type: 2}
+  - {fileID: 11400000, guid: 8f54cb7e902747bd9fd286e3cd1fe577, type: 2}
   Transitions:
-  - Decision: {fileID: 11400000, guid: 02c930e374c9692478139e7c0e5238cf, type: 2}
-    TrueState: {fileID: 11400000, guid: 9b2756af1ce614b3580b56f6c9f05e42, type: 2}
-    FalseState: {fileID: 11400000, guid: eec70798b5d2de24881ee13b53187095, type: 2}
+  - Decision: {fileID: 11400000, guid: 9188f2d891b147fcae06dfc6e4338ab0, type: 2}
+    TrueState: {fileID: 11400000, guid: f69039a2355e4ecdab92086502067f6f, type: 2}
+    FalseState: {fileID: 11400000, guid: 8c1edeb9f4f34a45b3f194d15b7c8558, type: 2}

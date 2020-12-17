@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3cf0ed0ad440a4488159c0681e2cf3, type: 3}
+  m_Script: {fileID: 11500000, guid: 5eacb8be64d046be95c7e6c1e90df8d7, type: 3}
   m_Name: DoctorStateFollow
   m_EditorClassIdentifier: 
   Actions:
-  - {fileID: 11400000, guid: 0de9c7ce552de28418b992439a96c968, type: 2}
-  - {fileID: 11400000, guid: 258987eb28f52da47982cf2e9a0d3868, type: 2}
+  - {fileID: 11400000, guid: 65d503c6750c4a7599ec697cd7efee74, type: 2}
+  - {fileID: 11400000, guid: d03a6ac6154f408c92662aee34e5ee2e, type: 2}
   Transitions:
-  - Decision: {fileID: 11400000, guid: 79c93ec1f878206449c3c1bbd5e724ff, type: 2}
-    TrueState: {fileID: 11400000, guid: 9b2756af1ce614b3580b56f6c9f05e42, type: 2}
-    FalseState: {fileID: 11400000, guid: 7630da66df80e8c4fa942481c93055ac, type: 2}
+  - Decision: {fileID: 11400000, guid: 49309bac67e24b89808fd153bbcb9ad0, type: 2}
+    TrueState: {fileID: 11400000, guid: f69039a2355e4ecdab92086502067f6f, type: 2}
+    FalseState: {fileID: 11400000, guid: 4094a7568c8543d793bf536bfcd753cd, type: 2}

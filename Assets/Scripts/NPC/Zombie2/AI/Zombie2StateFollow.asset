@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3cf0ed0ad440a4488159c0681e2cf3, type: 3}
+  m_Script: {fileID: 11500000, guid: 5eacb8be64d046be95c7e6c1e90df8d7, type: 3}
   m_Name: Zombie2StateFollow
   m_EditorClassIdentifier: 
   Actions:
-  - {fileID: 11400000, guid: 7b4e222171f4e97489250951c4db6093, type: 2}
-  - {fileID: 11400000, guid: 64c643a7804b76642bbfe26aecc2649b, type: 2}
+  - {fileID: 11400000, guid: 309a7a7dd76d4f54904e516e49f9a3dc, type: 2}
+  - {fileID: 11400000, guid: 49c46e8a063347439b119ac1995d7c60, type: 2}
   Transitions:
-  - Decision: {fileID: 11400000, guid: 724311359bca7be4180b55aa7ec407d9, type: 2}
-    TrueState: {fileID: 11400000, guid: 9b2756af1ce614b3580b56f6c9f05e42, type: 2}
-    FalseState: {fileID: 11400000, guid: 3a7e70d2036cd5a4c9369dc086d8462f, type: 2}
+  - Decision: {fileID: 11400000, guid: 26b2e4204354486a868f2147f429e351, type: 2}
+    TrueState: {fileID: 11400000, guid: f69039a2355e4ecdab92086502067f6f, type: 2}
+    FalseState: {fileID: 11400000, guid: 160cd7715636452f8edf2d7fd08907c9, type: 2}

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Boss1StateIdle
   m_EditorClassIdentifier: 
   Actions:
-  - {fileID: 11400000, guid: c38d67f128a814402ba0fba293759924, type: 2}
+  - {fileID: 11400000, guid: ccd0d2368a2f467f936471b0b641225d, type: 2}
   Transitions:
-  - Decision: {fileID: 11400000, guid: c1cd86fd63e054617ab9caf946701a17, type: 2}
-    TrueState: {fileID: 11400000, guid: 3a228047f76bd427fa93b4a0c2f7efd0, type: 2}
-    FalseState: {fileID: 11400000, guid: 9b2756af1ce614b3580b56f6c9f05e42, type: 2}
+  - Decision: {fileID: 11400000, guid: f5ba70af1a52416291f8c0bfa9c761bb, type: 2}
+    TrueState: {fileID: 11400000, guid: c5a201797850473f854273853beb2326, type: 2}
+    FalseState: {fileID: 11400000, guid: f69039a2355e4ecdab92086502067f6f, type: 2}

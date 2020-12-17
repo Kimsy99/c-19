@@ -730,7 +730,7 @@ ParticleSystem:
     m_Mesh: {fileID: 0}
     m_MeshRenderer: {fileID: 0}
     m_SkinnedMeshRenderer: {fileID: 0}
-    m_Sprite: {fileID: 7981458561678715645, guid: bd830f2dbea1e074f850c5aa95dcde97,
+    m_Sprite: {fileID: 7981458561678715645, guid: 02be3576eb10428c94405fcbd36f27ad,
       type: 3}
     m_SpriteRenderer: {fileID: 0}
     m_UseMeshMaterialIndex: 0
@@ -1539,7 +1539,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 21300000, guid: 6e414b5da42f8104a8183ac688eb3d83, type: 3}
+    - sprite: {fileID: 21300000, guid: 8d7045263e6d40049ac47e73bef9bd80, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:

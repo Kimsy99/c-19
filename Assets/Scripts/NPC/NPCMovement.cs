@@ -2,7 +2,8 @@
 
 public class NPCMovement : AnimatableMovable2D
 {
-	private NPCHealth npcHealth;
+	private NPC npc;
+	private Animator weaponHolderAnimator;
 	protected Vector2 target;
 	[SerializeField] private float followRange = 10;
 	[SerializeField] protected float walkSpeed = 4;
@@ -10,14 +11,20 @@ public class NPCMovement : AnimatableMovable2D
 	protected override void Awake()
 	{
 		base.Awake();
-		npcHealth = GetComponent<NPCHealth>();
+		npc = GetComponent<NPC>();
+	}
+
+	void Start()
+	{
+		weaponHolderAnimator = npc.weaponHolder.GetComponent<Animator>();
 	}
 
 	// Update is called once per frame
 	protected override void Update()
 	{
 		base.Update();
-		if (npcHealth.IsDead)
+		weaponHolderAnimator.SetBool(isMovingParamater, Speed > 0);
+		if (npc.health.IsDead)
 			return;
 		Patrol(followRange);
 	}

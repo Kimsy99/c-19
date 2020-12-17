@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: TileA2_PHC_General-Flooring_19
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -5052357074455881208, guid: e2ee5b4db83314346833e5bd3637b40a,
+  m_Sprite: {fileID: -5052357074455881208, guid: 3dcd91ac0a624f0a8008889f09eb02d9,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:

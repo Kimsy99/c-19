@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: TileA4_PHC_Interior-General_20
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -5211834934936356383, guid: 673f009591ab84658ba2687e300e899c,
+  m_Sprite: {fileID: -5211834934936356383, guid: 4b9531dcc57148caa264607cc0010a6b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:

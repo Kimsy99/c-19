@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: TileD_PHC_Interior-Delapidated_5
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1878295964751894076, guid: 9046b6f7ada1e4a74bb5470a4f2a7c08,
+  m_Sprite: {fileID: 1878295964751894076, guid: 4624929d4a99468586e80d6f1b5c232e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:

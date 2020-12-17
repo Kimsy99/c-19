@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34754dc4ed93d2d46b5185f88b1290e5, type: 3}
+  m_Script: {fileID: 11500000, guid: f2886db0d28f4adf999069ab57179b2f, type: 3}
   m_Name: LaserGun
   m_EditorClassIdentifier: 
   displayName: Laser Gun
-  displaySprite: {fileID: -4107469028111699786, guid: eb082058f0a599945b15d17405d326c3,
+  displaySprite: {fileID: -4107469028111699786, guid: f6d51d1aafc340249f981272e0a72e40,
     type: 3}
-  heldSprite: {fileID: -4107469028111699786, guid: 49f1d111ecb7b0248bb2b8b7643985c7,
+  heldSprite: {fileID: -4107469028111699786, guid: 43d3b3a36df54412a5c13c6db2c4b8d5,
     type: 3}
   bulletToUse: {fileID: 0}
   bulletSpawnPositionOffset: {x: 0.232, y: 0.037}
@@ -25,7 +25,7 @@ MonoBehaviour:
   spread: 0
   shootSound: 6
   cooldown: 0.1
-  muzzlePS: {fileID: 2302688338332776376, guid: e9d5becc7763c3e48a3b255dc9242286,
+  muzzlePS: {fileID: 2302688338332776376, guid: 266430e855434c41b80c58bcf2907df3,
     type: 3}
-  customBulletSpawner: {fileID: 1592039412317066011, guid: 203f0589a3d873c4a8cb8dd9715ffba7,
+  customBulletSpawner: {fileID: 1592039412317066011, guid: fb09e664b2904ac299bafdafc715fa2a,
     type: 3}

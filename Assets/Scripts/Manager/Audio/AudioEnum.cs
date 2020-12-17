@@ -7,5 +7,7 @@
 	PistolShoot,
 	PlasmaGunShoot,
 	Laser,
-	EnemyHurt
+	EnemyHurt,
+	ChestOpen,
+	Collect
 }

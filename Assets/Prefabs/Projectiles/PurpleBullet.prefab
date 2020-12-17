@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 8472959599878325173}
   - component: {fileID: 8472959599878325172}
   - component: {fileID: -4302216780864823160}
-  - component: {fileID: 8472959599878325179}
-  - component: {fileID: 8472959599878325175}
+  - component: {fileID: 521565983024012712}
+  - component: {fileID: 9103431994874482778}
   m_Layer: 13
-  m_Name: EnemyProjectile
+  m_Name: PurpleBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,8 +125,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &8472959599878325179
-CircleCollider2D:
+--- !u!61 &521565983024012712
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -135,13 +135,23 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.011720107}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.23, y: 0.21}
+    newSize: {x: 0.23, y: 0.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.03
---- !u!114 &8472959599878325175
+  m_Size: {x: 0.067916304, y: 0.06511617}
+  m_EdgeRadius: 0
+--- !u!114 &9103431994874482778
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,9 +163,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37babf6a3af042c99a06c144c0cf78cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  impactPS: {fileID: 0}
+  impactPS2: {fileID: 0}
+  infectionRate: 0.15
+  shouldFollow: 1
+  moveSpeed: 3
   destroyEffect: {fileID: 4787095099272584536, guid: 4ed7e22351894ad79550ad7f1f449b17,
     type: 3}
   attackEffect: {fileID: 4084275945994392668, guid: d7db9b2e630d4008823fb530217b068c,
     type: 3}
-  maxLife: 1.4
+  maxLife: 2

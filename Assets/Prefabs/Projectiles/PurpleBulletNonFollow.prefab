@@ -1,21 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &6086891095368650237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3531316126539097484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34144841ea9f4a2ea32a6b03d095f004, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impactPS: {fileID: 2885675892663126107, guid: 56e37356bb404f1c81a9a812a68da89e,
-    type: 3}
-  impactPS2: {fileID: 4333207786718604534, guid: 56e37356bb404f1c81a9a812a68da89e,
-    type: 3}
 --- !u!1001 &4941643496055596602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 8472959599878325174, guid: 057d34e36c564711bb1baefb30b2c46c,
         type: 3}
       propertyPath: m_Name
-      value: EnemyFollowProjectile
+      value: PurpleBulletNonFollow
       objectReference: {fileID: 0}
     - target: {fileID: 8472959599878325178, guid: 057d34e36c564711bb1baefb30b2c46c,
         type: 3}
@@ -83,12 +67,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9103431994874482778, guid: 057d34e36c564711bb1baefb30b2c46c,
+        type: 3}
+      propertyPath: shouldFollow
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 8472959599878325175, guid: 057d34e36c564711bb1baefb30b2c46c, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 057d34e36c564711bb1baefb30b2c46c, type: 3}
---- !u!1 &3531316126539097484 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8472959599878325174, guid: 057d34e36c564711bb1baefb30b2c46c,
-    type: 3}
-  m_PrefabInstance: {fileID: 4941643496055596602}
-  m_PrefabAsset: {fileID: 0}

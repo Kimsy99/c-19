@@ -63,11 +63,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2141492535573478094, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
+        type: 3}
+      propertyPath: currentState
+      value: 
+      objectReference: {fileID: 11400000, guid: 2520ff8a73fc4952859105e4fbab18af,
+        type: 2}
     - target: {fileID: 5984424923952772208, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
       propertyPath: bulletToUse
       value: 
-      objectReference: {fileID: 8472959599878325175, guid: 057d34e36c564711bb1baefb30b2c46c,
+      objectReference: {fileID: 9103431994874482778, guid: 057d34e36c564711bb1baefb30b2c46c,
         type: 3}
     - target: {fileID: 5984424923952772208, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}

@@ -2,6 +2,7 @@
 
 public class PurpleBullet : EnemyBullet
 {
+	[SerializeField] private bool shouldFollow = true;
 	[SerializeField] private float moveSpeed = 1;
 
 	public GameObject destroyEffect; //after 2 sec and never touch player, trigger
@@ -10,16 +11,28 @@ public class PurpleBullet : EnemyBullet
 	private float lifeTimer;
 	[SerializeField] private float maxLife = 2.0F;
 
-	private void Update()
+	void Update()
 	{
-		Vector2 directionVector = ken.transform.position - transform.position;
-		float direction = Vector2.SignedAngle(Vector2.right, directionVector);
+		if (shouldFollow)
+		{
+			Vector2 directionVector = ken.transform.position - transform.position;
+			float direction = Vector2.SignedAngle(Vector2.right, directionVector);
 
-		Direction = direction;
-		Speed = moveSpeed;
+			Direction = direction;
+			Speed = moveSpeed;
+		}
 
 		lifeTimer += Time.deltaTime;
 		if (lifeTimer >= maxLife)
-			OnBulletImpact();
+		{
+			Instantiate(destroyEffect, transform.position, Quaternion.identity);
+			Destroy(gameObject);
+		}
+	}
+
+	protected override void OnBulletImpact()
+	{
+		Instantiate(attackEffect, transform.position, Quaternion.identity);
+		Destroy(gameObject);
 	}
 }

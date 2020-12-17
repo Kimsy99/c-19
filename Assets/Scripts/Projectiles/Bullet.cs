@@ -42,15 +42,20 @@ public class Bullet : Movable2D
 		DestroyBullet();
 	}
 
-	protected void OnBulletImpact()
+	protected virtual void OnBulletImpact()
 	{
-		impactPS.Play();
+		if (impactPS != null)
+			impactPS.Play();
 		if (impactPS2 != null)
 			impactPS2.Play();
 
 		// Wait for particle finish playing
 		Invoke(nameof(DestroyBullet), impactPS.main.duration);
+		DisableBullet();
+	}
 
+	protected void DisableBullet()
+	{
 		Direction = 0;
 		Speed = 0;
 		spriteRenderer.sprite = null;

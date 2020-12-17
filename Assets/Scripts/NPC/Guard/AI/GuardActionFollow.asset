@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e7129b578f44f1f978f83243c3ec0d2, type: 3}
   m_Name: GuardActionFollow
   m_EditorClassIdentifier: 
-  minDistanceToFollow: 3
-  followingSpeed: 1.25
+  minDistanceToFollow: 0
+  followingSpeed: 2

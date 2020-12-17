@@ -125,6 +125,11 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0.1172248
       objectReference: {fileID: 0}
+    - target: {fileID: 7940670431555395283, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
+        type: 3}
+      propertyPath: maxHp
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6eaeed3792d74f4f931a4dff3b4da3ca, type: 3}
 --- !u!198 &4947099992675066968 stripped

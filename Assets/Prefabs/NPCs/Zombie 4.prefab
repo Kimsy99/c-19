@@ -163,7 +163,6 @@ GameObject:
   - component: {fileID: 892908392163746208}
   - component: {fileID: 892908392163746267}
   - component: {fileID: 6068312062649501076}
-  - component: {fileID: 892908392163746212}
   - component: {fileID: 892908392163746213}
   - component: {fileID: 8799784187117275311}
   - component: {fileID: 495548779115126749}
@@ -312,18 +311,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28, y: 0.47550058}
   m_EdgeRadius: 0
---- !u!114 &892908392163746212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 892908392163746211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9abe1dcd35a74cbeb2f339484c2e6b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &892908392163746213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,9 +365,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14641e83e3f64b6d9cfe593c35349ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 0}
   spriteFlippable2D: {fileID: 0}
+  flashable: {fileID: 0}
+  health: {fileID: 0}
   movement: {fileID: 0}
+  weaponHolder: {fileID: 0}
   heldWeapon: {fileID: 0}
 --- !u!114 &7940670431555395283
 MonoBehaviour:
@@ -976,15 +965,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfb0d2cf46fa47f48083cbd84dd9322a, type: 3}
---- !u!4 &7802711644211809871 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 178491736850879537, guid: dfb0d2cf46fa47f48083cbd84dd9322a,
-    type: 3}
-  m_PrefabInstance: {fileID: 7940670431640050302}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &7802711644211809865 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 178491736850879543, guid: dfb0d2cf46fa47f48083cbd84dd9322a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7940670431640050302}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7802711644211809871 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 178491736850879537, guid: dfb0d2cf46fa47f48083cbd84dd9322a,
     type: 3}
   m_PrefabInstance: {fileID: 7940670431640050302}
   m_PrefabAsset: {fileID: 0}

@@ -5,8 +5,6 @@ public class NPCMovement : AnimatableMovable2D
 	private NPC npc;
 	private Animator weaponHolderAnimator;
 	protected Vector2 target;
-	[SerializeField] private float followRange = 10;
-	[SerializeField] protected float walkSpeed = 4;
 
 	protected override void Awake()
 	{
@@ -24,9 +22,6 @@ public class NPCMovement : AnimatableMovable2D
 	{
 		base.Update();
 		weaponHolderAnimator.SetBool(isMovingParamater, Speed > 0);
-		if (npc.health.IsDead)
-			return;
-		Patrol(followRange);
 	}
 
 	protected virtual void Patrol(float followRange)

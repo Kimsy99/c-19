@@ -10,7 +10,12 @@ PrefabInstance:
     - target: {fileID: 2302688338332776326, guid: 67500ea05c32474c88e38819024bd18d,
         type: 3}
       propertyPath: m_Name
-      value: BulletImpactEffect2
+      value: SyringeImpactEffect2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302688338332776376, guid: 67500ea05c32474c88e38819024bd18d,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.026644066
       objectReference: {fileID: 0}
     - target: {fileID: 2302688338332776376, guid: 67500ea05c32474c88e38819024bd18d,
         type: 3}
@@ -19,23 +24,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302688338332776376, guid: 67500ea05c32474c88e38819024bd18d,
         type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2302688338332776376, guid: 67500ea05c32474c88e38819024bd18d,
-        type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2302688338332776379, guid: 67500ea05c32474c88e38819024bd18d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.9086914
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2302688338332776379, guid: 67500ea05c32474c88e38819024bd18d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0796173
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2302688338332776379, guid: 67500ea05c32474c88e38819024bd18d,
         type: 3}

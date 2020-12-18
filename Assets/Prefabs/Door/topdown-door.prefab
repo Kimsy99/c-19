@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -149223744989434653}
   m_Layer: 0
   m_Name: topdown-door
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 61380793
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 3493484265958090389, guid: 24713541bcb9404ea6a137f99235cc01,
     type: 3}

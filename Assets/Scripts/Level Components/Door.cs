@@ -16,10 +16,6 @@ public class Door : MonoBehaviour
   }
   private void Update()
   {
-    if (Input.GetKeyDown(KeyCode.Z))
-    {
-      haveKey = true;
-    }
     if (Input.GetKeyDown(KeyCode.C) && haveKey)
     {
       OpenDoor();

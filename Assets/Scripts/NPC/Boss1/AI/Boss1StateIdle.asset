@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51977423f9c3d4a0692ce0828b946c1c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5eacb8be64d046be95c7e6c1e90df8d7, type: 3}
   m_Name: Boss1StateIdle
   m_EditorClassIdentifier: 
   Actions:
@@ -18,3 +18,6 @@ MonoBehaviour:
   - Decision: {fileID: 11400000, guid: f5ba70af1a52416291f8c0bfa9c761bb, type: 2}
     TrueState: {fileID: 11400000, guid: c5a201797850473f854273853beb2326, type: 2}
     FalseState: {fileID: 11400000, guid: f69039a2355e4ecdab92086502067f6f, type: 2}
+  - Decision: {fileID: 0}
+    TrueState: {fileID: 0}
+    FalseState: {fileID: 0}

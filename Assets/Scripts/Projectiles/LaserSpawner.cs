@@ -29,7 +29,7 @@ public class LaserSpawner : MonoBehaviour
 
   void ShootLaser()
   {
-    int layerMask = LayerMask.GetMask("Enemy", "Wall");
+    int layerMask = LayerMask.GetMask("Enemy", "Wall", "Boss");
     Vector2 directionVector = Quaternion.Euler(0, 0, weaponAim.AimAngle) * Vector2.right;
     Vector2 laserEnd = (Vector2)transform.position + directionVector * 100;
     RaycastHit2D hit = Physics2D.Raycast(transform.position, directionVector, Mathf.Infinity, layerMask);

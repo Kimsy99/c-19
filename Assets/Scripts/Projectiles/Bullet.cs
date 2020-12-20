@@ -17,8 +17,8 @@ public class Bullet : Movable2D
     protected override void Awake()
     {
 		base.Awake();
-		spriteRenderer = GetComponent<SpriteRenderer>();
-		bulletCollider = GetComponent<BoxCollider2D>();
+		spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+		bulletCollider = GetComponentInChildren<BoxCollider2D>();
     }
 
 	public void SetDamage(float damage)
@@ -28,11 +28,8 @@ public class Bullet : Movable2D
 
 	protected virtual void OnCollisionEnter2D(Collision2D other)
 	{
-		if (ShotByWeaponName.Equals("Shot Blocker"))
-			return;
-
 		if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
-			other.gameObject.GetComponentInParent<NPCHealth>().Damage(damage, true);
+			other.gameObject.GetComponentInParent<NPCHealth>().Damage(damage, true, 0.1F);
 
 		OnBulletImpact();
 	}

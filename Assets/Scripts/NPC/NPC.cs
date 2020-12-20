@@ -15,7 +15,9 @@ public class NPC : MonoBehaviour
 		flashable = GetComponent<Flashable>();
 		health = GetComponent<NPCHealth>();
 		movement = GetComponent<NPCMovement>();
-		weaponHolder = transform.Find("WeaponHolder").gameObject;
+		Transform weaponHolderTransform = transform.Find("WeaponHolder");
+		if (weaponHolderTransform != null)
+			weaponHolder = weaponHolderTransform.gameObject;
 		heldWeapon = GetComponentInChildren<NPCHeldWeapon>();
 	}
 }

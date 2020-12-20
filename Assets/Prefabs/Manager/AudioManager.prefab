@@ -98,3 +98,27 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - audioEnum: 9
+    clip: {fileID: 8300000, guid: f945dbc9e81aa5344bfd1443f975cb88, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - audioEnum: 10
+    clip: {fileID: 8300000, guid: 6e9e059f4f69c9544bc851add254125f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - audioEnum: 11
+    clip: {fileID: 8300000, guid: 16a97f1c0e0a51447840d39b314676ed, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - audioEnum: 12
+    clip: {fileID: 8300000, guid: 4edba3f4fc733bb449e97ff7699ff579, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}

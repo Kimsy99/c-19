@@ -1,15 +1,24 @@
 using UnityEngine;
 
-public class LevelManager : MonoBehaviour
+public class LevelManager : Singleton<LevelManager>
 {
+	private Ken ken;
 	private HeldWeapon heldWeapon;
+	private Transform bulletSpawner;
 	[SerializeField] private WeaponSettings firstWeaponSettings = null;
 	[SerializeField] private WeaponSettings secondWeaponSettings = null;
 	[SerializeField] private WeaponSettings thirdWeaponSettings = null;
 
-	void Awake()
+	[SerializeField] private GameObject flashLight = null;
+
+	public bool isBossIntro, isBossReady;
+
+	protected override void Awake()
 	{
-		heldWeapon = GameObject.Find("Ken").GetComponentInChildren<HeldWeapon>();
+		base.Awake();
+		ken = GameObject.Find("Ken").GetComponent<Ken>();
+		heldWeapon = ken.GetComponentInChildren<HeldWeapon>();
+		bulletSpawner = ken.transform.Find("WeaponHolder").Find("BulletSpawner");
 	}
 
 	void Start()
@@ -19,5 +28,12 @@ public class LevelManager : MonoBehaviour
 		InventoryManager.Instance.SetWeapon(1, new Weapon(secondWeaponSettings));
 		InventoryManager.Instance.SetWeapon(2, new Weapon(thirdWeaponSettings));
 		heldWeapon.SetHeldWeapon(firstWeapon);
+
+		AudioManager.Instance.Play(AudioEnum.Level4Theme);
+	}
+
+	public void SetFlashLightEnabled(bool isEnabled)
+	{
+		Instantiate(flashLight, bulletSpawner);
 	}
 }

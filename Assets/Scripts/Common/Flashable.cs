@@ -2,15 +2,17 @@
 using UnityEngine;
 
 /// <summary>
-/// GameObjects can apply this script for a damage flash red effect.
+/// GameObjects can apply this script for a flash effect. You can configure it to flash to
+/// any color you want.
 /// </summary>
 public class Flashable : MonoBehaviour
 {
-	[HideInInspector] public SpriteRenderer spriteRenderer = null;
-	private Coroutine revertCoroutine;
-	
+	[SerializeField] private Color flashColor = Color.red;
 	[SerializeField] private ParticleSystem blood = null;
 	[SerializeField] private AudioEnum flashAudio = AudioEnum.NoAudio;
+
+	[HideInInspector] public SpriteRenderer spriteRenderer = null;
+	protected Coroutine revertCoroutine;
 
 	// Use this for initialization
 	protected virtual void Awake()
@@ -21,9 +23,9 @@ public class Flashable : MonoBehaviour
 	/// <summary>
 	/// Call this function to flash red.
 	/// </summary>
-	public virtual void Flash()
+	public void Flash()
 	{
-		spriteRenderer.color = Color.red;
+		Modify();
 		if (blood != null)
 			blood.Play();
 		AudioManager.Instance.Play(flashAudio);
@@ -32,7 +34,12 @@ public class Flashable : MonoBehaviour
 		revertCoroutine = StartCoroutine(Revert());
 	}
 
-	private IEnumerator Revert()
+	protected virtual void Modify()
+	{
+		spriteRenderer.color = flashColor;
+	}
+
+	protected virtual IEnumerator Revert()
 	{
 		yield return new WaitForSeconds(0.1F);
 		spriteRenderer.color = Color.white;

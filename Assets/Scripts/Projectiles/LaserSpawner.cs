@@ -30,14 +30,18 @@ public class LaserSpawner : MonoBehaviour
 	void ShootLaser()
 	{
 		int layerMask = LayerMask.GetMask("Enemy", "Wall");
-		Vector2 laserEnd = transform.position + Quaternion.Euler(0, 0, weaponAim.AimAngle) * Vector2.right * 100;
-		RaycastHit2D hit = Physics2D.Raycast(transform.position, laserEnd, Mathf.Infinity, layerMask);
+		Vector2 directionVector = Quaternion.Euler(0, 0, weaponAim.AimAngle) * Vector2.right;
+		Vector2 laserEnd = (Vector2)transform.position + directionVector*100;
+		RaycastHit2D hit = Physics2D.Raycast(transform.position, directionVector, Mathf.Infinity, layerMask);
 		if (hit)
 		{
 			SetLaserPoints(transform.position, hit.point);
 			NPCHealth npcHealth = hit.collider.gameObject.GetComponentInParent<NPCHealth>();
+			BossHealth bossHealth = hit.collider.gameObject.GetComponentInParent<BossHealth>();
 			if (npcHealth != null)
 				npcHealth.Damage(damage, true);
+			else if (bossHealth != null)
+				bossHealth.Damage(damage, true);
 		}
 		else
 			SetLaserPoints(transform.position, laserEnd);

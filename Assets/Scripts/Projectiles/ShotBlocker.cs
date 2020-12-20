@@ -2,9 +2,13 @@
 
 public class ShotBlocker : Bullet
 {
+	protected override void OnCollisionEnter2D(Collision2D other)
+	{
+	}
+
 	protected void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
-			other.gameObject.GetComponentInParent<NPCHealth>().Damage(damage, true);
+			other.gameObject.GetComponentInParent<NPCHealth>().Damage(damage, true, 0.1F);
     }
 }

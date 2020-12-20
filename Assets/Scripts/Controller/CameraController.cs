@@ -6,7 +6,10 @@
 public class CameraController : MonoBehaviour
 {
 	private Camera cam;
-	[SerializeField] private Transform cameraTarget = null;
+	public Transform cameraTarget = null;
+	public Transform secondTarget = null;
+	public float cameraTargetWeightage = 5;
+	public float camSize = 4;
 	[SerializeField] private float cameraSpeedFactor = 3;
 	private Vector2 mousePos = new Vector2();
 
@@ -19,9 +22,14 @@ public class CameraController : MonoBehaviour
 	void Update()
 	{
 		mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-		float fx = (cameraTarget.position.x*5 + mousePos.x) / 6, fy = (cameraTarget.position.y*5 + mousePos.y) / 6;
+		Vector2 secondPos = secondTarget == null ? mousePos : (Vector2)secondTarget.position;
+		float fx = (cameraTarget.position.x * cameraTargetWeightage + secondPos.x) / (1 + cameraTargetWeightage), fy = (cameraTarget.position.y * cameraTargetWeightage + secondPos.y) / (1 + cameraTargetWeightage);
 		float vcx = transform.position.x, vcy = transform.position.y;
-			
+		
+		// Smoothly follow target and second target
 		transform.Translate((fx - vcx) * cameraSpeedFactor * Time.deltaTime, (fy - vcy) * cameraSpeedFactor * Time.deltaTime, 0);
+
+		// Smoothly adjust camera size
+		cam.orthographicSize += (camSize - cam.orthographicSize) * cameraSpeedFactor * Time.deltaTime;
 	}
 }

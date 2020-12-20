@@ -9,5 +9,9 @@
 	Laser,
 	EnemyHurt,
 	ChestOpen,
-	Collect
+	Collect,
+	Regenerate,
+	Level4Theme,
+	BossTheme,
+	Alarm
 }

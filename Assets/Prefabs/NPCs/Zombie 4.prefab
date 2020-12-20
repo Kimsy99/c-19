@@ -401,8 +401,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfdafb7ea2af4f008b7430714a658eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followRange: 10
-  walkSpeed: 4
 --- !u!114 &7940670431555395369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,6 +414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionDamage: 0.5
+  infectionRate: 0.15
 --- !u!114 &2141492535573478094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,7 +564,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 61380793
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &892908392854001704
 MonoBehaviour:

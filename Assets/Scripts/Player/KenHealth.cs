@@ -88,9 +88,11 @@ public class KenHealth : Health
 		return true;
 	}
 
-	public void Infect(float infection)
+	public void Infect(float infection, float invulnerabilityTime = 0)
 	{
-		Infection += infection;
+		if (!IsInvulnerable)
+			Infection += infection;
+		invulnerabilityTimer += invulnerabilityTime;
 	}
 
 	private void Die()

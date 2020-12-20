@@ -24,12 +24,12 @@ public class WeaponAim : MonoBehaviour
 	
 	void Update()
 	{
-		if (ken.shooting.HeldWeapon.Weapon == null) // Enable autoflip if Ken is not holding a weapon
-		{
-			ken.spriteFlippable2D.autoFlip = true;
-			return;
-		}
-		ken.spriteFlippable2D.autoFlip = false; // Ken is holding a weapon, we will flip things manually
+		//if (ken.shooting.HeldWeapon.Weapon == null) // Enable autoflip if Ken is not holding a weapon
+		//{
+		//	ken.spriteFlippable2D.autoFlip = true;
+		//	return;
+		//}
+		//ken.spriteFlippable2D.autoFlip = false; // Ken is holding a weapon, we will flip things manually
 
 		// Calculate angle from Ken to mouse
 		Vector2 mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);

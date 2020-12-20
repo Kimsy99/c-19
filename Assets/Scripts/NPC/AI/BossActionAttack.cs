@@ -3,18 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(menuName = "AI/Actions/Attack", fileName = "ActionAttack")]
-public class BossActionAttack : ActionAttack
+[CreateAssetMenu(menuName = "AI/Actions/BossAttack", fileName = "BossActionAttack")]
+public class BossActionAttack : AIAction
 {
-  // Start is called before the first frame update
-  void Start()
-  {
+  public float secondsBetweenAttack;
+  private float attackDelay;
 
+  public override void Act(StateController controller)
+  {
+    Attack(controller);
   }
 
-  // Update is called once per frame
-  void Update()
+  private void Attack(StateController controller)
   {
+    if (controller.Target == null)
+      return;
 
+    attackDelay = Mathf.Max(attackDelay - Time.deltaTime, 0);
+    if (attackDelay == 0)
+    {
+      controller.npc.heldWeapon.Shoot();
+      attackDelay = secondsBetweenAttack;
+    }
   }
 }

@@ -1,12 +1,19 @@
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "AI/Actions/Follow", fileName = "ActionFollow")]
-public class ActionFollow : AIAction
-{
-  public float minDistanceToFollow = 2;
-  public float followingSpeed = 1;
+[CreateAssetMenu(menuName = "AI/Actions/BossFollow", fileName = "BossActionFollow")]
 
+public class BossActionFollow : AIAction
+{
+  public float minDistanceToFollow = 0;
+  public float followingSpeed1 = 3;
+  public float followingSpeed2 = 5;
+  public float followingSpeed = 1;
+  private void Start()
+  {
+    followingSpeed = followingSpeed1;
+  }
   public override void Act(StateController controller)
   {
     FollowTarget(controller);
@@ -17,6 +24,14 @@ public class ActionFollow : AIAction
     if (controller.Target == null)
       return;
 
+    if (controller.npc.health.Hp <= controller.npc.health.maxHp / 2)
+    {
+      Debug.Log("Increase speed");
+      followingSpeed = followingSpeed2;
+    }
+    // Debug.Log(controller.npc.health.Hp);
+    // Debug.Log(controller.npc.health.maxHp);
+    // Debug.Log("cont");
     // Calculate direction
     Vector2 targetDirectionVector = controller.Target.position - controller.transform.position;
     float direction = Vector2.SignedAngle(Vector2.right, targetDirectionVector);

@@ -4,7 +4,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
   public float hp;
-  [SerializeField] protected float maxHp;
+  [SerializeField] public float maxHp;
   [HideInInspector] public float invulnerabilityTimer = 0;
 
   public Action OnDie;

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Boss1ActionFollowNew
   m_EditorClassIdentifier: 
   minDistanceToFollow: 0
-  followingSpeed1: 3
-  followingSpeed2: 5
-  followingSpeed: 3
+  followingSpeed1: 2
+  followingSpeed2: 3
+  followingSpeed: 2

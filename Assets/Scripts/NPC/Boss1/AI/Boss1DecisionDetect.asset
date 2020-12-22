@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d02ff7e0ea2645a0aaa9495cf0c6f231, type: 3}
   m_Name: Boss1DecisionDetect
   m_EditorClassIdentifier: 
-  detectArea: 7
+  detectArea: 10
   targetMask:
     serializedVersion: 2
     m_Bits: 256

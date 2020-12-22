@@ -32,7 +32,9 @@ public class Bullet : Movable2D
       return;
 
     if (other.gameObject.layer == LayerMask.NameToLayer("Enemy") || other.gameObject.layer == LayerMask.NameToLayer("Boss"))
+    {
       other.gameObject.GetComponentInParent<NPCHealth>().Damage(damage, true);
+    }
 
     OnBulletImpact();
   }

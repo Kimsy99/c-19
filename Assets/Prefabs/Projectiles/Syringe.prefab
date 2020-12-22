@@ -106,7 +106,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &1799522047058668660
 BoxCollider2D:
@@ -160,6 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impactPS: {fileID: 553686087281913659}
   impactPS2: {fileID: 6005459772574833509}
+  infectionRate: 0
 --- !u!1001 &154431934384206915
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -119,7 +119,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.49553716, y: 0.34016123}
+  m_Offset: {x: 0.49553716, y: -0.030115843}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.25, y: 0.46153846}
@@ -130,7 +130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0082834, y: 2.6301672}
+  m_Size: {x: 2.0082834, y: 4.553558}
   m_EdgeRadius: 0
 --- !u!114 &5366846168166867517
 MonoBehaviour:
@@ -146,8 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoDoor: 0
   keyName: 
-  openDoorHint: {fileID: 0}
-  getKeyHint: {fileID: 0}
+  openDoorRequirement: {fileID: 0}
   scanCard: 11
   openDoor: 10
 --- !u!1 &5366846168300456979

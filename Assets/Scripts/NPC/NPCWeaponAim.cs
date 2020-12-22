@@ -18,9 +18,9 @@ public class NPCWeaponAim : MonoBehaviour
 	void Update()
 	{
 		AimAngle = Vector2.SignedAngle(Vector2.right, kenCenter.transform.position - transform.position);
-		if (spriteFlippable2D.Facing == SpriteFlippable2D.RelativeDirection.Left)
-			transform.rotation = Quaternion.Euler(0, 0, AimAngle + 180);
-		else
+		if (spriteFlippable2D == null || spriteFlippable2D.Facing == SpriteFlippable2D.RelativeDirection.Right)
 			transform.rotation = Quaternion.Euler(0, 0, AimAngle);
+		else
+			transform.rotation = Quaternion.Euler(0, 0, AimAngle + 180);
 	}
 }

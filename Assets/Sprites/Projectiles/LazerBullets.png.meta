@@ -38,6 +38,9 @@ TextureImporter:
   - first:
       213: -2681360765912993008
     second: PoliceBullet
+  - first:
+      213: -8075009940830398473
+    second: TurretBullet
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -160,6 +163,27 @@ TextureImporter:
       bones: []
       spriteID: 01336110794e9cad0800000000000000
       internalID: -2681360765912993008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretBullet
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 34
+        width: 39
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f75e07fd3dcfef80800000000000000
+      internalID: -8075009940830398473
       vertices: []
       indices: 
       edges: []

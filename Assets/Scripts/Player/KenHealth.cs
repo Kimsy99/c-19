@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class KenHealth : Health
@@ -102,6 +103,8 @@ public class KenHealth : Health
 		weaponHolder.SetActive(false);
 		trigger1.SetActive(false);
 		animator.SetBool(isDeadParameter, true);
+
+		LevelManager.Instance.GameOver();
 	}
 
 	// Revive this game object    

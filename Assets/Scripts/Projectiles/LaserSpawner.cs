@@ -1,57 +1,33 @@
 ﻿using UnityEngine;
 
-public class LaserSpawner : MonoBehaviour
+public class LaserSpawner : Laser
 {
-	private Camera cam;
-	private LineRenderer lineRenderer;
 	private WeaponAim weaponAim;
-	[SerializeField] private GameObject laserEnd = null;
 	public float damage;
 
-	void Awake()
+	protected override void Awake()
 	{
-		cam = Camera.main;
-		lineRenderer = GetComponent<LineRenderer>();
+		base.Awake();
 		weaponAim = GetComponentInParent<WeaponAim>();
 
 		gameObject.SetActive(false);
 	}
 
-	void Update()
-	{
-		lineRenderer.widthMultiplier = Random.Range(0.08F, 0.14F);
-	}
-
 	void FixedUpdate()
 	{
-		ShootLaser();
+		ShootLaser(LayerMask.GetMask("Enemy", "Wall", "LaserPassableWall"), weaponAim.AimAngle);
 	}
 
-	void ShootLaser()
+	protected override void OnLaserHit(RaycastHit2D hit)
 	{
-		int layerMask = LayerMask.GetMask("Enemy", "Wall");
-		Vector2 directionVector = Quaternion.Euler(0, 0, weaponAim.AimAngle) * Vector2.right;
-		Vector2 laserEnd = (Vector2)transform.position + directionVector*100;
-		RaycastHit2D hit = Physics2D.Raycast(transform.position, directionVector, Mathf.Infinity, layerMask);
-		if (hit)
-		{
-			SetLaserPoints(transform.position, hit.point);
-			NPCHealth npcHealth = hit.collider.gameObject.GetComponentInParent<NPCHealth>();
-			BossHealth bossHealth = hit.collider.gameObject.GetComponentInParent<BossHealth>();
-			if (npcHealth != null)
-				npcHealth.Damage(damage, true);
-			else if (bossHealth != null)
-				bossHealth.Damage(damage, true);
-		}
-		else
-			SetLaserPoints(transform.position, laserEnd);
-	}
-
-	private void SetLaserPoints(Vector2 startPosition, Vector2 endPosition)
-	{
-		lineRenderer.SetPosition(0, startPosition);
-		lineRenderer.SetPosition(1, endPosition);
-		laserEnd.transform.position = endPosition;
+		if (hit.collider.gameObject.layer != LayerMask.NameToLayer("Enemy"))
+			return;
+		NPCHealth npcHealth = hit.collider.gameObject.GetComponentInParent<NPCHealth>();
+		BossHealth bossHealth = hit.collider.gameObject.GetComponentInParent<BossHealth>();
+		if (npcHealth != null)
+			npcHealth.Damage(damage, true);
+		else if (bossHealth != null)
+			bossHealth.Damage(damage, true);
 	}
 
 	public bool IsLaserOn
@@ -62,7 +38,7 @@ public class LaserSpawner : MonoBehaviour
 			gameObject.SetActive(value);
 			if (value)
 			{
-				ShootLaser();
+				ShootLaser(LayerMask.GetMask("Enemy", "Wall", "LaserPassableWall"), weaponAim.AimAngle);
 				AudioManager.Instance.Play(AudioEnum.Laser);
 			}
 			else

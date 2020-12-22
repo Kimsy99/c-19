@@ -6,9 +6,10 @@ public class UIManager : Singleton<UIManager>
 	private Image healthBar;
 	private Image healthBarBackground;
 	private Image infectionBar;
+	public GameObject bossBarContainer;
+	[HideInInspector] public Image bossBar;
+	[HideInInspector] public Image bossBarBackground;
 	[SerializeField] private float fillAmountChangeRate = 1;
-	//[SerializeField] private TextMeshProUGUI currentHealthTMP;
-	//[SerializeField] private TextMeshProUGUI currentInfectionTMP;
 
 	private float playerHealth = 5F;
 	private float playerMaxHealth = 10F;
@@ -17,9 +18,13 @@ public class UIManager : Singleton<UIManager>
 
 	void Start()
 	{
-		healthBar = GameObject.Find("HealthBar").GetComponent<Image>();
-		healthBarBackground = GameObject.Find("HealthBarBackground").GetComponent<Image>();
-		infectionBar = GameObject.Find("InfectionBar").GetComponent<Image>();
+		Transform statsBarContainer = GameObject.Find("StatsBarContainer").transform;
+		healthBar = statsBarContainer.Find("HealthBarContainer").Find("HealthBar").GetComponent<Image>();
+		healthBarBackground = statsBarContainer.Find("HealthBarContainer").Find("HealthBarBackground").GetComponent<Image>();
+		infectionBar = statsBarContainer.Find("InfectionBarContainer").Find("InfectionBar").GetComponent<Image>();
+		
+		bossBar = bossBarContainer.transform.Find("BossBar").GetComponent<Image>();
+		bossBarBackground = bossBarContainer.transform.Find("BossBarBackground").GetComponent<Image>();
 	}
 
 	void Update()
@@ -44,9 +49,7 @@ public class UIManager : Singleton<UIManager>
 			healthBarBackground.fillAmount -= fillAmountChangeRate * Time.deltaTime;
 		else
 			healthBarBackground.fillAmount = healthBar.fillAmount;
-		//currentHealthTMP.text = playerCurrentHealth.ToString() + "/" + playerMaxHealth.ToString();
 
 		infectionBar.fillAmount = playerInfection / playerMaxInfection;
-		//currentInfectionTMP.text = playerCurrentInfection.ToString() + "/" + playerMaxInfection.ToString();
 	}
 }

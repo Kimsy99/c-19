@@ -1,19 +1,18 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class NPCHeldWeapon : MonoBehaviour
 {
-	private NPCWeaponAim weaponAim;
-	private Animator animator;
+	[SerializeField] protected NPCWeaponAim weaponAim;
+	protected Animator animator;
 	private readonly int UseWeaponParameter = Animator.StringToHash("UseWeapon");
-	[SerializeField] private Transform bulletSpawner = null;
-	[SerializeField] private ParticleSystem muzzlePS = null;
+	[SerializeField] protected Transform bulletSpawner = null;
+	[SerializeField] protected ParticleSystem muzzlePS = null;
 
-	[SerializeField] private EnemyBullet bulletToUse = null;
-	[SerializeField] private float bulletSpeed = 1;
-	[SerializeField] private float bulletDamage = 1;
+	[SerializeField] protected EnemyBullet bulletToUse = null;
+	[SerializeField] protected float bulletSpeed = 1;
+	[SerializeField] protected float bulletDamage = 1;
 
-	void Awake()
+	protected virtual void Awake()
 	{
 		weaponAim = GetComponentInParent<NPCWeaponAim>();
 		animator = GetComponent<Animator>();
@@ -26,7 +25,7 @@ public class NPCHeldWeapon : MonoBehaviour
 			muzzlePS.Play();
 	}
 
-	public void Shoot() //shoot with updated position
+	public virtual void Shoot() //shoot with updated position
 	{
 		if (bulletToUse == null)
 			return;
@@ -40,7 +39,7 @@ public class NPCHeldWeapon : MonoBehaviour
 		//AudioManager.Instance.Play(WeaponSettings.shootSound);
 	}
 
-	private void CreateBullet(float direction, float speed, float damage)
+	protected void CreateBullet(float direction, float speed, float damage)
 	{
 		EnemyBullet bullet = Instantiate(bulletToUse, bulletSpawner.transform.position, Quaternion.identity);
 		bullet.Speed = speed;

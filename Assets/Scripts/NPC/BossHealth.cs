@@ -2,14 +2,14 @@
 {
 	protected override void Update()
 	{
-		if (!LevelManager.Instance.isBossReady)
+		if (!LevelManager.Instance.IsBossReady)
 			return;
 		base.Update();
 	}
 
 	public override bool Damage(float damage, bool shouldFlash = false, float invulnerabilityTime = 0)
 	{
-		if (!LevelManager.Instance.isBossReady)
+		if (!LevelManager.Instance.IsBossReady)
 			return false;
 		return base.Damage(damage, shouldFlash, invulnerabilityTime);
 	}

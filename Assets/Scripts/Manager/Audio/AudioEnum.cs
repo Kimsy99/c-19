@@ -13,5 +13,12 @@
 	Regenerate,
 	Level4Theme,
 	BossTheme,
-	Alarm
+	Alarm,
+	PowerDown,
+	TurretActivating,
+	TurretShoot,
+	Blip,
+	TerminalLaser,
+	Explosion,
+	BigExplosion
 }

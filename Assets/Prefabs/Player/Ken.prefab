@@ -162,9 +162,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f94fec13c25440b797d4645dc566deb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
   blood: {fileID: 272387123591250593}
   flashAudio: 2
+  spriteRenderer: {fileID: 0}
 --- !u!114 &5672041627485759047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,7 +559,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6713922777103662557}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7036726, w: 0.7105244}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -593,7 +594,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 48.499996
   m_PointLightOuterAngle: 86.56
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 5.044671
+  m_PointLightOuterRadius: 7.8462515
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5

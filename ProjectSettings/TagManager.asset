@@ -38,7 +38,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - LaserPassableWall
   m_SortingLayers:
   - name: ZOrderedObjects
     uniqueID: 61380793

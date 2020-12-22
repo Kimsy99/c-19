@@ -6,9 +6,10 @@
 public class CameraController : MonoBehaviour
 {
 	private Camera cam;
-	public Transform cameraTarget = null;
-	public Transform secondTarget = null;
-	public float cameraTargetWeightage = 5;
+	public Transform primaryTarget = null;
+	public Transform secondaryTarget = null;
+	public float primaryTargetWeightage = 5;
+	public float secondaryTargetWeightage = 1;
 	public float camSize = 4;
 	[SerializeField] private float cameraSpeedFactor = 3;
 	private Vector2 mousePos = new Vector2();
@@ -22,8 +23,9 @@ public class CameraController : MonoBehaviour
 	void Update()
 	{
 		mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-		Vector2 secondPos = secondTarget == null ? mousePos : (Vector2)secondTarget.position;
-		float fx = (cameraTarget.position.x * cameraTargetWeightage + secondPos.x) / (1 + cameraTargetWeightage), fy = (cameraTarget.position.y * cameraTargetWeightage + secondPos.y) / (1 + cameraTargetWeightage);
+		Vector2 secondPos = secondaryTarget == null ? mousePos : (Vector2)secondaryTarget.position;
+		float fx = (primaryTarget.position.x * primaryTargetWeightage + secondPos.x * secondaryTargetWeightage) / (primaryTargetWeightage + secondaryTargetWeightage);
+		float fy = (primaryTarget.position.y * primaryTargetWeightage + secondPos.y * secondaryTargetWeightage) / (primaryTargetWeightage + secondaryTargetWeightage);
 		float vcx = transform.position.x, vcy = transform.position.y;
 		
 		// Smoothly follow target and second target

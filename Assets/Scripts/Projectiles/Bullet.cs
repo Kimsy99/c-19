@@ -19,6 +19,8 @@ public class Bullet : Movable2D
 		base.Awake();
 		spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 		bulletCollider = GetComponentInChildren<BoxCollider2D>();
+		if (bulletCollider == null)
+			bulletCollider = GetComponentInChildren<CircleCollider2D>();
     }
 
 	public void SetDamage(float damage)
@@ -29,7 +31,7 @@ public class Bullet : Movable2D
 	protected virtual void OnCollisionEnter2D(Collision2D other)
 	{
 		if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
-			other.gameObject.GetComponentInParent<NPCHealth>().Damage(damage, true, 0.1F);
+			other.gameObject.GetComponentInParent<NPCHealth>().Damage(damage, true);
 
 		OnBulletImpact();
 	}

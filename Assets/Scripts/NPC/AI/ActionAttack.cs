@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "AI/Actions/Attack", fileName = "ActionAttack")]
@@ -20,7 +19,7 @@ public class ActionAttack : AIAction
 		attackDelay = Mathf.Max(attackDelay - Time.deltaTime, 0);
 		if (attackDelay == 0)
 		{
-			controller.npc.heldWeapon.Shoot();
+			controller.Npc.heldWeapon.Shoot();
 			attackDelay = secondsBetweenAttack;
 		}
 	}

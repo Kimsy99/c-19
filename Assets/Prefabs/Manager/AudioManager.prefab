@@ -122,3 +122,39 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - audioEnum: 13
+    clip: {fileID: 8300000, guid: 1a174f1c110e43848bd07f7165d72e14, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - audioEnum: 14
+    clip: {fileID: 8300000, guid: ba214bc74580fc94d875f8140d1c28b3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - audioEnum: 15
+    clip: {fileID: 8300000, guid: c931952315c4b1c42bdc884dea9d2e37, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - audioEnum: 16
+    clip: {fileID: 8300000, guid: e0bd46c4f508942429ad28cfaaebb083, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - audioEnum: 17
+    clip: {fileID: 8300000, guid: b2df9ed5d914ec6419481c847c959266, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - audioEnum: 18
+    clip: {fileID: 8300000, guid: 4e53bde6319ef5a479fbceaef1e7e16a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

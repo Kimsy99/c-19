@@ -26,7 +26,7 @@ public class KenShooting : MonoBehaviour
 
 		if (heldWeapon.Weapon != null)
 		{
-			if (Input.GetButton("Fire1") && !LevelManager.Instance.isBossIntro)
+			if (Input.GetButton("Fire1") && !LevelManager.Instance.IsBossIntro)
 			{
 				if (cooldown == 0)
 				{

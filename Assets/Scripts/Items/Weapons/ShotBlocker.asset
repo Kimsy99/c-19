@@ -22,7 +22,7 @@ MonoBehaviour:
   bulletSpawnPositionOffset: {x: 0.232, y: 0.071}
   bulletSpeed: 8
   maxBulletCount: 150
-  damage: 1.75
+  damage: 1.3
   spread: 0
   shootSound: 4
   cooldown: 0.6

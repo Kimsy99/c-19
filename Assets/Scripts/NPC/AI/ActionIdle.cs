@@ -5,6 +5,6 @@ public class ActionIdle : AIAction
 {
 	public override void Act(StateController controller)
 	{
-		controller.npc.movement.Speed = 0;
+		controller.Npc.movement.Speed = 0;
 	}
 }

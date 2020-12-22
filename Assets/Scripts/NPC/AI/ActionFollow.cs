@@ -23,16 +23,16 @@ public class ActionFollow : AIAction
 
 		if (Vector2.Distance(controller.transform.position, controller.Target.position) > minDistanceToFollow)
 		{
-			controller.npc.movement.Direction = direction;
-			controller.npc.movement.Speed = followingSpeed;
+			controller.Npc.movement.Direction = direction;
+			controller.Npc.movement.Speed = followingSpeed;
 		}
 		else
 		{
-			controller.npc.movement.Speed = 0;
+			controller.Npc.movement.Speed = 0;
 			if (controller.Target.position.x > controller.transform.position.x)
-				controller.npc.spriteFlippable2D.Facing = SpriteFlippable2D.RelativeDirection.Right;
+				controller.Npc.spriteFlippable2D.Facing = SpriteFlippable2D.RelativeDirection.Right;
 			else
-				controller.npc.spriteFlippable2D.Facing = SpriteFlippable2D.RelativeDirection.Left;
+				controller.Npc.spriteFlippable2D.Facing = SpriteFlippable2D.RelativeDirection.Left;
 		}
 	}
 }

@@ -27,12 +27,13 @@ public class AudioManager : Singleton<AudioManager>
 	/// Plays a sound.
 	/// </summary>
 	/// <param name="audioEnum">the sound</param>
-	public void Play(AudioEnum audioEnum)
+	public AudioSource Play(AudioEnum audioEnum)
 	{
 		if (audioEnum == AudioEnum.NoAudio)
-			return;
+			return null;
 		Audio audio = GetSound(audioEnum);
 		audio?.source.Play();
+		return audio?.source;
 	}
 
 	/// <summary>
@@ -47,7 +48,7 @@ public class AudioManager : Singleton<AudioManager>
 		audio?.source.Stop();
 	}
 
-	private Audio GetSound(AudioEnum audioEnum)
+	public Audio GetSound(AudioEnum audioEnum)
 	{
 		Audio theAudio = Array.Find(sounds, audio => audio.audioEnum == audioEnum);
 		if (theAudio == null)

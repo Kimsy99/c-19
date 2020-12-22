@@ -7,6 +7,9 @@ public class LevelManager : MonoBehaviour
 	[SerializeField] private WeaponSettings secondWeaponSettings = null;
 	[SerializeField] private WeaponSettings thirdWeaponSettings = null;
 
+	[Header("Background Music")]
+	[SerializeField] private AudioEnum music;
+
 	void Awake()
 	{
 		heldWeapon = GameObject.Find("Ken").GetComponentInChildren<HeldWeapon>();
@@ -19,5 +22,6 @@ public class LevelManager : MonoBehaviour
 		InventoryManager.Instance.SetWeapon(1, new Weapon(secondWeaponSettings));
 		InventoryManager.Instance.SetWeapon(2, new Weapon(thirdWeaponSettings));
 		heldWeapon.SetHeldWeapon(firstWeapon);
+		AudioManager.Instance.Play(music);
 	}
 }

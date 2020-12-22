@@ -15,7 +15,7 @@ public class BossHeldWeapon : NPCHeldWeapon
 
     // Actually create the bullet
     TriggerShootingEffect();
-    for (int i = 0; i < 51; i += 10)
+    for (int i = 0; i < 51; i += 15)
     {
       Debug.Log(i);
       CreateBullet(shootingAngle + i, bulletSpeed, bulletDamage);

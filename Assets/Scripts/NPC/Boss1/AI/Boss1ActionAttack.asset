@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064aedc6bd134b1894d8a63b48a81944, type: 3}
   m_Name: Boss1ActionAttack
   m_EditorClassIdentifier: 
-  secondsBetweenAttack: 0.5
+  secondsBetweenAttack: 2

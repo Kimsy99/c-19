@@ -7,7 +7,6 @@ public class BossNotice : MonoBehaviour
 
   [SerializeField] private GameObject bossL2Warning;
   [SerializeField] private CameraController cameraController;
-  [SerializeField] private BossSpawnZombie spawner;
   [SerializeField] private GameObject boss1;
   [SerializeField] private NPCHealth npcHealth;
 

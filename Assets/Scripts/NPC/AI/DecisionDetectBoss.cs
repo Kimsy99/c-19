@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "AI/Decisions/Detect Target", fileName = "DecisionDetectBoss")]
+[CreateAssetMenu(menuName = "AI/Decisions/Detect Target Boss", fileName = "DecisionDetectBoss")]
 public class DecisionDetectBoss : DecisionDetect
 {
   private Collider2D targetCollider2D;

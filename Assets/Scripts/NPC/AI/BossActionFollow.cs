@@ -7,9 +7,9 @@ using UnityEngine;
 public class BossActionFollow : AIAction
 {
   public float minDistanceToFollow = 0;
-  public float followingSpeed1 = 3;
-  public float followingSpeed2 = 5;
-  public float followingSpeed = 1;
+  public float followingSpeed1;
+  public float followingSpeed2;
+  public float followingSpeed;
   private void Start()
   {
     followingSpeed = followingSpeed1;

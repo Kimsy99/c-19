@@ -23,7 +23,7 @@ TagManager:
   - EnemyBullet
   - ShotBlocker
   - Collectable
-  - 
+  - Door Sensor
   - 
   - 
   - 
@@ -40,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Map
+    uniqueID: 3485647309
+    locked: 0
   - name: ZOrderedObjects
     uniqueID: 61380793
     locked: 0

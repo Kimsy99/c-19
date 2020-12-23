@@ -1,13 +1,15 @@
-﻿public enum AudioEnum
+public enum AudioEnum
 {
-	NoAudio,
-	KenSelect,
-	KenHurt,
-	Equip,
-	PistolShoot,
-	PlasmaGunShoot,
-	Laser,
-	EnemyHurt,
-	ChestOpen,
-	Collect
+    NoAudio,
+    KenSelect,
+    KenHurt,
+    Equip,
+    PistolShoot,
+    PlasmaGunShoot,
+    Laser,
+    EnemyHurt,
+    ChestOpen, 
+    Collect,
+    Regenerate,
+    BossTheme,
 }

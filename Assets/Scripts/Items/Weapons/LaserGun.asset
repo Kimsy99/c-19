@@ -20,8 +20,8 @@ MonoBehaviour:
   bulletToUse: {fileID: 0}
   bulletSpawnPositionOffset: {x: 0.232, y: 0.037}
   bulletSpeed: 8
-  maxBulletCount: 500
-  damage: 0.2
+  maxBulletCount: 300
+  damage: 0.15
   spread: 0
   shootSound: 6
   cooldown: 0.1

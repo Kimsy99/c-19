@@ -127,6 +127,15 @@ public class KenHealth : Health
 		else
 			heartIcon3.SetActive(false);
 
-		transform.position = spawnPosition.position;
+		if (LevelManager.Instance.IsBossReady)
+			LevelManager.Instance.SetBossCameraMode();
+		else
+		{
+			LevelManager.Instance.cameraController.secondaryTargetWeightage = 1;
+			LevelManager.Instance.cameraController.camSize = 4;
+		}
+
+		if (!LevelManager.Instance.IsBossReady)
+			transform.position = spawnPosition.position;
 	}
 }

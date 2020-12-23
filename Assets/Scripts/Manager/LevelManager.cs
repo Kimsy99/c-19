@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelManager : Singleton<LevelManager>
 {
-	private CameraController cameraController;
+	public CameraController cameraController;
 
 	private Ken ken;
 	private HeldWeapon heldWeapon;
@@ -18,9 +18,10 @@ public class LevelManager : Singleton<LevelManager>
 	public Action OnBossBarPostInit;
 
 	private AudioSource levelTheme;
+	private GameObject boss;
 
 	public bool IsBossIntro { get; private set; }
-	public bool IsBossReady { get; private set; }
+	public bool IsBossReady { get; set; }
 
 	protected override void Awake()
 	{
@@ -54,18 +55,28 @@ public class LevelManager : Singleton<LevelManager>
 			levelTheme.pitch = 1;
 	}
 
-	public void SetFlashLightEnabled(bool isEnabled)
+	public void EnableFlashLight()
 	{
 		Instantiate(flashLight, bulletSpawner);
 	}
 
 	public void IntroBoss(GameObject boss)
 	{
+		this.boss = boss;
+
 		levelTheme = AudioManager.Instance.Play(AudioEnum.BossTheme);
 		UIManager.Instance.bossBarContainer.SetActive(true); // Show boss bar
 		IsBossIntro = true;
 		cameraController.secondaryTarget = boss.transform; // Switch target to boss
 		cameraController.primaryTargetWeightage = 0;
+	}
+
+	public void SetBossCameraMode()
+	{
+		cameraController.primaryTargetWeightage = 1;
+		cameraController.secondaryTarget = boss.transform;
+		cameraController.secondaryTargetWeightage = 1;
+		cameraController.camSize = 6;
 	}
 
 	public void InitBossHealthBar()
@@ -88,8 +99,7 @@ public class LevelManager : Singleton<LevelManager>
 		IsBossIntro = false;
 		IsBossReady = true;
 
-		cameraController.primaryTargetWeightage = 1;
-		cameraController.camSize = 6;
+		SetBossCameraMode();
 
 		OnBossBarPostInit?.Invoke();
 	}
@@ -99,8 +109,11 @@ public class LevelManager : Singleton<LevelManager>
 		UIManager.Instance.bossBarContainer.SetActive(false);
 
 		cameraController.secondaryTarget = null;
+		cameraController.secondaryTargetWeightage = 1;
 		cameraController.primaryTargetWeightage = 5;
 		cameraController.camSize = 4;
+
+		boss = null;
 	}
 
 	public void GameOver()

@@ -20,10 +20,8 @@ public class FlashableMaterial : Flashable
 		spriteRenderer.material = flashMaterial;
 	}
 
-	protected override IEnumerator Revert()
+	protected override void Revert()
 	{
-		yield return new WaitForSeconds(0.1F);
 		spriteRenderer.material = prevMaterial;
-		revertCoroutine = null;
 	}
 }

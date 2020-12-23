@@ -16,6 +16,7 @@
 
 	protected override void Die()
 	{
+		LevelManager.Instance.IsBossReady = false;
 		animator.SetBool(isDeadParameter, true);
 	}
 }

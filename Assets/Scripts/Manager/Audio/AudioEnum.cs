@@ -20,5 +20,6 @@
 	Blip,
 	TerminalLaser,
 	Explosion,
-	BigExplosion
+	BigExplosion,
+	EnergyOff
 }

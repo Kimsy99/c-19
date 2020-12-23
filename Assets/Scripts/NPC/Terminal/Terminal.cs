@@ -137,7 +137,7 @@ public class Terminal : MonoBehaviour
 	private void ShootTurret(Turret turret)
 	{
 		turret.Shoot();
-		AudioManager.Instance.Play(AudioEnum.TurretShoot);
+		AudioManager.Instance.PlayOneShot(AudioEnum.TurretShoot);
 	}
 
 	public void StartProjectWarningLaser()

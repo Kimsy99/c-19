@@ -36,6 +36,15 @@ public class AudioManager : Singleton<AudioManager>
 		return audio?.source;
 	}
 
+	public AudioSource PlayOneShot(AudioEnum audioEnum)
+	{
+		if (audioEnum == AudioEnum.NoAudio)
+			return null;
+		Audio audio = GetSound(audioEnum);
+		audio?.source.PlayOneShot(audio.clip);
+		return audio?.source;
+	}
+
 	/// <summary>
 	/// Stops a sound.
 	/// </summary>

@@ -73,11 +73,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 7ef7c04c677f4332a8664fc9adc17a3f,
         type: 3}
+    - target: {fileID: 892908392163746210, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 892908392163746211, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
       propertyPath: m_Name
       value: Police
       objectReference: {fileID: 0}
+    - target: {fileID: 1824307370847266961, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
+        type: 3}
+      propertyPath: idleState
+      value: 
+      objectReference: {fileID: 11400000, guid: 2351d086c6a64d56af75acdcd6a8dfb0,
+        type: 2}
+    - target: {fileID: 2141492535573478094, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
+        type: 3}
+      propertyPath: currentState
+      value: 
+      objectReference: {fileID: 11400000, guid: 2351d086c6a64d56af75acdcd6a8dfb0,
+        type: 2}
     - target: {fileID: 5242783678225877059, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
       propertyPath: m_Sprite

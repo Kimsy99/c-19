@@ -12,7 +12,6 @@ public class Flashable : MonoBehaviour
 	[SerializeField] private AudioEnum flashAudio = AudioEnum.NoAudio;
 
 	[HideInInspector] public SpriteRenderer spriteRenderer = null;
-	protected Coroutine revertCoroutine;
 
 	// Use this for initialization
 	protected virtual void Awake()
@@ -29,9 +28,8 @@ public class Flashable : MonoBehaviour
 		if (blood != null)
 			blood.Play();
 		AudioManager.Instance.Play(flashAudio);
-		if (revertCoroutine != null)
-			StopCoroutine(revertCoroutine);
-		revertCoroutine = StartCoroutine(Revert());
+		CancelInvoke(nameof(Revert));
+		Invoke(nameof(Revert), 0.1F);
 	}
 
 	protected virtual void Modify()
@@ -39,10 +37,8 @@ public class Flashable : MonoBehaviour
 		spriteRenderer.color = flashColor;
 	}
 
-	protected virtual IEnumerator Revert()
+	protected virtual void Revert()
 	{
-		yield return new WaitForSeconds(0.1F);
 		spriteRenderer.color = Color.white;
-		revertCoroutine = null;
 	}
 }

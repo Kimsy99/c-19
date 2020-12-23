@@ -21,7 +21,7 @@ MonoBehaviour:
     type: 3}
   bulletSpawnPositionOffset: {x: 0.36, y: 0.031}
   bulletSpeed: 20
-  maxBulletCount: 60
+  maxBulletCount: 30
   damage: 10
   spread: 3
   shootSound: 5

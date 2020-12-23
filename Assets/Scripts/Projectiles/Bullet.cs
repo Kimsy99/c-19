@@ -17,6 +17,7 @@ public class Bullet : Movable2D
     protected override void Awake()
     {
 		base.Awake();
+
 		spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 		bulletCollider = GetComponentInChildren<BoxCollider2D>();
 		if (bulletCollider == null)

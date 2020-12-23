@@ -88,7 +88,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.11684093, y: 0.25349447}
+  m_Size: {x: 0.11684096, y: 0.38657278}
   m_EdgeRadius: 0
 --- !u!114 &1664903619379675990
 MonoBehaviour:
@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a085dec454ec5741b6af01799618471, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotBlocker: {fileID: 7887080687246668764}
 --- !u!1 &4262399593839567417
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,6 +244,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impactPS: {fileID: 6076250657958295324}
   impactPS2: {fileID: 5008774253523619720}
+  bulletSpawner: {fileID: 2090560266542140679, guid: 68a68acdaf454254e9494ffcff0b8993,
+    type: 3}
 --- !u!114 &6887210987852032930
 MonoBehaviour:
   m_ObjectHideFlags: 0

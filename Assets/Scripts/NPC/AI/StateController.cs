@@ -3,7 +3,7 @@ using UnityEngine;
 public class StateController : MonoBehaviour
 {
 	[Header("State")]
-	[SerializeField] private AIState currentState = null;
+	public AIState currentState = null;
 	[SerializeField] private AIState remainState = null;
 	
 	// Returns the target of this Enemy

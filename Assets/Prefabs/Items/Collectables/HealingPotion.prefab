@@ -146,4 +146,4 @@ MonoBehaviour:
   collectEffect: {fileID: 8192694337290660063, guid: e82e6373c0b9406bb6b3d6357b40b4d3,
     type: 3}
   shouldDestroy: 1
-  healthToAdd: 1
+  healthToAdd: 2

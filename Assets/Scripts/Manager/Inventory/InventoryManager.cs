@@ -16,7 +16,6 @@ public class InventoryManager : Singleton<InventoryManager>
 	private RectTransform slot0, slot1, slot2, slot3, slot4;
 	private RectTransform activeSlot;
 	private TextMeshProUGUI weaponLabel;
-	private Coroutine hideWeaponLabelCoroutine;
 
 	private int activeSlotIndex = 0;
 	public Action<int> OnActiveSlotIndexChanged;
@@ -125,17 +124,14 @@ public class InventoryManager : Singleton<InventoryManager>
 
 	private void UpdateWeaponLabel(int index)
 	{
-		if (hideWeaponLabelCoroutine != null)
-			StopCoroutine(hideWeaponLabelCoroutine);
+		CancelInvoke(nameof(HideWeaponLabel));
 		Weapon weapon = weapons[index];
 		weaponLabel.text = weapon?.weaponSettings.displayName ?? "";
-		hideWeaponLabelCoroutine = StartCoroutine(HideWeaponLabel());
+		Invoke(nameof(HideWeaponLabel), 2);
 	}
 
-	private IEnumerator HideWeaponLabel()
+	private void HideWeaponLabel()
 	{
-		yield return new WaitForSeconds(2);
 		weaponLabel.text = "";
-		yield return null;
 	}
 }

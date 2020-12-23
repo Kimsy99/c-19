@@ -2,6 +2,13 @@
 
 public class ShotBlocker : Bullet
 {
+	[SerializeField] protected Transform bulletSpawner;
+
+	protected override void Awake()
+	{
+		base.Awake();
+	}
+
 	protected override void OnCollisionEnter2D(Collision2D other)
 	{
 	}

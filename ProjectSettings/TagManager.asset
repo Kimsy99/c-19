@@ -40,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: map
+    uniqueID: 1114905549
+    locked: 0
   - name: ZOrderedObjects
     uniqueID: 61380793
     locked: 0

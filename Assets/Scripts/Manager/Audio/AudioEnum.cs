@@ -1,5 +1,6 @@
 ﻿public enum AudioEnum
 {
+	Key,
 	NoAudio,
 	KenSelect,
 	KenHurt,
@@ -9,5 +10,12 @@
 	Laser,
 	EnemyHurt,
 	ChestOpen,
-	Collect
+	Collect,
+	DoorOpen,
+	ScanCard,
+	Level1_theme,
+	Level2_theme,
+	Level3_theme,
+	Level4_theme,
+	Level5_theme
 }

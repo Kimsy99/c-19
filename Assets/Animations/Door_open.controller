@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: HaveKey
+    m_ConditionEvent: DoorOpen
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2335291036925569762}
@@ -59,7 +59,7 @@ AnimatorController:
   m_Name: Door_open
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: HaveKey
+  - m_Name: DoorOpen
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0

@@ -19,6 +19,10 @@ public class Bullet : Movable2D
 		base.Awake();
 		spriteRenderer = GetComponent<SpriteRenderer>();
 		bulletCollider = GetComponent<BoxCollider2D>();
+		if(bulletCollider==null)
+        {
+			bulletCollider = GetComponent <CircleCollider2D>();
+        }
     }
 
 	public void SetDamage(float damage)

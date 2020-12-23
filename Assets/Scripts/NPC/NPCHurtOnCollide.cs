@@ -18,7 +18,7 @@ public class NPCHurtOnCollide : MonoBehaviour
 		{
 			ken.movement.RecoilFrom(transform);
 			ken.health.Damage(collisionDamage, true, 0.25F);
-			ken.health.Infect(infectionRate);
+			
 		}
 	}
 

@@ -17,7 +17,7 @@ public class KenHealth : Health
 	private readonly int isDeadParameter = Animator.StringToHash("IsDead");
 	private Ken ken;
 	private GameObject trigger1;
-	private GameObject weaponHolder;
+	private GameObject heldWeapon;
 
 	private float infection = 0;
 	private int lives = 3;
@@ -30,7 +30,7 @@ public class KenHealth : Health
 		heartIcon3 = GameObject.Find("HeartIcon3");
 		animator = GetComponent<Animator>();
 		ken = GetComponent<Ken>();
-		weaponHolder = transform.Find("WeaponHolder").gameObject;
+		heldWeapon = GetComponentInChildren<HeldWeapon>().gameObject;
 		trigger1 = transform.Find("Colliders").Find("Trigger 1").gameObject;
 		UIManager.Instance.SetStats(Hp, maxHp, infection, maxInfection);
 	}
@@ -100,7 +100,7 @@ public class KenHealth : Health
 	{
 		ken.flashable.Flash();
 		ken.movement.speedMultiplier = 0;
-		weaponHolder.SetActive(false);
+		heldWeapon.SetActive(false);
 		trigger1.SetActive(false);
 		animator.SetBool(isDeadParameter, true);
 
@@ -110,7 +110,7 @@ public class KenHealth : Health
 	// Revive this game object    
 	public void Revive()
 	{
-		weaponHolder.SetActive(true);
+		heldWeapon.SetActive(true);
 		trigger1.SetActive(true);
 		animator.SetBool(isDeadParameter, false);
 		ken.movement.speedMultiplier = 1;

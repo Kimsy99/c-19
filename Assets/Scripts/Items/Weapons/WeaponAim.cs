@@ -40,6 +40,8 @@ public class WeaponAim : MonoBehaviour
 		Vector2 aimVector = mousePosition - (Vector2)transform.position;
 		AimAngle = Vector2.SignedAngle(Vector2.right, aimVector);
 
+		if (ken.health.IsDead)
+			return;
 		if (lookAngle > 90 || lookAngle < -90)
 		{
 			ken.spriteFlippable2D.Facing = SpriteFlippable2D.RelativeDirection.Left;

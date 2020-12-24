@@ -25,13 +25,21 @@ public class Chest : MonoBehaviour
 	{
 		if (!chestOpened && Input.GetKeyDown(KeyCode.Space))
 		{
-			if (Vector2.Distance(transform.position, ken.center.position) < 1.2F)
+			if (Vector2.Distance(transform.position, ken.center.position) < 1.2F && CanOpen())
 			{
 				spriteRenderer.sprite = chestOpenSprite;
 				GenerateLoot();
 				AudioManager.Instance.Play(AudioEnum.ChestOpen);
 			}
 		}
+	}
+
+	private bool CanOpen()
+	{
+		Vector2 directionVector = transform.position - ken.center.position;
+		float distance = Vector2.Distance(ken.center.position, transform.position);
+		RaycastHit2D hit = Physics2D.Raycast(ken.center.position, directionVector, distance, LayerMask.GetMask("Wall"));
+		return hit && hit.collider.gameObject.GetComponent<Chest>() != null;
 	}
 
 	private void GenerateLoot()

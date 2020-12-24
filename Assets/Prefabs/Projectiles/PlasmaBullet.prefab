@@ -122,7 +122,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.13
+  m_Radius: 0.07331311
 --- !u!114 &-8892455320561179592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +151,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302688338332776379, guid: 7667b5508f624779857f712779dee09f,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302688338332776379, guid: 7667b5508f624779857f712779dee09f,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -166,6 +171,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2302688338332776379, guid: 7667b5508f624779857f712779dee09f,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302688338332776379, guid: 7667b5508f624779857f712779dee09f,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -177,16 +187,6 @@ PrefabInstance:
     - target: {fileID: 2302688338332776379, guid: 7667b5508f624779857f712779dee09f,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2302688338332776379, guid: 7667b5508f624779857f712779dee09f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2302688338332776379, guid: 7667b5508f624779857f712779dee09f,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2302688338332776379, guid: 7667b5508f624779857f712779dee09f,

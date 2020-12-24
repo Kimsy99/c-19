@@ -7,11 +7,15 @@ public class MainMenuController : MonoBehaviour
 {
     [SerializeField] public GameObject mainMenu;
     [SerializeField] public GameObject optionsMenu;
-
+    [SerializeField] public GameObject Story;
+    [SerializeField] public GameObject Background;
 
     public void playGame()
     {
-        SceneManager.LoadScene("gameScene");
+        mainMenu.SetActive(false);
+        Background.SetActive(false);
+        Story.SetActive(true);
+      
     }
 
     public void options()

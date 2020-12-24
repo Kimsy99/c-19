@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
-  maxHp: 20
+  maxHp: 15
   invulnerabilityTimer: 0
   maxInfection: 10
   isInfecting: 0

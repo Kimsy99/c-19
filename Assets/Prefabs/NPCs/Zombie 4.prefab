@@ -367,6 +367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14641e83e3f64b6d9cfe593c35349ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  center: {fileID: 0}
   spriteFlippable2D: {fileID: 0}
   flashable: {fileID: 0}
   health: {fileID: 0}
@@ -416,7 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionDamage: 0.5
-  infectionRate: 0.15
+  infectionRate: 0.2
 --- !u!114 &2141492535573478094
 MonoBehaviour:
   m_ObjectHideFlags: 0

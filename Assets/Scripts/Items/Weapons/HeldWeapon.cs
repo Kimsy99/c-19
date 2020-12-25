@@ -62,8 +62,8 @@ public class HeldWeapon : MonoBehaviour
 
 		if (weapon != null)
 		{
-			if (weapon.weaponSettings.muzzlePS != null)
-				muzzlePS = Instantiate(weapon.weaponSettings.muzzlePS, bulletSpawner.transform);
+			if(weapon.weaponSettings.muzzlePS!=null)
+			muzzlePS = Instantiate(weapon.weaponSettings.muzzlePS, bulletSpawner.transform);
 			if (weapon.weaponSettings.customBulletSpawner != null)
 			{
 				customSpawner = Instantiate(weapon.weaponSettings.customBulletSpawner, bulletSpawner.transform);

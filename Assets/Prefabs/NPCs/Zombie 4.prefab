@@ -340,7 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 0}
   blood: {fileID: 7802711644211809865}
-  flashAudio: 0
+  flashAudio: 1
 --- !u!114 &495548779115126749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,8 +401,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfdafb7ea2af4f008b7430714a658eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followRange: 10
-  walkSpeed: 4
 --- !u!114 &7940670431555395369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,6 +414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionDamage: 0.5
+  infectionRate: 0.25
 --- !u!114 &2141492535573478094
 MonoBehaviour:
   m_ObjectHideFlags: 0

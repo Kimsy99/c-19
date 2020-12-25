@@ -18,7 +18,7 @@ public class MissionDoor : Door
         {
             if(!missionCompleted)
             {
-                openDoorRequirement.SetActive(true);
+                // openDoorRequirement.SetActive(true);
             }
         }
     }

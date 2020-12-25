@@ -10,7 +10,8 @@ public class Door : MonoBehaviour
 
     [Header("For door require key")]
     [SerializeField] private string keyName;
-    [SerializeField] protected GameObject openDoorRequirement;
+    [SerializeField] private GameObject openDoorHint;
+    [SerializeField] private GameObject getKeyHint;
 
     [Header("Sound Effect")]
     [SerializeField] private AudioEnum scanCard;
@@ -32,7 +33,7 @@ public class Door : MonoBehaviour
         // only for door require key
         if (!doorOpened && unlocked)
         {
-            openDoorRequirement.SetActive(false);
+            getKeyHint.SetActive(false);
             OpenDoor();
         }
     }
@@ -61,6 +62,13 @@ public class Door : MonoBehaviour
             {
                 OpenDoor();
             }
+            else
+            {
+                if (!doorOpened)
+                {
+                    getKeyHint.SetActive(true);
+                }
+            }
         }
     }
 
@@ -75,12 +83,12 @@ public class Door : MonoBehaviour
             }
             else
             {
-                openDoorRequirement.SetActive(false);
+                getKeyHint.SetActive(false);
             }
         }
     }
 
-    protected void UnlockDoor()
+    private void UnlockDoor()
     {
         unlocked = true;
         AudioManager.Instance.Play(scanCard);
@@ -91,11 +99,10 @@ public class Door : MonoBehaviour
         unlocked = false;
     }
 
-    protected void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (!autoDoor && !doorOpened)
         {
-            openDoorRequirement.SetActive(true);
             if (other.CompareTag("Player"))
             {
                 WeaponSettings weaponSetting = other.gameObject.GetComponentInParent<Ken>().GetComponentInChildren<HeldWeapon>().WeaponSettings;

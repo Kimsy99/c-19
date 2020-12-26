@@ -1,5 +1,6 @@
-using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KenHealth : Health
 {
@@ -13,6 +14,8 @@ public class KenHealth : Health
 	private GameObject heartIcon1;
 	private GameObject heartIcon2;
 	private GameObject heartIcon3;
+	[SerializeField] private TextMeshProUGUI infoLabel;
+	[SerializeField] private TextMeshProUGUI gameOverLabel;
 	private Animator animator;
 	private readonly int isDeadParameter = Animator.StringToHash("IsDead");
 	private Ken ken;
@@ -47,7 +50,12 @@ public class KenHealth : Health
 		if (IsDead)
 		{
 			if (Input.GetKeyDown(KeyCode.R))
-				Revive();
+			{
+				if (lives == 1) // Restart current level
+					SceneLoader.Instance.LoadScene(SceneManager.GetActiveScene().name);
+				else
+					Revive();
+			}
 			return;
 		}
 
@@ -105,9 +113,15 @@ public class KenHealth : Health
 		animator.SetBool(isDeadParameter, true);
 
 		LevelManager.Instance.GameOver();
+		infoLabel.gameObject.SetActive(true);
+		if (lives == 1)
+		{
+			infoLabel.text = "Press R to restart";
+			gameOverLabel.gameObject.SetActive(true);
+		}
 	}
 
-	// Revive this game object    
+	// Revive this game object
 	public void Revive()
 	{
 		heldWeapon.SetActive(true);
@@ -137,5 +151,7 @@ public class KenHealth : Health
 
 		if (!LevelManager.Instance.IsBossReady)
 			transform.position = spawnPosition.position;
+
+		infoLabel.gameObject.SetActive(false);
 	}
 }

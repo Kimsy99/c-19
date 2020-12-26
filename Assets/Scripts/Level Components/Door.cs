@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +7,7 @@ public class Door : MonoBehaviour
 {
   private Animator animator;
   private BoxCollider2D boxCollider2D;
+  [SerializeField] private DoorCollider boxColliderOpenDoor;
   private readonly int doorOpenParameter = Animator.StringToHash("HaveKey");
   public bool haveKey = false;
   private void Start()
@@ -16,11 +17,7 @@ public class Door : MonoBehaviour
   }
   private void Update()
   {
-    if (Input.GetKeyDown(KeyCode.Z))
-    {
-      haveKey = true;
-    }
-    if (Input.GetKeyDown(KeyCode.C) && haveKey)
+    if (Input.GetKeyDown(KeyCode.C) && haveKey && boxColliderOpenDoor.openDoor == true)
     {
       OpenDoor();
     }
@@ -30,6 +27,7 @@ public class Door : MonoBehaviour
   {
     animator.SetTrigger(doorOpenParameter);
     boxCollider2D.isTrigger = true;
+    boxColliderOpenDoor.doorPopUpPanel.SetActive(false);
   }
 
   //   private GameObject SelectReward()

@@ -5,7 +5,7 @@ public class NPCHealth : Health
 {
 	private NPC npc;
 	private new Collider2D collider2D;
-	private GameObject healthBar;
+	[SerializeField] private GameObject healthBar;
 	protected Animator animator;
 	protected readonly int isDeadParameter = Animator.StringToHash("IsDead");
 
@@ -18,9 +18,6 @@ public class NPCHealth : Health
 		base.Awake();
 		npc = GetComponent<NPC>();
 		collider2D = GetComponent<Collider2D>();
-		Transform canvasTransform = transform.Find("Canvas");
-		if (canvasTransform != null)
-			healthBar = canvasTransform.gameObject;
 		animator = GetComponent<Animator>();
 
 		OnDie += Die;
@@ -39,6 +36,7 @@ public class NPCHealth : Health
 
 	public virtual bool Damage(float damage, bool shouldFlash = false, float invulnerabilityTime = 0)
 	{
+		healthBar.SetActive(true);
 		bool damaged = base.Damage(damage, invulnerabilityTime);
 		if (!damaged)
 			return false;

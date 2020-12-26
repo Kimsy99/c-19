@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelManager : Singleton<LevelManager>
 {
-	public CameraController cameraController;
+	[HideInInspector] public CameraController cameraController;
 
 	private Ken ken;
 	private HeldWeapon heldWeapon;
@@ -17,6 +17,7 @@ public class LevelManager : Singleton<LevelManager>
 
 	public Action OnBossBarPostInit;
 
+	public AudioEnum levelThemeEnum;
 	private AudioSource levelTheme;
 	private GameObject boss;
 
@@ -41,7 +42,7 @@ public class LevelManager : Singleton<LevelManager>
 		InventoryManager.Instance.SetWeapon(2, new Weapon(thirdWeaponSettings));
 		heldWeapon.SetHeldWeapon(firstWeapon);
 
-		levelTheme = AudioManager.Instance.Play(AudioEnum.Level4Theme);
+		levelTheme = AudioManager.Instance.Play(levelThemeEnum);
 	}
 
 	void Update()

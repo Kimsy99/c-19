@@ -230,6 +230,8 @@ MonoBehaviour:
   maxInfection: 10
   isInfecting: 0
   spawnPosition: {fileID: 0}
+  infoLabel: {fileID: 0}
+  gameOverLabel: {fileID: 0}
 --- !u!114 &3910097786073860967
 MonoBehaviour:
   m_ObjectHideFlags: 0

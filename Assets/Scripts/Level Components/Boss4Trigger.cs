@@ -1,39 +1,36 @@
 ﻿using UnityEngine;
 
-public class Boss4Trigger : MonoBehaviour
+public class Boss4Trigger : BossTrigger
 {
 	[SerializeField] private SteelDoor[] steelDoorsToLock = null;
-	[SerializeField] private Terminal boss = null;
+	private Terminal terminal;
 
-	private Animator animator;
-	private new BoxCollider2D collider2D;
-
-	void Awake()
+	protected override void Awake()
 	{
-		animator = GetComponent<Animator>();
-		collider2D = GetComponentInChildren<BoxCollider2D>();
-
+		base.Awake();
 		LevelManager.Instance.OnBossBarPostInit += BossHealthPostInit;
+		terminal = boss.GetComponent<Terminal>();
 	}
 
-	void OnTriggerEnter2D(Collider2D collision)
+	protected override void OnTriggerEnter2D(Collider2D collision)
 	{
 		collider2D.enabled = false;
-		foreach (SteelDoor steelDoor in steelDoorsToLock) // Lock doors
-			steelDoor.isOpen = false;
 		LevelManager.Instance.IntroBoss(boss.gameObject);
 
-		AudioManager.Instance.Stop(AudioEnum.Level4Theme);
+		AudioManager.Instance.Stop(LevelManager.Instance.levelThemeEnum);
+
+		foreach (SteelDoor steelDoor in steelDoorsToLock) // Lock doors
+			steelDoor.isOpen = false;
 		AudioManager.Instance.Play(AudioEnum.Alarm);
 		animator.Play("TerminalIntroSequence");
 	}
 
 	public void TriggerBossIntroSequence()
 	{
-		boss.animator.SetTrigger(boss.nextPhaseTriggerParameter);
+		terminal.animator.SetTrigger(terminal.nextPhaseTriggerParameter);
 	}
 
-	public void BossInit()
+	public override void BossInit()
 	{
 		AudioManager.Instance.Stop(AudioEnum.Alarm);
 		LevelManager.Instance.InitBossHealthBar();
@@ -41,7 +38,7 @@ public class Boss4Trigger : MonoBehaviour
 
 	private void BossHealthPostInit()
 	{
-		boss.animator.SetTrigger(boss.nextPhaseTriggerParameter);
-		boss.SetPhase(1);
+		terminal.animator.SetTrigger(terminal.nextPhaseTriggerParameter);
+		terminal.SetPhase(1);
 	}
 }

@@ -9,6 +9,6 @@ public class DoorKeyInLevel5 : Collectable
     
 	protected override void Collect()
 	{
-		door.haveKey = true;
+		//door.haveKey = true;
 	}
 }

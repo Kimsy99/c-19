@@ -418,7 +418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionDamage: 0.5
-  infectionRate: 0.2
+  infectionRate: 0.25
 --- !u!114 &2141492535573478094
 MonoBehaviour:
   m_ObjectHideFlags: 0

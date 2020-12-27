@@ -1,0 +1,1058 @@
+fileFormatVersion: 2
+guid: 0e311270b6f0a844b877726fa3ad6e0e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3819881934133109063
+    second: Mid-TownA5_0
+  - first:
+      213: -5152678004538706793
+    second: Mid-TownA5_1
+  - first:
+      213: 360526593149816712
+    second: Mid-TownA5_2
+  - first:
+      213: -6695086654222638143
+    second: Mid-TownA5_3
+  - first:
+      213: 6069239183624919341
+    second: Mid-TownA5_4
+  - first:
+      213: 3509040967987098073
+    second: Mid-TownA5_5
+  - first:
+      213: 3247815613145105283
+    second: Mid-TownA5_6
+  - first:
+      213: 4555720741499622981
+    second: Mid-TownA5_7
+  - first:
+      213: 6756067199493898120
+    second: Mid-TownA5_8
+  - first:
+      213: 6221280680160541476
+    second: Mid-TownA5_9
+  - first:
+      213: 6736506154824531669
+    second: Mid-TownA5_10
+  - first:
+      213: 1419024311458736411
+    second: Mid-TownA5_11
+  - first:
+      213: -896652102620077030
+    second: Mid-TownA5_12
+  - first:
+      213: 8118511071341014244
+    second: Mid-TownA5_13
+  - first:
+      213: 3969888180467398975
+    second: Mid-TownA5_14
+  - first:
+      213: -4444064915578295691
+    second: Mid-TownA5_15
+  - first:
+      213: -8393563534846666539
+    second: Mid-TownA5_16
+  - first:
+      213: 976050982342318162
+    second: Mid-TownA5_17
+  - first:
+      213: 3609442365363391066
+    second: Mid-TownA5_18
+  - first:
+      213: -5805519658506403163
+    second: Mid-TownA5_19
+  - first:
+      213: -7995382951022971011
+    second: Mid-TownA5_20
+  - first:
+      213: -2954846615275038928
+    second: Mid-TownA5_21
+  - first:
+      213: -6766317500341732903
+    second: Mid-TownA5_22
+  - first:
+      213: -1693163752201735361
+    second: Mid-TownA5_23
+  - first:
+      213: -7407805707486407065
+    second: Mid-TownA5_24
+  - first:
+      213: 7596699789667577489
+    second: Mid-TownA5_25
+  - first:
+      213: 3384773947441013327
+    second: Mid-TownA5_26
+  - first:
+      213: -9196752074217600649
+    second: Mid-TownA5_27
+  - first:
+      213: 6383746304517050458
+    second: Mid-TownA5_28
+  - first:
+      213: 4462570545494251674
+    second: Mid-TownA5_29
+  - first:
+      213: -2604055057771031912
+    second: Mid-TownA5_30
+  - first:
+      213: -8199853315427803208
+    second: Mid-TownA5_31
+  - first:
+      213: -5953375148405865033
+    second: Mid-TownA5_32
+  - first:
+      213: -7895165658478766770
+    second: Mid-TownA5_33
+  - first:
+      213: -3221586873952031792
+    second: Mid-TownA5_34
+  - first:
+      213: 3029652322280336469
+    second: Mid-TownA5_35
+  - first:
+      213: 6943617238232694241
+    second: Mid-TownA5_36
+  - first:
+      213: 6368632684506281507
+    second: Mid-TownA5_37
+  - first:
+      213: -7870092343981431235
+    second: Mid-TownA5_38
+  - first:
+      213: 2849592864707278781
+    second: Mid-TownA5_39
+  - first:
+      213: 847931041911645845
+    second: Mid-TownA5_40
+  - first:
+      213: 4421225854911783262
+    second: Mid-TownA5_41
+  - first:
+      213: 3596413860510545691
+    second: Mid-TownA5_42
+  - first:
+      213: -8111387385020962885
+    second: Mid-TownA5_43
+  - first:
+      213: -7152204172693224270
+    second: Mid-TownA5_44
+  - first:
+      213: -8569246570832822503
+    second: Mid-TownA5_45
+  - first:
+      213: -6776624139014584535
+    second: Mid-TownA5_46
+  - first:
+      213: -4535756240635712167
+    second: Mid-TownA5_47
+  - first:
+      213: -5820619759490287027
+    second: Mid-TownA5_48
+  - first:
+      213: -4324209932377284077
+    second: Mid-TownA5_49
+  - first:
+      213: -2900959424592334668
+    second: Mid-TownA5_50
+  - first:
+      213: 2623675472942000096
+    second: Mid-TownA5_51
+  - first:
+      213: -5370450505052619237
+    second: Mid-TownA5_52
+  - first:
+      213: 2204798689085252117
+    second: Mid-TownA5_53
+  - first:
+      213: -7628331671915924906
+    second: Mid-TownA5_54
+  - first:
+      213: -5188846892840200809
+    second: Mid-TownA5_55
+  - first:
+      213: -8891907579983289868
+    second: Mid-TownA5_56
+  - first:
+      213: -4777624037450497415
+    second: Mid-TownA5_57
+  - first:
+      213: 8321782864517297408
+    second: Mid-TownA5_58
+  - first:
+      213: -8035035444031951460
+    second: Mid-TownA5_59
+  - first:
+      213: -5087946198860648737
+    second: Mid-TownA5_60
+  - first:
+      213: 3855030600263682331
+    second: Mid-TownA5_61
+  - first:
+      213: -2652850252129162477
+    second: Mid-TownA5_62
+  - first:
+      213: 136289793381507350
+    second: Mid-TownA5_63
+  - first:
+      213: -2182456494339262820
+    second: Mid-TownA5_64
+  - first:
+      213: 7855607761289695044
+    second: Mid-TownA5_65
+  - first:
+      213: -830624890705348400
+    second: Mid-TownA5_66
+  - first:
+      213: 3842116495610341068
+    second: Mid-TownA5_67
+  - first:
+      213: -3937760115126470932
+    second: Mid-TownA5_68
+  - first:
+      213: 2147765252694316324
+    second: Mid-TownA5_69
+  - first:
+      213: 2770918173479685209
+    second: Mid-TownA5_70
+  - first:
+      213: 1477649363171258778
+    second: Mid-TownA5_71
+  - first:
+      213: 6713301836201150471
+    second: Mid-TownA5_72
+  - first:
+      213: -167722496236294951
+    second: Mid-TownA5_73
+  - first:
+      213: 3975623837730377938
+    second: Mid-TownA5_74
+  - first:
+      213: 5448751536640042126
+    second: Mid-TownA5_75
+  - first:
+      213: 6401085111565178736
+    second: Mid-TownA5_76
+  - first:
+      213: -9130961791739284138
+    second: Mid-TownA5_77
+  - first:
+      213: 2349034327864761864
+    second: Mid-TownA5_78
+  - first:
+      213: 6769819393922841388
+    second: Mid-TownA5_79
+  - first:
+      213: -7119794840096808774
+    second: Mid-TownA5_80
+  - first:
+      213: 795719566733652648
+    second: Mid-TownA5_81
+  - first:
+      213: -3587478620558910501
+    second: Mid-TownA5_82
+  - first:
+      213: -5136256494353580048
+    second: Mid-TownA5_83
+  - first:
+      213: 8845565582290268363
+    second: Mid-TownA5_84
+  - first:
+      213: 152747524620313265
+    second: Mid-TownA5_85
+  - first:
+      213: -7457193995360672513
+    second: Mid-TownA5_86
+  - first:
+      213: 2497862071522423837
+    second: Mid-TownA5_87
+  - first:
+      213: -8936208345371281116
+    second: Mid-TownA5_88
+  - first:
+      213: -8714980244807265673
+    second: Mid-TownA5_89
+  - first:
+      213: 1473380044433159465
+    second: Mid-TownA5_90
+  - first:
+      213: 7168281082605280648
+    second: Mid-TownA5_91
+  - first:
+      213: -7391689339348811111
+    second: Mid-TownA5_92
+  - first:
+      213: -7426872608785773505
+    second: Mid-TownA5_93
+  - first:
+      213: -4197630325907381207
+    second: Mid-TownA5_94
+  - first:
+      213: 8999714849232400403
+    second: Mid-TownA5_95
+  - first:
+      213: 936535200390863455
+    second: Mid-TownA5_96
+  - first:
+      213: 1600900407809178355
+    second: Mid-TownA5_97
+  - first:
+      213: -146187593607275420
+    second: Mid-TownA5_98
+  - first:
+      213: 2379810040491974983
+    second: Mid-TownA5_99
+  - first:
+      213: 869574446715791178
+    second: Mid-TownA5_100
+  - first:
+      213: 8175058201382459836
+    second: Mid-TownA5_101
+  - first:
+      213: 8934271705371342789
+    second: Mid-TownA5_102
+  - first:
+      213: -2636313792494652646
+    second: Mid-TownA5_103
+  - first:
+      213: -3052351676824052973
+    second: Mid-TownA5_104
+  - first:
+      213: -5108842931680250620
+    second: Mid-TownA5_105
+  - first:
+      213: 8039209570197914795
+    second: Mid-TownA5_106
+  - first:
+      213: 83986904619078361
+    second: Mid-TownA5_107
+  - first:
+      213: -979178403448036897
+    second: Mid-TownA5_108
+  - first:
+      213: -2558051413345111446
+    second: Mid-TownA5_109
+  - first:
+      213: 7428860878403201350
+    second: Mid-TownA5_110
+  - first:
+      213: -170493612613883686
+    second: Mid-TownA5_111
+  - first:
+      213: -655033885595944042
+    second: Mid-TownA5_112
+  - first:
+      213: -3111724197921919004
+    second: Mid-TownA5_113
+  - first:
+      213: -1705938284402063476
+    second: Mid-TownA5_114
+  - first:
+      213: -2551951539576050589
+    second: Mid-TownA5_115
+  - first:
+      213: 2833450195778870934
+    second: Mid-TownA5_116
+  - first:
+      213: 5671311418521588587
+    second: Mid-TownA5_117
+  - first:
+      213: -8586876826282425528
+    second: Mid-TownA5_118
+  - first:
+      213: -956720920100615671
+    second: Mid-TownA5_119
+  - first:
+      213: -8475705598212941593
+    second: Mid-TownA5_120
+  - first:
+      213: 5319294083388291193
+    second: Mid-TownA5_121
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mid-TownA5_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be50189e9d0dfac0800000000000000
+      internalID: -3819881934133109063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7947089a7a20e78b0800000000000000
+      internalID: -5152678004538706793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fc6ccb609d00500800000000000000
+      internalID: 360526593149816712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3e99af8264613a0800000000000000
+      internalID: -6695086654222638143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2958dc91e44a3450800000000000000
+      internalID: 6069239183624919341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1f92f2b2e92b030800000000000000
+      internalID: 3509040967987098073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3834b7da71f821d20800000000000000
+      internalID: 3247815613145105283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 720
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546d6fc80eb293f30800000000000000
+      internalID: 4555720741499622981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f7080a25f52cd50800000000000000
+      internalID: 6756067199493898120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b38fc11dd665650800000000000000
+      internalID: 6221280680160541476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de7c8108a0ec7d50800000000000000
+      internalID: 6736506154824531669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19242cc71361b310800000000000000
+      internalID: 1419024311458736411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a142930d9a37e83f0800000000000000
+      internalID: -896652102620077030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec6b504ecebaa070800000000000000
+      internalID: 8118511071341014244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39f7ca4440e71730800000000000000
+      internalID: 3969888180467398975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_15
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 672
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57aed2441828352c0800000000000000
+      internalID: -4444064915578295691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8dac1af62148b80800000000000000
+      internalID: -8393563534846666539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2585f257231ab8d00800000000000000
+      internalID: 976050982342318162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_22
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d93f9a35163912a0800000000000000
+      internalID: -6766317500341732903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_23
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 624
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33b273c98ca088e0800000000000000
+      internalID: -1693163752201735361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766592015ff223990800000000000000
+      internalID: -7407805707486407065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19eab6ca536ec6960800000000000000
+      internalID: 7596699789667577489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8929ff9c8b98cdbd0800000000000000
+      internalID: -2604055057771031912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_31
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 576
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfdd93bad4443e80800000000000000
+      internalID: -8199853315427803208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_38
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36277fe5b0d7c290800000000000000
+      internalID: -7870092343981431235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_39
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 528
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db77d57dc99cb8720800000000000000
+      internalID: 2849592864707278781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_46
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927c2b9ef3894f1a0800000000000000
+      internalID: -6776624139014584535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid-TownA5_47
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 480
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95da5290bb1cd01c0800000000000000
+      internalID: -4535756240635712167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

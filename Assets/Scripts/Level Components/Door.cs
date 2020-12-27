@@ -1,60 +1,119 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-  private Animator animator;
-  private BoxCollider2D boxCollider2D;
-  [SerializeField] private DoorCollider boxColliderOpenDoor;
-  private readonly int doorOpenParameter = Animator.StringToHash("HaveKey");
-  public bool haveKey = false;
-  private void Start()
-  {
-    animator = GetComponent<Animator>();
-    boxCollider2D = GetComponent<BoxCollider2D>();
-  }
-  private void Update()
-  {
-    if (Input.GetKeyDown(KeyCode.C) && haveKey && boxColliderOpenDoor.openDoor == true)
+    [Header("Door")]
+    [SerializeField] private bool autoDoor = true;
+
+    [Header("For door require key")]
+    [SerializeField] private string keyName;
+    [SerializeField] private GameObject openDoorHint;
+    [SerializeField] private GameObject getKeyHint;
+
+    [Header("Sound Effect")]
+    [SerializeField] private AudioEnum scanCard;
+    [SerializeField] private AudioEnum openDoor;
+    
+    private Animator animator;
+    private readonly int doorOpenParameter = Animator.StringToHash("DoorOpen");
+    private readonly int doorCloseParameter = Animator.StringToHash("DoorClose");
+
+    protected bool unlocked = false;
+    private bool doorOpened = false;
+
+    private void Start()
     {
-      OpenDoor();
+        animator = GetComponent<Animator>();
     }
-  }
+    private void Update()
+    {
+        // only for door require key
+        if (!doorOpened && unlocked)
+        {
+            getKeyHint.SetActive(false);
+            OpenDoor();
+        }
+    }
 
-  private void OpenDoor()
-  {
-    animator.SetTrigger(doorOpenParameter);
-    boxCollider2D.isTrigger = true;
-    boxColliderOpenDoor.doorPopUpPanel.SetActive(false);
-  }
+    private void OpenDoor()
+    {
+        doorOpened = true;
+        
+        animator.SetTrigger(doorOpenParameter);
+        AudioManager.Instance.Play(openDoor);
+    }
 
-  //   private GameObject SelectReward()
-  //   {
-  //     int randomRewardIndex = Random.Range(0, rewards.Length);
-  //     for (int i = 0; i < rewards.Length; i++)
-  //     {
-  //       return rewards[randomRewardIndex];
-  //     }
+    private void CloseDoor()
+    {
+        doorOpened = false;
 
-  //     return null;
-  //   }
+        animator.SetTrigger(doorCloseParameter);
+        AudioManager.Instance.Play(openDoor);
+    }
 
-  //   private void OnTriggerEnter2D(Collider2D other)
-  //   {
-  //     if (other.CompareTag("Player"))
-  //     {
-  //       canReward = true;
-  //     }
-  //   }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (autoDoor)
+            {
+                OpenDoor();
+            }
+            else
+            {
+                if (!doorOpened)
+                {
+                    getKeyHint.SetActive(true);
+                }
+            }
+        }
+    }
 
-  //   private void OnTriggerExit2D(Collider2D other)
-  //   {
-  //     if (other.CompareTag("Player"))
-  //     {
-  //       canReward = false;
-  //     }
-  //   }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        LockDoor();
+        if (other.CompareTag("Player"))
+        {
+            if (autoDoor)
+            {
+                CloseDoor();
+            }
+            else
+            {
+                getKeyHint.SetActive(false);
+            }
+        }
+    }
 
+    private void UnlockDoor()
+    {
+        unlocked = true;
+        AudioManager.Instance.Play(scanCard);
+    }
+
+    private void LockDoor()
+    {
+        unlocked = false;
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (!autoDoor && !doorOpened)
+        {
+            if (other.CompareTag("Player"))
+            {
+                WeaponSettings weaponSetting = other.gameObject.GetComponentInParent<Ken>().GetComponentInChildren<HeldWeapon>().WeaponSettings;
+                if (weaponSetting != null)
+                {
+                    if (weaponSetting.displayName.Equals(keyName))
+                    {
+                        UnlockDoor();
+                    }
+                }
+            }
+        }
+    }
 }

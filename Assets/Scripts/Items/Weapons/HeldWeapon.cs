@@ -62,7 +62,8 @@ public class HeldWeapon : MonoBehaviour
 
 		if (weapon != null)
 		{
-			muzzlePS = Instantiate(weapon.weaponSettings.muzzlePS, bulletSpawner.transform);
+			if (weapon.weaponSettings.muzzlePS != null)
+				muzzlePS = Instantiate(weapon.weaponSettings.muzzlePS, bulletSpawner.transform);
 			if (weapon.weaponSettings.customBulletSpawner != null)
 			{
 				customSpawner = Instantiate(weapon.weaponSettings.customBulletSpawner, bulletSpawner.transform);
@@ -74,11 +75,14 @@ public class HeldWeapon : MonoBehaviour
 	public void TriggerShootingEffect()
 	{
 		animator.SetTrigger(UseWeaponParameter);
-		muzzlePS.Play();
+		if (muzzlePS != null)
+			muzzlePS.Play();
 	}
 
 	public bool ConsumeAmmo()
 	{
+		if (Weapon.weaponSettings.bulletToUse == null)
+			return false;
 		if (Weapon.bulletCount > 0 || Weapon.weaponSettings.maxBulletCount == -1)
 		{
 			if (Weapon.weaponSettings.maxBulletCount != -1)

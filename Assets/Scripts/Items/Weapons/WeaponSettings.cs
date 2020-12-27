@@ -9,6 +9,7 @@ public class WeaponSettings : ScriptableObject
 	public Sprite displaySprite;
 	/** Sprite to use when held by Ken. */
 	public Sprite heldSprite;
+	public bool isRotatable = true;
 
 	/** Bullet prefab to use for this weapon. */
 	public Bullet bulletToUse;

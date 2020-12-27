@@ -37,10 +37,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -6145892972313713941}
-    m_Position: {x: 350, y: 100, z: 0}
+    m_Position: {x: 340, y: 20, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1178341758879912290}
-    m_Position: {x: 340.16324, y: 193.91435, z: 0}
+    m_Position: {x: 340, y: 150, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -60,7 +60,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: HaveKey
+    m_ConditionEvent: DoorOpen
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6145892972313713941}
@@ -85,7 +85,7 @@ AnimatorController:
   m_Name: topdown-door_1
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: HaveKey
+  - m_Name: DoorOpen
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0

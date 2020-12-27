@@ -24,7 +24,7 @@ MonoBehaviour:
   maxBulletCount: 150
   damage: 1.5
   spread: 0
-  shootSound: 4
+  shootSound: 9
   cooldown: 0.6
   muzzlePS: {fileID: 2302688338332776376, guid: 266430e855434c41b80c58bcf2907df3,
     type: 3}

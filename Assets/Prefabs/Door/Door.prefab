@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 61380793
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: -738919434234687679, guid: e6f52b259f904e09a9cc05f9b1aae806,
     type: 3}
@@ -164,3 +164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20249db4bea94cdfbacae6a3640ad58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoDoor: 1
+  keyName: 
+  openDoorHint: {fileID: 0}
+  getKeyHint: {fileID: 0}
+  scanCard: 8
+  openDoor: 7

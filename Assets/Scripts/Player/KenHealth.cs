@@ -59,8 +59,10 @@ public class KenHealth : Health
 			return;
 		}
 
-		if (Hp > Mathf.Clamp(Mathf.Lerp(4, 0, infection / maxInfection), 0, 3)/3 * maxHp)
-			Damage(0.001F);
+		if (Hp > Mathf.Clamp(Mathf.Lerp(4, -1, infection / maxInfection), 0, 3) / 3 * maxHp)
+		{
+			Damage(Mathf.Lerp(0.03F, 0.24F, infection / maxInfection) * Time.deltaTime);
+		}
 		if (!IsInvulnerable && Input.GetKeyDown(KeyCode.L))
 			Damage(1, true, 0.1F);
 		if (Input.GetKeyDown(KeyCode.K) || isInfecting)
@@ -106,6 +108,7 @@ public class KenHealth : Health
 	{
 		ken.flashable.Flash();
 		ken.movement.speedMultiplier = 0;
+		ken.shooting.HeldWeapon.DontShoot();
 		heldWeapon.SetActive(false);
 		trigger1.SetActive(false);
 		animator.SetBool(isDeadParameter, true);

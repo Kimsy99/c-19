@@ -186,7 +186,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 8ccbb6cec5818b649a35cfc0d7b65255, type: 3}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - audioEnum: 24
     clip: {fileID: 8300000, guid: 37c92891d19bb6145ae87e4415dabb77, type: 3}

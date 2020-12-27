@@ -141,6 +141,8 @@ public class HeldWeapon : MonoBehaviour
 
 	public void DontShoot()
 	{
+		if (Weapon == null)
+			return;
 		switch (WeaponSettings.displayName)
 		{
 			case "Laser Gun":

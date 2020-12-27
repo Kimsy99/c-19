@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db83289dfbda54454883f74115ac37c9, type: 3}
+  m_Name: Level1StartingDialogue
+  m_EditorClassIdentifier: 
+  sentences:
+  - image: {fileID: 7981458561678715645, guid: 02be3576eb10428c94405fcbd36f27ad, type: 3}
+    text: I've had enough of this!
+    isInstruction: 0
+  - image: {fileID: 7981458561678715645, guid: 02be3576eb10428c94405fcbd36f27ad, type: 3}
+    text: Them saying that they'll treat my infection is all just bullcrap!
+    isInstruction: 0
+  - image: {fileID: 7981458561678715645, guid: 02be3576eb10428c94405fcbd36f27ad, type: 3}
+    text: All they do is have us play with the zombies!
+    isInstruction: 0
+  - image: {fileID: 7981458561678715645, guid: 02be3576eb10428c94405fcbd36f27ad, type: 3}
+    text: Saying that these are all controlled experiments for coming up a cure to...
+    isInstruction: 0
+  - image: {fileID: 7981458561678715645, guid: 02be3576eb10428c94405fcbd36f27ad, type: 3}
+    text: ...the virus.
+    isInstruction: 0
+  - image: {fileID: 7981458561678715645, guid: 02be3576eb10428c94405fcbd36f27ad, type: 3}
+    text: Screw this! I'm getting out of here!
+    isInstruction: 0
+  - image: {fileID: 7981458561678715645, guid: 02be3576eb10428c94405fcbd36f27ad, type: 3}
+    text: Good thing I snuck in a pistol to deal with the zombies!
+    isInstruction: 0
+  - image: {fileID: 0}
+    text: WASD or arrow keys to move. Use SPACE to open chests and collect items.
+    isInstruction: 1

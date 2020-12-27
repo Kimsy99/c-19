@@ -25,15 +25,15 @@ public class DialogueManager : Singleton<DialogueManager>
 		dialogText = dialogBox.GetComponentInChildren<TextMeshProUGUI>();
 		sentences = new Queue<Sentence>();
 
-		ken.health.OnDie += EndDialogue;
 	}
 
 	void Start()
 	{
+		ken.health.OnDie += EndDialogue;
 		if (startingDialogue != null)
 		{
 			LevelManager.Instance.CanPlayerMove = false;
-			StartCoroutine(DelayedStartDialogue(startingDialogue, 2));
+			StartCoroutine(DelayedStartDialogue(startingDialogue, 0.5F));
 		}
 	}
 
@@ -41,11 +41,11 @@ public class DialogueManager : Singleton<DialogueManager>
 	{
 		if (ken.health.IsDead)
 			return;
-		if (Input.anyKeyDown || Input.GetButtonDown("Fire1"))
+		if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Fire1"))
 			DisplayNextSentence();
 	}
 
-	private IEnumerator DelayedStartDialogue(Dialogue dialogue, int seconds)
+	private IEnumerator DelayedStartDialogue(Dialogue dialogue, float seconds)
 	{
 		yield return new WaitForSeconds(seconds);
 		StartDialogue(dialogue);
@@ -73,7 +73,8 @@ public class DialogueManager : Singleton<DialogueManager>
 		image.gameObject.SetActive(!sentence.isInstruction);
 		instructionImage.gameObject.SetActive(sentence.isInstruction);
 		Vector4 margin = dialogText.margin;
-		margin.x = 130 * (sentence.isInstruction ? 0 : 1);
+		margin.x = 110 * (sentence.isInstruction ? 0 : 1);
+		margin.z = 110 * (sentence.isInstruction ? 1 : 0);
 		dialogText.margin = margin;
 		image.enabled = instructionImage.enabled = sentence.image != null;
 		image.sprite = instructionImage.sprite = sentence.image;

@@ -45,7 +45,7 @@ public class UIManager : Singleton<UIManager>
 	private void UpdateStatBars()
 	{
 		healthBarInfected.fillAmount = playerHealth / playerMaxHealth;
-		healthBar.fillAmount = Mathf.Min(Mathf.Lerp(4, 0, playerInfection / playerMaxInfection)/3, healthBarInfected.fillAmount);
+		healthBar.fillAmount = Mathf.Min(Mathf.Lerp(4, -1, playerInfection / playerMaxInfection)/3, healthBarInfected.fillAmount);
 
 		// Dynamically shrink background health bar to match the actual health bar
 		if (healthBarBackground.fillAmount - healthBarInfected.fillAmount > fillAmountChangeRate * Time.deltaTime)

@@ -19,14 +19,14 @@ public class KenShooting : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (kenHealth.IsDead)
+		if (!LevelManager.Instance.CanPlayerMove)
 			return;
 
 		cooldown = Mathf.Max(cooldown - Time.deltaTime, 0);
 
 		if (heldWeapon.Weapon != null)
 		{
-			if (Input.GetButton("Fire1") && !LevelManager.Instance.CanPlayerMove)
+			if (Input.GetButton("Fire1"))
 			{
 				if (cooldown == 0)
 				{

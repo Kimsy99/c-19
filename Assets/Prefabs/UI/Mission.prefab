@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -68.955, y: -34.62}
-  m_SizeDelta: {x: 126.3, y: 80}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 99.99988, y: 36.928474}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4595285015899673136
 CanvasRenderer:
@@ -66,8 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3962123324350749488, guid: 71fb21d4bda66724e9fb75f7799a1c21,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd89b2c11b3f41d9acfb0bd0d27a12cd, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -76,7 +75,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 16
 --- !u!1 &4595285015958896948
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,14 +202,14 @@ RectTransform:
   m_GameObject: {fileID: 4595285016279861574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.61965}
+  m_LocalScale: {x: 0.2655975, y: 0.2655975, z: 0.4114437}
   m_Children: []
   m_Father: {fileID: 4595285015899673142}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 16.5}
+  m_AnchoredPosition: {x: 8.3, y: 25.9}
   m_SizeDelta: {x: 240, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4595285016279861569
@@ -285,8 +284,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -29}
-  m_SizeDelta: {x: -14, y: 100.60017}
+  m_AnchoredPosition: {x: 0, y: -17.4}
+  m_SizeDelta: {x: -14, y: 29.077847}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4595285016963692771
 CanvasRenderer:
@@ -315,9 +314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Level 3 mission
-
-    Steal disk with information of C-19'
+  m_text: Collect         to complete mission
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3569ec40f57d477a9e214ce5630cbf93, type: 2}
   m_sharedMaterial: {fileID: -6999798400202998433, guid: 3569ec40f57d477a9e214ce5630cbf93,

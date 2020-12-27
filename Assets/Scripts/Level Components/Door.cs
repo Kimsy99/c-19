@@ -12,7 +12,8 @@ public class Door : MonoBehaviour
     [Header("Sound Effect")]
     [SerializeField] private AudioEnum scanCard = AudioEnum.NoAudio;
     [SerializeField] private AudioEnum openDoor = AudioEnum.NoAudio;
-    
+
+    private Ken ken;
     private Animator animator;
     private readonly int doorOpenParameter = Animator.StringToHash("DoorOpen");
     private readonly int doorCloseParameter = Animator.StringToHash("DoorClose");
@@ -20,11 +21,13 @@ public class Door : MonoBehaviour
     protected bool unlocked = false;
     private bool doorOpened = false;
 
-    private void Start()
+    void Awake()
     {
+        ken = FindObjectOfType<Ken>();
         animator = GetComponent<Animator>();
     }
-    private void Update()
+
+    void Update()
     {
         // only for door require key
         if (!doorOpened && unlocked)
@@ -93,11 +96,14 @@ public class Door : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
-                WeaponSettings weaponSetting = other.gameObject.GetComponentInParent<Ken>().GetComponentInChildren<HeldWeapon>().WeaponSettings;
+                WeaponSettings weaponSetting = ken.shooting.HeldWeapon.WeaponSettings;
                 if (weaponSetting != null)
                 {
                     if (weaponSetting.displayName.Equals(keyName))
+                    {
                         UnlockDoor();
+                        InventoryManager.Instance.RemoveWeapon(InventoryManager.Instance.ActiveSlotIndex);
+                    }
                 }
             }
         }

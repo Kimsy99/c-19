@@ -12,7 +12,7 @@ public class LevelManager : Singleton<LevelManager>
 	[SerializeField] private WeaponSettings secondWeaponSettings = null;
 	[SerializeField] private WeaponSettings thirdWeaponSettings = null;
 
-	private bool canPlayerMove;
+	private bool canPlayerMove = true;
 
 	public Action OnBossBarPostInit;
 
@@ -42,11 +42,16 @@ public class LevelManager : Singleton<LevelManager>
 
 	void Start()
 	{
-		Weapon firstWeapon = new Weapon(firstWeaponSettings);
-		InventoryManager.Instance.SetWeapon(0, firstWeapon);
-		InventoryManager.Instance.SetWeapon(1, new Weapon(secondWeaponSettings));
-		InventoryManager.Instance.SetWeapon(2, new Weapon(thirdWeaponSettings));
-		heldWeapon.SetHeldWeapon(firstWeapon);
+		if (firstWeaponSettings != null)
+		{
+			Weapon weapon = new Weapon(firstWeaponSettings);
+			InventoryManager.Instance.SetWeapon(0, weapon);
+			heldWeapon.SetHeldWeapon(weapon);
+		}
+		if (secondWeaponSettings != null)
+			InventoryManager.Instance.SetWeapon(1, new Weapon(secondWeaponSettings));
+		if (thirdWeaponSettings != null)
+			InventoryManager.Instance.SetWeapon(2, new Weapon(thirdWeaponSettings));
 
 		levelTheme = AudioManager.Instance.Play(levelThemeEnum);
 	}

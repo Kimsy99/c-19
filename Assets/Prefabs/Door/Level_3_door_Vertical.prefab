@@ -55,7 +55,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2025981, y: 1.9999503}
+  m_Size: {x: 0.5040254, y: 1.9999503}
   m_EdgeRadius: 0
 --- !u!1 &7368399336688604858
 GameObject:
@@ -112,7 +112,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2025981, y: 1.997979}
+  m_Size: {x: 0.5040254, y: 1.997979}
   m_EdgeRadius: 0
 --- !u!1 &7368399336752015595
 GameObject:
@@ -216,7 +216,6 @@ MonoBehaviour:
   autoDoor: 1
   keyName: 
   openDoorHint: {fileID: 0}
-  getKeyHint: {fileID: 0}
   scanCard: 8
   openDoor: 7
 --- !u!61 &7368399336752015598

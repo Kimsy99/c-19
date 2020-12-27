@@ -23,6 +23,8 @@ public class Chest : MonoBehaviour
 
 	private void Update()
 	{
+		if (!LevelManager.Instance.CanPlayerMove)
+			return;
 		if (!chestOpened && Input.GetKeyDown(KeyCode.Space))
 		{
 			if (Vector2.Distance(transform.position, ken.center.position) < 1.2F && CanOpen())

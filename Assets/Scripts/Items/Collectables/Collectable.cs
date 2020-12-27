@@ -15,6 +15,8 @@ public class Collectable : MonoBehaviour
 
 	void Update()
 	{
+		if (!LevelManager.Instance.CanPlayerMove)
+			return;
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			if (Vector2.Distance(ken.center.position, transform.position) < 1.2F)

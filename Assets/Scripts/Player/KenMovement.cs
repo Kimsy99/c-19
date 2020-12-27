@@ -27,8 +27,8 @@ public class KenMovement : AnimatableMovable2D
 		float vx = Input.GetAxisRaw("Horizontal");
 		float vy = Input.GetAxisRaw("Vertical");
 
-		float speed = speedMultiplier * walkSpeed * (Input.GetKey(KeyCode.LeftShift) ? 2 : 1);
-		if (LevelManager.Instance.IsBossIntro)
+		float speed = speedMultiplier * walkSpeed; //* (Input.GetKey(KeyCode.LeftShift) ? 2 : 1);
+		if (LevelManager.Instance.CanPlayerMove)
 			speed = 0;
 		animator.SetBool(isMovingParamater, IsWalking());
 		weaponHolderAnimator.SetBool(isMovingParamater, IsWalking());
@@ -38,7 +38,7 @@ public class KenMovement : AnimatableMovable2D
 
 	public bool IsWalking()
 	{
-		if (LevelManager.Instance.IsBossIntro)
+		if (LevelManager.Instance.CanPlayerMove)
 			return false;
 		float vx = Input.GetAxisRaw("Horizontal");
 		float vy = Input.GetAxisRaw("Vertical");

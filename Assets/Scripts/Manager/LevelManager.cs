@@ -8,10 +8,11 @@ public class LevelManager : Singleton<LevelManager>
 
 	private Ken ken;
 	private HeldWeapon heldWeapon;
-	private Transform bulletSpawner;
 	[SerializeField] private WeaponSettings firstWeaponSettings = null;
 	[SerializeField] private WeaponSettings secondWeaponSettings = null;
 	[SerializeField] private WeaponSettings thirdWeaponSettings = null;
+
+	private bool canPlayerMove;
 
 	public Action OnBossBarPostInit;
 
@@ -19,7 +20,15 @@ public class LevelManager : Singleton<LevelManager>
 	private AudioSource levelTheme;
 	private GameObject boss;
 
-	public bool IsBossIntro { get; private set; }
+	public bool CanPlayerMove
+	{
+		get => canPlayerMove && !ken.health.IsDead;
+		set
+		{
+			canPlayerMove = value;
+		}
+	}
+
 	public bool IsBossReady { get; set; }
 
 	protected override void Awake()
@@ -29,7 +38,6 @@ public class LevelManager : Singleton<LevelManager>
 
 		ken = FindObjectOfType<Ken>();
 		heldWeapon = ken.GetComponentInChildren<HeldWeapon>();
-		bulletSpawner = ken.transform.Find("WeaponHolder").Find("BulletSpawner");
 	}
 
 	void Start()
@@ -63,7 +71,7 @@ public class LevelManager : Singleton<LevelManager>
 
 		levelTheme = AudioManager.Instance.Play(AudioEnum.BossTheme);
 		UIManager.Instance.bossBarContainer.SetActive(true); // Show boss bar
-		IsBossIntro = true;
+		CanPlayerMove = true;
 		cameraController.secondaryTarget = boss.transform; // Switch target to boss
 		cameraController.primaryTargetWeightage = 0;
 	}
@@ -93,7 +101,7 @@ public class LevelManager : Singleton<LevelManager>
 				break;
 			yield return new WaitForEndOfFrame();
 		}
-		IsBossIntro = false;
+		CanPlayerMove = false;
 		IsBossReady = true;
 
 		SetBossCameraMode();

@@ -9,12 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51977423f9c3d4a0692ce0828b946c1c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5eacb8be64d046be95c7e6c1e90df8d7, type: 3}
   m_Name: Boss1StateFollow
   m_EditorClassIdentifier: 
   Actions:
-  - {fileID: 11400000, guid: 42c1b53355cf47d4a7a8e8735de91a35, type: 2}
+  - {fileID: 11400000, guid: 6a00302f52f654c2a93853fab42475d1, type: 2}
+  - {fileID: 11400000, guid: 6c16fe2adefce4d4eba6a750f5b8c9f8, type: 2}
   Transitions:
-  - Decision: {fileID: 11400000, guid: f5ba70af1a52416291f8c0bfa9c761bb, type: 2}
+  - Decision: {fileID: 11400000, guid: 0f74d7ff03bb24dd7bdc08df29f9e1e9, type: 2}
     TrueState: {fileID: 11400000, guid: f69039a2355e4ecdab92086502067f6f, type: 2}
     FalseState: {fileID: 11400000, guid: 0331567cfb6b4ae7acac885e4eadfa0a, type: 2}

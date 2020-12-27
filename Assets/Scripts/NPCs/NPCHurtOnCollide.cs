@@ -17,7 +17,8 @@ public class NPCHurtOnCollide : MonoBehaviour
 		if (isHurtingKen)
 		{
 			ken.movement.RecoilFrom(transform);
-			ken.health.Damage(collisionDamage, true, 0.25F);
+			if (ken.health.Damage(collisionDamage, true, 0.25F))
+				ken.health.Infect(infectionRate);
 		}
 	}
 
@@ -26,7 +27,6 @@ public class NPCHurtOnCollide : MonoBehaviour
 		if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
 		{
 			isHurtingKen = true;
-			ken.health.Infect(infectionRate);
 		}
 	}
 

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2886db0d28f4adf999069ab57179b2f, type: 3}
   m_Name: Level1 3F-2FKey
   m_EditorClassIdentifier: 
-  displayName: Key 2
+  displayName: Key 1
   displaySprite: {fileID: -3357289602171556417, guid: 1752506dff6cb46ac8368ea4c092dc38,
     type: 3}
-  heldSprite: {fileID: -3357289602171556417, guid: 1752506dff6cb46ac8368ea4c092dc38,
+  heldSprite: {fileID: 6210793687080003120, guid: 1752506dff6cb46ac8368ea4c092dc38,
     type: 3}
   isRotatable: 0
   bulletToUse: {fileID: 0}

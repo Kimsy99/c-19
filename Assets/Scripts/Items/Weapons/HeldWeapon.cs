@@ -81,7 +81,7 @@ public class HeldWeapon : MonoBehaviour
 
 	public bool ConsumeAmmo()
 	{
-		if (Weapon.weaponSettings.bulletToUse == null)
+		if (!Weapon.weaponSettings.displayName.Equals("Laser Gun") && Weapon.weaponSettings.bulletToUse == null)
 			return false;
 		if (Weapon.bulletCount > 0 || Weapon.weaponSettings.maxBulletCount == -1)
 		{

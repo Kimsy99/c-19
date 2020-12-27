@@ -36,7 +36,8 @@ public class NPCHealth : Health
 
 	public virtual bool Damage(float damage, bool shouldFlash = false, float invulnerabilityTime = 0)
 	{
-		healthBar.SetActive(true);
+		if (!IsDead)
+			healthBar.SetActive(true);
 		bool damaged = base.Damage(damage, invulnerabilityTime);
 		if (!damaged)
 			return false;

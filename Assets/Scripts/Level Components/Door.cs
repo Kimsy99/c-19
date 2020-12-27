@@ -11,7 +11,6 @@ public class Door : MonoBehaviour
     [Header("For door require key")]
     [SerializeField] private string keyName;
     [SerializeField] private GameObject openDoorHint;
-    [SerializeField] private GameObject getKeyHint;
 
     [Header("Sound Effect")]
     [SerializeField] private AudioEnum scanCard;
@@ -33,7 +32,7 @@ public class Door : MonoBehaviour
         // only for door require key
         if (!doorOpened && unlocked)
         {
-            getKeyHint.SetActive(false);
+            openDoorHint.SetActive(false);
             OpenDoor();
         }
     }
@@ -59,15 +58,11 @@ public class Door : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             if (autoDoor)
-            {
                 OpenDoor();
-            }
             else
             {
                 if (!doorOpened)
-                {
-                    getKeyHint.SetActive(true);
-                }
+                    openDoorHint.SetActive(true);
             }
         }
     }
@@ -78,13 +73,9 @@ public class Door : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             if (autoDoor)
-            {
                 CloseDoor();
-            }
             else
-            {
-                getKeyHint.SetActive(false);
-            }
+                openDoorHint.SetActive(false);
         }
     }
 
@@ -109,9 +100,7 @@ public class Door : MonoBehaviour
                 if (weaponSetting != null)
                 {
                     if (weaponSetting.displayName.Equals(keyName))
-                    {
                         UnlockDoor();
-                    }
                 }
             }
         }

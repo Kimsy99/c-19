@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class UIManager : Singleton<UIManager>
 {
 	private Image healthBar;
+	private Image healthBarInfected;
 	private Image healthBarBackground;
 	private Image infectionBar;
 	public GameObject bossBarContainer;
@@ -20,6 +21,7 @@ public class UIManager : Singleton<UIManager>
 	{
 		Transform statsBarContainer = GameObject.Find("StatsBarContainer").transform;
 		healthBar = statsBarContainer.Find("HealthBarContainer").Find("HealthBar").GetComponent<Image>();
+		healthBarInfected = statsBarContainer.Find("HealthBarContainer").Find("HealthBarInfected").GetComponent<Image>();
 		healthBarBackground = statsBarContainer.Find("HealthBarContainer").Find("HealthBarBackground").GetComponent<Image>();
 		infectionBar = statsBarContainer.Find("InfectionBarContainer").Find("InfectionBar").GetComponent<Image>();
 		
@@ -42,13 +44,14 @@ public class UIManager : Singleton<UIManager>
 
 	private void UpdateStatBars()
 	{
-		healthBar.fillAmount = playerHealth / playerMaxHealth;
+		healthBarInfected.fillAmount = playerHealth / playerMaxHealth;
+		healthBar.fillAmount = Mathf.Min(Mathf.Lerp(4, 0, playerInfection / playerMaxInfection)/3, healthBarInfected.fillAmount);
 
 		// Dynamically shrink background health bar to match the actual health bar
-		if (healthBarBackground.fillAmount - healthBar.fillAmount > fillAmountChangeRate * Time.deltaTime)
+		if (healthBarBackground.fillAmount - healthBarInfected.fillAmount > fillAmountChangeRate * Time.deltaTime)
 			healthBarBackground.fillAmount -= fillAmountChangeRate * Time.deltaTime;
 		else
-			healthBarBackground.fillAmount = healthBar.fillAmount;
+			healthBarBackground.fillAmount = healthBarInfected.fillAmount;
 
 		infectionBar.fillAmount = playerInfection / playerMaxInfection;
 	}

@@ -14,6 +14,7 @@ public class LevelManager : Singleton<LevelManager>
 	[SerializeField] private WeaponSettings thirdWeaponSettings = null;
 
 	[SerializeField] private GameObject flashLight = null;
+	[SerializeField] private bool isFlashLightEnabled = false;
 
 	public Action OnBossBarPostInit;
 
@@ -43,6 +44,9 @@ public class LevelManager : Singleton<LevelManager>
 		heldWeapon.SetHeldWeapon(firstWeapon);
 
 		levelTheme = AudioManager.Instance.Play(levelThemeEnum);
+
+		if (isFlashLightEnabled)
+			EnableFlashLight();
 	}
 
 	void Update()
@@ -54,6 +58,9 @@ public class LevelManager : Singleton<LevelManager>
 		}
 		else
 			levelTheme.pitch = 1;
+
+		if (Input.GetKeyDown(KeyCode.Escape))
+			SceneLoader.Instance.LoadScene("MainMenu");
 	}
 
 	public void EnableFlashLight()
@@ -77,7 +84,7 @@ public class LevelManager : Singleton<LevelManager>
 		cameraController.primaryTargetWeightage = 1;
 		cameraController.secondaryTarget = boss.transform;
 		cameraController.secondaryTargetWeightage = 1;
-		cameraController.camSize = 6;
+		cameraController.camSize = 5.5F;
 	}
 
 	public void InitBossHealthBar()

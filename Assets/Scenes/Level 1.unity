@@ -2198,7 +2198,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: -100
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -66399,12 +66399,12 @@ PrefabInstance:
     - target: {fileID: 9153912707966078831, guid: ed77c0a2f8bd8a844a80112c9fc1b734,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 42.07627
+      value: 41.15
       objectReference: {fileID: 0}
     - target: {fileID: 9153912707966078831, guid: ed77c0a2f8bd8a844a80112c9fc1b734,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -7.456308
+      value: -7.18
       objectReference: {fileID: 0}
     - target: {fileID: 9153912707966078831, guid: ed77c0a2f8bd8a844a80112c9fc1b734,
         type: 3}
@@ -67708,7 +67708,7 @@ PrefabInstance:
     - target: {fileID: 2293396122227159690, guid: 8bb161a5084a45f09c7ea837db835856,
         type: 3}
       propertyPath: keyName
-      value: key1
+      value: Key 2
       objectReference: {fileID: 0}
     - target: {fileID: 2293396122227159690, guid: 8bb161a5084a45f09c7ea837db835856,
         type: 3}
@@ -67718,12 +67718,12 @@ PrefabInstance:
     - target: {fileID: 2293396122227159690, guid: 8bb161a5084a45f09c7ea837db835856,
         type: 3}
       propertyPath: openDoor
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2293396122227159690, guid: 8bb161a5084a45f09c7ea837db835856,
         type: 3}
       propertyPath: scanCard
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2293396122227159690, guid: 8bb161a5084a45f09c7ea837db835856,
         type: 3}
@@ -67734,7 +67734,7 @@ PrefabInstance:
         type: 3}
       propertyPath: openDoorHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1280872517}
     - target: {fileID: 8984853917583483857, guid: 8bb161a5084a45f09c7ea837db835856,
         type: 3}
       propertyPath: m_Name
@@ -74840,7 +74840,7 @@ PrefabInstance:
     - target: {fileID: 44769341103792964, guid: b1aa71ccbf404f8791a096c04ed9b3c2,
         type: 3}
       propertyPath: chestLoot.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 44769341103792964, guid: b1aa71ccbf404f8791a096c04ed9b3c2,
         type: 3}
@@ -74862,7 +74862,7 @@ PrefabInstance:
         type: 3}
       propertyPath: chestLoot.Array.data[1].collectable
       value: 
-      objectReference: {fileID: 3532185342734879178, guid: ed68540f90c5491682f6f7afe8424ebc,
+      objectReference: {fileID: 2082961803307455677, guid: 1c003260ad824feb81d01d39b1dfb40d,
         type: 3}
     - target: {fileID: 44769341103792964, guid: b1aa71ccbf404f8791a096c04ed9b3c2,
         type: 3}

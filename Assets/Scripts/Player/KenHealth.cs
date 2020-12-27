@@ -59,7 +59,7 @@ public class KenHealth : Health
 			return;
 		}
 
-		if (Infection >= maxInfection / 2)
+		if (Hp > Mathf.Clamp(Mathf.Lerp(4, 0, infection / maxInfection), 0, 3)/3 * maxHp)
 			Damage(0.001F);
 		if (!IsInvulnerable && Input.GetKeyDown(KeyCode.L))
 			Damage(1, true, 0.1F);
@@ -97,11 +97,9 @@ public class KenHealth : Health
 		return true;
 	}
 
-	public void Infect(float infection, float invulnerabilityTime = 0)
+	public void Infect(float infection)
 	{
-		if (!IsInvulnerable)
-			Infection += infection;
-		invulnerabilityTimer += invulnerabilityTime;
+		Infection += infection;
 	}
 
 	private void Die()

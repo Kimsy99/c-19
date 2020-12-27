@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: -1674722568577363638
     second: Key_F_0
+  - first:
+      213: 3282607122225244257
+    second: Key_F_InventoryView
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,8 +100,8 @@ TextureImporter:
         y: 52
         width: 100
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.13740374, y: 0.6815181}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -106,6 +109,27 @@ TextureImporter:
       bones: []
       spriteID: a41dd9a62b032c8e0800000000000000
       internalID: -1674722568577363638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Key_F_InventoryView
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 52
+        width: 100
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168276129c92e8d20800000000000000
+      internalID: 3282607122225244257
       vertices: []
       indices: 
       edges: []

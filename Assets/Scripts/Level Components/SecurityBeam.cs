@@ -20,7 +20,7 @@ public class SecurityBeam : Laser
 		dAngle = Vector2.SignedAngle(beamMark1.localPosition, beamMark2.localPosition);
 		baseDirection = Vector2.SignedAngle(Vector2.right, beamMark1.localPosition);
 
-		securitySystem = GameObject.Find("SecuritySystem").GetComponent<SecuritySystem>();
+		securitySystem = FindObjectOfType<SecuritySystem>();
 	}
 
 	protected override void Update()

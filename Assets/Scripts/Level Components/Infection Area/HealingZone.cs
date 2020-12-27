@@ -6,9 +6,9 @@ public class HealingZone : MonoBehaviour
 	private bool isInfectingKen=false;
 	private float healingRate = -0.5F;
 	// Start is called before the first frame update
-	void Start()
+	void Awake()
 	{
-		ken = GameObject.Find("Ken").GetComponent<Ken>();
+		ken = FindObjectOfType<Ken>();
 	}
 
 	// Update is called once per frame

@@ -43,16 +43,19 @@ public class WeaponAim : MonoBehaviour
 		if (ken.health.IsDead)
 			return;
 		bool isRotatable = ken.shooting.HeldWeapon.Weapon == null || ken.shooting.HeldWeapon.WeaponSettings.isRotatable;
+		GameObject flashLight = ken.shooting.HeldWeapon.flashLight;
 
 		if (lookAngle > 90 || lookAngle < -90)
 		{
-			ken.spriteFlippable2D.Facing = SpriteFlippable2D.RelativeDirection.Left;
 			transform.rotation = Quaternion.Euler(0, 0, isRotatable ? AimAngle + 180 : 0);
+			ken.spriteFlippable2D.Facing = SpriteFlippable2D.RelativeDirection.Left;
+			flashLight.transform.rotation = Quaternion.Euler(0, 0, AimAngle - 90);
 		}
 		else
 		{
 			ken.spriteFlippable2D.Facing = SpriteFlippable2D.RelativeDirection.Right;
 			transform.rotation = Quaternion.Euler(0, 0, isRotatable ? AimAngle : 0);
+			flashLight.transform.rotation = Quaternion.Euler(0, 0, AimAngle - 90);
 		}
 	}
 }

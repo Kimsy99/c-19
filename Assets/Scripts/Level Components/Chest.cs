@@ -18,7 +18,7 @@ public class Chest : MonoBehaviour
 		lootGeneratePosition = transform.Find("LootGeneratePosition");
 
 		spriteRenderer = GetComponent<SpriteRenderer>();
-		ken = GameObject.Find("Ken").GetComponent<Ken>();
+		ken = FindObjectOfType<Ken>();
 	}
 
 	private void Update()

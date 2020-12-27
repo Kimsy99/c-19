@@ -12,7 +12,7 @@ public class Turret : NPCHeldWeapon
 
 	protected override void Awake()
 	{
-		ken = GameObject.Find("Ken").GetComponent<Ken>();
+		ken = FindObjectOfType<Ken>();
 
 		animator = GetComponent<Animator>();
 		animator.Play("TurretDeactivating", 0, 1);

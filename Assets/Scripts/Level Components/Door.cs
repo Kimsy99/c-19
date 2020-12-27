@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Door : MonoBehaviour
 {
@@ -9,12 +6,12 @@ public class Door : MonoBehaviour
     [SerializeField] private bool autoDoor = true;
 
     [Header("For door require key")]
-    [SerializeField] private string keyName;
-    [SerializeField] private GameObject openDoorHint;
+    [SerializeField] private string keyName = null;
+    [SerializeField] private GameObject openDoorHint = null;
 
     [Header("Sound Effect")]
-    [SerializeField] private AudioEnum scanCard;
-    [SerializeField] private AudioEnum openDoor;
+    [SerializeField] private AudioEnum scanCard = AudioEnum.NoAudio;
+    [SerializeField] private AudioEnum openDoor = AudioEnum.NoAudio;
     
     private Animator animator;
     private readonly int doorOpenParameter = Animator.StringToHash("DoorOpen");
@@ -53,7 +50,7 @@ public class Door : MonoBehaviour
         AudioManager.Instance.Play(openDoor);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
@@ -67,7 +64,7 @@ public class Door : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         LockDoor();
         if (other.CompareTag("Player"))
@@ -90,7 +87,7 @@ public class Door : MonoBehaviour
         unlocked = false;
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    protected virtual void OnTriggerStay2D(Collider2D other)
     {
         if (!autoDoor && !doorOpened)
         {

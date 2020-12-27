@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 /// <summary>
 /// Contains the weapon held by Ken and controls animations when shooting. <br/>
@@ -18,6 +19,7 @@ public class HeldWeapon : MonoBehaviour
 	private GameObject customSpawner;
 	private LaserSpawner laserSpawner;
 	private ParticleSystem muzzlePS;
+	public GameObject flashLight;
 
 	// Provide access to internal data
 	public WeaponSettings WeaponSettings => Weapon?.weaponSettings;
@@ -48,6 +50,7 @@ public class HeldWeapon : MonoBehaviour
 		Weapon = weapon;
 		spriteRenderer.sprite = weapon?.weaponSettings.heldSprite;
 		bulletSpawner.localPosition = weapon?.weaponSettings.bulletSpawnPositionOffset ?? Vector2.zero;
+		flashLight.transform.localPosition = bulletSpawner.localPosition;
 		if (muzzlePS != null)
 			Destroy(muzzlePS.gameObject);
 		if (customSpawner != null)

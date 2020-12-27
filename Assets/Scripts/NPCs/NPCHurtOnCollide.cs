@@ -9,7 +9,7 @@ public class NPCHurtOnCollide : MonoBehaviour
 
 	void Awake()
 	{
-		ken = GameObject.Find("Ken").GetComponent<Ken>();
+		ken = FindObjectOfType<Ken>();
 	}
 
 	void Update()

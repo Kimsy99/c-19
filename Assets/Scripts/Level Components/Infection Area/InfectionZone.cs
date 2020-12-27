@@ -8,7 +8,7 @@ public class InfectionZone : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ken = GameObject.Find("Ken").GetComponent<Ken>();
+        ken = FindObjectOfType<Ken>();
     }
 
     // Update is called once per frame

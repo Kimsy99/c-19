@@ -8,7 +8,7 @@ public class EnemyBullet : Bullet
 	protected override void Awake()
 	{
 		base.Awake();
-		ken = GameObject.Find("Ken").GetComponent<Ken>();
+		ken = FindObjectOfType<Ken>();
 	}
 
 	protected void OnTriggerEnter2D(Collider2D collision)

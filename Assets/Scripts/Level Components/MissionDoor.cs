@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MissionDoor : Door
 {
@@ -12,11 +10,11 @@ public class MissionDoor : Door
         unlocked = true;
     }
 
-    protected new void OnTriggerStay2D(Collider2D other)
+    protected override void OnTriggerStay2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            if(!missionCompleted)
+            if (!missionCompleted)
             {
                 // openDoorRequirement.SetActive(true);
             }

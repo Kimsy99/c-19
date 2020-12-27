@@ -3,10 +3,17 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class LightSwitch : MonoBehaviour
 {
+	private Ken ken;
+
 	[SerializeField] private SteelDoor[] steelDoorsToUnlock = null;
 	[SerializeField] private GameObject lights = null;
 	[SerializeField] private Light2D globalLight = null;
 	[SerializeField] private GameObject securityBeams = null;
+
+	void Awake()
+	{
+		ken = FindObjectOfType<Ken>();
+	}
 
 	void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -15,7 +22,7 @@ public class LightSwitch : MonoBehaviour
 		AudioManager.Instance.Play(AudioEnum.EnergyOff);
 		lights.SetActive(true);
 		globalLight.intensity = 0;
-		LevelManager.Instance.EnableFlashLight();
+		ken.shooting.HeldWeapon.flashLight.SetActive(true);
 		securityBeams.SetActive(false);
 		Destroy(gameObject);
 	}

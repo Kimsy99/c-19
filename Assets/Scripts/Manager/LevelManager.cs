@@ -13,9 +13,6 @@ public class LevelManager : Singleton<LevelManager>
 	[SerializeField] private WeaponSettings secondWeaponSettings = null;
 	[SerializeField] private WeaponSettings thirdWeaponSettings = null;
 
-	[SerializeField] private GameObject flashLight = null;
-	[SerializeField] private bool isFlashLightEnabled = false;
-
 	public Action OnBossBarPostInit;
 
 	public AudioEnum levelThemeEnum;
@@ -30,7 +27,7 @@ public class LevelManager : Singleton<LevelManager>
 		base.Awake();
 		cameraController = Camera.main.GetComponent<CameraController>();
 
-		ken = GameObject.Find("Ken").GetComponent<Ken>();
+		ken = FindObjectOfType<Ken>();
 		heldWeapon = ken.GetComponentInChildren<HeldWeapon>();
 		bulletSpawner = ken.transform.Find("WeaponHolder").Find("BulletSpawner");
 	}
@@ -44,9 +41,6 @@ public class LevelManager : Singleton<LevelManager>
 		heldWeapon.SetHeldWeapon(firstWeapon);
 
 		levelTheme = AudioManager.Instance.Play(levelThemeEnum);
-
-		if (isFlashLightEnabled)
-			EnableFlashLight();
 	}
 
 	void Update()
@@ -61,11 +55,6 @@ public class LevelManager : Singleton<LevelManager>
 
 		if (Input.GetKeyDown(KeyCode.Escape))
 			SceneLoader.Instance.LoadScene("MainMenu");
-	}
-
-	public void EnableFlashLight()
-	{
-		Instantiate(flashLight, bulletSpawner);
 	}
 
 	public void IntroBoss(GameObject boss)

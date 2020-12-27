@@ -23,7 +23,7 @@ public class Terminal : MonoBehaviour
 
 	void Awake()
 	{
-		ken = GameObject.Find("Ken").GetComponent<Ken>();
+		ken = FindObjectOfType<Ken>();
 		animator = GetComponent<Animator>();
 		GetComponent<BossHealth>().OnDie += Die;
 	}

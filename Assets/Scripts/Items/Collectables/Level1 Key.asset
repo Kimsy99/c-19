@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Level1 Key
   m_EditorClassIdentifier: 
   displayName: Key 1
-  displaySprite: {fileID: -2524392170370377759, guid: ce91cf4a7b88347d0b5d9531cadbaa0e,
+  displaySprite: {fileID: -2370121874868600750, guid: ce91cf4a7b88347d0b5d9531cadbaa0e,
     type: 3}
-  heldSprite: {fileID: 0}
+  heldSprite: {fileID: -2524392170370377759, guid: ce91cf4a7b88347d0b5d9531cadbaa0e,
+    type: 3}
+  isRotatable: 0
   bulletToUse: {fileID: 0}
   bulletSpawnPositionOffset: {x: 0, y: 0}
   bulletSpeed: 0

@@ -31,7 +31,7 @@ public class Bullet : Movable2D
 
 	protected virtual void OnCollisionEnter2D(Collision2D other)
 	{
-		if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+		if (other.gameObject.layer == LayerMask.NameToLayer("Enemy") || other.gameObject.layer == LayerMask.NameToLayer("Boss"))
 			other.gameObject.GetComponentInParent<NPCHealth>().Damage(damage, true);
 
 		OnBulletImpact();

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "AI/Decisions/Detect Target Boss", fileName = "DecisionDetectBoss")]
@@ -11,5 +9,4 @@ public class DecisionDetectBoss : DecisionDetect
       return base.Decide(controller);
     return false;
   }
-
 }

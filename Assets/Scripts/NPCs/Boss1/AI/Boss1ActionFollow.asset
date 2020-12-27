@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e7129b578f44f1f978f83243c3ec0d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 06ed922959d074526bd3480efd66ce6a, type: 3}
   m_Name: Boss1ActionFollow
   m_EditorClassIdentifier: 
   minDistanceToFollow: 0
-  followingSpeed: 2
+  followingSpeed1: 1.5
+  followingSpeed2: 3
+  followingSpeed: 3

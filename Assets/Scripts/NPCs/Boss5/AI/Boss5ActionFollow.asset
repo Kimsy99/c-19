@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1820b82a47bdb4373b3327d2b2b5ab15, type: 3}
-  m_Name: Boss3ActionFollow
+  m_Script: {fileID: 11500000, guid: 06ed922959d074526bd3480efd66ce6a, type: 3}
+  m_Name: Boss5ActionFollow
   m_EditorClassIdentifier: 
-  minDistanceToFollow: 3.5
+  minDistanceToFollow: 0
+  followingSpeed1: 0.5
+  followingSpeed2: 0.5

@@ -17,16 +17,17 @@ MonoBehaviour:
     text: I've had enough of this!
     isInstruction: 0
   - image: {fileID: 7981458561678715645, guid: 02be3576eb10428c94405fcbd36f27ad, type: 3}
-    text: Them saying that they'll treat my infection is all just bullcrap!
+    text: I'm not even infected with C-19, yet they still captured me!
     isInstruction: 0
   - image: {fileID: 7981458561678715645, guid: 02be3576eb10428c94405fcbd36f27ad, type: 3}
-    text: All they do is have us play with the zombies!
+    text: I thought that this is the place where they treat C-19 patients,
     isInstruction: 0
   - image: {fileID: 7981458561678715645, guid: 02be3576eb10428c94405fcbd36f27ad, type: 3}
-    text: Saying that these are all controlled experiments for coming up a cure to...
+    text: But all they do is letting us play with the zombies!
     isInstruction: 0
   - image: {fileID: 7981458561678715645, guid: 02be3576eb10428c94405fcbd36f27ad, type: 3}
-    text: ...the virus.
+    text: Claiming that these are all controlled experiments for coming up a cure
+      for C-19.
     isInstruction: 0
   - image: {fileID: 7981458561678715645, guid: 02be3576eb10428c94405fcbd36f27ad, type: 3}
     text: Screw this! I'm getting out of here!

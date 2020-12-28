@@ -12,7 +12,7 @@ public class DialogueTrigger : MonoBehaviour
 
 	public void TriggerDialogue()
 	{
-		DialogueManager.Instance.StartDialogue(dialogue);
+		DialogueController.Instance.StartDialogue(dialogue);
 		Destroy(gameObject);
 	}
 }

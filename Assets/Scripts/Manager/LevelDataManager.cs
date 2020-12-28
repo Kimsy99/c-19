@@ -1,6 +1,6 @@
 ﻿public class LevelDataManager : Singleton<LevelDataManager>
 {
-	public readonly LevelData[] levelData = new LevelData[4];
+	public readonly LevelData[] levelData = new LevelData[5];
 
 	protected override void Awake()
 	{

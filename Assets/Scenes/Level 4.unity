@@ -108365,10 +108365,10 @@ GameObject:
   - component: {fileID: 1269780116}
   - component: {fileID: 1269780118}
   - component: {fileID: 1269780117}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Goal
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -114976,9 +114976,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6617098880705120528, guid: 7bd09fc1f1c8c8e45bd540e25ff6a7fc,
         type: 3}
+      propertyPath: firstWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 74b22c7a4bbe4593a24f15f055aa4c79,
+        type: 2}
+    - target: {fileID: 6617098880705120528, guid: 7bd09fc1f1c8c8e45bd540e25ff6a7fc,
+        type: 3}
       propertyPath: levelNumber
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6617098880705120528, guid: 7bd09fc1f1c8c8e45bd540e25ff6a7fc,
+        type: 3}
+      propertyPath: secondWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: fd2acc67b12c4eca93487dfa303af707,
+        type: 2}
     - target: {fileID: 6617098880705120528, guid: 7bd09fc1f1c8c8e45bd540e25ff6a7fc,
         type: 3}
       propertyPath: levelThemeEnum

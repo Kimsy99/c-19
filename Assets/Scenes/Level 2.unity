@@ -44729,9 +44729,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6617098880705120528, guid: 7bd09fc1f1c8c8e45bd540e25ff6a7fc,
         type: 3}
+      propertyPath: firstWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 74b22c7a4bbe4593a24f15f055aa4c79,
+        type: 2}
+    - target: {fileID: 6617098880705120528, guid: 7bd09fc1f1c8c8e45bd540e25ff6a7fc,
+        type: 3}
       propertyPath: levelNumber
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6617098880705120528, guid: 7bd09fc1f1c8c8e45bd540e25ff6a7fc,
+        type: 3}
+      propertyPath: secondWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 380ac58b1a1c4ef1a1322d56d67c21e5,
+        type: 2}
     - target: {fileID: 6617098880705120528, guid: 7bd09fc1f1c8c8e45bd540e25ff6a7fc,
         type: 3}
       propertyPath: levelThemeEnum
@@ -144031,10 +144043,10 @@ GameObject:
   - component: {fileID: 2030129315}
   - component: {fileID: 2030129316}
   - component: {fileID: 2030129318}
-  m_Layer: 17
+  m_Layer: 16
   m_Name: BossTrigger
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -150062,7 +150074,7 @@ MonoBehaviour:
   healthBar: {fileID: 392415444}
   hpImage: {fileID: 1984390128}
   hpEffectImage: {fileID: 1537497478}
-  hurtSpeed: 0.005
+  hurtSpeed: 0.001
 --- !u!114 &2345822953572550889
 MonoBehaviour:
   m_ObjectHideFlags: 0

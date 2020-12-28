@@ -11,6 +11,9 @@ public class LevelManager : Singleton<LevelManager>
 	private GameObject boss;
 	public Action OnBossBarPostInit;
 
+	[SerializeField] private WeaponSettings firstWeapon;
+	[SerializeField] private WeaponSettings secondWeapon;
+
 	private Ken ken;
 	private HeldWeapon heldWeapon;
 
@@ -52,6 +55,17 @@ public class LevelManager : Singleton<LevelManager>
 				heldWeapon.SetHeldWeapon(InventoryManager.Instance.GetWeapon(0));
 			ken.health.Hp = levelData.health;
 			ken.health.Infection = levelData.infection;
+		}
+		else
+		{
+			if (firstWeapon != null)
+			{
+				Weapon weapon = new Weapon(firstWeapon);
+				InventoryManager.Instance.SetWeapon(0, weapon);
+				heldWeapon.SetHeldWeapon(InventoryManager.Instance.GetWeapon(0));
+			}
+			if (secondWeapon != null)
+				InventoryManager.Instance.SetWeapon(1, new Weapon(secondWeapon));
 		}
 	}
 

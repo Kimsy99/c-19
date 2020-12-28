@@ -1,4 +1,4 @@
-﻿public class BossHeldWeapon : NPCHeldWeapon
+﻿public class Boss5HeldWeapon : NPCHeldWeapon
 {
 	public override void Shoot() //shoot with updated position
 	{
@@ -6,15 +6,14 @@
 			return;
 
 		// Bullet will randomly go slightly upward of downward
-		float shootingAngle = weaponAim.AimAngle;
+		//float shootingAngle = weaponAim.AimAngle;
 
 		// Actually create the bullet
 		TriggerShootingEffect();
-		for (int i = 0; i < 51; i += 15)
+		for (int i = 0; i < 360; i += 20)
 		{
 			//Debug.Log(i);
-			CreateBullet(shootingAngle + i, bulletSpeed, bulletDamage);
-			CreateBullet(shootingAngle - i, bulletSpeed, bulletDamage);
+			CreateBullet(i, bulletSpeed, bulletDamage);
 		}
 		// AudioManager.Instance.Play(WeaponSettings.shootSound);
 	}

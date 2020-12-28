@@ -5,6 +5,7 @@ using UnityEngine;
 public class Sentence
 {
 	public Sprite image;
+	[TextArea]
 	public string text;
 	public bool isInstruction;
 }

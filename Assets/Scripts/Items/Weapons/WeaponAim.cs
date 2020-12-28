@@ -8,6 +8,8 @@ public class WeaponAim : MonoBehaviour
 	//private readonly GameObject reticlePrefab;
 	private Camera cam;
 	private Ken ken; // To check and control character movement
+	private Animator animator;
+	private readonly int isDeadParameter = Animator.StringToHash("IsDead");
 
 	public float AimAngle { get; private set; }
 
@@ -18,6 +20,7 @@ public class WeaponAim : MonoBehaviour
 		//Cursor.visible = false;
 		cam = Camera.main;
 		ken = GetComponentInParent<Ken>();
+		animator = GetComponent<Animator>();
 
 		//reticle = Instantiate(reticlePrefab);
 	}
@@ -40,21 +43,23 @@ public class WeaponAim : MonoBehaviour
 		Vector2 aimVector = mousePosition - (Vector2)transform.position;
 		AimAngle = Vector2.SignedAngle(Vector2.right, aimVector);
 
-		if (ken.health.IsDead)
-			return;
 		bool isRotatable = ken.shooting.HeldWeapon.Weapon == null || ken.shooting.HeldWeapon.WeaponSettings.isRotatable;
 		GameObject flashLight = ken.shooting.HeldWeapon.flashLight;
+
+		animator.SetBool(isDeadParameter, ken.health.IsDead);
 
 		if (lookAngle > 90 || lookAngle < -90)
 		{
 			transform.rotation = Quaternion.Euler(0, 0, isRotatable ? AimAngle + 180 : 0);
-			ken.spriteFlippable2D.Facing = SpriteFlippable2D.RelativeDirection.Left;
+			if (!ken.health.IsDead)
+				ken.spriteFlippable2D.Facing = SpriteFlippable2D.RelativeDirection.Left;
 			flashLight.transform.rotation = Quaternion.Euler(0, 0, AimAngle - 90);
 		}
 		else
-		{
-			ken.spriteFlippable2D.Facing = SpriteFlippable2D.RelativeDirection.Right;
+	{
 			transform.rotation = Quaternion.Euler(0, 0, isRotatable ? AimAngle : 0);
+			if (!ken.health.IsDead)
+				ken.spriteFlippable2D.Facing = SpriteFlippable2D.RelativeDirection.Right;
 			flashLight.transform.rotation = Quaternion.Euler(0, 0, AimAngle - 90);
 		}
 	}

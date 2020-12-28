@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class DialogueManager : Singleton<DialogueManager>
+public class DialogueController : Singleton<DialogueController>
 {
 	private Ken ken;
 

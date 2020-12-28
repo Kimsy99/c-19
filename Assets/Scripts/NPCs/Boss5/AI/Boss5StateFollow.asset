@@ -9,12 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51977423f9c3d4a0692ce0828b946c1c, type: 3}
-  m_Name: Boss3StateFollow
+  m_Script: {fileID: 11500000, guid: 5eacb8be64d046be95c7e6c1e90df8d7, type: 3}
+  m_Name: Boss5StateFollow
   m_EditorClassIdentifier: 
   Actions:
   - {fileID: 11400000, guid: f899a632b01347869fcf9290800b88eb, type: 2}
+  - {fileID: 11400000, guid: 2b29e52227b927e4ca1bb2493ebd4fa8, type: 2}
   Transitions:
-  - Decision: {fileID: 11400000, guid: f3438157f24a472d9d1738e0ebbbc837, type: 2}
+  - Decision: {fileID: 11400000, guid: 0f74d7ff03bb24dd7bdc08df29f9e1e9, type: 2}
     TrueState: {fileID: 11400000, guid: f69039a2355e4ecdab92086502067f6f, type: 2}
     FalseState: {fileID: 11400000, guid: f594250fc72346b5ad49a15ee7ffa393, type: 2}

@@ -103,6 +103,7 @@ public class Door : MonoBehaviour
                     {
                         UnlockDoor();
                         InventoryManager.Instance.RemoveWeapon(InventoryManager.Instance.ActiveSlotIndex);
+                        ken.shooting.HeldWeapon.SetHeldWeapon(null);
                     }
                 }
             }

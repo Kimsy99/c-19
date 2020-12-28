@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,8 @@ public class SceneLoader : Singleton<SceneLoader>
 	public Transition currentTransition; // 当前的过场预设
 	public bool Loadable { get; private set; } // 现在是否可以转场
 	public int data;
+
+	private readonly int outParameter = Animator.StringToHash("Out");
 
 	protected override void Awake()
 	{
@@ -33,6 +36,8 @@ public class SceneLoader : Singleton<SceneLoader>
 
 	private IEnumerator LoadLevel(string levelName)
 	{
+		Canvas canvas = currentTransition.GetComponentInChildren<Canvas>();
+		canvas.sortingOrder = 110;
 		// 异步加载场景
 		AsyncOperation loading = SceneManager.LoadSceneAsync(levelName);
 
@@ -65,6 +70,19 @@ public class SceneLoader : Singleton<SceneLoader>
 		while (loading.progress != 1)
 			yield return null;
 
+		if (levelName.StartsWith("Level "))
+		{
+			canvas.worldCamera = GameObject.Find("UICamera").GetComponent<Camera>();
+			canvas.sortingOrder = 100;
+			TextMeshProUGUI levelLabel = GameObject.Find("LevelLabel").GetComponent<TextMeshProUGUI>();
+			TextMeshProUGUI levelSubLabel = GameObject.Find("LevelSubLabel").GetComponent<TextMeshProUGUI>();
+			levelLabel.text = levelName;
+			levelSubLabel.text = GetLevelGreeting(levelName);
+			yield return new WaitForSeconds(2);
+			levelLabel.GetComponent<Animator>().SetTrigger(outParameter);
+			levelSubLabel.GetComponent<Animator>().SetTrigger(outParameter);
+		}
+
 		// 结束过场
 		currentTransition.EndTrans();
 
@@ -77,9 +95,28 @@ public class SceneLoader : Singleton<SceneLoader>
 		while (!currentTransition.IsAnimationDone())
 			yield return null;
 
-		print("Done");
+		//print("Done");
 
 		// 可以继续转换场景
 		Loadable = true;
+	}
+
+	private string GetLevelGreeting(string levelName)
+	{
+		switch (levelName)
+		{
+			case "Level 1":
+				return "The C-19 Hospital";
+			case "Level 2":
+				return "Experimental Area Square";
+			case "Level 3":
+				return "Virus Laboratory";
+			case "Level 4":
+				return "Quarantine Administration Center";
+			case "Level 5":
+				return "Boundary to the Outside World";
+			default:
+				return "missingno";
+		}
 	}
 }

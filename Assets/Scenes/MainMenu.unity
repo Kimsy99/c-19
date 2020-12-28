@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1716,15 +1716,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caf0ac2d67ec6274290d4fda428ff324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelData:
-  - health: 0
-    infection: 0
-  - health: 0
-    infection: 0
-  - health: 0
-    infection: 0
-  - health: 0
-    infection: 0
 --- !u!4 &706677283
 Transform:
   m_ObjectHideFlags: 0
@@ -2867,31 +2858,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5995554864177861420, guid: a518e98964f8a244b806ac68372e8edb,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 2716.121
-      objectReference: {fileID: 0}
-    - target: {fileID: 5995554864177861420, guid: a518e98964f8a244b806ac68372e8edb,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 2716.121
-      objectReference: {fileID: 0}
-    - target: {fileID: 5995554864177861420, guid: a518e98964f8a244b806ac68372e8edb,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 2470
-      objectReference: {fileID: 0}
-    - target: {fileID: 5995554864177861420, guid: a518e98964f8a244b806ac68372e8edb,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5995554864768333775, guid: a518e98964f8a244b806ac68372e8edb,
         type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1777274276}
+    - target: {fileID: 5995554864768333775, guid: a518e98964f8a244b806ac68372e8edb,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a518e98964f8a244b806ac68372e8edb, type: 3}
 --- !u!1 &1630939485

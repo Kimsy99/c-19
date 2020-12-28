@@ -2,6 +2,7 @@
 
 public class BossTrigger : MonoBehaviour
 {
+	[SerializeField] private GameObject[] bossDoorsToLock = null;
 	[SerializeField] protected GameObject boss = null;
 
 	protected Animator animator;
@@ -19,6 +20,8 @@ public class BossTrigger : MonoBehaviour
 		collider2D.enabled = false;
 		LevelManager.Instance.IntroBoss(boss.gameObject);
 
+		foreach (GameObject bossDoor in bossDoorsToLock) // Lock doors
+			bossDoor.SetActive(true);
 		AudioManager.Instance.Stop(LevelManager.Instance.levelThemeEnum);
 		Invoke(nameof(BossInit), 4);
 	}

@@ -46,8 +46,6 @@ public class LevelManager : Singleton<LevelManager>
 		LevelData levelData = LevelDataManager.Instance.levelData[levelNumber - 2];
 		if (levelData != null)
 		{
-			print(InventoryManager.Instance);
-			print(levelData.weapons);
 			for (int i = 0; i < 5; i++)
 				InventoryManager.Instance.SetWeapon(i, levelData.weapons[i]);
 			if (InventoryManager.Instance.GetWeapon(0) != null)
@@ -69,13 +67,6 @@ public class LevelManager : Singleton<LevelManager>
 
 		if (Input.GetKeyDown(KeyCode.Escape))
 			SceneLoader.Instance.LoadScene("MainMenu");
-
-		if (Input.GetKeyDown(KeyCode.F2))
-		{
-			LevelManager.Instance.SaveData();
-			SceneLoader.Instance.data = LevelManager.Instance.levelNumber;
-			SceneLoader.Instance.LoadScene("LevelComplete");
-		}
 	}
 
 	public void IntroBoss(GameObject boss)
@@ -84,7 +75,7 @@ public class LevelManager : Singleton<LevelManager>
 
 		levelTheme = AudioManager.Instance.Play(AudioEnum.BossTheme);
 		UIManager.Instance.bossBarContainer.SetActive(true); // Show boss bar
-		CanPlayerMove = true;
+		CanPlayerMove = false;
 		cameraController.secondaryTarget = boss.transform; // Switch target to boss
 		cameraController.primaryTargetWeightage = 0;
 	}
@@ -114,7 +105,7 @@ public class LevelManager : Singleton<LevelManager>
 				break;
 			yield return new WaitForEndOfFrame();
 		}
-		CanPlayerMove = false;
+		CanPlayerMove = true;
 		IsBossReady = true;
 
 		SetBossCameraMode();

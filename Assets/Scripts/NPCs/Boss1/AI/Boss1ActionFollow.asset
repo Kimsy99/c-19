@@ -15,4 +15,3 @@ MonoBehaviour:
   minDistanceToFollow: 0
   followingSpeed1: 1.5
   followingSpeed2: 3
-  followingSpeed: 3

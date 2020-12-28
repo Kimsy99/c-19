@@ -17,10 +17,11 @@ MonoBehaviour:
     type: 3}
   heldSprite: {fileID: -4107469028111699786, guid: 43d3b3a36df54412a5c13c6db2c4b8d5,
     type: 3}
+  isRotatable: 1
   bulletToUse: {fileID: 0}
   bulletSpawnPositionOffset: {x: 0.232, y: 0.037}
   bulletSpeed: 8
-  maxBulletCount: 300
+  maxBulletCount: 350
   damage: 0.15
   spread: 0
   shootSound: 11

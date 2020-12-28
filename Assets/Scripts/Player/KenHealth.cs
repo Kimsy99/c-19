@@ -25,6 +25,8 @@ public class KenHealth : Health
 	private float infection = 0;
 	private int lives = 3;
 
+	private bool prevFlashLightState;
+
 	protected override void Awake()
 	{
 		base.Awake();
@@ -111,6 +113,8 @@ public class KenHealth : Health
 		ken.shooting.HeldWeapon.DontShoot();
 		heldWeapon.SetActive(false);
 		trigger1.SetActive(false);
+		prevFlashLightState = ken.shooting.HeldWeapon.flashLight.activeInHierarchy;
+		ken.shooting.HeldWeapon.flashLight.SetActive(false);
 		animator.SetBool(isDeadParameter, true);
 
 		LevelManager.Instance.GameOver();
@@ -127,6 +131,7 @@ public class KenHealth : Health
 	{
 		heldWeapon.SetActive(true);
 		trigger1.SetActive(true);
+		ken.shooting.HeldWeapon.flashLight.SetActive(prevFlashLightState);
 		animator.SetBool(isDeadParameter, false);
 		ken.movement.speedMultiplier = 1;
 		Hp = maxHp;

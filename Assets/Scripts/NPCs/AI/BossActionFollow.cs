@@ -9,11 +9,8 @@ public class BossActionFollow : AIAction
 	public float minDistanceToFollow = 0;
 	public float followingSpeed1;
 	public float followingSpeed2;
-	public float followingSpeed;
-	private void Start()
-	{
-		followingSpeed = followingSpeed1;
-	}
+	private float followingSpeed;
+
 	public override void Act(StateController controller)
 	{
 		FollowTarget(controller);
@@ -29,6 +26,8 @@ public class BossActionFollow : AIAction
 			//Debug.Log("Increase speed");
 			followingSpeed = followingSpeed2;
 		}
+		else
+			followingSpeed = followingSpeed1;
 		// Debug.Log(controller.Npc.health.Hp);
 		// Debug.Log(controller.Npc.health.maxHp);
 		// Debug.Log("cont");

@@ -7,6 +7,8 @@ public class Boss1 : Movable2D
 	private BossHealth boss1;
 	private NPCHurtOnCollide colliderNPC;
 
+	[SerializeField] private GameObject[] doorsToUnlock = null;
+
 	// Start is called before the first frame update
 	protected override void Awake()
 	{
@@ -23,11 +25,8 @@ public class Boss1 : Movable2D
 		LevelManager.Instance.ExitBossMode();
 		AudioManager.Instance.Stop(AudioEnum.BossTheme);
 		Destroy(GetComponent<BoxCollider2D>());
-	}
 
-	// Update is called once per frame
-	void Update()
-	{
-
+		foreach (GameObject gameObject in doorsToUnlock)
+			gameObject.SetActive(false);
 	}
 }

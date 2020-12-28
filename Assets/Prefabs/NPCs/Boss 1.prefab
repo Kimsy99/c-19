@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1897314a336b94d7da56220bd46a3ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponAim: {fileID: 0}
   bulletSpawner: {fileID: 6860956883148518663}
   muzzlePS: {fileID: 2352004111299066558}
   bulletToUse: {fileID: 9103431994874482778, guid: 057d34e36c564711bb1baefb30b2c46c,
@@ -52,6 +53,21 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: aea44c5ac6ab45759a6c5d10fe6bb316, type: 2}
     - target: {fileID: 892908392163746209, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 892908392163746209, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 892908392163746209, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 892908392163746209, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.35
       objectReference: {fileID: 0}
@@ -64,6 +80,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 892908392163746209, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 892908392163746209, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
@@ -82,16 +103,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 892908392163746209, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 892908392163746209, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 892908392163746209, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
-        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -104,16 +115,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 892908392163746209, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 892908392163746209, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 892908392163746210, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
@@ -153,13 +154,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 892908392854001707, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.745
+      propertyPath: m_AnchoredPosition.x
+      value: 0.081
       objectReference: {fileID: 0}
     - target: {fileID: 892908392854001707, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.081
+      propertyPath: m_AnchoredPosition.y
+      value: 0.745
       objectReference: {fileID: 0}
     - target: {fileID: 2141492535573478094, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
@@ -167,11 +168,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 0331567cfb6b4ae7acac885e4eadfa0a,
         type: 2}
-    - target: {fileID: 5242783678225877059, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5242783678225877059, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
       propertyPath: m_Size.x
@@ -184,14 +180,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5242783678225877059, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242783678225877059, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
+        type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5984424923952772208, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
+      propertyPath: muzzlePS
+      value: 
+      objectReference: {fileID: 2352004111299066558}
+    - target: {fileID: 5984424923952772208, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
+        type: 3}
       propertyPath: bulletSpeed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5984424923952772208, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
+        type: 3}
+      propertyPath: bulletToUse
+      value: 
+      objectReference: {fileID: 5151050438313354185, guid: 80321567ade443f418b6a16bbdd959a0,
+        type: 3}
     - target: {fileID: 5984424923952772208, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
       propertyPath: bulletDamage
@@ -202,17 +214,6 @@ PrefabInstance:
       propertyPath: bulletSpawner
       value: 
       objectReference: {fileID: 6860956883148518663}
-    - target: {fileID: 5984424923952772208, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
-        type: 3}
-      propertyPath: muzzlePS
-      value: 
-      objectReference: {fileID: 2352004111299066558}
-    - target: {fileID: 5984424923952772208, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
-        type: 3}
-      propertyPath: bulletToUse
-      value: 
-      objectReference: {fileID: 5151050438313354185, guid: 80321567ade443f418b6a16bbdd959a0,
-        type: 3}
     - target: {fileID: 6068312062649501076, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
@@ -232,6 +233,11 @@ PrefabInstance:
         type: 3}
       propertyPath: maxHp
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7940670431555395283, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
+        type: 3}
+      propertyPath: hurtSpeed
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 7940670431555395369, guid: 6eaeed3792d74f4f931a4dff3b4da3ca,
         type: 3}

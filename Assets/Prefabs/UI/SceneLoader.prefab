@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTransition: {fileID: 5244565591399345792}
+  data: 0
 --- !u!1001 &1040170747761547522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85,7 +86,7 @@ PrefabInstance:
     - target: {fileID: 6726988793153711821, guid: ae7775854191ba74588b54257a737616,
         type: 3}
       propertyPath: m_RenderMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6726988793153711821, guid: ae7775854191ba74588b54257a737616,
         type: 3}
@@ -94,8 +95,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6726988793435097646, guid: ae7775854191ba74588b54257a737616,
         type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2716.121
+      objectReference: {fileID: 0}
+    - target: {fileID: 6726988793435097646, guid: ae7775854191ba74588b54257a737616,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 2716.121
+      objectReference: {fileID: 0}
+    - target: {fileID: 6726988793435097646, guid: ae7775854191ba74588b54257a737616,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1944
+      value: 2470
       objectReference: {fileID: 0}
     - target: {fileID: 6726988794563602030, guid: ae7775854191ba74588b54257a737616,
         type: 3}

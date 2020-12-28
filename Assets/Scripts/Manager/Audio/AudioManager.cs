@@ -29,6 +29,7 @@ public class AudioManager : Singleton<AudioManager>
 	/// <param name="audioEnum">the sound</param>
 	public AudioSource Play(AudioEnum audioEnum)
 	{
+		//print("bzzzztz");
 		if (audioEnum == AudioEnum.NoAudio)
 			return null;
 		Audio audio = GetSound(audioEnum);

@@ -32105,6 +32105,12 @@ PrefabInstance:
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 907633520}
+    - target: {fileID: 321199242233703872, guid: 51c756c71a847da4fb575af3a354c70b,
+        type: 3}
+      propertyPath: startingDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 08db7b7fa1030a34d8e439806c97fb84,
+        type: 2}
     - target: {fileID: 321199242233703873, guid: 51c756c71a847da4fb575af3a354c70b,
         type: 3}
       propertyPath: m_RootOrder

@@ -65,10 +65,10 @@ public class KenHealth : Health
 		{
 			Damage(Mathf.Lerp(0.03F, 0.24F, infection / maxInfection) * Time.deltaTime);
 		}
-		if (!IsInvulnerable && Input.GetKeyDown(KeyCode.L))
-			Damage(1, true, 0.1F);
-		if (Input.GetKeyDown(KeyCode.K) || isInfecting)
-			Infect(1);
+		//if (!IsInvulnerable && Input.GetKeyDown(KeyCode.L))
+		//	Damage(1, true, 0.1F);
+		//if (Input.GetKeyDown(KeyCode.K) || isInfecting)
+		//	Infect(1);
 	}
 
 	public override float Hp

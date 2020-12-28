@@ -5,20 +5,16 @@ using UnityEngine;
 public class LevelManager : Singleton<LevelManager>
 {
 	[HideInInspector] public CameraController cameraController;
-
-	private Ken ken;
-	private HeldWeapon heldWeapon;
-	[SerializeField] private WeaponSettings firstWeaponSettings = null;
-	[SerializeField] private WeaponSettings secondWeaponSettings = null;
-	[SerializeField] private WeaponSettings thirdWeaponSettings = null;
-
-	private bool canPlayerMove = true;
-
-	public Action OnBossBarPostInit;
-
+	public int levelNumber;
 	public AudioEnum levelThemeEnum;
 	private AudioSource levelTheme;
 	private GameObject boss;
+	public Action OnBossBarPostInit;
+
+	private Ken ken;
+	private HeldWeapon heldWeapon;
+
+	private bool canPlayerMove = true;
 
 	public bool CanPlayerMove
 	{
@@ -42,18 +38,23 @@ public class LevelManager : Singleton<LevelManager>
 
 	void Start()
 	{
-		if (firstWeaponSettings != null)
-		{
-			Weapon weapon = new Weapon(firstWeaponSettings);
-			InventoryManager.Instance.SetWeapon(0, weapon);
-			heldWeapon.SetHeldWeapon(weapon);
-		}
-		if (secondWeaponSettings != null)
-			InventoryManager.Instance.SetWeapon(1, new Weapon(secondWeaponSettings));
-		if (thirdWeaponSettings != null)
-			InventoryManager.Instance.SetWeapon(2, new Weapon(thirdWeaponSettings));
-
 		levelTheme = AudioManager.Instance.Play(levelThemeEnum);
+
+		if (levelNumber == 1)
+			return;
+		// Load data from previous level
+		LevelData levelData = LevelDataManager.Instance.levelData[levelNumber - 2];
+		if (levelData != null)
+		{
+			print(InventoryManager.Instance);
+			print(levelData.weapons);
+			for (int i = 0; i < 5; i++)
+				InventoryManager.Instance.SetWeapon(i, levelData.weapons[i]);
+			if (InventoryManager.Instance.GetWeapon(0) != null)
+				heldWeapon.SetHeldWeapon(InventoryManager.Instance.GetWeapon(0));
+			ken.health.Hp = levelData.health;
+			ken.health.Infection = levelData.infection;
+		}
 	}
 
 	void Update()
@@ -68,6 +69,13 @@ public class LevelManager : Singleton<LevelManager>
 
 		if (Input.GetKeyDown(KeyCode.Escape))
 			SceneLoader.Instance.LoadScene("MainMenu");
+
+		if (Input.GetKeyDown(KeyCode.F2))
+		{
+			LevelManager.Instance.SaveData();
+			SceneLoader.Instance.data = LevelManager.Instance.levelNumber;
+			SceneLoader.Instance.LoadScene("LevelComplete");
+		}
 	}
 
 	public void IntroBoss(GameObject boss)
@@ -131,5 +139,16 @@ public class LevelManager : Singleton<LevelManager>
 		cameraController.secondaryTarget = null;
 		cameraController.secondaryTargetWeightage = 0;
 		cameraController.camSize = 3;
+	}
+
+	public void SaveData()
+	{
+		LevelData data = new LevelData();
+		for (int i = 0; i < 5; i++)
+			data.weapons[i] = InventoryManager.Instance.GetWeapon(i);
+		data.health = ken.health.Hp;
+		data.infection = ken.health.Infection;
+
+		LevelDataManager.Instance.levelData[levelNumber - 1] = data;
 	}
 }

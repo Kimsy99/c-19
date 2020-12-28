@@ -6,6 +6,7 @@ public class SceneLoader : Singleton<SceneLoader>
 {
 	public Transition currentTransition; // 当前的过场预设
 	public bool Loadable { get; private set; } // 现在是否可以转场
+	public int data;
 
 	protected override void Awake()
 	{

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using System.Collections;
 
 /// <summary>
 /// Reponsible for the storing of actual items and updating the inventory UI. Can handle item adding and removal.

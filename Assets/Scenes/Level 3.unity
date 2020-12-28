@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -65099,8 +65099,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 859835346}
-  - {fileID: 1726036788}
-  - {fileID: 1440223541}
+  - {fileID: 1130574879}
+  - {fileID: 2929665750597487561}
   - {fileID: 986087871}
   m_Father: {fileID: 207470113}
   m_RootOrder: 3
@@ -75126,6 +75126,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cda1b9ed330160b49bf4a6a4e0e14cb1, type: 3}
+--- !u!4 &1130574879 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1130574878}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1131772520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77144,12 +77149,6 @@ Transform:
 --- !u!1 &1440223537 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2929665748871475448, guid: cda1b9ed330160b49bf4a6a4e0e14cb1,
-    type: 3}
-  m_PrefabInstance: {fileID: 1130574878}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1440223541 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2929665748871475452, guid: cda1b9ed330160b49bf4a6a4e0e14cb1,
     type: 3}
   m_PrefabInstance: {fileID: 1130574878}
   m_PrefabAsset: {fileID: 0}
@@ -79435,12 +79434,6 @@ PrefabInstance:
 --- !u!1 &1726036784 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2929665748871475448, guid: cda1b9ed330160b49bf4a6a4e0e14cb1,
-    type: 3}
-  m_PrefabInstance: {fileID: 2929665750597487560}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1726036788 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2929665748871475452, guid: cda1b9ed330160b49bf4a6a4e0e14cb1,
     type: 3}
   m_PrefabInstance: {fileID: 2929665750597487560}
   m_PrefabAsset: {fileID: 0}
@@ -88363,6 +88356,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6617098880705120528, guid: 7bd09fc1f1c8c8e45bd540e25ff6a7fc,
         type: 3}
+      propertyPath: levelNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6617098880705120528, guid: 7bd09fc1f1c8c8e45bd540e25ff6a7fc,
+        type: 3}
       propertyPath: levelThemeEnum
       value: 25
       objectReference: {fileID: 0}
@@ -89061,6 +89059,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cda1b9ed330160b49bf4a6a4e0e14cb1, type: 3}
+--- !u!4 &2929665750597487561 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 2929665750597487560}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7368399336632506025 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1648394660189571039, guid: f57d7e8801495154e8b5501b471534c9,

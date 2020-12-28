@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3788,7 +3788,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 24
-      m_TileSpriteIndex: 29
+      m_TileSpriteIndex: 41
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -4895,7 +4895,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 42
-      m_TileSpriteIndex: 26
+      m_TileSpriteIndex: 29
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -5310,9 +5310,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: -2766245767759395096, guid: 545409e2af30947228a6aaf0b9358a0d,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: -9174027558235626460, guid: 5827a7cde10e24bcb9ce612db30b1455,
       type: 3}
@@ -5320,7 +5319,7 @@ Tilemap:
     m_Data: {fileID: -4377336188100482526, guid: d6fb6623bc2fe4ea6898785d735a44cc,
       type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 4512130852532841525, guid: 550677d2b79e9417382119be0040ae4c,
+    m_Data: {fileID: -2766245767759395096, guid: 545409e2af30947228a6aaf0b9358a0d,
       type: 3}
   - m_RefCount: 9
     m_Data: {fileID: 7964009681190013369, guid: 73fc10ea17dc441d6b9b5385d16a355d,
@@ -5355,8 +5354,9 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: -7261034980326161172, guid: 550677d2b79e9417382119be0040ae4c,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 4512130852532841525, guid: 550677d2b79e9417382119be0040ae4c,
+      type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 1085272551448429858, guid: 5827a7cde10e24bcb9ce612db30b1455,
       type: 3}
@@ -32486,12 +32486,12 @@ PrefabInstance:
     - target: {fileID: 272387123277920699, guid: 9b7446a9b0c24110a525e395233b336b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.34
+      value: -23.62
       objectReference: {fileID: 0}
     - target: {fileID: 272387123277920699, guid: 9b7446a9b0c24110a525e395233b336b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.83
+      value: 10.42
       objectReference: {fileID: 0}
     - target: {fileID: 272387123277920699, guid: 9b7446a9b0c24110a525e395233b336b,
         type: 3}

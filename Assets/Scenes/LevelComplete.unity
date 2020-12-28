@@ -435,6 +435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   label: {fileID: 2021512173}
+  pressAnyKeyToContinue: {fileID: 616425054}
 --- !u!1 &1154203286
 GameObject:
   m_ObjectHideFlags: 0

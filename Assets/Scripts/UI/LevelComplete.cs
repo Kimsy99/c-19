@@ -15,7 +15,10 @@ public class LevelComplete : MonoBehaviour
 	{
 		if (Input.anyKeyDown)
 		{
-			SceneLoader.Instance.LoadScene("MainMenu");
+			if (label.text.Equals("Level 5 Complete!"))
+				SceneLoader.Instance.LoadScene("Ending");
+			else
+				SceneLoader.Instance.LoadScene("MainMenu");
 			label.gameObject.SetActive(false);
 			pressAnyKeyToContinue.SetActive(false);
 		}

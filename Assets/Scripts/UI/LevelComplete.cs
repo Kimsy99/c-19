@@ -13,7 +13,7 @@ public class LevelComplete : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.anyKeyDown)
+		if (Input.anyKeyDown && SceneLoader.Instance.IsLoadable)
 		{
 			if (label.text.Equals("Level 5 Complete!"))
 				SceneLoader.Instance.LoadScene("Ending");

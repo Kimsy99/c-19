@@ -102,10 +102,10 @@ MonoBehaviour:
   chestLoot:
   - collectable: {fileID: 6862088023674417546, guid: 2569ef3baae74ffda458e3abb0a02e8c,
       type: 3}
-    weightage: 30
+    weightage: 40
   - collectable: {fileID: 3778275499027133721, guid: 5dfa1ffabf4c4cadafbf4f429e38724e,
       type: 3}
-    weightage: 5
+    weightage: 10
   - collectable: {fileID: 6075333916904434798, guid: 8a0b230834cc4987b2e2e5e7b761a66e,
       type: 3}
     weightage: 10

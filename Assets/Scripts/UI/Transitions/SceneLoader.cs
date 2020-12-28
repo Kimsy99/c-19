@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : Singleton<SceneLoader>
 {
 	public Transition currentTransition; // 当前的过场预设
-	public bool Loadable { get; private set; } // 现在是否可以转场
+	public bool IsLoadable { get; private set; } // 现在是否可以转场
 	public int data;
 
 	private readonly int outParameter = Animator.StringToHash("Out");
@@ -18,13 +18,13 @@ public class SceneLoader : Singleton<SceneLoader>
 			Destroy(gameObject);
 		else
 			DontDestroyOnLoad(gameObject);
-		Loadable = true;
+		IsLoadable = true;
 	}
 
 	public void LoadScene(string SceneName, Transition transition = null)
 	{
 		// 如果现在不能转换场景直接返回
-		if (!Loadable) return;
+		if (!IsLoadable) return;
 
 		// 如果有设置过场就设置过场
 		if (transition != null)
@@ -45,7 +45,7 @@ public class SceneLoader : Singleton<SceneLoader>
 		loading.allowSceneActivation = false;
 
 		// 现在不再能转换场景
-		Loadable = false;
+		IsLoadable = false;
 
 		// 开始过场
 		currentTransition.StartTrans();
@@ -98,7 +98,7 @@ public class SceneLoader : Singleton<SceneLoader>
 		//print("Done");
 
 		// 可以继续转换场景
-		Loadable = true;
+		IsLoadable = true;
 	}
 
 	private string GetLevelGreeting(string levelName)
